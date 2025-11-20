@@ -31,8 +31,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,13 +160,23 @@
               "icon": "lucide-list",
               "title": "Outline of Discrete Representations and Generative Modeling"
             }
+          },
+          {
+            "id": "019600b5849e6a0e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 219.5,
-    "collapsed": true
+    "width": 312.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,7 +194,7 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "0b7db1fe56169a79",
+  "active": "a3faa73489b8b737",
   "lastOpenFiles": [
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
