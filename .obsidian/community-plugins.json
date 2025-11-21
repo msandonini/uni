@@ -8,6 +8,10 @@
   "obsidian-icon-folder",
   "obsidian-style-settings",
   "omnisearch",
-  "editing-toolbar",
-  "obsidian-annotator"
+  "obsidian-annotator",
+  "obsidian-kanban",
+  "obsidian-importer",
+  "tag-wrangler",
+  "obsidian-mind-map",
+  "editing-toolbar"
 ]

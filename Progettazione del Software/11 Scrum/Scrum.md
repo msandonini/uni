@@ -45,5 +45,23 @@ Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done"
 - Development Team
 	- 3-9 membri ognuno con competenze diverse ma livello di esperienza analogo
 	- Sono impegnati full-time (con alcune eccezioni, come ad esempio il database administrator che è molto costoso)
+	- Il team è autoorganizzante
+	- Tutti i membri del team sono nello stesso spazio di lavoro
+	- Ogni modifica al team può avvenire solo tra uno sprint ed un altro (tutto il team deve seguire tutto lo sprint a cui è stato assegnato)
 	- Diversi responsabili della consegna di un PSI (Potentially Shippable Increment)
 ![[Scrum_team_interaction.png]]
+
+## Rituali (riunioni)
+
+- Sprint planning meeting
+	- Si definisce cosa fare (sprint backlog) e come aggiornare il product backlog
+	- Sono 8 ore divise in 2 blocchi da 4
+- Daily Scrum / Stand-up
+	- Ogni sviluppatore dice cosa ha fatto il giorno precedente, cosa pianifica per il giorno, e che impedimenti ha trovato
+	- Dura 15 minuti, in piedi, e coinvolge tutto il team
+- Sprint review
+	- Riguarda il prodotto, concentrandosi su cosa è stato completato o non in questo sprint, e sulla demo
+	- Dura al massimo 4 ore
+- Sprint retrospective
+	- Riguarda il processo, concentrandosi su cosa è andato bene e quali impedimenti si sono trovati
+	- Dura al massimo 3 ore
