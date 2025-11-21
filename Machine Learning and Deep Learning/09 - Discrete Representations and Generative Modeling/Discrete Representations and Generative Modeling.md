@@ -318,6 +318,17 @@ print("Soft sample (pass 2):", format_tensor(y_soft2))
 y_hard = F.gumbel_softmax(logits, tau=tau, hard=True)
 print("Hard sample (approx. one-hot):", format_tensor(y_hard))
 ```
+The output of this will be:
+```
+Output.
+Soft sample (pass 1):
+[[0.99, 0.01, 0.0]]
+Soft sample (pass 2):
+[[0.08, 0.0, 0.92]]
+Hard sample (approx. one-hot):
+[[0.0, 0.0, 1.0]]
+```
+Here, the `tau` value is set always the same, since we are sampling, so the values can change. 
 
 The initial example now becomes like this:
 ```python
@@ -335,3 +346,5 @@ print("Gradient w.r.t. query:", query.grad)
 # Selected value: 30.0
 # Gradient w.r.t. query: tensor([[ 0.2450, -0.2618, -3.1309, 4.7076]])
 ```
+
+
