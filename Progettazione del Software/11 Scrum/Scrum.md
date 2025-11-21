@@ -56,6 +56,7 @@ Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done"
 - Sprint planning meeting
 	- Si definisce cosa fare (sprint backlog) e come aggiornare il product backlog
 	- Sono 8 ore divise in 2 blocchi da 4
+	- Analizzando il product backlog s
 ![[Scrum_sprint_planning_meeting.png]]
 - Daily Scrum / Stand-up
 	- Ogni sviluppatore dice cosa ha fatto il giorno precedente, cosa pianifica per il giorno, e che impedimenti ha trovato
