@@ -242,7 +242,6 @@ PixelCNN is used to maximized the log-likelihood of the training data, which is 
 $$
 \mathcal{L} (\theta_{z}) = - \sum_{i, j} \log p_{\theta_{z}}(z_{i, j} | z_{<i, j})
 $$
-
 The output for each position is a discrete distribution (e.g. a softmax over $K$ categories, one for each codebook line)
 
 The training loss corresponds to the standard *cross-entropy* between the predicted distribution and the true target.
