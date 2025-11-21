@@ -56,7 +56,9 @@ Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done"
 - Sprint planning meeting
 	- Si definisce cosa fare (sprint backlog) e come aggiornare il product backlog
 	- Sono 8 ore divise in 2 blocchi da 4
-	- Analizzando il product backlog s
+	- Analizzando il product backlog si realizza lo sprint backlog, ovvero vengono decisi gli elementi che verranno sicuramente realizzati nello sprint
+		- Identificazione e stima di ciascun compito
+	- Si studia l'architettura di alto livello
 ![[Scrum_sprint_planning_meeting.png]]
 - Daily Scrum / Stand-up
 	- Ogni sviluppatore dice cosa ha fatto il giorno precedente, cosa pianifica per il giorno, e che impedimenti ha trovato
