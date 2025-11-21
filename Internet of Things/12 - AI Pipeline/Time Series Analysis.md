@@ -112,5 +112,5 @@ To apply anomaly detection, we must train it on a "normal" dataset (with no anom
 ### ML/DL methods
 
 Examples of ML/DL algorithms usable in time series analysis are:
-- Isolation forest / One class SVM
+- Isolation forest / One-class SVM
 - [[Autoencoders]]
