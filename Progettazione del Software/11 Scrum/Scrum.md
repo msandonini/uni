@@ -16,3 +16,8 @@ Scrum è caratterizzato da diversi punti chiave:
 - Per ogni sprint, ogni persona del team sceglie i requisiti da realizzare da uno *sprint backlog*
 - I meetings sono caratterizzati da reviews e retrospettive, in visione di miglioramento continuo
 
+## Sprint
+
+Lo sprint è l'iterazione principale di Scrum, analoga alle iterazioni di [[09 RUP & OpenUP|RUP]].
+Ogni sprint ha una durata costante di circa 2-4 settimane, e si compone di diverse storie.
+

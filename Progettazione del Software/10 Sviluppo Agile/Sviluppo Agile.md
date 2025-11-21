@@ -22,3 +22,5 @@ I metodi agili sono una famiglia di metodi di sviluppo che in comune hanno:
 - *Collaborazione continua* del team di progetto col cliente
 - *Documentazione* di sviluppo ridotta
 - *Valutazione sistematica e continua* di valori e rischi dei cambiamenti
+
+N.B.: In ambiente agile ogni persona lavora solo su un progetto per volta

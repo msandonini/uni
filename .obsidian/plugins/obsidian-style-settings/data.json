@@ -52,5 +52,8 @@
   "ITS@@hide-titlebar-tab": false,
   "ITS@@writing-document": false,
   "ITS@@paper": true,
-  "ITS@@writing": false
+  "ITS@@writing": false,
+  "things-style@@mobile-black-background": false,
+  "id@@colorblind_protan-deutan": false,
+  "id@@colorblind_tritan": false
 }

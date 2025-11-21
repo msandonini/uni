@@ -104,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Progettazione del Software/11 Scrum/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Scrum"
             }
           },
           {
@@ -122,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+                "file": "Progettazione del Software/11 Scrum/Scrum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Explainable AI - Metodi Locali Model-Agnostic"
+              "title": "Outgoing links from Scrum"
             }
           },
           {
@@ -151,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
+                "file": "Progettazione del Software/11 Scrum/Scrum.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Discrete Representations and Generative Modeling"
+              "title": "Outline of Scrum"
             }
           },
           {
@@ -196,6 +197,8 @@
   },
   "active": "a3faa73489b8b737",
   "lastOpenFiles": [
+    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
+    "Progettazione del Software/11 Scrum/Scrum.md",
     "Progettazione del Software/09 RUP & OpenUP",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
@@ -204,10 +207,8 @@
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Internet of Things/11 - Node-RED",
     "Internet of Things/10 - MIT App Inventor",
-    "Progettazione del Software/11 Scrum/Scrum.md",
     "Internet of Things/12 - AI Pipeline",
     "Internet of Things/09 - Telegram Bots",
-    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
     "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
     "Progettazione del Software/10 Sviluppo Agile/Agile - Scrum.md",
     "Progettazione del Software/11 Scrum",
@@ -236,7 +237,6 @@
     "Progettazione del Software/Putnam.md",
     "Progettazione del Software/Cocomo.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Overall.png",
-    "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Architecture.png",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/20251112 MLOps.md",
