@@ -53,14 +53,9 @@ Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done"
 
 ## Rituali (riunioni)
 
-- Sprint planning meeting
+- [[#Sprint Planning Meeting]]
 	- Si definisce cosa fare (sprint backlog) e come aggiornare il product backlog
 	- Sono 8 ore divise in 2 blocchi da 4
-	- Analizzando il product backlog si realizza lo sprint backlog, ovvero vengono decisi gli elementi che verranno sicuramente realizzati nello sprint
-		- Identificazione e stima di ciascun compito (1 - 16 ore)
-		- Uso di Planning Poker
-	- Si studia l'architettura di alto livello
-![[Scrum_sprint_planning_meeting.png]]
 - Daily Scrum / Stand-up
 	- Ogni sviluppatore dice cosa ha fatto il giorno precedente, cosa pianifica per il giorno, e che impedimenti ha trovato
 	- Dura 15 minuti, in piedi, e coinvolge tutto il team
@@ -70,4 +65,18 @@ Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done"
 - Sprint retrospective
 	- Riguarda il processo, concentrandosi su cosa è andato bene e quali impedimenti si sono trovati
 	- Dura al massimo 3 ore
+
+### Sprint Planning Meeting
+
+Analizzando il product backlog si realizza lo sprint backlog, ovvero vengono decisi gli elementi che verranno sicuramente realizzati nello sprint
+
+Durante questa riunione si identifica e stima di ciascun compito (1 - 16 ore)
+
+Per decidere la durata si fa uso di Planning Poker
+
+Si studia l'architettura di alto livello
+
+![[Scrum_sprint_planning_meeting.png]]
+
+### Scrum quotidiano
 
