@@ -240,5 +240,24 @@ This distinction is necessary since in the first layer we cannot access the curr
 
 PixelCNN is used to maximized the log-likelihood of the training data, which is equivalent to minimizing the negative log-likelihood:
 $$
-\mathcal{L} (\theta_{z}) = 
+\mathcal{L} (\theta_{z}) = - \sum_{i, j} \log p_{\theta_{z}}(z_{i, j} | z_{<i, j})
 $$
+
+The output for each position is a discrete distribution (e.g. a softmax over $K$ categories, one for each codebook line)
+
+The training loss corresponds to the standard *cross-entropy* between the predicted distribution and the true target.
+
+*Problem*: sampling from PixelCNN is slow, as it requires a sequential forward pass for each pixel due to the autoregressive dependency. 
+
+*Solution*: since during training ground-truth pixel values are available, we can apply **teacher forcing**:
+- Unlike sampling, the model does not rely on its own predictions to generate subsequent pixels during training
+- The model predicts all pixels in parallel through a single forward pass, using the ground-truth values as inputs for conditioning
+- This avoid sequential generation during training, drastically speeding up process.
+
+*Result*: Despite sequential sampling at inference, training is efficient and fully parallelizable.
+![[PixelCNN_Pseudocode.png]]
+
+Gated PixelCNN (inspired by LSTMs):
+![[Gated_PixelCNN.png]]
+
+
