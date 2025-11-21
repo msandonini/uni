@@ -49,6 +49,7 @@ Some solutions to this problem are:
 - Pixel-RNN
 	- Employs aggressive training
 - Surrogate gradients (e.g. Gumbel Softmax)
+
 ## Vector Quantized Variational Autoencoders (VQ-VAEs)
 
 In general terms, [[Generative Models#Variational Autoencoders (VAE)|VAEs]] have a tendency to generate blurry, unrealistic outputs.
@@ -275,3 +276,62 @@ Since VQ-VAE learns a discrete latent space using vector quantization and encode
 
 ## Gumbel Softmax
 
+In VQ-VAE we were exploiting the Straight-Through Estimator (STE).
+An alternative is to use the **Gumbel Softmax**, which allows sampling from a categorical distribution during the forward pass through a NN.
+
+$$
+y_{k} = \frac{\exp\left( \frac{\log \pi_{k} + g_{k}}{\lambda} \right)}{\sum_{j} \exp\left( \frac{\log \pi_{j} + g_{j}}{\lambda} \right)}
+$$ This shares similarities with the reparametrization trick used in VAEs
+
+In *Gumbel Softmax*, $\lambda$ is used as smoothing parameter, where:
+- $\lambda = 0$: Hard categorical choice:
+$$
+y_{k} = \text{one-hot}(\arg \max_{j} \pi_{j})
+$$
+- $\lambda = 1$
+$$
+y_{k} = \frac{\exp\left( \frac{\pi_{k}}{\lambda} \right)}{\sum_{j} \exp\left( \frac{\pi_{j}}{\lambda} \right)}
+$$
+
+The Gumbel-Softmax Trick allows sampling from a categorical distribution in a differentiable way using:
+$$
+y_{k} = \frac{\exp\left( \frac{\log \pi_{k} + g_{k}}{\lambda} \right)}{\sum_{j} \exp\left( \frac{\log \pi_{j} + g_{j}}{\lambda} \right)} \text{ with } g_{k} \sim \text{Gumbel} (0, 1) 
+$$
+- $\pi_{k}$: unnormalized logits (e.g. output of an ancoder)
+- Gumbel noise $g_{k} \sim \text{Gumbel}(0, 1) = -\log (-\log(U)), U \sim \mathcal{U}(0, 1)$ adds stochasticity
+- $\lambda$: temperature, controls how close the sample is to one-hot
+![[Pasted image 20251121153629.png]]
+
+Example with PyTorch:
+```python
+import torch.nn.functional as F
+# Logits over 3 categories (batch_size = 1)
+logits = torch.tensor([[2.0, 0.01, 1.0]], requires_grad=True)
+tau = 0.5 # Temperature
+# First soft sample
+y_soft1 = F.gumbel_softmax(logits, tau=tau, hard=False)
+print("Soft sample (pass 1):", format_tensor(y_soft1))
+# Second soft sample
+y_soft2 = F.gumbel_softmax(logits, tau=tau, hard=False)
+print("Soft sample (pass 2):", format_tensor(y_soft2))
+# Hard sample
+y_hard = F.gumbel_softmax(logits, tau=tau, hard=True)
+print("Hard sample (approx. one-hot):", format_tensor(y_hard))
+```
+
+The initial example now becomes like this:
+```python
+scores = torch.matmul(keys, query.T).squeeze() # shape: (5,)
+# Gumbel-Softmax for differentiable selection
+weights = F.gumbel_softmax(scores, tau=0.1, hard=True) # shape: (5,)
+# Differentiable value selection (softmax-weighted sum)
+selected_value = torch.sum(weights.unsqueeze(1) * values)
+# Loss (e.g., encourage high value selection)
+loss = selected_value ** 2
+loss.backward()
+# Show gradients
+print("Selected value:", selected_value.item())
+print("Gradient w.r.t. query:", query.grad)
+# Selected value: 30.0
+# Gradient w.r.t. query: tensor([[ 0.2450, -0.2618, -3.1309, 4.7076]])
+```
