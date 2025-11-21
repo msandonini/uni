@@ -19,6 +19,31 @@ Scrum è caratterizzato da diversi punti chiave:
 ## Sprint
 
 Lo sprint è l'iterazione principale di Scrum, analoga alle iterazioni di [[09 RUP & OpenUP|RUP]].
-Ogni sprint ha una durata costante di circa 2-4 settimane, e si compone di diverse storie.
+Ogni sprint ha una durata costante di circa 2-4 settimane, ed include design, codifica e test.
+Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done" al prodotto da mostrare al cliente
 
+## Ruoli
 
+- Product owner
+	- Rappresenta gli stakeholders (la voce del cliente)
+	- Scrive il product backlog e le user stories
+	- Definisce le features del prodotto
+	- Decide i rilasci
+	- Responsabile del valore del prodotto (ROI)
+	- Mette in priorità le features rispetto al loro valore di mercato
+	- Per ogni iterazione viene rivista la lista delle features e le loro priorità ove necessario
+	- Accetta o rifiuta i risultati
+![[Scrum_product_owner.png]]
+- Scrum master
+	- Rappresenta il management
+	- È responsabile dei valori e pratiche Scrum
+	- Facilita la corretta esecuzione del processo, ed elimina gli ostacoli
+	- Supporta la cooperazione di ruoli e funzioni
+	- È meglio se non è coperto dalla persona con ruolo di Product Owner
+	- Non ha responsabilità di gestione del personale o di project management "tradizionale"
+	- Anche se compreso nelle massimo 10 persone del team, non si occupa di sviluppo, ma si occupa di proteggerlo da interferenze esterne e si occupa del suo benessere
+- Development Team
+	- 3-9 membri ognuno con competenze diverse ma livello di esperienza analogo
+	- Sono impegnati full-time (con alcune eccezioni, come ad esempio il database administrator che è molto costoso)
+	- Diversi responsabili della consegna di un PSI (Potentially Shippable Increment)
+![[Scrum_team_interaction.png]]
