@@ -260,8 +260,18 @@ During training we have a single forward pass, and we do not sample.
 
 Each pixel is a classification problem over 255 values, so each loss is a sum of all the possible pixels.
 
+Since this gives me an histogram containing each pixel, PixelCNN models the exact data likelihood:
+$$
+\log p(x) = \sum_{i, j} \log p(x_{i, j} | x_{<i, j})
+$$
+- This can be computed efficiently in a single forward pass using masked convolutions
+- Allows us to assign a score probability (or log-likelihood) to any image
 
-Gated PixelCNN (inspired by LSTMs):
-![[Gated_PixelCNN.png]]
+Since I then have a log-likelihood, PixelCNN is very useful in Anomaly Detection tasks and Novelty Detection (detect out-of-distribution samples by thresholding likelihood)
 
+### Combined Pipeline
+
+Since VQ-VAE learns a discrete latent space using vector quantization and encodes maps inputs to discrete latent codes, we can use it to learn the discrete latent space, on which we will then train PixelCNN to learn the generative prior, sample from PixelCNN and then decode via VQ-VAE decoder.
+
+## Gumbel Softmax
 
