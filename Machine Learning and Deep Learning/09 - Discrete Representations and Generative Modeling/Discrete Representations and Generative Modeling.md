@@ -256,6 +256,11 @@ The training loss corresponds to the standard *cross-entropy* between the predic
 *Result*: Despite sequential sampling at inference, training is efficient and fully parallelizable.
 ![[PixelCNN_Pseudocode.png]]
 
+During training we have a single forward pass, and we do not sample.
+
+Each pixel is a classification problem over 255 values, so each loss is a sum of all the possible pixels.
+
+
 Gated PixelCNN (inspired by LSTMs):
 ![[Gated_PixelCNN.png]]
 
