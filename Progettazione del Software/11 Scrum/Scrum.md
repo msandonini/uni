@@ -83,3 +83,5 @@ Si studia l'architettura di alto livello
 ### Sprint Review
 
 Il team presenta ciò che ha ottenuto con lo sprint rispetto al prodotto, ovvero come questo è "cresciuto"
+
+##
