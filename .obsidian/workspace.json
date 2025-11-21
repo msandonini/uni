@@ -192,11 +192,14 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
+    "Progettazione del Software/11 Scrum/_img/Scrum_sprint_planning_meeting.png",
     "Progettazione del Software/11 Scrum/_img/Scrum_team_interaction.png",
     "Progettazione del Software/11 Scrum/_img",
     "Progettazione del Software/11 Scrum/_img/Scrum_product_owner.png",
@@ -241,7 +244,6 @@
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Overall.png",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Architecture.png",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
-    "Big Data & Text Analysis/20251112 MLOps.md",
-    "Machine Learning and Deep Learning/08 - Generative Models/_img/VAE_Architecture.png"
+    "Big Data & Text Analysis/20251112 MLOps.md"
   ]
 }
