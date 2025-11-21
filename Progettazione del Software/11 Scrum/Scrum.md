@@ -21,3 +21,4 @@ Scrum è caratterizzato da diversi punti chiave:
 Lo sprint è l'iterazione principale di Scrum, analoga alle iterazioni di [[09 RUP & OpenUP|RUP]].
 Ogni sprint ha una durata costante di circa 2-4 settimane, e si compone di diverse storie.
 
+
