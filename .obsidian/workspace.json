@@ -167,8 +167,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -181,6 +181,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "omnisearch:Omnisearch": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-importer:Open Importer": false,
       "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -194,14 +197,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3faa73489b8b737",
+  "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
+    "Progettazione del Software/11 Scrum/Scrum.md",
     "Progettazione del Software/11 Scrum/_img/Scrum_sprint_planning_meeting.png",
     "Progettazione del Software/11 Scrum/_img/Scrum_team_interaction.png",
     "Progettazione del Software/11 Scrum/_img",
     "Progettazione del Software/11 Scrum/_img/Scrum_product_owner.png",
     "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
-    "Progettazione del Software/11 Scrum/Scrum.md",
     "Progettazione del Software/09 RUP & OpenUP",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
@@ -239,7 +242,6 @@
     "Progettazione del Software/Putnam.md",
     "Progettazione del Software/Cocomo.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Overall.png",
-    "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/VQ_VAE_Architecture.png",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/20251112 MLOps.md"
   ]

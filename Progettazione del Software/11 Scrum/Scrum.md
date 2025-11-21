@@ -84,4 +84,37 @@ Si studia l'architettura di alto livello
 
 Il team presenta ciò che ha ottenuto con lo sprint rispetto al prodotto, ovvero come questo è "cresciuto"
 
-### S
+
+
+
+
+
+
+#### Sprint goal
+
+È una descrizione che ci ricorda cosa dobbiamo fare questo mese.
+
+#### Gestione dello sprint backlog
+
+I membri del team prenotano il lavoro da fare sulla base di una scelta personale
+
+Ogni membro del team può modificare lo sprint backlog, che di solito viene conservato in una kanban board
+
+Se il lavoro è poco chiaro, conviene definire uno sprint backlog item con una stima maggiore e decomporlo più tardi.
+
+## Scalabilità
+
+Scrum risulta scalabile su grossi sistemi creando molteplici team scrum ognuno assegnato a un sotto-progetto, con molteplici product owners ed un chief product owner.
+Un'alternativa è l'utilizzo di meta-scrum, un sistema scrum suddiviso su molteplici livelli.
+
+
+## Problematiche
+
+- Ignoranza dei valori agili e di Scrum
+- Cattiva definizione di "Done" (es. funzionalità che funziona ma in realtà non passa uno dei test)
+- Cattiva definizione di "Ready" (backlog non pronto all'inizio dello sprint)
+- Mancanza di facilitazione
+- Mancanza di supporto da parte dei manager
+- Mancanza di supporto da parte degli stakeholders
+- Gestione caotica degli scrum di scrums
+
