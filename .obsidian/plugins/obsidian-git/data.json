@@ -12,7 +12,7 @@
   "pullBeforePush": true,
   "disablePopups": false,
   "showErrorNotices": true,
-  "disablePopupsForNoChanges": true,
+  "disablePopupsForNoChanges": false,
   "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
