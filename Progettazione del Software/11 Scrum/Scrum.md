@@ -84,4 +84,4 @@ Si studia l'architettura di alto livello
 
 Il team presenta ciò che ha ottenuto con lo sprint rispetto al prodotto, ovvero come questo è "cresciuto"
 
-##
+### S
