@@ -121,19 +121,19 @@ The second term encourages the codeword to be as close as possible to the latent
 N.B.: $\text{stopgrad}[\cdot]$ stands for the stop gradient operator: it constraints its operand to be a *non-updated constant* during backpropagation
 
 $$
-\begin{array}{lll}
-1: & \textbf{Input: } \text{input } x, \text{encoder } E(\cdot), \text{decoder } D(\cdot), \text{codebook } \{e_k\}_{k=1}^K & \\
-2: & z_e \leftarrow E(x) & \text{\# Encode input} \\
-3: & k \leftarrow \arg \min_j \|z_e - e_j\|^2 & \text{\# Nearest codebook entry} \\
-4: & z_q \leftarrow e_k & \text{\# Quantized latent} \\
-5: & z_q^{\text{st}} \leftarrow z_e + \text{detach}(z_q - z_e) & \textbf{\# } \color{red}{\text{Straight-Through Estimator}} \\
-6: & \hat{x} \leftarrow D(z_q^{\text{st}}) & \text{\# Reconstruct} \\
-7: & \mathcal{L}_{\text{rec}} \leftarrow \|x - \hat{x}\|^2 & \text{\# Reconstruction loss} \\
-8: & \mathcal{L}_{\text{codebook}} \leftarrow \|\text{stopgrad}[z_e] - z_q\|^2 & \\
-9: & \mathcal{L}_{\text{commit}} \leftarrow \|z_e - \text{stopgrad}[z_q]\|^2 & \\
-10: & \mathcal{L} \leftarrow \mathcal{L}_{\text{rec}} + \mathcal{L}_{\text{codebook}} + \beta \mathcal{L}_{\text{commit}} & \\
-11: & \text{Backpropagate and update model and codebook} &
-\end{array}
+\begin{align}
+1: & \textbf{Input: } \text{input } x, \text{encoder } E(\cdot), \text{decoder } D(\cdot), \text{codebook } \{e_k\}_{k=1}^K \\
+2 & z_e \leftarrow E(x) & \text{\# Encode input} \\
+3 & k \leftarrow \arg \min_j \|z_e - e_j\|^2 & \text{\# Nearest codebook entry} \\
+4 & z_q \leftarrow e_k & \text{\# Quantized latent} \\
+5 & z_q^{\text{st}} \leftarrow z_e + \text{detach}(z_q - z_e) & \textbf{\# } \color{red}{\text{Straight-Through Estimator}} \\
+6 & \hat{x} \leftarrow D(z_q^{\text{st}}) & \text{\# Reconstruct} \\
+7 & \mathcal{L}_{\text{rec}} \leftarrow \|x - \hat{x}\|^2 & \text{\# Reconstruction loss} \\
+8 & \mathcal{L}_{\text{codebook}} \leftarrow \|\text{stopgrad}[z_e] - z_q\|^2 \\
+9 & \mathcal{L}_{\text{commit}} \leftarrow \|z_e - \text{stopgrad}[z_q]\|^2 \\
+10 & \mathcal{L} \leftarrow \mathcal{L}_{\text{rec}} + \mathcal{L}_{\text{codebook}} + \beta \mathcal{L}_{\text{commit}} \\
+11 & \text{Backpropagate and update model and codebook} &
+\end{align}
 $$
 
 $$
@@ -157,3 +157,88 @@ The solution to this problem is to learn a prior over the discrete latent space 
 
 ## Autoregressive models (PixelCNN)
 
+PixelCNN is an autoregressive model that can learn from a sequence of $K$ discrete symbols.
+
+> [!NOTE] Autoregressive
+> An autoregressive note is a model that can be factorized by 
+
+With the VQ-VAE model, we have a set of training examples
+
+We need to learn a generative model (*learned prior*) on top of these codes
+
+
+**Idea**: Cast the joint density as a product of conditional distribution
+
+**Chain rule of probability**: The prior $p_{\theta_{z}} (z)$ over discrete latent codes can be learned using an autoregressive factorization of the joint density: 
+$$
+p_{\theta_{z}} (z) = \prod_{t=1}^{T} p_{\theta_{z}} (z_{t_{0} | z_{<t}})
+$$
+Each latent code $z_t$ is predicted conditioned on all previous ones in the sequence.
+
+**Conclusion**: The joint distribution can be written as a product of conditionals, and this forms the basis of autoregressive generative models.
+
+Each latent variable $z_t$ is a discrete symbol from a codebook of size $K$, and each conditional can be modeled as a categorical distribution:
+
+$$
+p_{\theta_{z}} (z_{t} | z_{<t}) = \text{Cat} (z_{t}; \pi_{\theta_{z}} (z_{<t})), z_{t} \in \{1, \dots, k\}
+$$
+where $\pi_{\theta_{z}} (z_{<t}) \in \Delta^{K-1}$ is the predicted probability vector over each entry of the codebook, which can be parameterized by a NN.
+
+Common choices for $p_{\theta_{z}}$:
+- Pixel RNNs
+- PixelCNN
+- Transformers
+
+Here we will focus on PixelCNN
+
+### PixelCNN
+
+The general idea is to model the prior over discrete latent variables $z \in \{ 1, \dots, K \}^{H \times W}$ using a 2D autoregressive model.
+
+The joint distribution is factorized as:
+$$
+p_{\theta_{z}} (z) = \prod_{i=1}^{H} \prod_{j = 1}^{W} p_{\theta_{z}} (z_{i, j} | z_{<i, j})
+$$
+where $z_{<i, j}$ denotes all previously generated pixels in a raster scan order.
+![[PixelCNN.png]]
+
+#### Inference
+
+Sampling is performed sequentially:
+- Start with an empty image (or latent grid)
+- For each pixel or latent vector $(i, j)$ in the image grid sample $z_{i, j}$ from the predicted categorical distribution:
+	- Perform a *forward pass* through the PixelCNN to obtain the conditional distribution:
+$$
+p_{\theta_{z}} (z_{i, j} | z_{< i,j}) = \text{Cat} (z_{i, j}; \pi_{\theta_{z}}(z_{i, j})), \text{where } \pi_{\theta_{z}}(z_{< i, j}) = \text{PixelCNN} (z_{i, j}; \theta_{z})
+$$
+	- Sample $z_{i, j}$ from the predicted categorical distribution:
+$$
+z_{i, j} \sim p_{\theta_{z}} (z_{i, j} | z_{<i, j})
+$$
+- Fill in the grid one pixel at a time in raster scan order (row by row)
+
+At generation time, pixels are sampled one by one, in raster-scan order (left-to-right, top-to-bottom), using the predicted distribution conditioned on previously generated pixels.
+
+**Note**: This process is inherently slow, as each pixel depends on all previous ones, but
+ensures valid samples from the model.
+
+Implications:
+- Sampling time scales linearly with the number of pixels.
+- Cannot parallelize pixel generation.
+
+For 2D data (images), we have two masking strategies:
+- Mask type A
+	- excludes the current pixel (i, j)
+	- used in the first layer only to enforce strict causality
+- Mask type B:
+	- includes the current pixel (i, j)
+	- used in all subsequent layers
+
+This distinction is necessary since in the first layer we cannot access the current pixel $(i, j)$ that is supposed to predict (so we use type A), while in the subsequent layer we can allow the model to access the current pixel's position in the *feature maps* produced by earlier layers (so we use type B)
+
+#### Training
+
+PixelCNN is used to maximized the log-likelihood of the training data, which is equivalent to minimizing the negative log-likelihood:
+$$
+\mathcal{L} (\theta_{z}) = 
+$$
