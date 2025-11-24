@@ -101,3 +101,5 @@ Nel caso degli Shapley Values:
 - Il "gioco" è la task di predizione per una singola istanza del dataset
 - Il "guadagno" è la predizione effettiva meno la predizione media per tutte le istanze
 - I "giocatori" sono i valori delle features dell'istanza che collaborano per ottenere il guadagno
+
+Lo Shapley Value è il contributo marginale medio di una feature rispetto a tutte le possibili combinazioni (quanto avere un determinato valore in una feature influisce sulla predizione totale rispetto a tutti ).
