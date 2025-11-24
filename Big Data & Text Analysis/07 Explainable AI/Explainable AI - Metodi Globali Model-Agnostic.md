@@ -8,5 +8,6 @@ $$
 
 ## PFI (Permutation Feature Importance)
 
-La PFI misura l'aumento nell'errore di predizione del modello dopo aver permutato i valori di determinate features.
+La PFI misura l'aumento nell'errore di predizione del modello dopo aver permutato i valori di determinate features (scambio, sulla stessa colonna, il valore di righe a caso).
+Questo errore non viene calcolato sul training ma sul test, così da non valutare il modello overfittato.
 
