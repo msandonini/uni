@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
+                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Discrete Representations and Generative Modeling"
+              "title": "Explainable AI - Metodi Locali Model-Agnostic"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "a3faa73489b8b737",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+    "Big Data & Text Analysis/_.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/Gumbel_lambda.png",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/Gated_PixelCNN.png",
@@ -229,7 +231,6 @@
     "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png",
     "Progettazione del Software/10 Sviluppo Agile",
     "agilemanifesto.org.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Kernel_Size.png",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Tabular_Data.png",
     "Big Data & Text Analysis/07 Explainable AI/_img",
@@ -237,7 +238,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
-    "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
     "www.agilemanifesto.org.md",
     "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
