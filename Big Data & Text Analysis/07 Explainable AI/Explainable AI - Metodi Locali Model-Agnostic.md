@@ -105,3 +105,5 @@ Nel caso degli Shapley Values:
 Lo Shapley Value è il contributo marginale medio e pesato di una feature rispetto a tutte le possibili combinazioni (quanto avere un determinato valore in una feature influisce sulla predizione totale rispetto a tutti gli insiemi di elementi possibili).
 Si dice che è pesato perché le varie combinazioni hanno tutte una importanza diversa tra loro.
 
+Per simulare che una feature non esista faccio n predizioni prendendo un valore a caso della feature da eliminare, così che analizzando la combinazione con n valori diversi e facendo la media delle predizioni quella specifica feature perda di importanza.
+
