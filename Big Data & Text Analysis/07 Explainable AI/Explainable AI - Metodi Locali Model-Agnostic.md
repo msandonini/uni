@@ -108,7 +108,15 @@ Si dice che è pesato perché le varie combinazioni hanno tutte una importanza d
 Per simulare che una feature non esista faccio n predizioni prendendo un valore a caso della feature da eliminare, così che analizzando la combinazione con n valori diversi e facendo la media delle predizioni quella specifica feature perda di importanza.
 
 Lo Shapley Value permette di ottenere una distribuzione "giusta", tuttavia dobbiamo definire formalmente cosa intendiamo con "distribuzione giusta".
-Per definire ciò sono state proposte 4 proprietà:
+Per poter dare la definizione bisogna innanzitutto definire la notazione:
+- $N$ è l'insieme contenente i giocatori
+- $S$ è un sottoinsieme di $N$ ($S \subseteq N$)
+- $i$ è un elemento di $N$
+- $v$ è la value function che mappa sottoinsiemi di giocatori $S$ a u numero reale
+	- $v(S)$ è il guadagno della coalizione
+- Quando un giocatore $i$ viene unito ad un insieme di giocatori $S$, il contributo marginale del giocatore $i$ a $S$ risulta $V(S \cup \{ i \}) - v(S)$
+
+Basandosi su questa notazione, per definire il significato di distribuzione giusta sono state proposte 4 proprietà:
 - Efficienza
 $$
 v(N) = \sum_{i \in N} \phi_{i} (N, v)
