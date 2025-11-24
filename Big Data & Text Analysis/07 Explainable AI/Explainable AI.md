@@ -27,9 +27,6 @@ Proprietà delle spiegazioni:
 Un modello di spiegazione può produrre dei dati, o delle istanze che spiegano quei dati. In questo caso si chiama *modello contra-fattuale* (un esempio di questo è un modello che dica "con queste condizioni ho questo output, ma cambiando questo singolo valore ne fornisco un altro")
 
 L'interpretazione può essere 
-- locale (spiega solo una caratteristica)
-- globale (spiega l'intero modello)
+- [[Explainable AI - Metodi Locali Model-Agnostic|Locale]] (spiega solo una caratteristica)
+- [[Explainable AI - Metodi Globali Model-Agnostic|Globale]] (spiega l'intero modello)
 	- spiega la correlazione tra le features
-
-## Metodi locali model-agnostic
-
