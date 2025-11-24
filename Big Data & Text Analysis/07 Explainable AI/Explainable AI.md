@@ -1,6 +1,6 @@
 %% 2025/11/17 %%
 
-Con *interpretabilità* è il grado con cui un umano può capire la causa di una decisione e predire il risultato di un modello.
+Con *interpretabilità* si intende il grado con cui un umano può capire la causa di una decisione e predire il risultato di un modello.
 Quanto più è alta l'interpretabilità, più risulta facile capire perché il modello ha dato un certo risultato (*explainability*)
 
 L'interpretabilità è importante per garantire determinati comportamenti e prevenire
