@@ -139,3 +139,6 @@ $$
 \phi_{i} (N, v) = \frac{1}{N!} \sum_{S \subseteq N \setminus \{i\}} |S|! ( |N| - |S| - 1 )! [v(S \cup \{i\}) - v(S)]
 $$
 
+##### SHAP
+
+%% Non chiesta all'esame %%
