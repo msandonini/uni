@@ -128,23 +128,6 @@ $$
 
 Dati un set di giocatori $N$ e una value function $v$, lo Shapley Value del giocatore $i$ è data da:
 $$
-\phi_{i} (N, v) = \frac{1}{N!} \sum_{S \subseteq N \setminus \{i\}} |S|! (
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-)
+\phi_{i} (N, v) = \frac{1}{N!} \sum_{S \subseteq N \setminus \{i\}} |S|! ( |N| - |S| - 1 )! [v(S \cup \{i\}) - v(S)]
 $$
+
