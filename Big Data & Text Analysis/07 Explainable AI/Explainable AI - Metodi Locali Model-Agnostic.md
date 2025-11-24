@@ -107,3 +107,44 @@ Si dice che è pesato perché le varie combinazioni hanno tutte una importanza d
 
 Per simulare che una feature non esista faccio n predizioni prendendo un valore a caso della feature da eliminare, così che analizzando la combinazione con n valori diversi e facendo la media delle predizioni quella specifica feature perda di importanza.
 
+Lo Shapley Value permette di ottenere una distribuzione "giusta", tuttavia dobbiamo definire formalmente cosa intendiamo con "distribuzione giusta".
+Per definire ciò sono state proposte 4 proprietà:
+- Efficienza
+$$
+v(N) = \sum_{i \in N} \phi_{i} (N, v)
+$$
+- Simmetria
+$$
+\forall S \subseteq N \setminus \{i, j\}: v(S \cup \{j\}) \to \phi_{i} (N, v) = \phi_{j} (N, v)
+$$
+- Linearità
+$$
+\phi_{i} (N, v_{1}) + \phi_{i} (N, v_{2}) = \phi_{i} (N v_{1} + v_{2})
+$$
+- Dummy player
+$$
+\forall S \subseteq N \setminus \{i\}: v(S \cup \{j\}) = v(S) \to \phi_{i} (N, v) = 0
+$$
+
+Dati un set di giocatori $N$ e una value function $v$, lo Shapley Value del giocatore $i$ è data da:
+$$
+\phi_{i} (N, v) = \frac{1}{N!} \sum_{S \subseteq N \setminus \{i\}} |S|! (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+$$
