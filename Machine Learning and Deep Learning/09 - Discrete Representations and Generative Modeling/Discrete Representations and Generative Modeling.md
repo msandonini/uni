@@ -346,5 +346,3 @@ print("Gradient w.r.t. query:", query.grad)
 # Selected value: 30.0
 # Gradient w.r.t. query: tensor([[ 0.2450, -0.2618, -3.1309, 4.7076]])
 ```
-
-
