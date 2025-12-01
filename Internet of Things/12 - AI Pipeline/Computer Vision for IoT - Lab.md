@@ -45,7 +45,11 @@ La [[AP (Average Precision)]] è una metrica che calcola un'area più bilanciata
 $$
 \text{mAP} = \frac{1}{n} \sum_{k = 1}^{k = n} \text{AP}_{k}
 $$
-Nel caso di YOLO viene mostrata la COCO mAP, ovvero la mAP ottenuta con il dataset COCO variando la soglia tra 0.5 e 0.95
+Nel caso di YOLO viene mostrata la COCO mAP, ovvero la mAP ottenuta con il dataset COCO variando la soglia tra 0.5 e 0.95.
 
-### Esempio: Semafori
+Essendo allenato su COCO, YOLO può riconoscere 80 classi diverse.
+
+---
+
+###
 
