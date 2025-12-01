@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c432596f47dc1012",
+            "id": "8a92bf268c160efc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,16 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "Computer Vision for IoT - Lab"
-            }
-          },
-          {
-            "id": "8a92bf268c160efc",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -197,10 +187,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "8a92bf268c160efc",
   "lastOpenFiles": [
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
+    "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
+    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Internet of Things/13 - Computer Vision",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
@@ -243,7 +234,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
-    "www.agilemanifesto.org.md",
-    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md"
+    "www.agilemanifesto.org.md"
   ]
 }

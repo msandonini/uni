@@ -25,3 +25,27 @@ YOLOv11 contiene i seguenti modelli:
 - Pose (COCO)
 - Oriented Bounding Box (DOTAv1)
 
+YOLO si basa sulla metrica [[mAP (Mean Average Precision)]], a sua volta basata su:
+- [[IoU (Intersection over Union)]]
+	- Misura l'overlap della bounding box predetta rispetto alla ground truth
+$$
+\text{IoU} = \frac{\text{Area of overlap}}{\text{Area of union}}
+$$
+- Precision
+	- Misura il numero di veri positivi rispetto alla somma di veri e falsi positivi
+$$
+\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}
+$$
+- Recall
+$$
+\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+$$
+
+La [[AP (Average Precision)]] è una metrica che calcola un'area più bilanciata sotto la curva precision-recall
+$$
+\text{mAP} = \frac{1}{n} \sum_{k = 1}^{k = n} \text{AP}_{k}
+$$
+Nel caso di YOLO viene mostrata la COCO mAP, ovvero la mAP ottenuta con il dataset COCO variando la soglia tra 0.5 e 0.95
+
+### Esempio: Semafori
+
