@@ -53,6 +53,7 @@ Essendo allenato su COCO, YOLO può riconoscere 80 classi diverse.
 
 Se per caso fosse necessario far lavorare YOLO su classi diverse da quelle presenti in COCO, il modello può essere ri-trainato tramite dataset diversi.
 Per le caratteristiche del modello il dataset deve essere bilanciato e contenere almeno 50-100 immagini per classe diversa, e con caratteristiche diverse per immagine (luminosità diversa, posizioni diverse, ecc...).
+Riaddestrando il modello iniziale con un dataset custom le classi precedenti vengono perse, a meno che non andiamo ad aggiungere il nostro dataset a quello di partenza (COCO).
 
 ---
 
