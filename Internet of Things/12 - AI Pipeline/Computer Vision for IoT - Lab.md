@@ -17,3 +17,4 @@ Si basa su una rete convoluzionale composta da 3 step:
 Si distingue dai modelli precedenti in quanto analizza l'intero frame dell'immagine invece di far passare sotto-sezioni dell'immagine attraverso una moltitudine di reti, risultando più veloce.
 
 Non è l'attuale stato dell'arte per quanto riguarda l'accuracy, ma lo è per quanto riguarda la velocità.
+
