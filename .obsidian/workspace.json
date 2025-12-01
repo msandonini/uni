@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c39efc276450d5b4",
+        "id": "1db93951ad40c899",
         "type": "tabs",
         "children": [
           {
-            "id": "8a92bf268c160efc",
+            "id": "d936052327b31c46",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,6 +19,16 @@
               },
               "icon": "lucide-file",
               "title": "Computer Vision for IoT - Lab"
+            }
+          },
+          {
+            "id": "b94a4f661aa2b1df",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -187,10 +197,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8a92bf268c160efc",
+  "active": "d936052327b31c46",
   "lastOpenFiles": [
-    "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
+    "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Internet of Things/13 - Computer Vision",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",

@@ -49,10 +49,16 @@ Nel caso di YOLO viene mostrata la COCO mAP, ovvero la mAP ottenuta con il datas
 
 Essendo allenato su COCO, YOLO può riconoscere 80 classi diverse.
 
+### Fine tuning 
+
+Se per caso fosse necessario far lavorare YOLO su classi diverse da quelle presenti in COCO, il modello può essere ri-trainato tramite dataset diversi.
+Per le caratteristiche del modello il dataset deve essere bilanciato e contenere almeno 50-100 immagini per classe diversa, e con caratteristiche diverse per immagine (luminosità diversa, posizioni diverse, ecc...).
+
 ---
 
 ###
 
 - `opencv`
 - `ultralytics`: `YOLO`
-- 
+
+Un esempio di annotation tool è [CVAT](https://app.cvat.ai)
