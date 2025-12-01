@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+                "file": "Big Data & Text Analysis/08 Text Analysis 2/Text Analysis 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Explainable AI - Metodi Locali Model-Agnostic"
+              "title": "Text Analysis 2"
             }
           },
           {
@@ -200,6 +200,9 @@
   "active": "c432596f47dc1012",
   "lastOpenFiles": [
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+    "Big Data & Text Analysis/08 Text Analysis 2/Text Analysis 2.md",
+    "Big Data & Text Analysis/08 Text Analysis 2",
+    "Big Data & Text Analysis/Untitled.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
@@ -235,15 +238,12 @@
     "Progettazione del Software/10 Sviluppo Agile/_img",
     "Progettazione del Software/10 Sviluppo Agile/Untitled.md",
     "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png",
-    "Progettazione del Software/10 Sviluppo Agile",
     "agilemanifesto.org.md",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Kernel_Size.png",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Tabular_Data.png",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
-    "www.agilemanifesto.org.md",
-    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
-    "Progettazione del Software/Putnam.md"
+    "www.agilemanifesto.org.md"
   ]
 }
