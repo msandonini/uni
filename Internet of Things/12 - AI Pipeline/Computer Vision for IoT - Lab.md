@@ -53,3 +53,6 @@ Essendo allenato su COCO, YOLO può riconoscere 80 classi diverse.
 
 ###
 
+- `opencv`
+- `ultralytics`: `YOLO`
+- 
