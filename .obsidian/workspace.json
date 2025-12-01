@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+                "file": "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Explainable AI - Metodi Locali Model-Agnostic"
+              "title": "Computer Vision for IoT - Lab"
             }
           },
           {
@@ -197,8 +197,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c432596f47dc1012",
+  "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
+    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
+    "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
+    "Internet of Things/13 - Computer Vision",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
@@ -213,7 +216,6 @@
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/Gated_PixelCNN.png",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/PixelCNN_Pseudocode.png",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/PixelCNN.png",
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Progettazione del Software/11 Scrum/Scrum.md",
     "Progettazione del Software/11 Scrum/_img/Scrum_sprint_planning_meeting.png",
     "Progettazione del Software/11 Scrum/_img/Scrum_team_interaction.png",
@@ -235,7 +237,6 @@
     "Progettazione del Software/10 Sviluppo Agile/_img",
     "Progettazione del Software/10 Sviluppo Agile/Untitled.md",
     "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png",
-    "Progettazione del Software/10 Sviluppo Agile",
     "agilemanifesto.org.md",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Kernel_Size.png",
     "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Tabular_Data.png",
@@ -243,7 +244,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
     "www.agilemanifesto.org.md",
-    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
-    "Progettazione del Software/Putnam.md"
+    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md"
   ]
 }
