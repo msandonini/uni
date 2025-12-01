@@ -18,3 +18,10 @@ Si distingue dai modelli precedenti in quanto analizza l'intero frame dell'immag
 
 Non è l'attuale stato dell'arte per quanto riguarda l'accuracy, ma lo è per quanto riguarda la velocità.
 
+YOLOv11 contiene i seguenti modelli:
+- Detection (COCO)
+- Segmentation (COCO)
+- Classification (ImageNet)
+- Pose (COCO)
+- Oriented Bounding Box (DOTAv1)
+
