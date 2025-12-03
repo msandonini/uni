@@ -62,7 +62,9 @@ Abbiamo 2 tecniche per inserire la posizione:
 - Posizione relativa
 	- Mappo l'embedding nello spazio ottenendo la posizione di un embedding rispetto ad un altro (calcolo quindi la distanza tra gli embedding)
 
-Per modellare le frasi usiamo una head chiamata "Language modeling head"
+Per modellare le frasi usiamo una head chiamata [[Language modeling head]]
 
 ## LLMs
 
+Come generare una frase in un LLM?
+Quello che devo fare è scegliere la parola più probabile nel vocabolario. Questa cosa funziona male
