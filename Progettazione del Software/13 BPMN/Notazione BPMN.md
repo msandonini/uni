@@ -87,3 +87,24 @@ Nell'esecuzione del processo deve essere sempre possibile scegliere un percorso 
 ### Inclusive Gateways
 
 Gli Inclusive Gateways sono dei punti dove è possibile scegliere più percorsi (almeno 1, ma senza un limite massimo).
+La presenza di un Inclusive Gateway indica che in corrispondenza di ciò il flusso diventa parallelo fino ad un certo punto.
+
+### Complex Gateways
+
+I Complex Gateways sono punti in cui vanno prese decisioni complesse.
+
+### Parallel Gateways
+
+I Parallel Gateways sono punti del processo dove si caratterizzati da percorsi multipli paralleli. A differenza degli Inclusive Gateways non avvengono in corrispondenza di determinate condizioni.
+Non sono normalmente richiesti, a meno che non serva sincronizzare i flussi paralleli.
+
+## Connettori
+
+Ci sono diversi tipi di connettore:
+- Sequence flow, utilizzato per mostrare l'ordine in cui si svolgono le attività in un processo
+- Message flow, utilizzato per mostrare il flusso di messaggi tra diversi partecipanti al processo
+- Association, utilizzati per associare dati, informazioni, e Artifacts
+
+### Sequence flow
+
+Un Sequence Flow **non** può attraversare il bordo di un sub-process o di un pool.
