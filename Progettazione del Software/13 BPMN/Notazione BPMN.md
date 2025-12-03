@@ -133,7 +133,9 @@ I Data Objects sono utilizzati per mostrare come dati e documenti sono usati all
 
 I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo semplicemente un raggruppamento logico, può comprendere attività da diversi pool
 
-## Esempio
+## Esempi
 
-![[BPMN_example.png]]
+### Processo rimborso spese
+
+![[BPMN_esempio_rimborso_spese.png]]
 
