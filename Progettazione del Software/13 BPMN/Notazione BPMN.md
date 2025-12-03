@@ -122,24 +122,3 @@ Non è possibile connettere tramite message flow oggetti interni allo stesso poo
 
 Vanno spesso a collegare attività ed artefatti.
 Serve a mostrare un flusso di dati in ingresso ed uscita delle Activity.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
