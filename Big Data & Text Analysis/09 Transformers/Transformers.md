@@ -101,4 +101,4 @@ Per fare il training di un LLM, viene usata una tecnica chiamata [[teacher forci
 ## BERT
 
 BERT è un encoder che viene usato per ottenere i token nei vari LLMs, associando alla parola il contesto della frase.
-
+BERT funziona con un vocabolario di ingresso da 30'000 token ottenuti con WordPiece (se una parola non è nel vocabolario cerca di spezzare )
