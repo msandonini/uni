@@ -86,4 +86,6 @@ $$
 y = \text{softmax}\left( \frac{u}{t} \right)
 $$
 - $t \approx 1$: la distribuzione rimane invariata
-- $t < 1$: aumenta la probabilità di parole con ad alta
+- $t < 1$: aumenta la probabilità di scegliere parole con alta probabilità
+- $t \to 0$: la probabilità che venga scelta la parola con probabilità più alta tende ad 1
+- $t > 1$: 
