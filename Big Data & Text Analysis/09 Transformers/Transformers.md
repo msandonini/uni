@@ -74,3 +74,6 @@ Questa cosa funziona male, in quanto produce testo generico o ripetitivo, andand
 Per risolvere questo problema posso usare una tecnica di sampling contenente tutte le parole più probabili ([[top-k sampling]]).
 Top-k funziona, ma ci sono tecniche migliori, come il [[top-p sampling]].
 
+### Temperature sampling
+
+- Temperatur
