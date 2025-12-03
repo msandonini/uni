@@ -68,6 +68,8 @@ Per modellare le frasi usiamo una head chiamata [[Language modeling head]]
 
 Gli LLM sono utili per task di riassunto e sentiment analysis.
 
+### Sampling
+
 Come generare una frase in un LLM?
 Quello che devo fare è scegliere la parola più probabile nel vocabolario usando una argmax. 
 
@@ -76,7 +78,7 @@ Questa cosa funziona male, in quanto produce testo generico o ripetitivo, andand
 Per risolvere questo problema posso usare una tecnica di sampling contenente tutte le parole più probabili ([[top-k sampling]]).
 Top-k funziona, ma ci sono tecniche migliori, come il [[top-p sampling]].
 
-### Temperature sampling
+#### Temperature sampling
 
 Viene impostato un valore di temperatura che può avere 2 valori:
 - Temperatura alta
@@ -93,3 +95,5 @@ $$
 - $t > 1$: si appiattisce la distribuzione, quindi aumenta la diversità nel sampling
 
 ### Pre-Training
+
+Per fare il training di un LLM, viene usata una tecnica chiamata [[Teacher forcing]]
