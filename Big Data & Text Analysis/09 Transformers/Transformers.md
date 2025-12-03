@@ -85,4 +85,5 @@ In questo caso la logica del modello funziona tramite una softmax usando il valo
 $$
 y = \text{softmax}\left( \frac{u}{t} \right)
 $$
-- $t \approx 1$
+- $t \approx 1$: la distribuzione rimane invariata
+- $t < 1$: aumenta la probabilità di parole con ad alta
