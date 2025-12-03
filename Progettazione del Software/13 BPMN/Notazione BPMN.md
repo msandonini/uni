@@ -134,3 +134,5 @@ I Data Objects sono utilizzati per mostrare come dati e documenti sono usati all
 I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo semplicemente un raggruppamento logico, può comprendere attività da diversi pool
 
 ##
+
+
