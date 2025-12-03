@@ -80,4 +80,8 @@ Viene impostato un valore di temperatura che può avere 2 valori:
 - Temperatura alta
 	- Flessibile, esplora più opzioni
 - Temperatura bassa
-	- Più concentrata, preferisce valori a p
+	- Più concentrata, preferisce valori a probabilità più alta
+In questo caso si imposta il valore
+$$
+y = \text{softmax}\left( \frac{u}{t} \right)
+$$
