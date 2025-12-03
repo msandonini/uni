@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Transformers"
             }
+          },
+          {
+            "id": "8f53c0c7d9c26db5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,9 +198,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d936052327b31c46",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
@@ -214,7 +226,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic",
-    "Big Data & Text Analysis/_.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/Gumbel_lambda.png",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/_img/Gated_PixelCNN.png",

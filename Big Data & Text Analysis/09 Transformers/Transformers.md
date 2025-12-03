@@ -114,3 +114,6 @@ BERT viene allenato con 2 tecniche:
 	- Vengono codificate le frasi con 2 token particolari
 		- \[CLS]
 		- \[SEP]
+Tutti gli embedding soffrono di anisotropia, ovvero tutti gli embedding sono vicini nello spazio vettoriale, e per risolvere vanno normalizzati.
+Un altro problema che noi abbiamo è che molto spesso questi embedding sottostimano il giudizio umano per quanto riguarda la similarità di parole simili (ad esempio le parole "cosa" e "oggetto", che per un umano possono essere molto simili, dal modello possono essere viste come molto diverse).
+
