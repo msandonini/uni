@@ -20,16 +20,6 @@
               "icon": "lucide-file",
               "title": "Transformers"
             }
-          },
-          {
-            "id": "7fa3ddd11f723612",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
         ]
       }

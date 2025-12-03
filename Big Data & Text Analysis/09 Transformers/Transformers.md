@@ -98,3 +98,7 @@ $$
 
 Per fare il training di un LLM, viene usata una tecnica chiamata [[teacher forcing]].
 
+## BERT
+
+Bert è un encoder che viene usato per ottenere i token nei vari LLMs.
+
