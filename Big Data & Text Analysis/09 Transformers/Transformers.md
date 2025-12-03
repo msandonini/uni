@@ -96,5 +96,5 @@ $$
 
 ### Pre-Training
 
-Per fare il training di un LLM, viene usata una tecnica chiamata [[Teacher forcing]].
+Per fare il training di un LLM, viene usata una tecnica chiamata [[teacher forcing]].
 
