@@ -108,4 +108,18 @@ Ci sono diversi tipi di connettore:
 ### Sequence flow
 
 Un Sequence Flow **non** può attraversare il bordo di un sub-process o di un pool.
-Aggiungendo un rombo all'inizio di un sequence flow è possibile aggiungere determinate condizioni. In questo caso 
+Aggiungendo un rombo all'inizio di un sequence flow è possibile aggiungere determinate condizioni. In questo caso serve avere almeno un altro connettore parallelo.
+
+Si può indicare un connettore come default disegnando una piccola barretta all'inizio della freccia
+
+### Message flow
+
+Un Message Flow viene usato per mostrare un flusso di messaggi tra i partecipanti di un processo.
+Questo connettore può essere connesso con il bordo del pool o con un oggetto interno al pool stesso.
+Non è possibile connettere tramite message flow oggetti interni allo stesso pool.
+
+### Associations
+
+Vanno spesso a collegare attività ed artefatti.
+Serve a mostrare un flusso di dati in ingresso ed uscita delle Activity.
+
