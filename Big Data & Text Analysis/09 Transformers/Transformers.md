@@ -81,7 +81,8 @@ Viene impostato un valore di temperatura che può avere 2 valori:
 	- Flessibile, esplora più opzioni
 - Temperatura bassa
 	- Più concentrata, preferisce valori a probabilità più alta
-In questo caso si imposta il valore
+In questo caso la logica del modello funziona tramite una softmax usando il valore di temperatura come divisore delle probabilità:
 $$
 y = \text{softmax}\left( \frac{u}{t} \right)
 $$
+- $t \approx 1$
