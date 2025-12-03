@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "file": "Big Data & Text Analysis/09 Transformers/Transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notazione BPMN"
+              "title": "Transformers"
             }
           },
           {
@@ -197,12 +197,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "d936052327b31c46",
   "lastOpenFiles": [
+    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/09 Transformers",
     "Progettazione del Software/13 BPMN/_img",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
     "Progettazione del Software/Cocomo.md",
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/13 BPMN/Untitled Diagram 1.svg",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
     "Untitled.base",
@@ -238,8 +240,6 @@
     "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Internet of Things/11 - Node-RED",
-    "Internet of Things/10 - MIT App Inventor",
-    "Internet of Things/12 - AI Pipeline",
     "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
     "Progettazione del Software/10 Sviluppo Agile/Agile - Scrum.md",
     "Progettazione del Software/10 Sviluppo Agile/Untitled.md",
