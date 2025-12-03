@@ -35,3 +35,30 @@ $$
 
 Un singolo blocco di un transformer non può imparare a catturare tutti i tipi di relazioni tra gli input. Per risolvere questo problema si usa il meccanismo di [[Multi-head attention]]
 Il sistema basato sul meccanismo di [[Multi-head attention]] si chiama così perché usa $n$ attention heads diverse.
+
+Usando il Multi-head attention block ci si è resi conto che si perdevano molte informazioni riguardanti le informazioni iniziali, quindi si è aggiunta una [[connessione residua]], ovvero l'informazione iniziale viene passata al nodo successivo insieme al multi-head
+
+![[Pasted image 20251203105226.png]]
+
+$$
+\begin{align}
+&z = \text{LayerNorm}(x + \text{SelfAttention}) \\
+&y = \text{LayerNorm}(z + \text{FFN}(z))
+\end{align}
+$$
+Ogni componente della computazione si può dividere come segue:
+$$
+\begin{align}
+T^{1} = \text{SelfAttention}(X) \\
+
+\end{align}
+$$
+Ogni $X_i$ è formato da un embedding contenente il token e la posizione.
+
+Abbiamo 2 tecniche per inserire la posizione:
+- Posizione assoluta
+	- Sommo per ogni word embedding il suo position embedding, che si riferisce alla posizione della parola in tutta la frase
+	- Questa posizione non viene mai usata perché ci sono meno esempi per position embeddings più grandi che per position embeddings più piccoli (non tutte le frasi sono grandi uguali, ed è più facile avere frasi corte che frasi lunghe)
+- Posizione relativa
+	- Mappo l'embedding nello spazio ottenendo la posizione di un embedding rispetto ad un altro (calcolo quindi la distanza tra gli embedding)
+
