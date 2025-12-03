@@ -66,6 +66,8 @@ Per modellare le frasi usiamo una head chiamata [[Language modeling head]]
 
 ## LLMs
 
+Gli LLM sono utili per task di riassunto e sentiment analysis.
+
 Come generare una frase in un LLM?
 Quello che devo fare è scegliere la parola più probabile nel vocabolario usando una argmax. 
 
@@ -88,4 +90,6 @@ $$
 - $t \approx 1$: la distribuzione rimane invariata
 - $t < 1$: aumenta la probabilità di scegliere parole con alta probabilità
 - $t \to 0$: la probabilità che venga scelta la parola con probabilità più alta tende ad 1
-- $t > 1$: 
+- $t > 1$: si appiattisce la distribuzione, quindi aumenta la diversità nel sampling
+
+### Pre-Training
