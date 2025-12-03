@@ -23,4 +23,15 @@ $$
 
 $$
 
+$$
+\begin{align}
+&Q = XW^{Q} \\
+&K = XW^{K} \\
+&V = XW^{V} \\
 
+&A = \text{SelfAttention}(Q, V, K)  = \text{softmax}\left( \frac{QK^{T}}{\sqrt{ d_{k} }} \right) V
+\end{align}
+$$
+
+Un singolo blocco di un transformer non può imparare a catturare tutti i tipi di relazioni tra gli input. Per risolvere questo problema si usa il meccanismo di [[Multi-head attention]]
+Il sistema basato sul meccanismo di [[Multi-head attention]] si chiama così perché usa $n$ attention heads diverse.
