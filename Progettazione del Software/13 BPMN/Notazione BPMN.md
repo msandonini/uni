@@ -108,3 +108,4 @@ Ci sono diversi tipi di connettore:
 ### Sequence flow
 
 Un Sequence Flow **non** può attraversare il bordo di un sub-process o di un pool.
+Aggiungendo un rombo all'inizio di un sequence flow è possibile aggiungere determinate condizioni. In questo caso 
