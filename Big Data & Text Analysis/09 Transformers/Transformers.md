@@ -38,7 +38,7 @@ Il sistema basato sul meccanismo di [[Multi-head attention]] si chiama così per
 
 Usando il Multi-head attention block ci si è resi conto che si perdevano molte informazioni riguardanti le informazioni iniziali, quindi si è aggiunta una [[connessione residua]], ovvero l'informazione iniziale viene passata al nodo successivo insieme al multi-head
 
-![[Pasted image 20251203105226.png]]
+![[Transformer_multi_head_residual_connection.png]]
 
 $$
 \begin{align}
@@ -49,8 +49,8 @@ $$
 Ogni componente della computazione si può dividere come segue:
 $$
 \begin{align}
-T^{1} = \text{SelfAttention}(X) \\
-
+T^{1} &= \text{SelfAttention}(X) \\
+T^{2} &= X + T^{1}
 \end{align}
 $$
 Ogni $X_i$ è formato da un embedding contenente il token e la posizione.
@@ -61,4 +61,8 @@ Abbiamo 2 tecniche per inserire la posizione:
 	- Questa posizione non viene mai usata perché ci sono meno esempi per position embeddings più grandi che per position embeddings più piccoli (non tutte le frasi sono grandi uguali, ed è più facile avere frasi corte che frasi lunghe)
 - Posizione relativa
 	- Mappo l'embedding nello spazio ottenendo la posizione di un embedding rispetto ad un altro (calcolo quindi la distanza tra gli embedding)
+
+Per modellare le frasi usiamo una head chiamata "Language modeling head"
+
+## LLMs
 
