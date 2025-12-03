@@ -100,5 +100,5 @@ Per fare il training di un LLM, viene usata una tecnica chiamata [[teacher forci
 
 ## BERT
 
-Bert è un encoder che viene usato per ottenere i token nei vari LLMs.
+BERT è un encoder che viene usato per ottenere i token nei vari LLMs, associando alla parola il contesto della frase.
 
