@@ -67,4 +67,8 @@ Per modellare le frasi usiamo una head chiamata [[Language modeling head]]
 ## LLMs
 
 Come generare una frase in un LLM?
-Quello che devo fare è scegliere la parola più probabile nel vocabolario. Questa cosa funziona male
+Quello che devo fare è scegliere la parola più probabile nel vocabolario usando una argmax. 
+
+
+Questa cosa funziona male, in quanto produce testo generico o ripetitivo, andando a perdere la diversità che caratterizza un linguaggio.
+Per risolvere questo problema posso usa
