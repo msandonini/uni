@@ -71,5 +71,8 @@ Quello che devo fare è scegliere la parola più probabile nel vocabolario usand
 
 
 Questa cosa funziona male, in quanto produce testo generico o ripetitivo, andando a perdere la diversità che caratterizza un linguaggio.
-Per risolvere questo problema posso usare una tecnica di sampling contenente tutte le parole più probabili.
+Per risolvere questo problema posso usare una tecnica di sampling contenente tutte le parole più probabili (top-k sampling).
 
+$$
+\mathcal{P}
+$$
