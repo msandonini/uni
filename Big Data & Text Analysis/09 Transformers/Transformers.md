@@ -76,4 +76,8 @@ Top-k funziona, ma ci sono tecniche migliori, come il [[top-p sampling]].
 
 ### Temperature sampling
 
-- Temperatur
+Viene impostato un valore di temperatura che può avere 2 valori:
+- Temperatura alta
+	- Flessibile, esplora più opzioni
+- Temperatura bassa
+	- Più concentrata, preferisce valori a p
