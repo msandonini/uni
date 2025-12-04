@@ -41,4 +41,28 @@ Freezing layers do grant different pros:
 	- High risk of overfitting
 Linear probing is often used in the literature as a quick tool to assess how good the features of a frozen backbone are for a downstream task.
 
+During fine tuning I can use 3 different strategies to decide the learning rate:
+- Uniform learning rate: apply same learning rate to all trainable layers
+	- Pros: simple and easy to implement
+	- Cons: can be sub-optimal, since some layers can be over-updated while others could be under-updated
+- Layer specific learning rate: use larger LR for the last (task-specific) layers and smaller LR for earlier layers
+	- Helps adapt high-level features quickly while preserving low-level representations.
+	- Also known as *Slow Learner*
+- Warmup schedules: gradually increase LR during initial iterations to avoid disrupting pre-trained weights
+	- useful when updating al layers
+
+An alternative strategy is the LP-FT (Linear Probing + Fine Tuning):
+1. Freeze the pre-trained backbone and train only a linear classifier (Linear Probing)
+2. Fine tune the whole network starting from the adapted classifier
+
+This strategy works since when training the linear classifier I assume the features space is already optimized, and so by freezing the classifier I obtain just light-adaptations.
+
+In some settings, while the weights of the network are kept frozen, the [[BatchNorm]] statistics are updated to match the target domain, so only the running mean and variance of BatchNorm layers are updated, while the learnable parameters $\gamma$ (scale) and $\beta$ (shift) can remain fixed or be updated. This is equivalent to running one epoch with [[SGD]] and $\text{lr} = 0$.
+This approach is widely applied in domain adaptation to align source and target features distributions.
+
+Some limitation of fine-tuning are: 
+- Architectural rigidity
+- Dependence on external data
+- Inherited biases
+
 
