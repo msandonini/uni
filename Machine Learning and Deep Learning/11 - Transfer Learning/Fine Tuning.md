@@ -64,5 +64,5 @@ Some limitation of fine-tuning are:
 - Architectural rigidity
 - Dependence on external data
 - Inherited biases
-
-
+An example of inherited bias can be seen in the image below, where the models are very biased toward textures:
+![[fine_tuning_bias_texture.png]]
