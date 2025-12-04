@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/09 Transformers/Transformers.md",
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transformers"
+              "title": "Fine Tuning"
             }
           },
           {
@@ -200,6 +200,8 @@
   "active": "d936052327b31c46",
   "lastOpenFiles": [
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
+    "Machine Learning and Deep Learning/11 - Transfer Learning",
     "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
@@ -235,7 +237,6 @@
     "Progettazione del Software/11 Scrum/_img/Scrum_team_interaction.png",
     "Progettazione del Software/11 Scrum/_img",
     "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
-    "Progettazione del Software/09 RUP & OpenUP",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
