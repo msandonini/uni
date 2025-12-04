@@ -31,8 +31,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,7 +197,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8f53c0c7d9c26db5",
+  "active": "d936052327b31c46",
   "lastOpenFiles": [
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/_.md",
