@@ -80,4 +80,10 @@ Another limitation of fine tuning is the Model Storage since we need to store a 
 
 In high-data regime, the more layers we have, the more complex patterns and abstractions the network can learn, generally leading to better performance.
 
-An idea to improve the learning is to 
+## Deep Ensembles
+An idea to improve the learning is to apply [[Bagging]], so to create Deep Ensembles:
+- Train multiple independent models with different random initializations and data shuffling
+- Each model converges to a different local minimum, all consistent with the data
+
+Deep Ensembles rely on redundancy of representations to improve performance and robustness, but they are hard to deploy in production due to their high computational and memory requirements.
+To solve this problem we can train a very large and complex model to simplify learning, and then distill its knowledge into a smaller efficient one
