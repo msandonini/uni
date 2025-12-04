@@ -6,4 +6,5 @@ Question: why is it now rare to train a NN from scratch, but instead everyone re
 - Data availability
 	- Large-scale datasets required for training from scratch are not always easily accessible, and not always a dataset will be big enough to grant better performances than the previous model
 
+![[fine_tuning_Effectiveness.png]]
 
