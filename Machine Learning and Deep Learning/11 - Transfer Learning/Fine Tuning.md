@@ -41,6 +41,8 @@ Freezing layers do grant different pros:
 	- High risk of overfitting
 Linear probing is often used in the literature as a quick tool to assess how good the features of a frozen backbone are for a downstream task.
 
+## Learning Rate Strategies
+
 During fine tuning I can use 3 different strategies to decide the learning rate:
 - Uniform learning rate: apply same learning rate to all trainable layers
 	- Pros: simple and easy to implement
@@ -51,14 +53,20 @@ During fine tuning I can use 3 different strategies to decide the learning rate:
 - Warmup schedules: gradually increase LR during initial iterations to avoid disrupting pre-trained weights
 	- useful when updating al layers
 
+## LP-FT
+
 An alternative strategy is the LP-FT (Linear Probing + Fine Tuning):
 1. Freeze the pre-trained backbone and train only a linear classifier (Linear Probing)
 2. Fine tune the whole network starting from the adapted classifier
 
 This strategy works since when training the linear classifier I assume the features space is already optimized, and so by freezing the classifier I obtain just light-adaptations.
 
+## BatchNorm
+
 In some settings, while the weights of the network are kept frozen, the [[BatchNorm]] statistics are updated to match the target domain, so only the running mean and variance of BatchNorm layers are updated, while the learnable parameters $\gamma$ (scale) and $\beta$ (shift) can remain fixed or be updated. This is equivalent to running one epoch with [[SGD]] and $\text{lr} = 0$.
 This approach is widely applied in domain adaptation to align source and target features distributions.
+
+## Limitations
 
 Some limitation of fine-tuning are: 
 - Architectural rigidity
@@ -66,3 +74,10 @@ Some limitation of fine-tuning are:
 - Inherited biases
 An example of inherited bias can be seen in the image below, where the models are very biased toward textures:
 ![[fine_tuning_bias_texture.png]]
+Another limitation of fine tuning is the Model Storage since we need to store a full copy of the fine-tuned model for each downstream task
+
+# Teacher-Student techniques
+
+In high-data regime, the more layers we have, the more complex patterns and abstractions the network can learn, generally leading to better performance.
+
+An idea to improve the learning is to 
