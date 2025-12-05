@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
+                "file": "Machine Learning and Deep Learning/01 - Logistic Regression with Gradient Descent/Logistic Regression.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Discrete Representations and Generative Modeling"
+              "title": "Logistic Regression"
             }
           },
           {
@@ -210,6 +210,8 @@
   },
   "active": "e4ef03c8e68f4ebd",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
+    "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Machine Learning and Deep Learning/_templates/default.md",
     "Machine Learning and Deep Learning/_templates",
@@ -250,10 +252,8 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
     "Progettazione del Software/11 Scrum/Scrum.md",
     "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
-    "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/11 - Node-RED/Node-RED.md"
   ]

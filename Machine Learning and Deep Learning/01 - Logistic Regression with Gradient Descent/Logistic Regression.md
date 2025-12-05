@@ -1,3 +1,8 @@
+---
+tags:
+  - deep_learning
+  - logreg
+---
 *Logistic Regression* is a **probabilistic discriminative classifier**.
 
 In the **binary case**, it directly models the posterior probability as:

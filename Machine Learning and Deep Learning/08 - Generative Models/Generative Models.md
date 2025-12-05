@@ -1,3 +1,8 @@
+---
+tags:
+  - deep_learning
+  - generative_models
+---
 %% 2025/11/11 %%
 
 *Generative modeling* is a area of ML which deals with models of distributions $p(x)$, defined over datapoints $x$ in some potentially high-dimensional space $\chi$
