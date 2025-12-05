@@ -212,6 +212,11 @@
   "active": "ec44855cb96ee3a0",
   "lastOpenFiles": [
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+    "Untitled.md",
+    "Big Data & Text Analysis/_templates/default.md",
+    "Internet of Things/_templates/default.md",
+    "Big Data & Text Analysis/_templates",
+    "Internet of Things/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
@@ -236,10 +241,7 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/01 - Logistic Regression with Gradient Descent/Logistic Regression.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
-    "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
-    "Machine Learning and Deep Learning/_templates/default.md",
     "Machine Learning and Deep Learning/_templates",
-    "_static/templates/Untitled.md",
     "_static/templates",
     "_static",
     "_static",
@@ -254,8 +256,6 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_effectiveness.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning",
-    "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png"
   ]
 }
