@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
+                "file": "Internet of Things/11 - Node-RED/Node-RED.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Telegram Bots"
+              "title": "Node-RED"
             }
           },
           {
@@ -210,6 +210,8 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
+    "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Progettazione del Software/Putnam.md",
     "Progettazione del Software/Cocomo.md",
@@ -253,8 +255,6 @@
     "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
-    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
-    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
-    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md"
+    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md"
   ]
 }

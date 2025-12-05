@@ -3,6 +3,7 @@ tags:
   - iot
   - telegram
   - api
+  - bot
 ---
 
 ## Telegram Bot
