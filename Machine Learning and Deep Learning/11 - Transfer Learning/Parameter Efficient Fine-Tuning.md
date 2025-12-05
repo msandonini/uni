@@ -2,6 +2,7 @@
 tags:
   - deep_learning
   - transfer_learning
+  - transformers
 ---
 Full fine-tuning entails updating all model parameters, but this leads to:
 - High computational demand (often requires thousands of GPUs in parallel)
@@ -16,7 +17,7 @@ In order to make fine-tuning more efficient several approaches are used, dependi
 
 ## Prompt Tuning
 
-In the context of a [[transformer]], a [[token]] represents a unit of input (e.g. a word/subword), and a [[prompt]] is a sequence of such tokens that conditions the model's behavior during inference or training.
+In the context of a [[Transformers|transformer]], a [[token]] represents a unit of input (e.g. a word/subword), and a [[prompt]] is a sequence of such tokens that conditions the model's behavior during inference or training.
 
 Prompt tuning is one of the most lightweight [[Parameter Efficient Fine-Tuning|Parameter-Efficient Fine Tuning (PEFT)]] techniques
 
