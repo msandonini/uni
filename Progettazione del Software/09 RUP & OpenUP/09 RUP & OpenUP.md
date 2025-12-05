@@ -1,3 +1,11 @@
+---
+tags:
+  - progettazione_software
+  - rup
+  - openup
+---
+
+
 %% 2025/11/14 %%
 
 ## Rational Unified Process (RUP)
