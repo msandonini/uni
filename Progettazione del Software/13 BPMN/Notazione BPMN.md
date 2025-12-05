@@ -154,5 +154,17 @@ L'acquisizione materiali si divide in 4 processi:
 	- Viene emessa da un'unità organizzativa ed è approvata secondo una specifica procedura
 	- Una volta approvata viene inviata all'ufficio acquisti per l'emissione dell'ordine
 2. Emissione Ordine
+	- Una volta ricevuta la richiesta di acquisto approvata l'ufficio acquisti verifica i possibili fornitori, ed emette uno o più ordini per acquistare la merce richiesta
+	- Gli ordini emessi vengono inviati ai fornitori, al magazzino, all'ufficio cassa, ed all'unità organizzativa che ha emesso la richiesta di acquisto
 3. Ricezione Merce
+	- La merce viene accettata solo se esiste un ordine emesso nei confronti del fornitore
+	- Il fornitore consegna la merce insieme al documento di accompagnamento, con il riferimento all'ordine ricevuto, le informazioni sul tipo di merce, ed il quantitativo
+	- Il magazzino non accetta nulla se non trova corrispondenza a quanto riportato sull'ordine emesso
 4. Pagamento Fornitori
+	- L'unità organizzativa che ha emesso la richiesta di acquisto verifica il corretto funzionamento della merce
+	- Se la verifica è positiva viene emesso un buono di accettazione, altrimenti la merce viene rifiutata
+	- Il buono di accettazione viene inviato al fornitore ed all'ufficio cassa
+	- Il fornitore emette la fattura, con riferimento all'ordine ed al buono di accettazione, e la invia all'ufficio cassa
+	- L'ufficio cassa verifica che la fattura sia congruente rispetto all'ordine emesso, ai materiali consegnati, ed al buono di accettazione, ed in caso positivo paga il fornitore ed archivia la fattura
+
+

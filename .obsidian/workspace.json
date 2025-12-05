@@ -15,7 +15,17 @@
               "state": {
                 "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Notazione BPMN"
@@ -84,8 +94,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -198,7 +207,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d936052327b31c46",
+  "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
