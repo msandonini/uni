@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "06 MLOps"
+              "title": "Parameter Efficient Fine-Tuning"
             }
           },
           {
@@ -210,6 +210,7 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
@@ -246,7 +247,6 @@
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_freeze.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png",

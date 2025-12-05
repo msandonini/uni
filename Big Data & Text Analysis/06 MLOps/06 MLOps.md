@@ -2,6 +2,8 @@
 tags:
   - big_data
   - mlops
+  - development
+  - deployment
 ---
 
 
