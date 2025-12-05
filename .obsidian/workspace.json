@@ -210,7 +210,12 @@
   },
   "active": "e4ef03c8e68f4ebd",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/_templates/default.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+    "Machine Learning and Deep Learning/_templates",
+    "_static/templates/Untitled.md",
+    "_static/templates",
+    "_static",
     "_static/Big Data & Text Analysis.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "_static",
@@ -234,11 +239,8 @@
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
     "Big Data & Text Analysis/09 Transformers",
-    "Progettazione del Software/13 BPMN/_img",
     "Progettazione del Software/Cocomo.md",
-    "Untitled.base",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
-    "Progettazione del Software/13 BPMN",
     "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
@@ -253,8 +255,6 @@
     "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
-    "Internet of Things/11 - Node-RED/Node-RED.md",
-    "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md"
+    "Internet of Things/11 - Node-RED/Node-RED.md"
   ]
 }
