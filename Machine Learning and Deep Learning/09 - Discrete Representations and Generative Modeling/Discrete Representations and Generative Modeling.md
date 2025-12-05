@@ -1,3 +1,10 @@
+---
+tags:
+  - deep_learning
+  - generative_models
+---
+
+
 %% 2025/11/13 %%
 
 Most of the times the world is both continuous and discrete, so the problem now becomes the discretization of the space, since even when we observe a continuous phenomenon, we tend to discretize it (so to divide it into distinct parts) in order to simplify it. An example is the alphabet.
