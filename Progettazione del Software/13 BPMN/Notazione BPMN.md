@@ -141,6 +141,4 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 
 ## Esercizi
 
-Il servizio telefonico della banca 
-
 ![[Banca.drawio]]
