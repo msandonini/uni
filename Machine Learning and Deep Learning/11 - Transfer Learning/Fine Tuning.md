@@ -90,7 +90,7 @@ Deep Ensembles rely on redundancy of representations to improve performance and 
 To solve this problem we can train a very large and complex model to simplify learning, and then distill its knowledge into a smaller efficient one.
 
 With knowledge distillation we train a smaller student to mimic the output distribution of a larger teacher model.
-![[Pasted image 20251204151731.png]]
+![[fine_tuning_teacher_student.png]]
 With this strategy the teacher produces logits $z_{i}$ for each class $i$, and then apply a softmax with temperature $T>1$:
 $$
 p_{i}^{(T)} = \frac{\exp\left( \frac{z_{i}}{T} \right)}{\sum_{j} \exp\left( \frac{z_{j}}{T} \right)}
