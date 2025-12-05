@@ -1,3 +1,12 @@
+---
+tags:
+  - iot
+  - computer_vision
+  - yolo
+  - deep_learning
+---
+
+
 All'interno della Computer Vision rientrano principalmente 3 task:
 - Classificazione
 	- Associazione di etichette a singoli oggetti a partire da un'immagine

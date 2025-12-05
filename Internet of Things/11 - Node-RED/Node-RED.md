@@ -4,6 +4,8 @@ tags:
   - app
   - nodejs
   - bridge
+  - machine_learning
+  - edge
 ---
 
 

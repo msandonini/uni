@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Internet of Things/11 - Node-RED/Node-RED.md",
+                "file": "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Node-RED"
+              "title": "Time Series Analysis"
             }
           },
           {
@@ -210,6 +210,8 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
+    "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
@@ -251,10 +253,8 @@
     "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
-    "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
     "mAP (Mean Average Precision).md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
-    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md"
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md"
   ]
 }
