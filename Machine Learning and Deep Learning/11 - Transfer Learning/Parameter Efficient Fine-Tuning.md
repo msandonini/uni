@@ -81,3 +81,4 @@ Basically, with this technique we reparameterize the space given by $\Delta W$ a
 
 LoRA is a reparameterization-based fine tuning method that freezes the pre-trained weights and introduces a low-rank trainable update to reduce the number of trainable parameters.
 LoRA is a general model that can be applied to any model, including vision models, language models, and more.
+
