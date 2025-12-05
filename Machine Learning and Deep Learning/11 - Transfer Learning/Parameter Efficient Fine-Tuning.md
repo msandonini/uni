@@ -82,3 +82,11 @@ Basically, with this technique we reparameterize the space given by $\Delta W$ a
 LoRA is a reparameterization-based fine tuning method that freezes the pre-trained weights and introduces a low-rank trainable update to reduce the number of trainable parameters.
 LoRA is a general model that can be applied to any model, including vision models, language models, and more.
 
+Basically, in LoRA the function is learned as 2 low-rank matrices which can be multiplied with each other, so that by applying a multiplication the number of virtual parameters is the same, but the physical dimension of the parameters is reduced since we use 2 low-rank matrices (so, instead of learning a $m \times n$ matrix. we learn a $m \times r$ matrix and a $r \times n$ matrix, with $r$ being a low number).
+$$
+\begin{align}
+&W' = W_{0} + \Delta W = W_{0} + BA \\
+&A = \mathcal{N}(0, \sigma^{2}) \\
+\end{align}
+$$
+At the beginning of the training, we set $B = 0$ so that we are sure the model starts on the pre-trained model, and thereafter add noise to make the model adapt.
