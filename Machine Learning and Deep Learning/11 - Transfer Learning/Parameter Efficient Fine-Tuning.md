@@ -63,4 +63,7 @@ Usually, prefix tuning outperforms prompt tuning.
 [[AdaptFormer]] is an adapter-based fine-tuning method that uses a small number of adapter to fine-tune large models.
 The adapters are small [[MLPs]] added to the model's intermediate layers (after the [[LayerNorm]]), and are used to adapt the model to a new task.
 
+In AdaptFormers the $s$ parameter is a stability value which acts as multiplier defining how much to overwrite the original knowledge and, as a consequence, if the model is able to adapt fast or slowly to the new data.
+
+
 
