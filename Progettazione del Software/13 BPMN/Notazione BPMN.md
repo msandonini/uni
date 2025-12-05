@@ -1,3 +1,9 @@
+---
+tags:
+  - progettazione_software
+  - bpmn
+---
+
 ##
 
 ### Attività

@@ -1,3 +1,9 @@
+---
+tags:
+  - progettazione_software
+  - agile
+---
+
 Da manifesto, il movimento [*Agile*](https://agilemanifesto.org/) attribuisce valore a:
 - <font color="#2DC26B">Individui e interazioni</font> più che a <font color="#d99694">processi e strumenti</font>
 - <font color="#2DC26B">Software che funziona</font> più che a <font color="#d99694">documentazione completa</font>

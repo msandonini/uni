@@ -1,5 +1,8 @@
 ---
 tags:
+  - progettazione_software
+  - agile
+  - extreme_programming
 ---
 
 *Extreme Programming* è una disciplina dello sviluppo software basata su valori di semplicità, comunicazione, feedback, e coraggio.

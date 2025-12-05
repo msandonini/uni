@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
+                "file": "Progettazione del Software/Cocomo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Agile - Extreme Programming (XP)"
+              "title": "Cocomo"
             }
           },
           {
@@ -210,6 +210,10 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+    "Progettazione del Software/11 Scrum/Scrum.md",
+    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
+    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
     "Progettazione del Software/_templates/default.md",
     "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
     "Progettazione del Software/_templates",
@@ -224,7 +228,6 @@
     "_static/templates",
     "_static",
     "_static/Big Data & Text Analysis.md",
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "_static",
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
@@ -252,9 +255,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Progettazione del Software/11 Scrum/Scrum.md"
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md"
   ]
 }
