@@ -11,10 +11,24 @@
             "id": "e4ef03c8e68f4ebd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Parameter Efficient Fine-Tuning"
             }
           },
           {
@@ -196,6 +210,7 @@
   },
   "active": "e4ef03c8e68f4ebd",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "_static/Big Data & Text Analysis.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "_static",
@@ -240,7 +255,6 @@
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Scrum.md"
+    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md"
   ]
 }
