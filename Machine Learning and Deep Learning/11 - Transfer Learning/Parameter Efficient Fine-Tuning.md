@@ -99,7 +99,6 @@ During inference we can merge the 2 branches back into a single weight matrix, s
 VeRA is a variation of [[#Low Rank Adaptation (LoRA)|LoRA]] which uses froze random low-rank matrices $W_{\text{up}}$ and $W_{\text{down}}$ shared across all layers, adapted by small scaling learnable vectors $b$ and $d$.
 Here, the reparameterization is:
 $$
-h_{\text{out}} = W_{0} x + ^_{b} W_{\text{up}} ^_{d} W_{\text{down}} x
+h_{\text{out}} = W_{0} x + ^_{b} W_{\text{up}} ^_{d} W_{\text{down}} x 
 $$
-
 This further reduces the cost to just $r + d$ per adapted layer.
