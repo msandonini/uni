@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
+                "file": "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Text Analysis"
+              "title": "06 MLOps"
             }
           },
           {
@@ -210,6 +210,8 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
+    "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
@@ -251,9 +253,7 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_effectiveness.png",
-    "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning",
-    "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png"
   ]

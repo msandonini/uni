@@ -1,3 +1,10 @@
+---
+tags:
+  - big_data
+  - mlops
+---
+
+
 %% 2025/11/10 %%
 # MLOps: Machine Learning Operativo
 
