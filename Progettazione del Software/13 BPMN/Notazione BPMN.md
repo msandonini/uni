@@ -146,7 +146,11 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 
 ## Businness Process Management
 
-- Situazione As Is
-- Situazione To Be
-- Piano di transizione As Is <span>&rarr;</span> To Be 
+Data una situazione iniziale "As Is", e una situazione finale desiderata "To Be" chiamiamo *Piano di transizione* il processo che ci permette il passaggio As Is <span>&rarr;</span> To Be
+### Acquisizione Materiali
 
+L'acquisizione materiali si divide in 4 processi:
+1. Richiesta acquisto
+2. Emissione Ordine
+3. Ricezione Merce
+4. Pagamento Fornitori
