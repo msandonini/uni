@@ -139,3 +139,6 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 
 ![[BPMN_esempio_rimborso_spese.png]]
 
+## Esercizi
+
+Il servizio telefonico della banca 
