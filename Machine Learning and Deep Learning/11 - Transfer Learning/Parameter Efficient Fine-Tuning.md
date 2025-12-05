@@ -20,6 +20,7 @@ In order to make fine-tuning more efficient several approaches are used, dependi
 - [[#Prompt Tuning]]
 - [[#Prefix Tuning]]
 - [[#Adaptation-based Fine Tuning]]
+- [[#Reparameterization-based fine tuning]]
 
 ## Prompt Tuning
 
@@ -65,5 +66,10 @@ The adapters are small [[MLPs]] added to the model's intermediate layers (after 
 
 In AdaptFormers the $s$ parameter is a stability value which acts as multiplier defining how much to overwrite the original knowledge and, as a consequence, if the model is able to adapt fast or slowly to the new data.
 
+## Reparameterization-based fine tuning
 
-
+Reparameterization-based fine tuning is a [[Parameter Efficient Fine-Tuning|PEFT]] strategy where model updates are expressed via structured, low-dimensional transformations rather than directly updating full weight matrices.
+$$
+W' = W_{0} + \Delta W, \text{ where } \Delta W = f_{\theta}(\cdot)
+$$
+In this general form, $W_{0}$ is the pre-trained weight matrix and $f_{\theta}$ is a structured function (e.g. low-rank, sparse, or generated).
