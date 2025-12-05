@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
+                "file": "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Data Preparation"
+              "title": "Text Analysis"
             }
           },
           {
@@ -210,6 +210,8 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
+    "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
@@ -253,8 +255,6 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning",
     "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
-    "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
-    "mAP (Mean Average Precision).md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md"
+    "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png"
   ]
 }

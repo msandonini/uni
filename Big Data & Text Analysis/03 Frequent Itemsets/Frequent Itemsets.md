@@ -1,3 +1,9 @@
+---
+tags:
+  - big_data
+  - frequent_items
+  - hashing
+---
 %% 2025/10/08 %%
 
 Con *Frequent Itemset* si intende un set di elementi che appare in più *baskets*, ovvero che appare in diversi gruppi di dati
