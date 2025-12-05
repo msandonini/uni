@@ -85,7 +85,7 @@ LoRA is a general model that can be applied to any model, including vision model
 Basically, in LoRA the function is learned as 2 low-rank matrices which can be multiplied with each other, so that by applying a multiplication the number of virtual parameters is the same, but the physical dimension of the parameters is reduced since we use 2 low-rank matrices (so, instead of learning a $m \times n$ matrix. we learn a $m \times r$ matrix and a $r \times n$ matrix, with $r$ being a low number).
 $$
 \begin{align}
-&W' = W_{0} + \Delta W = W_{0} + BA \\
+&W = W_{0} + \Delta W = W_{0} + BA \\
 &A = \mathcal{N}(0, \sigma^{2}) \\
 \end{align}
 $$
