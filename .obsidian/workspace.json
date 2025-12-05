@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/01 - Logistic Regression with Gradient Descent/Logistic Regression.md",
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,20 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Logistic Regression"
+              "title": "Parameter Efficient Fine-Tuning"
             }
           },
           {
             "id": "8f53c0c7d9c26db5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Parameter Efficient Fine-Tuning"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,11 +223,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "e4ef03c8e68f4ebd",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+    "Machine Learning and Deep Learning/01 - Logistic Regression with Gradient Descent/Logistic Regression.md",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Machine Learning and Deep Learning/09 - Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Machine Learning and Deep Learning/_templates/default.md",
     "Machine Learning and Deep Learning/_templates",
     "_static/templates/Untitled.md",
@@ -229,7 +246,6 @@
     "Progettazione del Software/13 BPMN/_img/drawio",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_freeze.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png",
@@ -253,8 +269,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Progettazione del Software/11 Scrum/Scrum.md",
-    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
-    "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
-    "Internet of Things/11 - Node-RED/Node-RED.md"
+    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md"
   ]
 }
