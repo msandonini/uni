@@ -2,9 +2,9 @@
 tags:
   - iot
   - time_series
+  - deep_learning
+  - machine_learning
 ---
-
-
 [[Time Series]] are used in IoT since in real world scenarios we find continuous sensor data streams, with high volume, velocity and variety.
 
 In an IoT context Time Series are usually used for these scopes:

@@ -15,3 +15,5 @@ In order to make fine-tuning more efficient several approaches are used, dependi
 - Prompt tuning
 
 ## Prompt Tuning
+
+In the context of a transformer, a [[token]] represents a unit of input (e.g. a word/subword), and a [[prompt]] is a sequen

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
+                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Time Series Analysis"
+              "title": "Parameter Efficient Fine-Tuning"
             }
           },
           {
@@ -210,6 +210,7 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
@@ -254,7 +255,6 @@
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
     "mAP (Mean Average Precision).md",
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md"
   ]
 }
