@@ -4,7 +4,7 @@ tags:
   - transfer_learning
   - transformers
 ---
-Full fine-tuning entails updating all model parameters, but this leads to:
+Full [[Fine Tuning|fine tuning]] entails updating all model parameters, but this leads to:
 - High computational demand (often requires thousands of GPUs in parallel)
 - High memory footprint
 - Redundancy when adapting to multiple downstream tasks

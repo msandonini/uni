@@ -1,3 +1,9 @@
+---
+tags:
+  - deep_learning
+  - transformers
+  - big_data
+---
 %% N.B. Il prof ha raccolto le pere ma in miniera non ci è mai andato %%
 
 L'input di un [[Transformer]] è composto da un embedding che rappresenta i token contestualmente alla posizione nella frase.

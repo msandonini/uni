@@ -41,8 +41,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,15 +208,16 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ec44855cb96ee3a0",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+    "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
-    "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
@@ -242,7 +242,6 @@
     "_static",
     "_static/Big Data & Text Analysis.md",
     "_static",
-    "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
