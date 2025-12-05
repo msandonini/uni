@@ -139,7 +139,15 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 
 ![[BPMN_esempio_rimborso_spese.png]]
 
-## Esercizi
+### Servizio clienti banca (2 versioni)
 
-![[Banca.drawio]]
-![[Progettazione del Software/13 BPMN/Untitled Diagram.svg]]
+![[Banca.drawio.png]]
+
+
+## Businness Process Management
+
+- Situazione As Is
+- Situazione To Be
+- Piano di transizione As Is <span>&rarr;</span> To Be 
+
+
