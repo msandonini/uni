@@ -1,3 +1,10 @@
+---
+tags:
+  - deep_learning
+  - fine_tuning
+  - transfer_learning
+  - ensemble
+---
 Question: why is it now rare to train a NN from scratch, but instead everyone relies on fine-tuning of pre-trained models?
 - Performance
 	- Fine tuning often outperforms training from scratch, especially in data-scarce scenarios

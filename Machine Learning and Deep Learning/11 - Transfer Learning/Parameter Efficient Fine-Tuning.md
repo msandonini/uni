@@ -3,6 +3,7 @@ tags:
   - deep_learning
   - transfer_learning
   - transformers
+  - fine_tuning
 ---
 Full [[Fine Tuning|fine tuning]] entails updating all model parameters, but this leads to:
 - High computational demand (often requires thousands of GPUs in parallel)
@@ -21,8 +22,10 @@ In the context of a [[Transformers|transformer]], a [[token]] represents a unit 
 
 Prompt tuning is one of the most lightweight [[Parameter Efficient Fine-Tuning|Parameter-Efficient Fine Tuning (PEFT)]] techniques
 
+### Visual Prompt Tuning (VPT)
+
 [[Visual Prompt Tuning (VPT)]] is a variant of prompt tuning which uses visual prompts to fine tune vision models. It has 2 variants:
 - Shallow
 - Deep
 
-
+By using tokens prepended to the prompt, in [[Visual Prompt Tuning (VPT)|VPT]] we can influence the weights of other parameters in the model.

@@ -41,7 +41,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,11 +209,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8f53c0c7d9c26db5",
+  "active": "ec44855cb96ee3a0",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
     "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
@@ -240,7 +242,6 @@
     "_static/templates/Untitled.md",
     "_static/templates",
     "_static",
-    "_static/Big Data & Text Analysis.md",
     "_static",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
