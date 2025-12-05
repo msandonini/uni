@@ -19,6 +19,7 @@ Basically, fine tuning large models is increasingly impractical due to their vas
 In order to make fine-tuning more efficient several approaches are used, depending on how and where the model is used:
 - [[#Prompt Tuning]]
 - [[#Prefix Tuning]]
+- [[#Adaptation-based Fine Tuning]]
 
 ## Prompt Tuning
 
@@ -55,4 +56,7 @@ These vectors may be either static or generated dynamically by a small prefix [[
 
 Usually, prefix tuning outperforms prompt tuning.
 
+## Adaptation-based Fine Tuning
 
+[[AdaptFormer]] is an adapter-based fine-tuning method that uses a small number of adapter to fine-tune large models.
+The adapters are small [[MLPs]] added to the model's intermediate layers (after the [[LayerNorm]]), and are used to adapt the model to a new task.

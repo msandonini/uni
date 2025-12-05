@@ -41,8 +41,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,7 +208,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ec44855cb96ee3a0",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Untitled.md",
