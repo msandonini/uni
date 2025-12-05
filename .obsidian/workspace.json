@@ -6,6 +6,7 @@
       {
         "id": "1db93951ad40c899",
         "type": "tabs",
+        "dimension": 82.48407643312102,
         "children": [
           {
             "id": "d936052327b31c46",
@@ -16,20 +17,12 @@
                 "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Notazione BPMN"
-            }
+            },
+            "group": "3591f2cd91065501"
           },
           {
             "id": "8f53c0c7d9c26db5",
@@ -40,6 +33,51 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          }
+        ]
+      },
+      {
+        "id": "59555ca4ad18809e",
+        "type": "tabs",
+        "dimension": 17.51592356687898,
+        "children": [
+          {
+            "id": "bb43267242201f52",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Notazione BPMN"
+            },
+            "group": "3591f2cd91065501"
           }
         ]
       }
@@ -109,25 +147,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2b97da174ab9c780",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Progettazione del Software/11 Scrum/Scrum.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Scrum"
-            }
-          },
-          {
             "id": "1c9ba887b97e4c3d",
             "type": "leaf",
             "state": {
@@ -180,9 +199,28 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "33cc233f9bcfc2a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Notazione BPMN"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -207,7 +245,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "d936052327b31c46",
   "lastOpenFiles": [
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",

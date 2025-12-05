@@ -168,3 +168,4 @@ L'acquisizione materiali si divide in 4 processi:
 	- L'ufficio cassa verifica che la fattura sia congruente rispetto all'ordine emesso, ai materiali consegnati, ed al buono di accettazione, ed in caso positivo paga il fornitore ed archivia la fattura
 
 
+ 
