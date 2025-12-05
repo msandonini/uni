@@ -73,3 +73,12 @@ $$
 W' = W_{0} + \Delta W, \text{ where } \Delta W = f_{\theta}(\cdot)
 $$
 In this general form, $W_{0}$ is the pre-trained weight matrix and $f_{\theta}$ is a structured function (e.g. low-rank, sparse, or generated).
+Basically, with this technique we reparameterize the space given by $\Delta W$ as the function $f_{\theta}(\cdot)$ which creates that same space, hoping it has a fewer number of weights than the entire space.
+
+### Low Rank Adaptation (LoRA)
+
+%% Not the same as IoT's [[LoRA]] %%
+
+LoRA is a reparameterization-based fine tuning method that freezes the pre-trained weights and introduces a low-rank trainable update to reduce the number of trainable parameters.
+
+LoRA is a general model that can be applied to any model, including vision models, language models, and more.
