@@ -151,6 +151,8 @@ Data una situazione iniziale "As Is", e una situazione finale desiderata "To Be"
 
 L'acquisizione materiali si divide in 4 processi:
 1. Richiesta acquisto
+	- Viene emessa da un'unità organizzativa ed è approvata secondo una specifica procedura
+	- Una volta approvata viene inviata all'ufficio acquisti per l'emissione dell'ordine
 2. Emissione Ordine
 3. Ricezione Merce
 4. Pagamento Fornitori

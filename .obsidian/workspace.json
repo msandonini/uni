@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Progettazione del Software/11 Scrum/Scrum.md",
+                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Scrum"
+              "title": "Outline of Notazione BPMN"
             }
           },
           {
@@ -172,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -197,11 +198,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "d936052327b31c46",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
+    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio",
@@ -221,7 +223,6 @@
     "Big Data & Text Analysis/09 Transformers",
     "Progettazione del Software/13 BPMN/_img",
     "Progettazione del Software/Cocomo.md",
-    "Progettazione del Software/13 BPMN/Untitled Diagram 1.svg",
     "Untitled.base",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
     "Progettazione del Software/13 BPMN",
