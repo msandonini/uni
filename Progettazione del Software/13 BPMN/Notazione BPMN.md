@@ -142,3 +142,4 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 ## Esercizi
 
 ![[Banca.drawio]]
+![[Progettazione del Software/13 BPMN/Untitled Diagram.svg]]
