@@ -1,3 +1,10 @@
+---
+tags:
+  - iot
+  - telegram
+  - api
+---
+
 ## Telegram Bot
 
 Telegram communication relies on a protocol called MTProto.

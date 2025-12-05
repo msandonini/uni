@@ -11,4 +11,7 @@ Full fine-tuning entails updating all model parameters, but this leads to:
 
 Basically, fine tuning large models is increasingly impractical due to their vast number of parameters and high computational costs. This becomes more and more inefficient and unsustainable as model sizes keep growing.
 
-In order to make fine-tuning more efficient several 
+In order to make fine-tuning more efficient several approaches are used, depending on how and where the model is used:
+- Prompt tuning
+
+## Prompt Tuning

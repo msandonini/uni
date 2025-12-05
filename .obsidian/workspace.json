@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
+                "file": "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Parameter Efficient Fine-Tuning"
+              "title": "Telegram Bots"
             }
           },
           {
