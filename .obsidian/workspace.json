@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
+                "file": "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "09 RUP & OpenUP"
+              "title": "Agile - Extreme Programming (XP)"
             }
           },
           {
@@ -210,6 +210,9 @@
   },
   "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Progettazione del Software/_templates/default.md",
+    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
+    "Progettazione del Software/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/01 - Logistic Regression with Gradient Descent/Logistic Regression.md",
@@ -241,7 +244,6 @@
     "Big Data & Text Analysis/_.md",
     "Big Data & Text Analysis/09 Transformers/_img",
     "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png",
-    "Big Data & Text Analysis/09 Transformers",
     "Progettazione del Software/Cocomo.md",
     "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
     "mAP (Mean Average Precision).md",
@@ -253,7 +255,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Progettazione del Software/11 Scrum/Scrum.md",
-    "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md"
+    "Progettazione del Software/11 Scrum/Scrum.md"
   ]
 }
