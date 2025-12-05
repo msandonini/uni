@@ -150,4 +150,3 @@ I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo 
 - Situazione To Be
 - Piano di transizione As Is <span>&rarr;</span> To Be 
 
-
