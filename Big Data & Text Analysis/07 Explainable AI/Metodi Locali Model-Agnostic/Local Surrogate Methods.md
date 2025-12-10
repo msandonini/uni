@@ -5,25 +5,6 @@ tags:
   - explainable_ai
   - local_methods
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Local Interpretable Model-Agnostic Explanations (LIME)
 
 I modelli surrogati locali sono modelli interpretabili usati per spiegare predizioni individuali di modelli di machine learning black box.
