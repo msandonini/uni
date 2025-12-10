@@ -3,7 +3,6 @@ tags:
   - big_data
   - deep_learning
   - transformers
-  - ai
 ---
 %% N.B. Il prof ha raccolto le pere ma in miniera non ci è mai andato %%
 

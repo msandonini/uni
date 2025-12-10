@@ -1,9 +1,11 @@
 ---
 tags:
   - big_data
-  - ai
   - explainable_ai
   - local_methods
+aliases:
+  - ICE
+  - Individual Conditional Expectation
 ---
 Una variazione del [[Centeris Paribus (CP)|CP]] è l'[[Individual Conditional Expectation (ICE)]].
 Questo metodo funziona circa come il CP, ma invece di concentrarsi sul singolo data point si concentra sull'intero dataset:

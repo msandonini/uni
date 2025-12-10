@@ -41,7 +41,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,25 +209,27 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "7057ac5bb8224a90",
   "lastOpenFiles": [
-    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio.png",
-    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
-    "Progettazione del Software/13 BPMN/Esempi.md",
-    "Progettazione del Software/Cocomo.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
-    "CP.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
+    "Progettazione del Software/13 BPMN/Esempi.md",
+    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
+    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
+    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio.png",
+    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
+    "Progettazione del Software/Cocomo.md",
+    "CP.md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
@@ -249,12 +252,9 @@
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio",
-    "Progettazione del Software/13 BPMN/_img/drawio",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_freeze.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_effectiveness.png",
-    "Big Data & Text Analysis/09 Transformers/_img/Transformer_multi_head_residual_connection.png"
+    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png"
   ]
 }

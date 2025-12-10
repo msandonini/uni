@@ -52,4 +52,13 @@ Esercizio:
 
 ![[Fast food - pool.drawio.png]]
 
+![[Fast food - subprocesses.drawio.png]]
 
+## Pacchetto Viaggio
+
+Modellare utilizzando BPMN il seguente processo di prenotazione di un pacchetto viaggio.
+Il processo inizia quando l’utente, impiegato della società TalDeiTali s.r.l., accede al sito di prenotazioni on line della società PalmaViaggi s.r.l. e indica le date del suo viaggio. La società, ricevute le date, ricerca nel suo database tutte le possibili soluzioni di viaggio e le propone al cliente che ne seleziona una. Selezionato il viaggio, la società propone una lista di hotel eventualmente prenotabili nella città di arrivo. 
+Il cliente può decidere se prenotare o meno uno degli hotel proposti. Terminata questa fase, la PalmaViaggi invia un riepilogo delle prenotazioni e si procede al pagamento.
+Questo viene effettuato dalla parte amministrativa della società TalDeiTali. Ricevuto il pagamento, la PalmaViaggi procede a finalizzare le due prenotazioni di volo e hotel.
+Le prenotazioni sono svolte in maniera contemporanea (la prenotazione dell’hotel deve essere effettuata solo nel caso in cui quest’ultimo è stato selezionato). Finalizzate le prenotazioni, la PalmaViaggi invia conferma dell’itinerario.
+Il processo deve rispettare il seguente vincolo temporale: dal momento in cui la PalmaViaggi inizia la procedura di prenotazione del pacchetto viaggio (ricezione delle date del viaggio), il processo di prenotazione deve concludersi entro 15 minuti. In caso contrario, la PalmaViaggi cancella il processo e notifica la cancellazione della procedura di prenotazione.

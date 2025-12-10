@@ -1,7 +1,6 @@
 ---
 tags:
   - big_data
-  - ai
   - explainable_ai
   - local_methods
 aliases:
