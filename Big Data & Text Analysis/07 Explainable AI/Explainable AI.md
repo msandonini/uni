@@ -1,3 +1,11 @@
+---
+tags:
+  - big_data
+  - ai
+  - explainable_ai
+---
+
+
 %% 2025/11/17 %%
 
 Con *interpretabilità* si intende il grado con cui un umano può capire la causa di una decisione e predire il risultato di un modello.

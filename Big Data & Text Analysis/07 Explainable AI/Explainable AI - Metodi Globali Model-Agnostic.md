@@ -1,3 +1,12 @@
+---
+tags:
+  - big_data
+  - ai
+  - explainable_ai
+  - global_methods
+---
+
+
 ## PDP (Partial Dependency Plot)
 
 Il Partial Dependency Plot (PDP / PD Plot) mostra l'effetto marginale che una o 2 features hanno sulla predizione restituita da un modello ML.

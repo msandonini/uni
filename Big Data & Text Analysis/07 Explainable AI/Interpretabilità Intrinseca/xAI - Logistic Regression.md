@@ -1,3 +1,13 @@
+---
+tags:
+  - big_data
+  - ai
+  - explainable_ai
+  - logreg
+  - intrinsic_models
+  - deep_learning
+---
+
 L'interpretazione della [[0_Logistic Regression with Gradient Descent|Logistic Regression]] viene costruita in base al rapporto chiamato *odds*, ovvero la proprietà dell'evento divisa il suo opposto:
 $$
 \begin{align}

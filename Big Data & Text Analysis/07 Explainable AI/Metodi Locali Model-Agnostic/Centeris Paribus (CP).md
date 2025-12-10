@@ -1,3 +1,13 @@
+---
+tags:
+  - big_data
+  - ai
+  - explainable_ai
+  - local_methods
+aliases:
+  - CP
+  - Centeris Paribus
+---
 I plot [[Centeris Paribus (CP)]] visualizzano come cambiando una singola feature cambia la predizione per uno specifico data point lasciando costanti tutte le altre features
 
 Questo metodo funziona in maniera molto semplice:

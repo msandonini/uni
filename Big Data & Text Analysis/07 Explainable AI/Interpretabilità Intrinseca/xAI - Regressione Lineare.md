@@ -1,3 +1,13 @@
+---
+tags:
+  - big_data
+  - ai
+  - explainable_ai
+  - linear_regression
+  - intrinsic_models
+  - machine_learning
+---
+
 $$
 y = \beta_{0} + \beta_{1}x_{1} + \dots + \beta_{p} x_{p} + \epsilon
 $$
