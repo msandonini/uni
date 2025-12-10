@@ -49,3 +49,7 @@ Esercizio:
 - Definire i criteri di convenienza di questo intervento di cambiamento e di introduzione di un sistema informatico
 - Ipotizzare un diagramma di [[Gantt]] con il piano di progetto
 - Definire il piano di change management
+
+![[Fast food - pool.drawio.png]]
+
+
