@@ -2,6 +2,8 @@
 tags:
   - progettazione_software
   - bpmn
+aliases:
+  - BPMN
 ---
 ##
 
