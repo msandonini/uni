@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "file": "Progettazione del Software/13 BPMN/Esempi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Notazione BPMN"
+              "title": "Esempi"
             }
           },
           {
@@ -41,8 +41,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,9 +208,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "7057ac5bb8224a90",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+    "Progettazione del Software/13 BPMN/Esempi.md",
+    "Progettazione del Software/Cocomo.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
@@ -230,7 +231,6 @@
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
-    "Progettazione del Software/Cocomo.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Untitled.md",
     "Big Data & Text Analysis/_templates/default.md",
@@ -238,7 +238,6 @@
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
     "Progettazione del Software/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/_templates",

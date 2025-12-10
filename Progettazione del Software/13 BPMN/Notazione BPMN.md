@@ -138,17 +138,6 @@ I Data Objects sono utilizzati per mostrare come dati e documenti sono usati all
 
 I gruppi sono usati per raggruppare un insieme di attività. Un gruppo, essendo semplicemente un raggruppamento logico, può comprendere attività da diversi pool
 
-## Esempi
-
-### Processo rimborso spese
-
-![[BPMN_esempio_rimborso_spese.png]]
-
-### Servizio clienti banca (2 versioni)
-
-![[Banca.drawio.png]]
-
-
 ## Businness Process Management
 
 Data una situazione iniziale "As Is", e una situazione finale desiderata "To Be" chiamiamo *Piano di transizione* il processo che ci permette il passaggio As Is <span>&rarr;</span> To Be
