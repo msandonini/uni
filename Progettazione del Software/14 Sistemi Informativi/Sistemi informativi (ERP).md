@@ -76,15 +76,29 @@ L'obiettivo finale di sistema informatico è rappresentare fedelmente l'organizz
 Un sistema informatico basato su rappresentazione per funzioni è caratterizzato da tanti blocchi, uno per ogni funzione, che organizza dati in silos quasi indipendenti tra loro
 La rappresentazione per funzioni è considerata ormai obsoleta, ed è caratterizzata da diversi vantaggi e svantaggi:
 - Vantaggi
-	- 
+	- Sistemi informatici specializzati per funzioni
+	- Alta efficienza "locale"
 - Svantaggi
-	- 
+	- Scarsa integrazione e conseguente scarsa capacità di rispondere in tempi brevi alle esigenze del mercato
+	- Possibilità di ridondanza o inconsistenza dei dati
+	- Impossibilità di modellare relazioni inter-organizzative
 
 ### Rappresentazione per processi
 
-La rappresentazione per processi pone l'enfasi sulla creazione del valore, tramite processi che coinvolgono più funzioni, causando:
+La rappresentazione moderna è quella per processi, che pone l'enfasi sulla creazione del valori tramite processi che coinvolgono più funzioni, causando:
 - maggiore enfasi sul coordinamento
 - passaggio da obiettivi locali a obiettivo globale
 In questo tipo di rappresentazione è più difficile scomporre l'organizzazione in processi
 
+La rappresentazione per processi presenta diversi vantaggi e svantaggi:
+- Vantaggi
+	- Esplicitazione dei flussi informativi dell'organizzazione
+	- Favorito lo sviluppo di sottosistemi orientati al supporto di interfacce di comunicazione tra le funzioni coinvolte
+- Svantaggi
+	- Difficoltà nell'identificazione dei processi
+	- Possibile impatto organizzativo
 
+### Rappresentazione di Anthony
+
+La rappresentazione di Anthony è nata per classificare le attività svolte nell'organizzazione (e non la struttura).
+Questa rappresentazione può essere considerata come un'integrazione alla rappresentazione per processi, che pone enfasi sulle attività
