@@ -16,5 +16,7 @@
   "google-calendar",
   "obsidian-annotator",
   "obsidian-html-tags-autocomplete",
-  "templater-obsidian"
+  "templater-obsidian",
+  "make-md",
+  "obsidian-tagfolder"
 ]
