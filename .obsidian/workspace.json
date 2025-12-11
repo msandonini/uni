@@ -41,7 +41,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,10 +209,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8f53c0c7d9c26db5",
+  "active": "7057ac5bb8224a90",
   "lastOpenFiles": [
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
+    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/14 Sistemi Informativi",
     "Untitled Kanban.md",
     "Progettazione del Software/13 BPMN/Esempi.md",

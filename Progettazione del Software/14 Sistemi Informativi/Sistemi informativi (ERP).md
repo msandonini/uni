@@ -14,8 +14,6 @@ In Italia, per le medie imprese, i più diffusi sono:
 - Teamsystem
 - Zucchetti
 
-## Basi concettuali
-
 Ad un'azienda non interessano i semplici dati ma le informazioni, ovvero dati associati al loro contesto, di conseguenza le strategie che ne supportano la gestione sono passate da essere uno strumento accessorio ad essere uno strumento strategico.
 Questi strumenti che ne supportano la gestione svolgono 2 funzioni principali:
 - *Sistema organizzativo*
@@ -42,4 +40,29 @@ La gestione dell'informazione può essere di 3 tipi:
 	- Informazione accessibile tramite documenti cartacei
 - Esplicita supportata da ICT
 	- Informazione accessibile tramite sistema informativo
+
+Il sistema informativo produce informazioni sulla base di eventi, dividendo dunque i ruoli in:
+- Generatori di eventi
+- Utilizzatori
+
+Gli eventi si basano su diverse componenti:
+- Dati
+	- Rappresentano una descrizione degli eventi
+	- Una figura preposta deve identificare quali dati tenere e quali no
+- Principi
+	- Modalità di raccolta, elaborazione, distribuzione dei dati
+	- Si sta man mano virando su sistemi sempre meno invasivi per l'uomo (virando dunque nel mondo [[IoT]])
+- Procedure
+	- Specifiche in funzione del processo realizzato
+	- Indipendenti dagli strumenti impiegati
+- Persone + ICT
+	- Ruoli e tecnologie usate per attuare il sistema informativo
+- Macchine + Utenti
+	- Destinatari delle informazioni, siano essi interni o esterni
+
+Progettazione ed utilizzo di un sistema informativo  richiedono principalmente 3 classi di competenze:
+- Organizzazione
+- Tecnologia
+- Management
+
 
