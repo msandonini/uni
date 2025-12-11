@@ -35,3 +35,11 @@ La gestione dell'informazione implica diverse attività:
 - Distribuire e scambiare informazioni
 - Presentare informazioni
 
+La gestione dell'informazione può essere di 3 tipi:
+- Implicita
+	- L'informazione è gestita da un dipendente
+- Esplicita non supportata da ICT
+	- Informazione accessibile tramite documenti cartacei
+- Esplicita supportata da ICT
+	- Informazione accessibile tramite sistema informativo
+
