@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/13 BPMN/Esempi.md",
+                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Esempi"
+              "title": "Notazione BPMN"
             }
           },
           {
@@ -208,8 +208,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8f53c0c7d9c26db5",
+  "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
+    "Untitled Kanban.md",
+    "Progettazione del Software/13 BPMN/Esempi.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
@@ -224,7 +226,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Progettazione del Software/13 BPMN/Esempi.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio.png",
@@ -254,7 +255,6 @@
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_freeze.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_low_data_regime.png"
+    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png"
   ]
 }

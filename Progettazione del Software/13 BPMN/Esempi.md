@@ -64,3 +64,6 @@ Le prenotazioni sono svolte in maniera contemporanea (la prenotazione dell’hot
 Il processo deve rispettare il seguente vincolo temporale: dal momento in cui la PalmaViaggi inizia la procedura di prenotazione del pacchetto viaggio (ricezione delle date del viaggio), il processo di prenotazione deve concludersi entro 15 minuti. In caso contrario, la PalmaViaggi cancella il processo e notifica la cancellazione della procedura di prenotazione.
 
 ![[Agenzia viaggi.drawio.png]]
+
+
+
