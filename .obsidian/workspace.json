@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "file": "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Notazione BPMN"
+              "title": "Sistemi informativi (ERP)"
             }
           },
           {
@@ -208,14 +208,15 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
+    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
     "Progettazione del Software/14 Sistemi Informativi",
     "Untitled Kanban.md",
     "Progettazione del Software/13 BPMN/Esempi.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
@@ -248,7 +249,6 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/_templates",
     "_static/templates",
-    "_static",
     "_static",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
