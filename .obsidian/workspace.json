@@ -11,10 +11,12 @@
             "id": "51916b1842487ad8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "mk-space",
+              "state": {
+                "path": "Progettazione del Software"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Progettazione del Software"
             }
           }
         ]
@@ -195,9 +197,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2f45c2dc9eeefb32",
+  "active": "01fa57c583907d00",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
+    "Progettazione del Software/Progettazione del Software.md",
     "Tags",
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
