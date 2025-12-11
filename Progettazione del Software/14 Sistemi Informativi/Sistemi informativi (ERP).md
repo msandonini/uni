@@ -2,6 +2,8 @@
 tags:
   - progettazione_software
   - erp
+aliases:
+  - ERP
 ---
 I produttori più noti sono:
 - SAP
@@ -103,4 +105,5 @@ La rappresentazione per processi presenta diversi vantaggi e svantaggi:
 La rappresentazione di Anthony è nata per classificare le attività svolte nell'organizzazione (e non la struttura).
 Questa rappresentazione può essere considerata come un'integrazione alla rappresentazione per processi, che pone enfasi sulle attività e aggiunge proprietà specifiche ai processi stessi.
 La rappresentazione di Anthony si basa sul principio che attività dello stesso livello impiegano informazioni dello stesso tipo
+
 
