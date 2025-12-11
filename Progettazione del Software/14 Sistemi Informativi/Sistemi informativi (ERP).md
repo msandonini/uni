@@ -65,4 +65,30 @@ Progettazione ed utilizzo di un sistema informativo  richiedono principalmente 3
 - Tecnologia
 - Management
 
+Storicamente, un'organizzazione è rappresentata ccon:
+- Funzioni
+- Processi
+- Piramide di Anthony
+L'obiettivo finale di sistema informatico è rappresentare fedelmente l'organizzazione in cui viene utilizzata
+
+Un sistema informatico basato su rappresentazione per funzioni è caratterizzato da tanti blocchi, uno per ogni funzione, che organizza dati in silos quasi indipendenti tra loro
+La rappresentazione per funzioni è considerata ormai obsoleta, ed è caratterizzata da diversi vantaggi e svantaggi:
+- Vantaggi
+- Svantaggi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

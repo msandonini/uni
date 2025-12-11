@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "7057ac5bb8224a90",
+            "id": "97752b963543df7d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -41,8 +41,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,9 +208,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "7057ac5bb8224a90",
+  "active": "8f53c0c7d9c26db5",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
+    "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/14 Sistemi Informativi",
     "Untitled Kanban.md",
@@ -243,7 +243,6 @@
     "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
     "Machine Learning and Deep Learning/11 - Transfer Learning/Parameter Efficient Fine-Tuning.md",
     "Untitled.md",
-    "Big Data & Text Analysis/_templates/default.md",
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Progettazione del Software/_templates",
