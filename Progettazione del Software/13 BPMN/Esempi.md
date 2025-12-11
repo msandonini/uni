@@ -62,3 +62,5 @@ Il cliente può decidere se prenotare o meno uno degli hotel proposti. Terminata
 Questo viene effettuato dalla parte amministrativa della società TalDeiTali. Ricevuto il pagamento, la PalmaViaggi procede a finalizzare le due prenotazioni di volo e hotel.
 Le prenotazioni sono svolte in maniera contemporanea (la prenotazione dell’hotel deve essere effettuata solo nel caso in cui quest’ultimo è stato selezionato). Finalizzate le prenotazioni, la PalmaViaggi invia conferma dell’itinerario.
 Il processo deve rispettare il seguente vincolo temporale: dal momento in cui la PalmaViaggi inizia la procedura di prenotazione del pacchetto viaggio (ricezione delle date del viaggio), il processo di prenotazione deve concludersi entro 15 minuti. In caso contrario, la PalmaViaggi cancella il processo e notifica la cancellazione della procedura di prenotazione.
+
+![[Agenzia viaggi.drawio.png]]
