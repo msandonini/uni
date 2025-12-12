@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
+                "file": "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Mercato ICT"
+              "title": "Sistemi informativi"
+            }
+          },
+          {
+            "id": "8f8b4ef77d0f7697",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -208,7 +219,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "51916b1842487ad8",
+  "active": "8f8b4ef77d0f7697",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",

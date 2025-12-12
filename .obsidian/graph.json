@@ -5,37 +5,8 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "tag:#big_data  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "tag:#deep_learning  ",
-      "color": {
-        "a": 1,
-        "rgb": 5526240
-      }
-    },
-    {
-      "query": "tag:#iot  ",
-      "color": {
-        "a": 1,
-        "rgb": 14147666
-      }
-    },
-    {
-      "query": "tag:#progettazione_software  ",
-      "color": {
-        "a": 1,
-        "rgb": 13193952
-      }
-    }
-  ],
+  "collapse-color-groups": true,
+  "colorGroups": [],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -47,5 +18,5 @@
   "linkStrength": 0.520833333333333,
   "linkDistance": 30,
   "scale": 0.4361493235783967,
-  "close": false
+  "close": true
 }
