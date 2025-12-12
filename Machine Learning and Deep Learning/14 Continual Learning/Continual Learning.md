@@ -45,3 +45,20 @@ Depending on the target of regularization, such methods can be divided into 2 su
 	- These approaches target the intermediate or final output of the prediction function
 
 ![[CL_Regularization_Approaches.png]]
+
+## Rehearsal Approaches
+
+Rehearsal approaches store previously seen examples in a memory buffer and use them in later iterations.
+[[#Experience replay (ER)]] is an old, simple, yet surprisingly effective baseline for CL.
+- Pros:
+	- Simple and straightforward
+- Cons:
+	- Performance proportional to memory size
+	- It may clash with privacy constraints
+
+![[CL_Rehearsal_Approaches.png]]
+
+The idea is, in a subsequent task, to call both images from the same batch and images from the replay buffer, so at every training iteration we revisit past data and re-optimize it within the memory buffer.
+
+## Experience Replay (ER)
+
