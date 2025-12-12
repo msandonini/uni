@@ -110,3 +110,5 @@ Logits can be considered as secondary information since, by the fact they encode
 
 DER++ is a variant of DER that also asks the learner to predict the ground truth labels for past examples.
 
+## Rehearsal-free approaches
+
