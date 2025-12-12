@@ -78,4 +78,6 @@ $$
 
 ![[CL_ER_Algorithm.png]]
 
-
+```pseudo
+D, \theta, \alpha
+```
