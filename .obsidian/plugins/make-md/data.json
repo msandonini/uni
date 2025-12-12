@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "//Progettazione del Software",
     "//Progettazione del Software/Progettazione del Software/14 Sistemi Informativi",
-    "/"
+    "/",
+    "//Big Data & Text Analysis"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -55,7 +56,7 @@
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
-  "inlineContextExpanded": true,
+  "inlineContextExpanded": false,
   "inlineContextProperties": true,
   "inlineContextSectionsExpanded": true,
   "banners": true,

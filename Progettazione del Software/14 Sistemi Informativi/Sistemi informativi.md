@@ -3,7 +3,6 @@ tags:
   - progettazione_software
   - erp
 aliases:
-  - ERP
 ---
 I produttori più noti sono:
 - SAP
