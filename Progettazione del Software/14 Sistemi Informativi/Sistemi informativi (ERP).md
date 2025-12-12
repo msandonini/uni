@@ -126,5 +126,27 @@ La [[American Productivity and Quality Center (APQC)]] checklist divide i 12 pro
 
 Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco funzionale per settori poco regolamentati o poco omogenei, e richiede un'approfondita analisi dell'organizzazione
 
-### Metodo Analitico
+## Categorie di sistemi informatici
+
+- EDP (Electronic Data Processing)
+	- Gestione amministrativa
+		- TPS (Transaction Processing Systems)
+- MIS (Management Information Systems)
+	- Gestione della produzione e della logistica
+		- MRP
+		- SCM 
+		- ERP
+	- Gestione della conoscenza
+		- KMS
+		- CAD
+		- CAE
+		- CAM
+- EIS (Executive Information Systems)
+	- Sistemi a supporto delle decisioni
+		- DSS
+		- ESS
+	- Sistemi per la gestione del rapporto con i clienti
+		- CRM
+
+
 
