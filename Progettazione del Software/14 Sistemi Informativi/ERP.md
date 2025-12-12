@@ -21,3 +21,4 @@ Gli ERP sono software modulari, composti da un modulo per ogni processo da gesti
 - Sistema progetto
 - Workflow
 - Soluzioni industriali
+
