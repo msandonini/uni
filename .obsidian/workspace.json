@@ -41,8 +41,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,7 +218,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8f8b4ef77d0f7697",
+  "active": "51916b1842487ad8",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",

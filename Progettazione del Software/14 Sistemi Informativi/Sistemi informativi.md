@@ -135,7 +135,7 @@ Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco fun
 	- Gestione della produzione e della logistica
 		- MRP
 		- SCM 
-		- ERP
+		- [[ERP]]
 	- Gestione della conoscenza
 		- KMS
 		- CAD
