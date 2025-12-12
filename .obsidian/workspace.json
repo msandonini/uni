@@ -76,10 +76,13 @@
             "id": "2f45c2dc9eeefb32",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -197,10 +200,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "01fa57c583907d00",
+  "active": "51916b1842487ad8",
   "lastOpenFiles": [
-    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
     "Progettazione del Software/Progettazione del Software.md",
+    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
     "Tags",
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
