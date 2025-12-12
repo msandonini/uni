@@ -221,10 +221,12 @@
   },
   "active": "a1bd5e5e93964574",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
+    "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Reservoir_Sampling_algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_ER_Algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Experience_Replay.png",
-    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Rehearsal_Approaches.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Regularization_Approaches.png",
     "Vault.md",
@@ -261,11 +263,9 @@
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
     "Progettazione del Software/Cocomo.md",
-    "CP.md",
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Progettazione del Software/_templates",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
-    "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png"
+    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png"
   ]
 }

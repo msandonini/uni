@@ -112,7 +112,7 @@ The training procedure of knowledge distillation is the following:
 $$
 \mathcal{L}_{\text{student}} = \alpha \cdot \mathcal{L}_{\text{CE}}(y, \sigma(z_{s})) + (1 - \alpha) \cdot T^{2} \cdot \mathcal{L}_{\text{CE}} \left( \sigma\left( \frac{z_{t}}{T} \right), \sigma \left( \frac{z_{s}}{T} \right) \right)
 $$
-Empirically, incorporating soft targets typically improves performance over relying solely on hard (one-hot) labels. This is so effective because of dark knowledge (information contained in the relative probabilities of the non-argmax classes), which is secondary information which can help the student to learn richer decision boundaries than one-hot labels allow, and also acts as some guidelines, preventing the student from overfitting.
+Empirically, incorporating soft targets typically improves performance over relying solely on hard (one-hot) labels. This is so effective because of [[dark knowledge]] (information contained in the relative probabilities of the non-argmax classes), which is secondary information which can help the student to learn richer decision boundaries than one-hot labels allow, and also acts as some guidelines, preventing the student from overfitting.
 
 Application of Knowledge Distillation are:
 - Model compression

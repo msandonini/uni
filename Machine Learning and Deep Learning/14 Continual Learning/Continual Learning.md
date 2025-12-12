@@ -85,3 +85,28 @@ In particular, it solves the problem of keeping some limited number $M$ of $N$ t
 
 ![[CL_Reservoir_Sampling_algorithm.png]]
 
+Due to its simplicity, [[#Experience Replay (ER)|ER]] is an ideal starting point to develop a strong CL method.
+However, it is affected by some key issues: 
+- ER repeatedly optimizes a relatively small buffer: possible overfitting problem
+- Incrementally learning a sequence of classes implicitly biases the network towards newer tasks.
+
+The solution to this is using [[Fine Tuning#Knowledge Distillation|Knowledge Distillation]], obtaining [[#Dark Experience Replay (DER)|Dark Experience Replay]].
+
+### Dark Experience Replay (DER)
+
+DER is an approach relying on [[dark knowledge]] for retaining past experiences.
+As ER, it maintains a buffer $\mathcal{B}$ of past network responses; then, in addition to the loss of the current task $\mathcal{L}_{t_{c}}$, DER minimizes the $L^{2}$ distances between past and current outputs for buffer datapoints:
+$$
+\mathcal{L}_{t_{c}} + \alpha \mathbb{E}_{(x, z) \sim \mathcal{B}} [ \lvert \lvert z -h_{\theta} \rvert  \rvert^{2}_{2}  ]
+$$
+
+$\alpha \mathbb{E}_{(x, z) \sim \mathcal{B}} [ \lvert \lvert z -h_{\theta} \rvert  \rvert^{2}_{2}  ]$ represents the function regularization, being the MSE of current responses vs those stored in the memory buffer.
+
+
+![[CL_DER.png]]
+
+The logits stored into the memory buffer are not just proxies for the ground-truth labels, but have a deeper meaning.
+Logits can be considered as secondary information since, by the fact they encode visual similarities and relations between classes, they are more informative than labels, and therefore carry out more insightful signal regarding past tasks.
+
+DER++ is a variant of DER that also asks the learner to predict the ground truth labels for past examples.
+
