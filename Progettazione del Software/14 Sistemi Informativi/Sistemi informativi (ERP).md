@@ -148,6 +148,4 @@ Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco fun
 	- Sistemi per la gestione del rapporto con i clienti
 		- CRM
 
-### Sistemi operativi di gestione
-
 
