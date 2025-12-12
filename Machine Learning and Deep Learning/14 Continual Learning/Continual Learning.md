@@ -78,6 +78,10 @@ $$
 
 ![[CL_ER_Algorithm.png]]
 
-```pseudo
-D, \theta, \alpha
-```
+#### Reservoir Sampling
+
+Reservoir sampling provides an online strategy to construct the memory buffer.
+In particular, it solves the problem of keeping some limited number $M$ of $N$ total items seen before with equal probability $\frac{M}{N}$ when you don’t know what number $N$ will be in advance.
+
+![[CL_Reservoir_Sampling_algorithm.png]]
+
