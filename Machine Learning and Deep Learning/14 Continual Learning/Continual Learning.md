@@ -61,5 +61,21 @@ The idea is, in a subsequent task, to call both images from the same batch and i
 	- Performance proportional to memory size
 	- It may clash with privacy constraints
 
+Rehearsal approaches are simple, but they are very prone to overfitting when the memory buffer is small.
 ### Experience Replay (ER)
+
+ER stores a few old training samples within a small memory buffer $\mathcal{B}$  with fixed memory capacity.
+
+![[CL_Experience_Replay.png]]
+
+Indicating with $l$ the cross-entropy loss between the output $f_{\theta}$ and the true labels $y$, we have that:
+$$
+\mathcal{L}_{ER} = \mathbb{E}_{(x, y) \sim \mathcal{D}_{t}}[l(y, f_{\theta}(x))] + \mathbb{E}_{(x, y) \sim \mathcal{B}}[l(y, f_{\theta}(x))]
+$$
+
+- $\mathbb{E}_{(x, y) \sim \mathcal{D}_{t}}[l(y, f_{\theta}(x))]$ represents the current task, being the loss on a batch from the task
+- $\mathbb{E}_{(x, y) \sim \mathcal{B}}[l(y, f_{\theta}(x))]$ represents the memory buffer, being the loss on a batch sampled from the memory buffer $\mathcal{B}$
+
+![[CL_ER_Algorithm.png]]
+
 
