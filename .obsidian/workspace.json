@@ -104,7 +104,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -221,6 +222,10 @@
   "active": "51916b1842487ad8",
   "lastOpenFiles": [
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Regularization_Approaches.png",
+    "Vault.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/_img",
+    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Architectural_Approaches.png",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
@@ -253,18 +258,13 @@
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
     "Progettazione del Software/Cocomo.md",
     "CP.md",
-    "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
-    "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Progettazione del Software/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
-    "Machine Learning and Deep Learning/_templates",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_freeze.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_convergence.png"
+    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png"
   ]
 }
