@@ -131,7 +131,7 @@ Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco fun
 - EDP (Electronic Data Processing)
 	- Gestione amministrativa
 		- TPS (Transaction Processing Systems)
-- MIS (Management Information Systems)
+- [[#Sistemi operativi di gestione|MIS]] (Management Information Systems)
 	- Gestione della produzione e della logistica
 		- MRP
 		- SCM 
@@ -148,5 +148,6 @@ Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco fun
 	- Sistemi per la gestione del rapporto con i clienti
 		- CRM
 
+### Sistemi operativi di gestione
 
 
