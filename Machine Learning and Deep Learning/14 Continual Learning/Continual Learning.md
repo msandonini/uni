@@ -2,6 +2,8 @@
 tags:
   - deep_learning
   - continual_learning
+  - ewc
+  - fim
 ---
 A Continual Learning classification problem is split in $T$ tasks
 
@@ -16,5 +18,10 @@ $$
 - $\lambda$ is an hyper-parameter
 
 The idea is to modulate the distance according to the importance
+
+## Fisher Information Matrix
+
+There is a theoretical relation between the empirical Fisher Information Matrix (FIM) and the second derivative of the loss near a minimum.
+Because of this, the FIM captures the curvature of the log likelihood function: a high Fisher information indicates that the log likelihood is sharply peaked there, so it would be inconvenient to modify the corresponding weight.
 
 

@@ -104,8 +104,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -221,8 +220,8 @@
   },
   "active": "51916b1842487ad8",
   "lastOpenFiles": [
-    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
