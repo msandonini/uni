@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/14 Sistemi Informativi/ERP.md",
+                "file": "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ERP"
+              "title": "Mercato ICT"
             }
           }
         ]
@@ -208,9 +208,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "71edf6db8b1c908f",
+  "active": "51916b1842487ad8",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
+    "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
     "Progettazione del Software/14 Sistemi Informativi/ERP.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Progettazione del Software/Progettazione del Software.md",
@@ -243,7 +244,6 @@
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
-    "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Progettazione del Software/_templates",

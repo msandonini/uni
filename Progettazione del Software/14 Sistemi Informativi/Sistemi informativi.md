@@ -2,6 +2,7 @@
 tags:
   - progettazione_software
   - erp
+  - ict
 aliases:
 ---
 I produttori più noti sono:
