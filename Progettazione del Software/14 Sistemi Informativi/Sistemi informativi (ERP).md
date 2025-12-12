@@ -106,4 +106,25 @@ La rappresentazione di Anthony è nata per classificare le attività svolte nell
 Questa rappresentazione può essere considerata come un'integrazione alla rappresentazione per processi, che pone enfasi sulle attività e aggiunge proprietà specifiche ai processi stessi.
 La rappresentazione di Anthony si basa sul principio che attività dello stesso livello impiegano informazioni dello stesso tipo
 
+## Processi
+
+### Checklist
+
+La [[American Productivity and Quality Center (APQC)]] checklist divide i 12 processi principali in 70 sottoprocessi. I 12 principali sono:
+- Comprensione dei mercati e dei consumatori
+- Sviluppo della vision e della strategia
+- Sviluppo prodotti e servizi
+- Marketing e vendite
+- Produzione e consegna prodotti
+- Fatturazione e servizi al cliente
+- Sviluppo e gestione delle risorse umane
+- Gestione dell'informazione
+- Gestione delle risorse fisiche e finanziarie
+- Realizzazione di programmi per la tutela ambientale
+- Gestione relazioni esterne
+- Gestione del cambiamento
+
+Questa checklist garantisce il vantaggio della semplicità, tuttavia è poco funzionale per settori poco regolamentati o poco omogenei, e richiede un'approfondita analisi dell'organizzazione
+
+### Metodo Analitico
 

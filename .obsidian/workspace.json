@@ -11,12 +11,24 @@
             "id": "51916b1842487ad8",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "Progettazione del Software"
+                "file": "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi (ERP).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "Progettazione del Software"
+              "title": "Sistemi informativi (ERP)"
             }
           }
         ]
@@ -73,16 +85,13 @@
             }
           },
           {
-            "id": "2f45c2dc9eeefb32",
+            "id": "ab67a58af2bf83eb",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
