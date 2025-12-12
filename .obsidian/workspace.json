@@ -94,8 +94,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -209,7 +208,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "51916b1842487ad8",
+  "active": "71edf6db8b1c908f",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Progettazione del Software/14 Sistemi Informativi/ERP.md",
