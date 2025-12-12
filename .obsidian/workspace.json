@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
+                "file": "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sistemi informativi"
+              "title": "Continual Learning"
             }
           },
           {
@@ -95,19 +95,17 @@
             }
           },
           {
-            "id": "ab67a58af2bf83eb",
+            "id": "a1bd5e5e93964574",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -224,10 +222,13 @@
   "active": "51916b1842487ad8",
   "lastOpenFiles": [
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
-    "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
-    "Progettazione del Software/14 Sistemi Informativi/ERP.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Machine Learning and Deep Learning/14 Continual Learning",
+    "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Progettazione del Software/Progettazione del Software.md",
+    "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
+    "Progettazione del Software/14 Sistemi Informativi/ERP.md",
     "Tags",
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
@@ -255,14 +256,11 @@
     "CP.md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
-    "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
-    "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/_templates",
     "Internet of Things/_templates",
     "Progettazione del Software/_templates",
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Machine Learning and Deep Learning/_templates",
-    "_static/templates",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
     "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",

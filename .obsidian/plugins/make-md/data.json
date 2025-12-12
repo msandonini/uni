@@ -38,10 +38,11 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "//Progettazione del Software",
     "//Progettazione del Software/Progettazione del Software/14 Sistemi Informativi",
     "/",
-    "//Big Data & Text Analysis"
+    "//Tags",
+    "//Machine Learning and Deep Learning",
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
