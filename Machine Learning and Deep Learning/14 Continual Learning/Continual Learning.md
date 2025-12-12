@@ -112,3 +112,18 @@ DER++ is a variant of DER that also asks the learner to predict the ground truth
 
 ## Rehearsal-free approaches
 
+Rehearsal-free approaches are born to try finding a solution to some core issues of replay based models:
+- They need an episodic memory buffer, which requires storing raw samples or feature embeddings from past tasks
+- Storage cost grows with the number of tasks
+- Privacy concerns
+
+Rehearsal free approaches aim to avoid explicit storage of past data, to gain the following benefits:
+- No storage
+- Simpler training pipeline
+- Lower resource footprint
+
+### Recall Prompting
+
+### L2P
+
+![[CL_L2P.png]]
