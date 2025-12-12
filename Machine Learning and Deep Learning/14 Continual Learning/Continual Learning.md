@@ -60,5 +60,5 @@ Rehearsal approaches store previously seen examples in a memory buffer and use t
 
 The idea is, in a subsequent task, to call both images from the same batch and images from the replay buffer, so at every training iteration we revisit past data and re-optimize it within the memory buffer.
 
-## Experience Replay (ER)
+### Experience Replay (ER)
 

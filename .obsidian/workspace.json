@@ -109,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -219,10 +220,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a1bd5e5e93964574",
+  "active": "51916b1842487ad8",
   "lastOpenFiles": [
-    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Rehearsal_Approaches.png",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Rehearsal_Approaches.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Regularization_Approaches.png",
     "Vault.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
@@ -265,7 +266,6 @@
     "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_bias_texture.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Banca.drawio.png",
     "Progettazione del Software/13 BPMN/Untitled Diagram.svg",
-    "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/_img/fine_tuning_teacher_student.png"
+    "Progettazione del Software/13 BPMN/_img/BPMN_esempio_rimborso_spese.png"
   ]
 }
