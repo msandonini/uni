@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6fc31f846338696f",
+        "id": "770a61a560d3c9a5",
         "type": "tabs",
         "children": [
           {
-            "id": "51916b1842487ad8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Continual Learning"
-            }
-          },
-          {
-            "id": "8f8b4ef77d0f7697",
+            "id": "aab6751d0e9a2b5f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -73,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,14 +74,16 @@
             "id": "a1bd5e5e93964574",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -216,10 +194,11 @@
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "51916b1842487ad8",
+  "active": "aab6751d0e9a2b5f",
   "lastOpenFiles": [
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Tags/Untitled.md",
