@@ -130,3 +130,8 @@ which pulls the client's update direction closer to the global direction, reduci
 The variables $c$ and $c_i$ are defined as control variates.
 
 ![[SCAFFOLD_algorithm.png]]
+
+## Prototype-based approach
+
+The concept of prototypes is connected to the concept of classes.
+The idea behind each prototype is to obtain the centroid of each class (an aggregation of every point in the class).
