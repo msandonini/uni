@@ -134,4 +134,32 @@ The variables $c$ and $c_i$ are defined as control variates.
 ## Prototype-based approach
 
 The concept of prototypes is connected to the concept of classes.
-The idea behind each prototype is to obtain the centroid of each class (an aggregation of every point in the class).
+The idea behind prototypes is to obtain the centroid of each class (an aggregation of every point in the class which can be obtained for example by calculating the point with the smaller total distance from all the samples of the same class).
+These prototype can then be used to perform classification.
+The idea of these approaches is to not send the data to the model on the server but to send the prototypes.
+
+### FedProto
+
+FedProto has each client $i$ compute protoypes $p_{i, c}$ for each class $c$.
+Given client $i$'s feature extractor $f_{i}$, classifier $g_{i}$ and local dataset $D_{i}$, each client computes the prototype for a given class $c$ at the end of each round as:
+$$
+p_{i, c} = \mathbb{E}_{(x, y) \sim D_{i}} [f_{i(x)}: y = c]
+$$
+Clients send these prototypes to the server, and the server averages the received prototypes to form global prototypes for each class.
+
+The server sends the global prototypes back to the clients. Each client $i$ then adds a regularization term to its loss to keep its local prototypes close to the global ones:
+$$
+\mathcal{L}_{i}^{\text{FedProto}} = \mathcal{L}_{i}^{(\text{local})} + \lambda \lvert \lvert p_{i, c} - \bar{p}_{c} \rvert  \rvert^{2}
+$$
+which penalizes the discrepancy between $p_{i,c}$ and the global prototype $\bar{p}_{c}$ for each class $c$.
+This ensures that feature representations across clients remain aligned, addressing heterogeneous label distributions.
+Inference can also be done using nearest-mean classifier:
+$$
+\hat{y} = \arg \min_{c} \lvert \lvert f(x) - \bar{p}_{c} \rvert \rvert_{2} 
+$$
+
+The usage of FedProto grants various advantages:
+- Efficiency
+	- Prototype vectors are much smaller than full model updates, so communication costs are reduced since we only share prototypes and not entire models
+- Effectiveness
+	- By regularizing toward global prototypes, FedProto outperforms FedAvg and similar methods on heterogeneous benchmarks, achieving higher accuracy in federated settings.
