@@ -27,4 +27,6 @@ This enables training on decentralized data for improved privacy and efficiency,
 0. The server has an initialized network (global model) but no data, which is distributed among clients
 1. Server sends the global model to selected clients
 2. Clients perform local training on their private data (one or more epochs)
-3. Clients send local model updates (e.g. gradients )
+3. Clients send local model updates (e.g. gradients or new weights) back to the server
+4. Server aggregates updates (e.g. by averaging) to improve the global model
+The steps 1-4 get repeated until convergence
