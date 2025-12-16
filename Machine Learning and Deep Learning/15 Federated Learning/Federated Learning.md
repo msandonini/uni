@@ -30,4 +30,5 @@ Federated learning is based on a set of steps:
 2. Clients perform local training on their private data (one or more epochs)
 3. Clients send local model updates (e.g. gradients or new weights) back to the server
 4. Server aggregates updates (e.g. by averaging) to improve the global model
-The steps 1-4 get repeated until convergence
+The steps 1-4 get repeated until convergence.
+
