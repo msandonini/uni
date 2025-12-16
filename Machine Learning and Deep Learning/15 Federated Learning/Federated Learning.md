@@ -18,4 +18,5 @@ Centralized ML is characterized by different problems:
 - Hardware limits
 - High bandwidth usages for big datasets
 - Privacy problems while downloading the data from the server
-These problems can be circumvented 
+These problems can be circumvented by, instead of sending data to a centralized model, sending the pre-trained model to where the data is stored
+
