@@ -17,8 +17,8 @@
   "activeView": "/",
   "hideFrontmatter": true,
   "activeSpace": "",
-  "defaultDateFormat": "yyyy MMM dd yyyy",
-  "defaultTimeFormat": "h:mm a",
+  "defaultDateFormat": "yyyy-MM-dd",
+  "defaultTimeFormat": "hh:mm",
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
@@ -45,7 +45,9 @@
     "//Tags",
     "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI",
     "//Machine Learning and Deep Learning",
-    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/15 Federated Learning"
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/15 Federated Learning",
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning",
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning/Machine Learning and Deep Learning/11 Transfer Learning/_img"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
