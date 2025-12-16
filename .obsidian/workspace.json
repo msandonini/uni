@@ -11,10 +11,24 @@
             "id": "ebe87d19b249a453",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Federated Learning"
             }
           }
         ]
@@ -196,8 +210,9 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "9d3f5ace0b700a99",
+  "active": "ebe87d19b249a453",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning/15 Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Machine Learning and Deep Learning/Untitled.md",
@@ -238,7 +253,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
