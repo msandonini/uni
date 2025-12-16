@@ -6,7 +6,11 @@ In Federated Learning the idea is the same as in Continual Learning, but spreadi
 
 This is born by the fact that until now, machine learning was done in a centralized way:
 - All data is in one single point of the network
+	- Training data from all sources is aggregated and stored on a central server or in a data center
+	- The model has access to the entire dataset during training
 - Single model, combined dataset
+	- A single global model is trained on this unified dataset
+	- This addit
 - Iterative optimization (SGD)
 	- The model's parameters are iteratively updated using Stochastic Gradient Descent, epoch after epoch until the model converges
 Centralized ML is a problem because
