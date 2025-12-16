@@ -11,10 +11,24 @@
             "id": "aab6751d0e9a2b5f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Explainable AI"
             }
           }
         ]
@@ -71,7 +85,7 @@
             }
           },
           {
-            "id": "a1bd5e5e93964574",
+            "id": "99e1133231ba7593",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -83,7 +97,8 @@
               "title": "Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -200,6 +215,8 @@
   },
   "active": "aab6751d0e9a2b5f",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
+    "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Tags/Untitled.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/_img.md",
@@ -217,7 +234,6 @@
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
-    "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Progettazione del Software/Progettazione del Software.md",
     "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
     "Progettazione del Software/14 Sistemi Informativi/ERP.md",
@@ -239,7 +255,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
