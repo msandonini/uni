@@ -99,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -212,6 +213,8 @@
   },
   "active": "ebe87d19b249a453",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/15 Federated Learning/_img/SCAFFOLD_algorithm.png",
+    "Machine Learning and Deep Learning/15 Federated Learning/Derivation of Fisher-Weighted Averaging.md",
     "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "2025-12-16.md",
     "Machine Learning and Deep Learning/12 Transfer Learning/Fine Tuning.md",
@@ -253,8 +256,6 @@
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
     "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/14 Sistemi Informativi",
-    "Untitled Kanban.md",
-    "Progettazione del Software/13 BPMN/Esempi.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio"

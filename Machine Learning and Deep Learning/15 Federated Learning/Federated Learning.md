@@ -70,7 +70,7 @@ The main problem with FedAvg is that with non-iid client data, local models can 
 FedAvg limitations have led to various improvements, which can be categorized into 3 families:
 - [[#Server-side approach]]
 	- The server employs more powerful ways to aggregate the parameters
-- Client-side approach
+- [[#Client-side approach]]
 	- Each client has some additional terms, that constrain their objective or their weights to force consistency
 - Prototype-based approach
 	- Constraint are forced in feature space instead of weight space, in order to obtain a good trade-off between consistency among clients and specialization on local-datasets
@@ -79,5 +79,54 @@ FedAvg limitations have led to various improvements, which can be categorized in
 
 Parameter averaging (e.g. FedAvg) treats every weight dimension as equally informative. This works when updates come from i.i.d. data but can be sub-optimal under heterogeneity.
 To solve this problem we can weight the contribution of each model parameter by how confident the model is about that parameter, measured using the [[Fisher Information Matrix]]
+$$
+F_{\theta} = \frac{1}{N} \sum_{i=1}^{N} \nabla_{\theta} \log p(x^{(i)}|\theta) \nabla_{\theta} \log p(x^{(i)}|\theta)^{T}
+$$
+There is a theoretical relation between the empirical Fisher Information Matrix (FIM) and the second derivative of the loss near a minimum: in particular, the [[Fisher Information Matrix|FIM]] can be used as an approximation of the Hessian matrix near a minimum.
 
+Since FIM captures the curvature of the function, a high Fisher information for parameter $i$ indicates that that parameter is pivotal, so if we modify it we are likely going to increase the value of the loss function.
+On the contrary, if another parameter $j$ has low Fisher information it means that its value is not so important, and by mildly changing it the value of the loss should remain more or less the same.
 
+The core formula of the Fisher-weighted average is obtained as follows:
+- Given $M$ client models $\{\theta_{i}\}_{i=1}^{M}$ with identical initialization, approximate each model's posterior as a Gaussian-distributed posterior $p(\theta|\theta_{i}, F_{i})$, where $F_i$ is the Fisher Information Matrix.
+- The objective is to find the set of weights $\theta^{\star}$ that maximizes the joint posterior, that is, the posterior of all clients' models:
+$$
+\theta^{\star} = \arg \max_{\theta} \prod_{i=1}^{M} \lambda_{i} p(\theta|\theta_{i}, F_{i})
+$$
+where $\lambda_{i}$, $\sum_{i} \lambda_{i} = 1$ is an ulterior set of scalars.
+
+This optimization problem holds a closed-form solution, which is given by:
+$$
+\theta^{\star} = \left( \sum_{i} \lambda_{i} F_{i} \right)^{-1} \left( \sum_{i} \lambda_{i} F_{i} \theta_{i} \right)
+$$
+Problem: Both estimating and storing a full FIM can be non-feasible when the number of parameters of the neural network becomes fairly large, especially since all modern architectures are over-parameterized.
+Solution: Using an approximation of the FIM, such as its diagonal, that can be represented as a vector, can become tractable. It also simplifies the closed-form solution, which becomes:
+$$
+\theta^{\star} = \frac{\sum_{i=1}^{M} \lambda_{i} F_{i} \theta_{i}}{\sum_{i=1}^{M} \lambda_{i} F_{i}}
+$$
+
+## Client-side approach
+
+Under non-iid data, FedAvg's local updates can move in inconsistent directions, causing the global model to drift from the true optimum.
+
+In this approach our goal is to make each client follow as closely as possible the ideal update direction (the one we would obtain if all data were available in one place).
+- The ideal direction is easy to compute if:
+	- All data are stored on a single client
+	- Clients send both their model parameters and gradients to a central server
+- The server could then aggregate all gradients, compute the global update, and send it back to the clients
+- Clients would use this information to correct their local update direction, avoiding drift caused by non-IID data.
+The challenge with this solution is that directly exchanging gradients is communication-expensive.
+To solve this we can approximate this global correction efficiently.
+
+### SCAFFOLD
+
+SCAFFOLD introduces adjusted local gradients to correct for client drift.
+
+<u>Adjusted local gradient</u>: when client $i$ trains on current model $w$, it uses
+$$
+g_{i}(w) = \nabla \mathcal{L}_{i}(w) + c - c_{i}
+$$
+which pulls the client's update direction closer to the global direction, reducing drift.
+The variables $c$ and $c_i$ are defined as control variates.
+
+![[SCAFFOLD_algorithm.png]]
