@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "770a61a560d3c9a5",
+        "id": "24e9a453df371d4e",
         "type": "tabs",
         "children": [
           {
-            "id": "aab6751d0e9a2b5f",
+            "id": "ebe87d19b249a453",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Explainable AI"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -85,16 +71,13 @@
             }
           },
           {
-            "id": "99e1133231ba7593",
+            "id": "9d3f5ace0b700a99",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -213,8 +196,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "aab6751d0e9a2b5f",
+  "active": "9d3f5ace0b700a99",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/15 Federated Learning/15 Federated Learning.md",
+    "Machine Learning and Deep Learning/15 Federated Learning",
+    "Machine Learning and Deep Learning/Untitled.md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
@@ -222,7 +209,7 @@
     "Machine Learning and Deep Learning/14 Continual Learning/_img/_img.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_L2P.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
-    "Machine Learning and Deep Learning/11 - Transfer Learning/Fine Tuning.md",
+    "Machine Learning and Deep Learning/11 Transfer Learning/Fine Tuning.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Reservoir_Sampling_algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_ER_Algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Experience_Replay.png",
@@ -252,14 +239,10 @@
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
     "Big Data & Text Analysis/_templates",
-    "Internet of Things/_templates",
-    "Progettazione del Software/_templates"
+    "Internet of Things/_templates"
   ]
 }
