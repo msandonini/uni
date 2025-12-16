@@ -8,3 +8,5 @@ This is born by the fact that until now, machine learning was done in a centrali
 - All data is in one single point of the network
 - Single model, combined dataset
 - Iterative optimization (SGD)
+	- The model's parameters are iteratively updated using Stochastic Gradient Descent, epoch after epoch until the model converges
+Centralized ML is a problem because
