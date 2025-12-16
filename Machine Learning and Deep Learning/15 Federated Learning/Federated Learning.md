@@ -21,3 +21,5 @@ Centralized ML is characterized by different problems:
 These problems can be circumvented by, instead of sending data to a centralized model, sending the pre-trained model to where the data is stored
 
 The overall idea of federated learning is to have a paradigm where the data and the model are spread between different devices in different geographical positions.
+This paradigm works on the fact that a server coordinates a set of clients to collaboratively train a model without sharing their raw data.
+This enables 
