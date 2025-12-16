@@ -32,3 +32,5 @@ Federated learning is based on a set of steps:
 4. Server aggregates updates (e.g. by averaging) to improve the global model
 The steps 1-4 get repeated until convergence.
 
+![[FL_idea.png]]
+

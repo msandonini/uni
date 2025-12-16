@@ -210,8 +210,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "ebe87d19b249a453",
+  "active": "9d3f5ace0b700a99",
   "lastOpenFiles": [
+    "Internet of Things/Internet of Things.md",
+    "Machine Learning and Deep Learning/15 Federated Learning/_img/_img.md",
+    "Machine Learning and Deep Learning/15 Federated Learning/_img",
+    "Machine Learning and Deep Learning/15 Federated Learning/_img/FL_idea.png",
     "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning/15 Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning",
@@ -251,12 +255,8 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
-    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
-    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio.png",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio",
-    "Big Data & Text Analysis/_templates",
-    "Internet of Things/_templates"
+    "Big Data & Text Analysis/_templates"
   ]
 }
