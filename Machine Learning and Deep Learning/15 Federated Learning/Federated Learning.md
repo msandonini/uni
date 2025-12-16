@@ -10,7 +10,9 @@ This is born by the fact that until now, machine learning was done in a centrali
 	- The model has access to the entire dataset during training
 - Single model, combined dataset
 	- A single global model is trained on this unified dataset
-	- This addit
+	- This traditional approach relies on p
 - Iterative optimization (SGD)
 	- The model's parameters are iteratively updated using Stochastic Gradient Descent, epoch after epoch until the model converges
-Centralized ML is a problem because
+Centralized ML is characterized by different problems:
+- Single point of failure
+- Hardware limits
