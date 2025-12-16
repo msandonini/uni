@@ -11,8 +11,8 @@ This is born by the fact that until now, machine learning was done in a centrali
 - Single model, combined dataset
 	- A single global model is trained on this unified dataset
 	- This traditional approach relies on processing all data centrally before model training
-- Iterative optimization (SGD)
-	- The model's parameters are iteratively updated using Stochastic Gradient Descent, epoch after epoch until the model converges
+- Iterative optimization ([[Stochastic Gradient Descent|SGD]])
+	- The model's parameters are iteratively updated using [[Stochastic Gradient Descent]], epoch after epoch until the model converges
 Centralized ML is characterized by different problems:
 - Single point of failure
 - Hardware limits
@@ -24,6 +24,7 @@ The overall idea of federated learning is to have a paradigm where the data and 
 This paradigm works on the fact that a server coordinates a set of clients to collaboratively train a model without sharing their raw data.
 This enables training on decentralized data for improved privacy and efficiency, sharing the updated model instead of the data.
 
+Federated learning is based on a set of steps:
 0. The server has an initialized network (global model) but no data, which is distributed among clients
 1. Server sends the global model to selected clients
 2. Clients perform local training on their private data (one or more epochs)
