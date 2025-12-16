@@ -15,7 +15,7 @@ This is born by the fact that until now, machine learning was done in a centrali
 	- The model's parameters are iteratively updated using Stochastic Gradient Descent, epoch after epoch until the model converges
 Centralized ML is characterized by different problems:
 - Single point of failure
-- Hardware limits
+- 
 - High bandwidth usages for big datasets
 - Privacy problems while downloading the data from the server
 These problems can be circumvented by, instead of sending data to a centralized model, sending the pre-trained model to where the data is stored
