@@ -130,4 +130,6 @@ print(outputs.logits)
 ```python
 >>> tensor([[-1.5607,  1.6123], [ 4.1692, -3.3464]])
 ```
+Come possiamo vedere, qua ci vengono restituiti i logits del modello, ovvero degli score grezzi da convertire in probabilità. Per convertire questi logits in rappresentazione probabilistica possiamo usare una softmax
+
 
