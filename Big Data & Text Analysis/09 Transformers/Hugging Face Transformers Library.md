@@ -3,8 +3,6 @@ tags:
   - big_data
   - transformers
 ---
-## Hugging Face Transformers Library
-
 Task NLP:
 - Classificazione del sentimento della frase
 - Classificazione delle singole parole in una frase
@@ -59,7 +57,7 @@ classifier(
 Una pipeline, come si può vedere nella figura seguente, prende in input una frase, la converte in token da passare al modello, e per finire ne esegue il post-processing per ottenere le probabilità:
 ![[hugging_face_pipeline.png]]
 
-### Tokenizer
+## Tokenizer
 
 Per utilizzare un tokenizer nella libreria `transformers` il metodo più veloce è utilizzare `transformers.AutoTokenizer`, classe che automaticamente sceglie quale modello di tokenizer utilizzare per lo specifico input (in alternativa si possono usare metodi specifici, come ad esempio `transformers.BertTokenizerFast`)
 
@@ -90,7 +88,7 @@ inputs = tokenizer(raw_inputs, padding=True, truncation=True, return_tensors="pt
 
 Utilizzando [[Transformers#BERT|BERT]] come tokenizer, viene utilizzato il metodo dei CLS Token, utilizzando i caratteri `101` (`CLS`) e `102` (`SEP`).
 
-### Model
+## Model
 
 ```python
 from transformers import AutoModel

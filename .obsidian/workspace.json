@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/09 Transformers/Uso dei Transformers.md",
+                "file": "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Uso dei Transformers"
+              "title": "Hugging Face Transformers Library"
             }
           }
         ]
@@ -210,13 +210,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "787c7bcd1703b247",
+  "active": "64b31dba750b5b69",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_pipeline.png",
-    "Big Data & Text Analysis/09 Transformers/Transformers.md",
-    "Big Data & Text Analysis/09 Transformers/Uso dei Transformers.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning/_img/SCAFFOLD_algorithm.png",
@@ -244,7 +244,6 @@
     "Machine Learning and Deep Learning/14 Continual Learning/_img/_img.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_L2P.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
-    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Reservoir_Sampling_algorithm.png",
     "Vault.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
