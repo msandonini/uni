@@ -132,4 +132,11 @@ Come possiamo vedere, qua ci vengono restituiti i logits del modello, ovvero deg
 
 ## Classificazione del testo
 
+Per classificare il testo si possono utilizzare 2 tipi di modello diversi:
+- Modello specifico per la classificazione
+	- Usato in caso di esempi etichettati
+- Modello generativo
+	- Fornisce anche label positive e negative oltre al testo generato
+	- Usato in caso di esempi non etichettati
+
 
