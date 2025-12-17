@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "24e9a453df371d4e",
+        "id": "04afce4cdc244e03",
         "type": "tabs",
         "children": [
           {
-            "id": "ebe87d19b249a453",
+            "id": "64b31dba750b5b69",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Federated Learning"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -85,16 +71,13 @@
             }
           },
           {
-            "id": "9d3f5ace0b700a99",
+            "id": "6e8b98a71e7ab35a",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -214,11 +197,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "ebe87d19b249a453",
+  "active": "64b31dba750b5b69",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning/_img/SCAFFOLD_algorithm.png",
     "Machine Learning and Deep Learning/15 Federated Learning/Derivation of Fisher-Weighted Averaging.md",
-    "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "2025-12-16.md",
     "Machine Learning and Deep Learning/12 Transfer Learning/Fine Tuning.md",
     "Machine Learning and Deep Learning/13 Parameter-Efficient Fine-Tuning/Parameter Efficient Fine-Tuning.md",
@@ -246,7 +229,6 @@
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Reservoir_Sampling_algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_ER_Algorithm.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Experience_Replay.png",
-    "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_Rehearsal_Approaches.png",
     "Vault.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
