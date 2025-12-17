@@ -38,16 +38,14 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "//Progettazione del Software/Progettazione del Software/14 Sistemi Informativi",
     "/",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 - Transfer Learning/Machine Learning and Deep Learning/11 - Transfer Learning/_img",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning/Machine Learning and Deep Learning/14 Continual Learning/_img",
     "//Tags",
     "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI",
-    "//Machine Learning and Deep Learning",
-    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/15 Federated Learning",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning",
-    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning/Machine Learning and Deep Learning/11 Transfer Learning/_img"
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning/Machine Learning and Deep Learning/11 Transfer Learning/_img",
+    "//Progettazione del Software"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
