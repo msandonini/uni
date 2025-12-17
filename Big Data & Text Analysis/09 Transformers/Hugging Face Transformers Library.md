@@ -130,4 +130,6 @@ print(outputs.logits)
 ```
 Come possiamo vedere, qua ci vengono restituiti i logits del modello, ovvero degli score grezzi da convertire in probabilità. Per convertire questi logits in rappresentazione probabilistica possiamo usare una softmax
 
+## Classificazione del testo
+
 
