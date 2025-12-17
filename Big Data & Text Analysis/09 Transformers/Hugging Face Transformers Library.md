@@ -149,26 +149,8 @@ Queste sono possibili soluzioni, ma non sono comunque ottimali, in quanto non se
 Come soluzione è stato sviluppato un generatore di embedding apposito chiamato [[Sentence-BERT]], che riceve in input i token di [[Transformers#BERT|BERT]] per 2 frasi diverse, e per ogni frase esegue pooling per ottenere un token rappresentante una combinazione degli embeddings di tutta la frase.
 A questo punto calcola la differenza tra gli embeddings delle 2 frasi, così da capire se le 2 frasi sono simili o meno.
 Appunto per il fatto che Sentence-BERT utilizza 2 architetture al suo interno (per quanto identiche), prende la definizione di modello siamese.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Solitamente, Sentence-BERT viene utilizzato per task di [[Natural Language Inference]].
 
 Sentence-BERT inizia con BERT pre-trainato, ma durante il training esegue re-training di tutto il BERT originario, così da ottenere un BERT capace di fare l'inferenza.
+
+
