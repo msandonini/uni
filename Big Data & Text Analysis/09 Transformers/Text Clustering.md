@@ -9,6 +9,7 @@ Per eseguire clustering esistono diversi metodi:
 - [[#T-SNE]]
 - [[#UMAP]]
 - [[HDBSCAN]]
+- [[c-TF-IDF]], una versione modificata di [[Text Analysis#TF Transformation|TF-IDF]]
 
 ## T-SNE
 
@@ -23,3 +24,8 @@ A questo punto non usa una gaussiana ma usa una funzione esponenziale per defini
 Una volta che si è eseguita una dimensionality reduction, ottenendo dunque degli embedding in uno spazio compresso, si esegue il clustering, che può essere basato su diverse tecniche:
 - 
 - Density-based
+
+## c-TF-IDF
+
+Una tecnica TF-IDF basata sulle classi che si occupa di riconoscere parole chiave così da associarle ad ogni cluster andando a ridurre il peso su parole che appaiono più spesso in tutti i cluster.
+Per incrementare le performance di questa tecnica si può aggiungere un re-ranker basato su modelli generativi così da ri-classificare le parole chiave dopo una prima classificazione (così da tenere conto non delle singole parole ma del significato delle stesse).

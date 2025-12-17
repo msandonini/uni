@@ -95,7 +95,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -211,13 +211,14 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "6322b03724ba3149",
+  "active": "7b413d4d0fd9f9d8",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
+    "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
-    "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
     "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
@@ -249,7 +250,6 @@
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
-    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_L2P.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
