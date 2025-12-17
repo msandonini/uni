@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
+                "file": "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hugging Face Transformers Library"
+              "title": "Text Clustering"
             }
           }
         ]
@@ -213,8 +213,10 @@
   },
   "active": "a410ede573738036",
   "lastOpenFiles": [
-    "2025-12-17.md",
     "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
+    "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
+    "Big Data & Text Analysis/09 Transformers/09 Transformers.md",
+    "2025-12-17.md",
     "Tags/Tags.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
@@ -252,8 +254,6 @@
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
-    "Progettazione del Software/Progettazione del Software.md",
-    "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
     "Tags",
     "Progettazione del Software/14 Sistemi Informativi",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
