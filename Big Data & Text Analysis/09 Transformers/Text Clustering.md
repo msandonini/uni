@@ -9,7 +9,7 @@ Per eseguire clustering esistono diversi metodi:
 - [[#T-SNE]]
 - [[#UMAP]]
 - [[HDBSCAN]]
-- [[c-TF-IDF]], una versione modificata di [[Text Analysis#TF Transformation|TF-IDF]]
+- [[#c-TF-IDF]], una versione modificata di [[Text Analysis#TF Transformation|TF-IDF]]
 
 ## T-SNE
 
