@@ -11,10 +11,24 @@
             "id": "64b31dba750b5b69",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Big Data & Text Analysis/09 Transformers/Uso dei Transformers.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Uso dei Transformers"
             }
           }
         ]
@@ -71,16 +85,13 @@
             }
           },
           {
-            "id": "6e8b98a71e7ab35a",
+            "id": "787c7bcd1703b247",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -201,6 +212,9 @@
   },
   "active": "64b31dba750b5b69",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/09 Transformers/Uso dei Transformers.md",
+    "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/15 Federated Learning/Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning/_img/SCAFFOLD_algorithm.png",
     "Machine Learning and Deep Learning/15 Federated Learning/Derivation of Fisher-Weighted Averaging.md",
@@ -222,7 +236,6 @@
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
-    "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Tags/Untitled.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/_img.md",
@@ -241,7 +254,6 @@
     "Progettazione del Software/14 Sistemi Informativi/ERP.md",
     "Tags",
     "Big Data & Text Analysis/03 Frequent Itemsets/_excalidraw/Algoritmo a priori.md",
-    "Progettazione del Software/13 BPMN/Notazione BPMN.md",
     "Progettazione del Software/14 Sistemi Informativi",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
     "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
