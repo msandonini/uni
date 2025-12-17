@@ -27,4 +27,28 @@ La libreria espone una pipeline con diversi metodi già implementati:
 from transformers import pipeline
 
 classifier = pipeline("sentiment-analysis")
+
+classifier("I've been waiting for a HuggingFace course my whole life.")
 ```
+```
+$ [{'label': 'POSITIVE', 'score': 0.9598047137260437}]
+```
+
+```python
+from transformers import pipeline
+
+classifier = pipeline("zero-shot-classification")
+classifier(
+    "This is a course about the Transformers library",
+    candidate_labels=["education", "politics", "business"],
+)
+```
+```
+{'sequence': 'This is a course about the Transformers library',
+ 'labels': ['education', 'business', 'politics'], 'scores': [0.844, 0.112, 0.0434]}
+```
+
+Una pipeline, come si può vedere nella figura seguente, prende in input una frase, la converte in token da passare al modello, e per finire ne esegue il post-processing per ottenere le probabilità:
+![[hugging_face_pipeline.png]]
+
+
