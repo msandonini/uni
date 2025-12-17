@@ -86,7 +86,7 @@ inputs = tokenizer(raw_inputs, padding=True, truncation=True, return_tensors="pt
 ```
 
 
-Utilizzando [[Transformers#BERT|BERT]] come tokenizer, viene utilizzato il metodo dei CLS Token, utilizzando i caratteri `101` (`CLS`) e `102` (`SEP`).
+Utilizzando [[Transformers#BERT|BERT]] come tokenizer, viene utilizzato il metodo dei \[CLS] Token, utilizzando i caratteri `101` (`CLS`) e `102` (`SEP`).
 
 ## Model
 
@@ -139,4 +139,36 @@ Per classificare il testo si possono utilizzare 2 tipi di modello diversi:
 	- Fornisce anche label positive e negative oltre al testo generato
 	- Usato in caso di esempi non etichettati
 
+Problema: input diversi possono avere dimensione diversa.
+Una possibile soluzione è basata sul condensare, ovvero sul far si che un token rappresenti un'intera frase. Per farlo ci sono diverse tecniche:
+- Embedding dei CLS
+	- È rappresentativo della frase
+- Media degli embeddings di tutti i token
+Queste sono possibili soluzioni, ma non sono comunque ottimali, in quanto non sempre l'embedding è effettivamente rappresentativo della frase (perché BERT non è stato allenato per questo e perché la media non è una funzione creata appositamente)
 
+Come soluzione è stato sviluppato un generatore di embedding apposito chiamato [[Sentence-BERT]], che riceve in input i token di [[Transformers#BERT|BERT]] per 2 frasi diverse, e per ogni frase esegue pooling per ottenere un token rappresentante una combinazione degli embeddings di tutta la frase.
+A questo punto calcola la differenza tra gli embeddings delle 2 frasi, così da capire se le 2 frasi sono simili o meno.
+Appunto per il fatto che Sentence-BERT utilizza 2 architetture al suo interno (per quanto identiche), prende la definizione di modello siamese.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solitamente, Sentence-BERT viene utilizzato per task di [[Natural Language Inference]].
+
+Sentence-BERT inizia con BERT pre-trainato, ma durante il training esegue re-training di tutto il BERT originario, così da ottenere un BERT capace di fare l'inferenza.
