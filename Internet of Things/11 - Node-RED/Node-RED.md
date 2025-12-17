@@ -2,8 +2,6 @@
 tags:
   - iot
   - app
-  - nodejs
-  - bridge
   - machine_learning
   - edge
 ---

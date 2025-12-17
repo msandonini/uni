@@ -3,7 +3,6 @@ tags:
   - big_data
   - explainable_ai
   - linear_regression
-  - intrinsic_models
   - machine_learning
 ---
 

@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "a7d213925f91f1e8",
+        "id": "4de19c99c3df1518",
         "type": "tabs",
         "children": [
           {
-            "id": "735542dd84169cc0",
+            "id": "7b413d4d0fd9f9d8",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Text Clustering"
             }
           }
         ]
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +95,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -197,11 +211,14 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "735542dd84169cc0",
+  "active": "6322b03724ba3149",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
+    "Internet of Things/11 - Node-RED/Node-RED.md",
+    "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
     "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
-    "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/09 Transformers/09 Transformers.md",
@@ -233,11 +250,8 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
-    "Tags/Untitled.md",
-    "Machine Learning and Deep Learning/14 Continual Learning/_img/_img.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_L2P.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
-    "Vault.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Tags",
