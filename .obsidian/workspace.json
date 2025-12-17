@@ -11,10 +11,24 @@
             "id": "a410ede573738036",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Hugging Face Transformers Library"
             }
           }
         ]
@@ -199,6 +213,7 @@
   },
   "active": "a410ede573738036",
   "lastOpenFiles": [
+    "2025-12-17.md",
     "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Tags/Tags.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
@@ -239,7 +254,6 @@
     "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
     "Progettazione del Software/Progettazione del Software.md",
     "Progettazione del Software/14 Sistemi Informativi/Mercato ICT.md",
-    "Progettazione del Software/14 Sistemi Informativi/ERP.md",
     "Tags",
     "Progettazione del Software/14 Sistemi Informativi",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
