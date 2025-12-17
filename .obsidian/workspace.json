@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "23fab22d5e9a906a",
+        "id": "a7d213925f91f1e8",
         "type": "tabs",
         "children": [
           {
-            "id": "a410ede573738036",
+            "id": "735542dd84169cc0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Text Clustering"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -211,14 +197,16 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "a410ede573738036",
+  "active": "735542dd84169cc0",
   "lastOpenFiles": [
-    "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
+    "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
+    "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/09 Transformers/09 Transformers.md",
     "2025-12-17.md",
     "Tags/Tags.md",
-    "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_pipeline.png",
@@ -251,9 +239,7 @@
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
     "Vault.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
-    "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Machine Learning and Deep Learning/14 Continual Learning",
-    "Machine Learning and Deep Learning/Machine Learning and Deep Learning.md",
     "Tags",
     "Progettazione del Software/14 Sistemi Informativi",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
