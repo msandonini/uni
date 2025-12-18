@@ -71,16 +71,13 @@
             }
           },
           {
-            "id": "dfa7ee465e181eb8",
+            "id": "3a8b74d6b07846ba",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -200,8 +197,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "0ea19c7786736f7d",
+  "active": "3a8b74d6b07846ba",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/10 Reinforcement Learning/10 Reinforcement Learning.md",
+    "Big Data & Text Analysis/10 Reinforcement Learning",
     "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
     "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
@@ -238,7 +237,6 @@
     "Machine Learning and Deep Learning/15 Federated Learning/15 Federated Learning.md",
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
-    "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_L2P.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img/CL_DER.png",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
@@ -246,7 +244,6 @@
     "Tags",
     "Progettazione del Software/14 Sistemi Informativi",
     "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio",
-    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio",
-    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - pool.drawio"
+    "Progettazione del Software/13 BPMN/_img/drawio/Fast food - subprocesses.drawio"
   ]
 }
