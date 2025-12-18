@@ -225,3 +225,5 @@ This is a on-policy control since I am evaluating the same policy which I am usi
 %% Likely question: difference between Q-Learning and SARSA %%
 
 ![[Q-Learning_algorithm.png]]
+Q-Learning is an off-policy control, since
+

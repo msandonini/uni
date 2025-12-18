@@ -99,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -211,7 +212,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3a8b74d6b07846ba",
+  "active": "7ed3a8f034a560c4",
   "lastOpenFiles": [
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Q-Learning_algorithm.png",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/SARSA_algorithm.png",
