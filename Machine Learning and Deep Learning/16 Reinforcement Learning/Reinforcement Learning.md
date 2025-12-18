@@ -173,3 +173,8 @@ $$
 $$
 \pi' = \text{greedy}(v_{\pi})
 $$
+
+Problem of greedy action selection: since we always choose what we think is the best path we don't explore other possibil
+
+$\epsilon$-greedy exploration (likely question in exam):
+- Simple
