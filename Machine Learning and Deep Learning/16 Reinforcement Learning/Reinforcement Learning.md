@@ -181,9 +181,16 @@ Problem of greedy action selection: since we always choose what we think is the 
 
 $\epsilon$-greedy exploration:
 - Simplest idea for ensuring continual exploration
-- All $m$ actions are tried
+- All $m$ actions are tried with non-zero probability
+- With probability $1 - \epsilon$
 
-%% $\epsilon$-greedy exploration is a likely question in e %%
+%% $\epsilon$-greedy exploration is a likely question in exam %%
 
 On and off policy learning
 %% which one is better is a likely question in exam %%
+
+- On policy learning
+	- Learn about the job
+	- Learn about 
+
+%% off policy is better %%
