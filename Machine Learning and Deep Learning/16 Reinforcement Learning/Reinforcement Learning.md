@@ -217,5 +217,5 @@ So the natural idea is to use TD instead of MC in our control loop
 
 ### SARSA
 
-SARSA is a on-policy control algorithm
-![[Pasted image 20251218153842.png]]
+![[SARSA.png]]
+SARSA is a on-policy control algorithm:
