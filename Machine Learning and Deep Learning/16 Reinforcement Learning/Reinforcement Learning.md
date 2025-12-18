@@ -179,6 +179,11 @@ $$
 
 Problem of greedy action selection: since we always choose what we think is the best path we don't explore other possibilities.
 
-$\epsilon$-greedy exploration (likely question in exam):
+$\epsilon$-greedy exploration:
 - Simplest idea for ensuring continual exploration
 - All $m$ actions are tried
+
+%% $\epsilon$-greedy exploration is a likely question in e %%
+
+On and off policy learning
+%% which one is better is a likely question in exam %%
