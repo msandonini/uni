@@ -219,6 +219,8 @@ So the natural idea is to use TD instead of MC in our control loop
 ![[SARSA.png]]
 SARSA is a on-policy control algorithm:
 ![[SARSA_algorithm.png]]
-This is a on-policy control since I am using the same 
+This is a on-policy control since I am evaluating the same policy which I am using to behave
 
+### Q-Learning
+%% Likely ques %%
 
