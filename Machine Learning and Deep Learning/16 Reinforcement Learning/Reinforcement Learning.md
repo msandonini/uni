@@ -171,10 +171,14 @@ q_{\pi}(s, a) &= \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \dots | S_{t} = s, A_{t} 
 $$
 - Improve the policy by acting greedily with respect to $v_{\pi}$
 $$
-\pi' = \text{greedy}(v_{\pi})
+\begin{align}
+&\pi' = \text{greedy}(v_{\pi}) \\
+&\pi' = \text{greedy}(q_{\pi})
+\end{align}
 $$
 
-Problem of greedy action selection: since we always choose what we think is the best path we don't explore other possibil
+Problem of greedy action selection: since we always choose what we think is the best path we don't explore other possibilities.
 
 $\epsilon$-greedy exploration (likely question in exam):
-- Simple
+- Simplest idea for ensuring continual exploration
+- All $m$ actions are tried
