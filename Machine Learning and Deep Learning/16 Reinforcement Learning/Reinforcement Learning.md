@@ -166,6 +166,10 @@ How to improve a policy?
 $$
 \begin{align}
 v_{\pi}(s) &= \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \dots | S_{t} = s) \\
-q_{\pi}(s, a) &= \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \dots)
+q_{\pi}(s, a) &= \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \dots | S_{t} = s, A_{t} = a)
 \end{align}
+$$
+- Improve the policy by acting greedily with respect to $v_{\pi}$
+$$
+\pi' = \text{greedy}(v_{\pi})
 $$
