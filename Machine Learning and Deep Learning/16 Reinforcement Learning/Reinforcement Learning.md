@@ -205,4 +205,12 @@ On and off policy learning
 	- Learn about policy $\pi$ from experience sampled from $\mu$
 %% off policy is better %%
 
+In the control Temporal-difference (TD) learning has several advantages over Monte-Carlo (MC):
+- Lower variance
+- Online
+- Incomplete sequences
 
+So the natural idea: use TD instead of MC in our control loop
+Apply TD to Q(S, A)
+Use ϵ-greedy policy improvement
+Update every time-step
