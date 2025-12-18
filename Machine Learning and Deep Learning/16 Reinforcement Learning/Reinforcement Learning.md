@@ -187,8 +187,8 @@ $\epsilon$-greedy exploration:
 
 $$
 \pi(a|s) = \{ \begin{align}
-&\frac{\epsilon}{m} + 1 - \epsilon & \text{if } a^{\star} = \arg \max_{a \in \mathcal{A}} Q(s, a) \\
-&\frac{&\epsilon}{m}
+&\frac{\epsilon}{m} + 1 - \epsilon &\text{if } a^{\star} = \arg \max_{a \in \mathcal{A}} Q(s, a) \\
+&\frac{\epsilon}{m} &\text{otherwise}
 \end{align}
 $$
 
@@ -198,7 +198,7 @@ On and off policy learning
 %% which one is better is a likely question in exam %%
 
 - On policy learning
-	- Learn about the job
-	- Learn about 
+	- Learn on the job
+	- Learn about policy $p
 
 %% off policy is better %%
