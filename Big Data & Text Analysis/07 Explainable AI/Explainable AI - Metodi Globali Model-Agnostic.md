@@ -2,7 +2,6 @@
 tags:
   - big_data
   - explainable_ai
-  - global_methods
 ---
 
 

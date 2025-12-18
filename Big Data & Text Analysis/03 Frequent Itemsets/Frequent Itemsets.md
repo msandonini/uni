@@ -1,8 +1,6 @@
 ---
 tags:
   - big_data
-  - frequent_items
-  - hashing
 ---
 %% 2025/10/08 %%
 

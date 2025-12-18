@@ -1,7 +1,6 @@
 ---
 tags:
   - deep_learning
-  - continual_learning
 ---
 A Continual Learning classification problem is split in $T$ tasks
 

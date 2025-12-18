@@ -1,8 +1,7 @@
 ---
 tags:
   - progettazione_software
-  - rup
-  - openup
+  - agile
 ---
 %% 2025/11/14 %%
 

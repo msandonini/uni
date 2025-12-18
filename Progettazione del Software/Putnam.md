@@ -1,7 +1,6 @@
 ---
 tags:
   - progettazione_software
-  - putnam
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - iot
-  - time_series
   - deep_learning
   - machine_learning
 ---

@@ -2,7 +2,6 @@
 tags:
   - deep_learning
   - generative_models
-  - discretization
 ---
 
 

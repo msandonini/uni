@@ -1,8 +1,6 @@
 ---
 tags:
   - big_data
-  - data_preparation
-  - discretization
 ---
 %% 2025/10/01 %%
 

@@ -1,7 +1,6 @@
 ---
 tags:
   - progettazione_software
-  - scrum
 ---
 
 Scrum, nel rugby, è il termine che indica il pacchetto di mischia (i giocatori che si tengono stretti durante la mischia per guadagnare terreno verso la meta)

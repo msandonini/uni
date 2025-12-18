@@ -3,7 +3,6 @@ tags:
   - big_data
   - explainable_ai
   - logreg
-  - intrinsic_models
   - deep_learning
 ---
 

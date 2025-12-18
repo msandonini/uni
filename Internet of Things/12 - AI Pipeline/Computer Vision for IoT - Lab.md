@@ -2,7 +2,6 @@
 tags:
   - iot
   - computer_vision
-  - yolo
   - deep_learning
 ---
 
