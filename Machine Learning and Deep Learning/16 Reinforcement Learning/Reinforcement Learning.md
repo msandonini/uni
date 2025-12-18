@@ -222,5 +222,6 @@ SARSA is a on-policy control algorithm:
 This is a on-policy control since I am evaluating the same policy which I am using to behave
 
 ### Q-Learning
-%% Likely ques %%
+%% Likely question: difference between Q-Learning and SARSA %%
 
+![[Q-Learning_algorithm.png]]
