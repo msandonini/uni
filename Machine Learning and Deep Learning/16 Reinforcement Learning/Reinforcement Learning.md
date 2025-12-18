@@ -165,6 +165,7 @@ How to improve a policy?
 - Evaluate the policy $\pi$:
 $$
 \begin{align}
-v_{\pi}(s) &= \mathbb{E}
+v_{\pi}(s) &= \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \dots | S_{t} = s) \\
+q_{\pi}(s, a)
 \end{align}
 $$
