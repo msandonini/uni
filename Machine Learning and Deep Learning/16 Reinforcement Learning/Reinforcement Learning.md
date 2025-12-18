@@ -194,15 +194,14 @@ $$
 
 %% $\epsilon$-greedy exploration is a likely question in exam %%
 
-On and off policy learning
-%% which one is better is a likely question in exam %%
-
+On and off policy learning:
 - On policy learning
 	- Learn on the job
 	- Learn about policy $\pi$ from experience sampled from $\pi$
 - Off-policy learning
 	- Look over someone shoulder
 	- Learn about policy $\pi$ from experience sampled from $\mu$
+%% which one is better is a likely question in exam %%
 %% off policy is better %%
 
 In the control Temporal-difference (TD) learning has several advantages over Monte-Carlo (MC):
@@ -220,6 +219,6 @@ So the natural idea is to use TD instead of MC in our control loop
 ![[SARSA.png]]
 SARSA is a on-policy control algorithm:
 ![[SARSA_algorithm.png]]
-This is a on-policy control since 
+This is a on-policy control since I am using the same 
 
 
