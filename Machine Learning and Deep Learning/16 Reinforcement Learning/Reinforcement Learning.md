@@ -199,6 +199,10 @@ On and off policy learning
 
 - On policy learning
 	- Learn on the job
-	- Learn about policy $p
-
+	- Learn about policy $\pi$ from experience sampled from $\pi$
+- Off-policy learning
+	- Look over someone shoulder
+	- Learn about policy $\pi$ from experience sampled from $\mu$
 %% off policy is better %%
+
+
