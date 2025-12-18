@@ -187,7 +187,8 @@ $\epsilon$-greedy exploration:
 
 $$
 \pi(a|s) = \{ \begin{align}
-\frac{\epsilon}{m} + 1 - \epsilon &
+&\frac{\epsilon}{m} + 1 - \epsilon & \text{if } a^{\star} = \arg \max_{a \in \mathcal{A}} Q(s, a) \\
+&\frac{&\epsilon}{m}
 \end{align}
 $$
 
