@@ -186,8 +186,8 @@ $\epsilon$-greedy exploration:
 - With probability $\epsilon$ choose an action at random
 
 $$
-\pi(a|s) = \{ \frac{1}{} \begin{align}
-
+\pi(a|s) = \{ \begin{align}
+\frac{\epsilon}{m} + 1 - \epsilon &
 \end{align}
 $$
 
