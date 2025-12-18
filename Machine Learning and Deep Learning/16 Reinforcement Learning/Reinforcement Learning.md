@@ -161,4 +161,10 @@ Bias/Variance trade-off:
 
 How to improve a policy?
 
-Gree
+- Given a policy $\pi$
+- Evaluate the policy $\pi$:
+$$
+\begin{align}
+v_{\pi}(s) &= \mathbb{E}
+\end{align}
+$$
