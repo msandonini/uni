@@ -80,7 +80,7 @@ $$
 q_{\pi}(s, a) = \mathbb{E}_{\pi} [ R_{t+1} + \gamma q_{\pi}(S_{t+1}, A_{t+1}) | S_{t} = s, A_{t} = a]
 $$
 
-%% Prof. Calderara will not ask the model slides (slide 19) %%
+%% Slide 19 (model) gets skipped since Prof. Calderara will not ask it in exam %%
 
 ## Model-free prediction
 
@@ -219,11 +219,14 @@ So the natural idea is to use TD instead of MC in our control loop
 ![[SARSA.png]]
 SARSA is a on-policy control algorithm:
 ![[SARSA_algorithm.png]]
-This is a on-policy control since I am evaluating the same policy which I am using to behave
+This is a on-policy control since I update my estimation with the same policy which I am using to behave (in this case $\epsilon$-greedy)
 
 ### Q-Learning
 %% Likely question: difference between Q-Learning and SARSA %%
 
 ![[Q-Learning_algorithm.png]]
-Q-Learning is an off-policy control, since
+Q-Learning is an off-policy control, since I update my estimation with a different policy than the one I am using to behave (in this case I choose the action with $\epsilon$-greedy and update my estimation with greedy)
 
+Using $\epsilon$-greedy to choose an action and greedy to update my estimation with greedy is good since, choosing my action with $\epsilon$-greedy, I am exploratory when I have to move, but updating with greedy I have no uncertainty in the update.
+
+So, naturally, Q-Learning converges faster than SARSA, sometimes with an order of magnitude.
