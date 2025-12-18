@@ -210,7 +210,12 @@ In the control Temporal-difference (TD) learning has several advantages over Mon
 - Online
 - Incomplete sequences
 
-So the natural idea: use TD instead of MC in our control loop
-Apply TD to Q(S, A)
-Use ϵ-greedy policy improvement
-Update every time-step
+So the natural idea is to use TD instead of MC in our control loop
+- Apply TD to Q(S, A)
+- Use ϵ-greedy policy improvement
+- Update every time-step
+
+### SARSA
+
+SARSA is a on-policy control algorithm
+![[Pasted image 20251218153842.png]]
