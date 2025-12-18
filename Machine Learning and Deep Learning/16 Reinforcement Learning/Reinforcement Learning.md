@@ -149,13 +149,16 @@ Bias/Variance trade-off:
 
 ## Model-free control
 
-Model-Free control
-Model-free prediction
-estimate the value function given a policy in a non-observable environment
-Monte-Carlo Learning
-Temporal-Difference Learning
-Model-free control
-find a good policy in a non-observable environment
-On-Policy Monte-Carlo Control
-On-Policy Temporal-Difference Learning
-Off-Policy Learning
+- Model-free prediction
+	- estimate the value function given a policy in a non-observable environment
+		- Monte-Carlo Learning
+		- Temporal-Difference Learning
+- Model-free control
+	- find a good policy in a non-observable environment
+		- On-Policy Monte-Carlo Control
+		- On-Policy Temporal-Difference Learning
+		- Off-Policy Learning
+
+How to improve a policy?
+
+Gree
