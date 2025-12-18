@@ -182,7 +182,14 @@ Problem of greedy action selection: since we always choose what we think is the 
 $\epsilon$-greedy exploration:
 - Simplest idea for ensuring continual exploration
 - All $m$ actions are tried with non-zero probability
-- With probability $1 - \epsilon$
+- With probability $1 - \epsilon$ choose the greedy action
+- With probability $\epsilon$ choose an action at random
+
+$$
+\pi(a|s) = \{ \frac{1}{} \begin{align}
+
+\end{align}
+$$
 
 %% $\epsilon$-greedy exploration is a likely question in exam %%
 
