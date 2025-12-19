@@ -14,8 +14,7 @@ Un retriever può dividersi in 2 categorie:
 	- Soffrono da problemi di out-of-vocabulary
 	- Richiedono un word-match esatto, in quanto i sinonimi vengono trattati come parole totalmente diversi
 - Dense retrievers
-	- Performano meglio
+	- Performano meglio rispetto agli sparse retrievers
 	- Non soffrono di problemi di out-of-vocabulary
 	- Sono più computazionalmente onerosi
 
-I dense retrieval systems 
