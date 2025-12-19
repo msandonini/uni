@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb4f79694748b87b",
+        "id": "84aee17167058618",
         "type": "tabs",
         "children": [
           {
-            "id": "dfd618632cf1de12",
+            "id": "a31109d43ab25ff6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Best Practices for RAG Applications"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -85,7 +71,7 @@
             }
           },
           {
-            "id": "e07758ffa63ced82",
+            "id": "4bfefee6829c0b54",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -192,7 +178,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-to-notion:Share to notion": false,
       "templater-obsidian:Templater": false,
       "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
@@ -211,12 +196,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "dfd618632cf1de12",
+  "active": "a31109d43ab25ff6",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
     "Tags/Big Data.md",
     "Tags/Tags.md",
-    "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Tags/big_data.md",
     "Vault.md",
     "Big Data & Text Analysis/10 LLM",
