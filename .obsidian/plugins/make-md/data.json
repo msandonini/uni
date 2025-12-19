@@ -48,7 +48,9 @@
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/16 Reinforcement Learning/Machine Learning and Deep Learning/16 Reinforcement Learning/_img",
     "//Big Data & Text Analysis",
     "//Big Data & Text Analysis/Big Data & Text Analysis/10 LLM",
-    "//Big Data & Text Analysis/Big Data & Text Analysis/06 MLOps"
+    "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI",
+    "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI/Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca",
+    "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI/Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
