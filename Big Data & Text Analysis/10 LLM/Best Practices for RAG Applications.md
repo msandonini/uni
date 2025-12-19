@@ -3,7 +3,7 @@ tags:
   - big_data
   - llm
 ---
-Dall'avvento dei LLM, la parte di [[Information Retrieval]] (IR) è rimasta particolarmente colpita.
+Dall'avvento dei LLM, la parte di [[Information Retrieval (IR)]] è rimasta particolarmente colpita.
 
 Nelle applicazioni di retrieval, una query $q$ è usata per cercare tra diversi documenti candidati $d_{i, \dots, n}$, tornando i documenti che corrispondono meglio all'informazione richiesta.
 
@@ -18,3 +18,6 @@ Un retriever può dividersi in 2 categorie:
 	- Non soffrono di problemi di out-of-vocabulary
 	- Sono più computazionalmente onerosi
 
+## Retrieval Augmented Generation (RAG)
+
+I RAG sono sistemi in cui, dato un prompt, i documenti trovati vengono forniti ad un LLM come contesto così da migliorare le sue performance e ridurre il rischio che subisca allucinazioni.
