@@ -11,10 +11,24 @@
             "id": "40c341586a0fae9b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Best Practices for RAG Applications"
             }
           }
         ]
@@ -80,8 +94,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -197,8 +210,18 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "6322b03724ba3149",
+  "active": "40c341586a0fae9b",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
+    "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
+    "Big Data & Text Analysis/10 LLM",
+    "Big Data & Text Analysis/Untitled.md",
+    "Big Data & Text Analysis/09 Transformers/Transformers.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Logistic Regression.md",
+    "Big Data & Text Analysis/Big Data & Text Analysis.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Regressione Lineare.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Decision Tree.md",
+    "Machine Learning and Deep Learning/12 Transfer Learning/Fine Tuning.md",
     "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Q-Learning_algorithm.png",
@@ -212,24 +235,15 @@
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
     "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Progettazione del Software/11 Scrum/Scrum.md",
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Machine Learning and Deep Learning/09 Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
     "Progettazione del Software/Putnam.md",
-    "Machine Learning and Deep Learning/12 Transfer Learning/Fine Tuning.md",
     "Progettazione del Software/Cocomo.md",
-    "Progettazione del Software/09 RUP & OpenUP/09 RUP & OpenUP.md",
-    "Internet of Things/12 - AI Pipeline/Time Series Analysis.md",
-    "Internet of Things/12 - AI Pipeline/Computer Vision for IoT - Lab.md",
-    "Big Data & Text Analysis/02 Data Analysis/Data Preparation.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning",
-    "Big Data & Text Analysis/09 Transformers/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_pipeline.png",
@@ -243,7 +257,6 @@
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
     "Machine Learning and Deep Learning/14 Continual Learning",
     "Tags",
-    "Progettazione del Software/14 Sistemi Informativi",
-    "Progettazione del Software/13 BPMN/_img/drawio/Agenzia viaggi.drawio"
+    "Progettazione del Software/14 Sistemi Informativi"
   ]
 }

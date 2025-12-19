@@ -18,9 +18,9 @@ L'interpretabilità è importante per garantire determinati comportamenti e prev
 
 L'interpretabilità può essere di 2 tipi:
 - Intrinseca, proprietà del modello stesso quando esso è facilmente spiegabile. Questi modelli sono:
-	- [[xAI - Decision Tree|Decision Tree]]
-	- [[xAI - Regressione Lineare|Sistemi Lineari]]
-	- [[xAI - Logistic Regression|Logistic regression]] (sempre un sistema lineare, per quanto messo in una sigmoide)
+	- [[Decision Tree|Decision Tree]]
+	- [[Regressione Lineare|Sistemi Lineari]]
+	- [[Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Logistic Regression|Logistic regression]] (sempre un sistema lineare, per quanto messo in una sigmoide)
 - [[Explainable AI  - Modelli Post-Hoc|Post hoc]], data dall'allenamento di un modello lineare surrogato che simula quello più complesso per renderlo spiegabile
 
 Proprietà delle spiegazioni:

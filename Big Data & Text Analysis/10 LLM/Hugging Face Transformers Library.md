@@ -3,6 +3,7 @@ tags:
   - big_data
   - transformers
   - hugging_face
+  - llm
 ---
 Task NLP:
 - Classificazione del sentimento della frase
