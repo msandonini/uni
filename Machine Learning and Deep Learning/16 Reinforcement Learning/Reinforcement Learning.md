@@ -2,6 +2,8 @@
 tags:
   - deep_learning
 ---
+%% 2025/12/18 %%
+
 Reinforcement learning is a branch of machine learning which differs from [[supervised learning]] and [[unsupervised learning]] which differs from the previous 2 by the fact that data has no labels, but still has something to be based on.
 
 Reinforcement learning models have the following characteristics:
@@ -231,6 +233,7 @@ Using $\epsilon$-greedy to choose an action and greedy to update my estimation w
 
 So, naturally, Q-Learning converges faster than SARSA, sometimes with an order of magnitude.
 
+%% 2025/12/19 %%
 ## Value function approximation
 
 Problem with model-free predictions: it's not viable for really complex tasks (e.g. chess or the game of go).
@@ -243,4 +246,80 @@ $$
 \end{align}
 $$
 
+### Incremental methods
 
+#### Gradient descent
+
+![[Pasted image 20251219143338.png]]
+
+With [[SGD]], the value function approximation goal is to find parameter vector $w$ minimising [[MSE]]:
+$$
+J(w) = \mathbb{E}_{\pi} [(v_{\pi} (S) - \hat{v}(S, w))^{2}]
+$$
+Gradient descent finds a local minimum:
+$$
+\begin{align}
+\Delta w &= - \frac{1}{2} \alpha \nabla_{w} J(w) \\
+&= \alpha E_{\pi} [(v_{\pi}(S) - \hat{v}(S, w)) \nabla_{w} \hat{v}(S, w)]
+\end{align}
+$$
+Stochastic gradient descent samples the gradient:
+$$
+\Delta w = \alpha (v_{\pi}(S) - \hat{v}(S, w)) \nabla_{w} \hat{v}(S, w)
+$$
+Expected update is equal to full gradient update.
+
+Represent state by a feature vector:
+$$
+x(S) = \left( \begin{align}
+x_{1}(S) \\
+\vdots \\
+x_{n}(S)
+\end{align} \right)
+$$
+
+Represent value function by a linear combination of features:
+$$
+\hat{v}(S, w) = x(S)^{T} w = \sum_{j=1}^{n} x_{j}(S)w_{j}
+$$
+Objective function is quadratic in parameters w:
+$$
+J(w) = \mathbb{E}_{\pi}[(v_{\pi}(S) - x(S)^{T} w)^{2}]
+$$
+Stochastic gradient descent converges on global optimum
+Update rule is particularly simple:
+$$
+\begin{align}
+\nabla_{w} \hat{v} (S, w) &= x(S) \\
+\Delta w &= \alpha (v_{\pi} (S) - \hat{v}(S, w)) x(S)
+\end{align}
+$$
+So, $\text{Update} = \text{stepsize} \times \text{predictionerror} \times \text{featurevalue}$
+
+Table lookup is a special case of linear value function approximation.
+Using table lookup features:
+$$
+x^{\text{table}}(S) = \left(\begin{align}
+1(S = s_{1}) \\
+\vdots \\
+1(S=s_{n})
+\end{align}\right)
+$$
+Parameter vector $w$ gives value of each individual state:
+$$
+\hat{v}(S, w) = \left(
+\begin{align}
+1(S = s_{1}) \\
+\vdots \\
+1(S=s_{n})
+\end{align}
+\right)
+\cdot 
+\left(
+\begin{align}
+w_{1} \\
+\vdots \\
+w_{n}
+\end{align}
+\right)
+$$

@@ -99,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -212,6 +213,7 @@
   },
   "active": "3426a591688bce33",
   "lastOpenFiles": [
+    "Pasted image 20251219143338.png",
     "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
