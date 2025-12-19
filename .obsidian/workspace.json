@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9a0e4eb5a14f2a2a",
+        "id": "3bf1bea617549e87",
         "type": "tabs",
         "children": [
           {
-            "id": "5d686c81519e532f",
+            "id": "b4ba71fc09b01131",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -196,8 +196,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "4bfefee6829c0b54",
+  "active": "b4ba71fc09b01131",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
+    "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
@@ -227,8 +229,6 @@
     "Supervised learning.md",
     "Progettazione del Software/Progettazione del Software.md",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
-    "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
-    "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
