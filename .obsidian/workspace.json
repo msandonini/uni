@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Big Data.md",
+                "file": "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Big Data"
+              "title": "Best Practices for RAG Applications"
             }
           }
         ]
@@ -213,10 +213,10 @@
   },
   "active": "dfd618632cf1de12",
   "lastOpenFiles": [
-    "Tags/Tags.md",
-    "Tags/Big Data.md",
-    "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
+    "Tags/Big Data.md",
+    "Tags/Tags.md",
+    "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Tags/big_data.md",
     "Vault.md",
     "Big Data & Text Analysis/10 LLM",
