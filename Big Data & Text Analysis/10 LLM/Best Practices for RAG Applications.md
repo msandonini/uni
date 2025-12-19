@@ -3,7 +3,7 @@ tags:
   - big_data
   - llm
 ---
-Dall'avvento dei LLM, la parte di Information Retrieval (IR) è rimasta particolarmente colpita.
+Dall'avvento dei LLM, la parte di [[Information Retrieval]] (IR) è rimasta particolarmente colpita.
 
 Nelle applicazioni di retrieval, una query $q$ è usata per cercare tra diversi documenti candidati $d_{i, \dots, n}$, tornando i documenti che corrispondono meglio all'informazione richiesta.
 
