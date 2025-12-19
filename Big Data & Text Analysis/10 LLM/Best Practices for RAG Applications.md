@@ -21,3 +21,26 @@ Un retriever può dividersi in 2 categorie:
 ## Retrieval Augmented Generation (RAG)
 
 I RAG sono sistemi in cui, dato un prompt, i documenti trovati vengono forniti ad un LLM come contesto così da migliorare le sue performance e ridurre il rischio che subisca allucinazioni.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
