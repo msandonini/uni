@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f0d1ad6bb7400847",
+        "id": "1202f564b36dba3e",
         "type": "tabs",
         "children": [
           {
-            "id": "53552e86ff0b9f2d",
+            "id": "3426a591688bce33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
+                "file": "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Simulazione Esame"
+              "title": "Reinforcement Learning"
             }
           }
         ]
@@ -85,16 +85,13 @@
             }
           },
           {
-            "id": "4bfefee6829c0b54",
+            "id": "2070e55a6422ee0e",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -213,13 +210,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "53552e86ff0b9f2d",
+  "active": "3426a591688bce33",
   "lastOpenFiles": [
+    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img",
     "Progettazione del Software/07 Stima dei Costi - FP/07 Stima dei Costi - FP.md",
-    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
@@ -255,7 +252,6 @@
     "Machine Learning and Deep Learning/15 Federated Learning/_img/SCAFFOLD_algorithm.png",
     "Machine Learning and Deep Learning/12 Transfer Learning/_img/fine_tuning_convergence.png",
     "Machine Learning and Deep Learning/12 Transfer Learning/_img/fine_tuning_effectiveness.png",
-    "Machine Learning and Deep Learning/12 Transfer Learning/_img/fine_tuning_freeze.png",
     "Machine Learning and Deep Learning/13 Parameter-Efficient Fine-Tuning",
     "Machine Learning and Deep Learning/15 Federated Learning/_img",
     "Machine Learning and Deep Learning/15 Federated Learning",

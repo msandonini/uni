@@ -230,3 +230,5 @@ Q-Learning is an off-policy control, since I update my estimation with a differe
 Using $\epsilon$-greedy to choose an action and greedy to update my estimation with greedy is good since, choosing my action with $\epsilon$-greedy, I am exploratory when I have to move, but updating with greedy I have no uncertainty in the update.
 
 So, naturally, Q-Learning converges faster than SARSA, sometimes with an order of magnitude.
+
+
