@@ -271,11 +271,11 @@ Expected update is equal to full gradient update.
 
 Represent state by a feature vector:
 $$
-x(S) = \left( \begin{align}
+x(S) = \begin{bmatrix}
 x_{1}(S) \\
 \vdots \\
 x_{n}(S)
-\end{align} \right)
+\end{bmatrix}
 $$
 
 Represent value function by a linear combination of features:
@@ -299,27 +299,39 @@ So, $\text{Update} = \text{stepsize} \times \text{predictionerror} \times \text{
 Table lookup is a special case of linear value function approximation.
 Using table lookup features:
 $$
-x^{\text{table}}(S) = \left(\begin{align}
+x^{\text{table}}(S) = \begin{bmatrix}
 1(S = s_{1}) \\
 \vdots \\
 1(S=s_{n})
-\end{align}\right)
+\end{bmatrix}
 $$
 Parameter vector $w$ gives value of each individual state:
 $$
-\hat{v}(S, w) = \left(
-\begin{align}
+\hat{v}(S, w) = \begin{bmatrix}
 1(S = s_{1}) \\
 \vdots \\
 1(S=s_{n})
-\end{align}
-\right)
+\end{bmatrix}
 \cdot 
-\left(
-\begin{align}
+\begin{bmatrix}
 w_{1} \\
 \vdots \\
 w_{n}
-\end{align}
-\right)
+\end{bmatrix}
+
 $$
+
+### Batch methods
+
+#### Experience replay in Deep Q-Networks (DQN)
+
+[[DQN]] uses [[Continual Learning#Experience Replay (ER)|experience replay]] and fixed Q-targets:
+- Take action $a_{t}$ according to $\epsilon$-greedy policy
+- Store transition $(s_{t}, a_{t}, r_{t+1}, s_{t+1})$ in replay memory $\mathcal{D}$
+- Sample random mini-batch of transitions $(s, a, r, s')$ from $\mathcal{D}$
+- Compute Q-learning targets w.r.t. old, fixed parameters $w^{-}$
+- Optimise [[MSE]] between Q-network and Q-learning targets
+$$
+\mathcal{L}_{i}(w_{i}) = \mathbb{E}_{s,a,r,s' \sim D_{i}} \left[\left(r+\gamma \max_{a'} Q(s', a'; w_{i}^{-}) - Q(s, a, w_{i})\right)^{2}\right]
+$$
+
