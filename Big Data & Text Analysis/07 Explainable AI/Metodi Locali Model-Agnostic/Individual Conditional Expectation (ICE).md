@@ -2,7 +2,6 @@
 tags:
   - big_data
   - explainable_ai
-  - local_methods
 aliases:
   - ICE
   - Individual Conditional Expectation

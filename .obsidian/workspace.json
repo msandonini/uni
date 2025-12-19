@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "84aee17167058618",
+        "id": "9a0e4eb5a14f2a2a",
         "type": "tabs",
         "children": [
           {
-            "id": "a31109d43ab25ff6",
+            "id": "5d686c81519e532f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#local_methods  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,8 +196,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "a31109d43ab25ff6",
+  "active": "4bfefee6829c0b54",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
+    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
+    "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
     "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
     "Tags/Big Data.md",
@@ -225,10 +229,6 @@
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
     "Big Data & Text Analysis/09 Transformers/Text Clustering.md",
-    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
-    "Progettazione del Software/11 Scrum/Scrum.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
