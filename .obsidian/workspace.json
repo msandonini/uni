@@ -11,10 +11,24 @@
             "id": "53552e86ff0b9f2d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Simulazione Esame"
             }
           }
         ]
@@ -85,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -198,6 +213,12 @@
   },
   "active": "53552e86ff0b9f2d",
   "lastOpenFiles": [
+    "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
+    "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/_img",
+    "Progettazione del Software/07 Stima dei Costi - FP/07 Stima dei Costi - FP.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
+    "Progettazione del Software/07 Stima dei Costi - FP",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
@@ -221,14 +242,10 @@
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
     "Big Data & Text Analysis/Big Data & Text Analysis.md",
     "Machine Learning and Deep Learning/12 Transfer Learning/Fine Tuning.md",
-    "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
-    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Q-Learning_algorithm.png",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/SARSA_algorithm.png",
-    "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/_img.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/SARSA.png",
-    "Machine Learning and Deep Learning/16 Reinforcement Learning/16 Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
@@ -241,8 +258,6 @@
     "Machine Learning and Deep Learning/15 Federated Learning/_img",
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
-    "Machine Learning and Deep Learning/14 Continual Learning",
-    "Tags",
-    "Progettazione del Software/14 Sistemi Informativi"
+    "Machine Learning and Deep Learning/14 Continual Learning"
   ]
 }
