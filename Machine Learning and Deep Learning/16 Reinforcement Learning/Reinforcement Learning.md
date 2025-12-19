@@ -231,4 +231,16 @@ Using $\epsilon$-greedy to choose an action and greedy to update my estimation w
 
 So, naturally, Q-Learning converges faster than SARSA, sometimes with an order of magnitude.
 
+## Value function approximation
+
+Problem with model-free predictions: it's not viable for really complex tasks (e.g. chess or the game of go).
+
+The solution is the *Value function approximation*:
+$$
+\begin{align}
+\hat{v} (s, w) &\simeq v_{\pi} (s) \\
+\hat{q} (s, a, w) &\simeq q_{\pi} (s, a)
+\end{align}
+$$
+
 
