@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3e06b443d9f74a09",
+        "id": "f0d1ad6bb7400847",
         "type": "tabs",
         "children": [
           {
-            "id": "b4ad036b1b54cd09",
+            "id": "53552e86ff0b9f2d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -196,8 +196,9 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "b4ad036b1b54cd09",
+  "active": "53552e86ff0b9f2d",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
@@ -208,7 +209,6 @@
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
-    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/06 MLOps/06 MLOps.md",
     "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
     "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
