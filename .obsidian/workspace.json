@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ddf6f791e515645b",
+        "id": "fb4f79694748b87b",
         "type": "tabs",
         "children": [
           {
-            "id": "40c341586a0fae9b",
+            "id": "dfd618632cf1de12",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,7 +94,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -210,10 +211,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "40c341586a0fae9b",
+  "active": "dfd618632cf1de12",
   "lastOpenFiles": [
-    "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
+    "Tags/Tags.md",
+    "Vault.md",
     "Big Data & Text Analysis/10 LLM/Best Practices for RAG Applications.md",
+    "Big Data & Text Analysis/10 LLM/Hugging Face Transformers Library.md",
     "Big Data & Text Analysis/10 LLM",
     "Big Data & Text Analysis/Untitled.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",
@@ -241,8 +244,6 @@
     "Progettazione del Software/11 Scrum/Scrum.md",
     "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Machine Learning and Deep Learning/09 Discrete Representations and Generative Modeling/Discrete Representations and Generative Modeling.md",
-    "Progettazione del Software/Putnam.md",
-    "Progettazione del Software/Cocomo.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning",
     "Big Data & Text Analysis/09 Transformers/_img/hugging_face_head.png",
     "Pasted image 20251217105241.png",
