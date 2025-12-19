@@ -2,7 +2,6 @@
 tags:
   - big_data
   - text_analysis
-  - normalization
 ---
 
 %% 2025/10/15 %%

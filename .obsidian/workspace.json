@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f90779abe6d1509c",
+        "id": "ddf6f791e515645b",
         "type": "tabs",
         "children": [
           {
-            "id": "7ed3a8f034a560c4",
+            "id": "40c341586a0fae9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Reinforcement Learning"
+              "title": "New tab"
             }
           }
         ]
@@ -85,25 +71,21 @@
             }
           },
           {
-            "id": "3a8b74d6b07846ba",
+            "id": "e07758ffa63ced82",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
-    "collapsed": true
+    "width": 306.5
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -215,8 +197,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "7ed3a8f034a560c4",
+  "active": "6322b03724ba3149",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/04 Text Analysis/Text Analysis.md",
+    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Q-Learning_algorithm.png",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/SARSA_algorithm.png",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/_img.md",
@@ -224,7 +208,6 @@
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/SARSA.png",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/16 Reinforcement Learning.md",
     "Supervised learning.md",
-    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Progettazione del Software/Progettazione del Software.md",
     "Progettazione del Software/14 Sistemi Informativi/Sistemi informativi.md",
     "Big Data & Text Analysis/03 Frequent Itemsets/Frequent Itemsets.md",
@@ -256,7 +239,6 @@
     "Machine Learning and Deep Learning/12 Transfer Learning/_img/fine_tuning_freeze.png",
     "Machine Learning and Deep Learning/13 Parameter-Efficient Fine-Tuning",
     "Machine Learning and Deep Learning/15 Federated Learning/_img",
-    "Machine Learning and Deep Learning/15 Federated Learning/_img/FL_idea.png",
     "Machine Learning and Deep Learning/15 Federated Learning",
     "Machine Learning and Deep Learning/14 Continual Learning/_img",
     "Machine Learning and Deep Learning/14 Continual Learning",
