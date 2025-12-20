@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1202f564b36dba3e",
+        "id": "63b7edd231d97808",
         "type": "tabs",
         "children": [
           {
-            "id": "3426a591688bce33",
+            "id": "0520dddf5310c665",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
+                "file": "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reinforcement Learning"
+              "title": "Continual Learning"
             }
           }
         ]
@@ -85,16 +85,13 @@
             }
           },
           {
-            "id": "2070e55a6422ee0e",
+            "id": "dd0f03b57b13a02e",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -102,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
-    "collapsed": true
+    "width": 306.5
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -214,10 +210,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3426a591688bce33",
+  "active": "0520dddf5310c665",
   "lastOpenFiles": [
-    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Vault.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
+    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Pasted image 20251219143338.png",
     "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
@@ -242,7 +239,6 @@
     "Tags/Big Data.md",
     "Tags/Tags.md",
     "Tags/big_data.md",
-    "Vault.md",
     "Big Data & Text Analysis/10 LLM",
     "Big Data & Text Analysis/Untitled.md",
     "Big Data & Text Analysis/09 Transformers/Transformers.md",

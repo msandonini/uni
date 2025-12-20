@@ -38,7 +38,6 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 - Transfer Learning/Machine Learning and Deep Learning/11 - Transfer Learning/_img",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning/Machine Learning and Deep Learning/14 Continual Learning/_img",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/11 Transfer Learning",
@@ -49,7 +48,8 @@
     "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP",
     "//Machine Learning and Deep Learning",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/16 Reinforcement Learning",
-    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning"
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning",
+    "/"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
