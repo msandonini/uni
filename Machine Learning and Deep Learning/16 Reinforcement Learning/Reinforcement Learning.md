@@ -221,13 +221,16 @@ So the natural idea is to use TD instead of MC in our control loop
 ![[SARSA.png]]
 SARSA is a on-policy control algorithm:
 ![[SARSA_algorithm.png]]
-This is a on-policy control since I update my estimation with the same policy which I am using to behave (in this case $\epsilon$-greedy)
+This is a on-policy control since I update my estimation with the same policy which I am using to behave ($\epsilon$-greedy)
 
 ### Q-Learning
-%% Likely question: difference between Q-Learning and SARSA %%
+%% 
+Likely question: difference between Q-Learning and SARSA 
+Answer is that SARSA is on-policy since it uses $\epsilon$-greedy both for estimation and action choice, while Q-Learning is off-policy since it uses $\epsilon$-greedy for action choice and greedy for estimation
+%%
 
 ![[Q-Learning_algorithm.png]]
-Q-Learning is an off-policy control, since I update my estimation with a different policy than the one I am using to behave (in this case I choose the action with $\epsilon$-greedy and update my estimation with greedy)
+Q-Learning is an off-policy control, since I update my estimation with a different policy than the one I am using to behave (I choose the action with $\epsilon$-greedy and update my estimation with greedy)
 
 Using $\epsilon$-greedy to choose an action and greedy to update my estimation with greedy is good since, choosing my action with $\epsilon$-greedy, I am exploratory when I have to move, but updating with greedy I have no uncertainty in the update.
 
@@ -334,4 +337,4 @@ $$
 $$
 \mathcal{L}_{i}(w_{i}) = \mathbb{E}_{s,a,r,s' \sim D_{i}} \left[\left(r+\gamma \max_{a'} Q(s', a'; w_{i}^{-}) - Q(s, a, w_{i})\right)^{2}\right]
 $$
-
+DQN is off-policy since it uses a greedy approach for action choice and a $\epsilon$-greedy approach for estimation
