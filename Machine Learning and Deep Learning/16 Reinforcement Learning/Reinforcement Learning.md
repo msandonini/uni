@@ -253,7 +253,7 @@ $$
 
 #### Gradient descent
 
-![[Pasted image 20251219143338.png]]
+![[Reinforcement_learning_gradient_descent.png]]
 
 With [[SGD]], the value function approximation goal is to find parameter vector $w$ minimising [[MSE]]:
 $$
