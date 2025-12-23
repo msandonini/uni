@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
+                "file": "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reinforcement Learning"
+              "title": "DataCentricAI"
             }
           }
         ]
@@ -144,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "file": "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Notazione BPMN"
+              "title": "Outline of DataCentricAI"
             }
           },
           {
@@ -210,12 +210,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "7fd2b9485dc62d20",
+  "active": "6dccc1682fbf06b5",
   "lastOpenFiles": [
+    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Reinforcement_learning_gradient_descent.png",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Vault.md",
-    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
