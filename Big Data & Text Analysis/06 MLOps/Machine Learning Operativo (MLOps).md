@@ -120,7 +120,7 @@ Le principali cose che dobbiamo controllare in un dataset sono le seguenti:
 - Utilizzabilità
 - Comprensibilità
 - Affidabilità
-	- Feedback loop: proprietà del modello di ottenere dati da sé stesso. È relativo a problemi di auto-amplificazione
+	- Feedback loop: proprietà del modello di ottenere dati da sé stesso. È soggetto a problemi di auto-amplificazione
 	- Data leakage: introduzione involontaria nel dataset di informazioni che non sarebbero dovute essere state fornite al modello
 
 Problemi comuni riguardanti i dati sono:
