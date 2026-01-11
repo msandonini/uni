@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36fa8e768646012c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Text Analysis 2"
-            }
-          },
-          {
             "id": "8a92bf268c160efc",
             "type": "leaf",
             "state": {
@@ -95,7 +71,7 @@
             }
           },
           {
-            "id": "a86b775508f3b38e",
+            "id": "bff31ce9472d3280",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -220,8 +196,9 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "36fa8e768646012c",
+  "active": "8a92bf268c160efc",
   "lastOpenFiles": [
+    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Reinforcement_learning_gradient_descent.png",
@@ -233,7 +210,6 @@
     "Progettazione del Software/07 Stima dei Costi - FP/_img",
     "Progettazione del Software/07 Stima dei Costi - FP/07 Stima dei Costi - FP.md",
     "Progettazione del Software/07 Stima dei Costi - FP",
-    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
@@ -262,23 +238,11 @@
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/11 - Node-RED/Node-RED.md",
-    "Internet of Things/09 - Telegram Bots/Telegram Bots.md",
     "Internet of Things/11 - Node-RED",
     "Internet of Things/10 - MIT App Inventor",
     "Internet of Things/12 - AI Pipeline",
     "Internet of Things/09 - Telegram Bots",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Extreme Programming (XP).md",
-    "Progettazione del Software/10 Sviluppo Agile/Agile - Scrum.md",
     "Progettazione del Software/11 Scrum",
-    "Progettazione del Software/10 Sviluppo Agile/_img",
-    "Progettazione del Software/10 Sviluppo Agile/Untitled.md",
-    "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png",
-    "agilemanifesto.org.md",
-    "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Kernel_Size.png",
-    "Big Data & Text Analysis/07 Explainable AI/_img/LIME_Tabular_Data.png",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Logistic Regression.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Regressione Lineare.md",
-    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/xAI - Decision Tree.md",
-    "www.agilemanifesto.org.md"
+    "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png"
   ]
 }
