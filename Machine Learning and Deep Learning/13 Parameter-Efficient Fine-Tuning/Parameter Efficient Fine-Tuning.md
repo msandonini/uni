@@ -1,0 +1,105 @@
+---
+tags:
+  - deep_learning
+  - transfer_learning
+  - transformers
+  - fine_tuning
+aliases:
+  - PEFT
+  - Parameter-Efficient Fine-Tuning (PEFT)
+---
+Full [[Fine Tuning|fine tuning]] entails updating all model parameters, but this leads to:
+- High computational demand (often requires thousands of GPUs in parallel)
+- High memory footprint
+- Redundancy when adapting to multiple downstream tasks
+- Loss of generalization (overwriting pre-trained knowledge, leading to reduced performance on tasks outside the fine-tuning domain)
+
+Basically, fine tuning large models is increasingly impractical due to their vast number of parameters and high computational costs. This becomes more and more inefficient and unsustainable as model sizes keep growing.
+
+In order to make fine-tuning more efficient several approaches are used, depending on how and where the model is used:
+- [[#Prompt Tuning]]
+- [[#Prefix Tuning]]
+- [[#Adaptation-based Fine Tuning]]
+- [[#Reparameterization-based fine tuning]]
+
+## Prompt Tuning
+
+In the context of a [[Transformers|transformer]], a [[token]] represents a unit of input (e.g. a word/subword), and a [[prompt]] is a sequence of such tokens that conditions the model's behavior during inference or training.
+
+Prompt tuning is one of the most lightweight [[Parameter Efficient Fine-Tuning|Parameter-Efficient Fine-Tuning (PEFT)]] techniques
+
+### Visual Prompt Tuning (VPT)
+
+[[Visual Prompt Tuning (VPT)]] is a variant of prompt tuning which uses visual prompts to fine tune vision models. It has 2 variants:
+- Shallow
+- Deep
+
+By using tokens prepended to the prompt, in [[Visual Prompt Tuning (VPT)|VPT]] we can influence the weights of other parameters in the model.
+
+## Prefix Tuning
+
+Prefix tuning is a [[Parameter Efficient Fine-Tuning|PEFT]] method based on prefix vectors, which influence attention distributions.
+This technique introduces trainable key/value vectors $P^{K}$ and $P^{V}$ of length $l$ prepended to each attention layer. For each layer:
+$$
+\begin{align}
+&K' = [P^{K} || K] \\
+&V' = [P^{V} || V]
+\end{align}
+$$
+These vectors may be either static or generated dynamically by a small prefix [[encoder]] (often an [[MLP]]), shared across layers or layer-specific
+
+- Parameter-efficient
+	- less than 1% of model parameters are trained
+- No full model duplication
+	- Suitable for multi-task and low-resource settings
+- Preserve pre-trained knowledge
+	- Core transformer weights remain frozen
+
+Usually, prefix tuning outperforms prompt tuning.
+
+## Adaptation-based Fine Tuning
+
+### AdaptFormer
+
+[[AdaptFormer]] is an adapter-based fine-tuning method that uses a small number of adapter to fine-tune large models.
+The adapters are small [[MLPs]] added to the model's intermediate layers (after the [[LayerNorm]]), and are used to adapt the model to a new task.
+
+In AdaptFormers the $s$ parameter is a stability value which acts as multiplier defining how much to overwrite the original knowledge and, as a consequence, if the model is able to adapt fast or slowly to the new data.
+
+## Reparameterization-based fine tuning
+
+Reparameterization-based fine tuning is a [[Parameter Efficient Fine-Tuning|PEFT]] strategy where model updates are expressed via structured, low-dimensional transformations rather than directly updating full weight matrices.
+$$
+W' = W_{0} + \Delta W, \text{ where } \Delta W = f_{\theta}(\cdot)
+$$
+In this general form, $W_{0}$ is the pre-trained weight matrix and $f_{\theta}$ is a structured function (e.g. low-rank, sparse, or generated).
+Basically, with this technique we reparameterize the space given by $\Delta W$ as the function $f_{\theta}(\cdot)$ which creates that same space, hoping it has a fewer number of weights than the entire space.
+
+### Low Rank Adaptation (LoRA)
+
+%% Not the same as IoT's [[LoRA]] %%
+
+LoRA is a reparameterization-based fine tuning method that freezes the pre-trained weights and introduces a low-rank trainable update to reduce the number of trainable parameters.
+LoRA is a general model that can be applied to any model, including vision models, language models, and more.
+
+Basically, in LoRA the function is learned as 2 low-rank matrices which can be multiplied with each other, so that by applying a multiplication the number of virtual parameters is the same, but the physical dimension of the parameters is reduced since we use 2 low-rank matrices (so, instead of learning a $m \times n$ matrix. we learn a $m \times r$ matrix and a $r \times n$ matrix, with $r$ being a low number, so we reduce the size of the weights from $m \times n$ to $m \times r + r \times n$).
+$$
+\begin{align}
+&W' = W_{0} + \Delta W = W_{0} + BA \\
+&A = \mathcal{N}(0, \sigma^{2}) \\
+\end{align}
+$$
+At the beginning of the training, we set $B = 0$ so that we are sure the model starts on the pre-trained model, and thereafter add noise to make the model adapt.
+During inference we can merge the 2 branches back into a single weight matrix, so that the forward pass costs the same as the original pre-trained model (and so we get no additional overhead at inference time).
+
+### VeRA
+
+%% Not asked in the exam %%
+
+VeRA is a variation of [[#Low Rank Adaptation (LoRA)|LoRA]] which uses froze random low-rank matrices $W_{\text{up}}$ and $W_{\text{down}}$ shared across all layers, adapted by small scaling learnable vectors $b$ and $d$.
+Here, the reparameterization is:
+$$
+h_{\text{out}} = W_{0} x + \Lambda_{b} W_{\text{up}} \Lambda_{d} W_{\text{down}} x 
+$$
+This further reduces the cost to just $r + d$ per adapted layer.
+

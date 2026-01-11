@@ -1,3 +1,0 @@
-- [[Centeris Paribus (CP)]]
-- [[Individual Conditional Expectation (ICE)]]
-- [[Local Surrogate Methods]]

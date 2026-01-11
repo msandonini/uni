@@ -1,3 +1,9 @@
+---
+tags:
+  - big_data
+  - text_analysis
+---
+
 %% 2025/10/15 %%
 
 Data una collezione di documenti il compito principale della Text Analysis è trovare una serie di parole chiave che permettano di collegare la query di un utente al documento che necessita

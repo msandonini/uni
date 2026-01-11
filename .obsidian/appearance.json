@@ -4,6 +4,8 @@
   "baseFontSizeAction": true,
   "nativeMenus": false,
   "baseFontSize": 16,
-  "enabledCssSnippets": [],
-  "cssTheme": "ITS Theme"
+  "enabledCssSnippets": [
+    "theme-override"
+  ],
+  "cssTheme": "GitHub Theme"
 }

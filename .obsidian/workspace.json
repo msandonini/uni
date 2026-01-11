@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "c39efc276450d5b4",
+        "id": "2af46c8602d89c3a",
         "type": "tabs",
         "children": [
           {
-            "id": "c432596f47dc1012",
+            "id": "36fa8e768646012c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big Data & Text Analysis/08 Text Analysis 2/Text Analysis 2.md",
+                "file": "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Text Analysis 2"
@@ -63,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#local_methods  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +93,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "a86b775508f3b38e",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -98,25 +119,6 @@
         "id": "e4415e00419e3b5d",
         "type": "tabs",
         "children": [
-          {
-            "id": "2b97da174ab9c780",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Progettazione del Software/11 Scrum/Scrum.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Scrum"
-            }
-          },
           {
             "id": "1c9ba887b97e4c3d",
             "type": "leaf",
@@ -152,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Progettazione del Software/11 Scrum/Scrum.md",
+                "file": "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Scrum"
+              "title": "Outline of DataCentricAI"
             }
           },
           {
@@ -170,9 +172,28 @@
               "icon": "lucide-ghost",
               "title": "git-view"
             }
+          },
+          {
+            "id": "33cc233f9bcfc2a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Progettazione del Software/13 BPMN/Notazione BPMN.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Notazione BPMN"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -181,6 +202,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -194,19 +216,32 @@
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "c432596f47dc1012",
+  "active": "36fa8e768646012c",
   "lastOpenFiles": [
-    "Big Data & Text Analysis/_.md",
-    "Big Data & Text Analysis/08 Text Analysis 2/Text Analysis 2.md",
-    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
-    "Big Data & Text Analysis/08 Text Analysis 2",
-    "Big Data & Text Analysis/Untitled.md",
+    "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
+    "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
+    "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Reinforcement_learning_gradient_descent.png",
+    "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
+    "Vault.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
+    "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/_img",
+    "Progettazione del Software/07 Stima dei Costi - FP/07 Stima dei Costi - FP.md",
+    "Progettazione del Software/07 Stima dei Costi - FP",
+    "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Local Surrogate Methods.md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Individual Conditional Expectation (ICE).md",
     "Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic/Centeris Paribus (CP).md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Logistic Regression.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Regressione Lineare.md",
+    "Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca/Decision Tree.md",
+    "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Locali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI - Metodi Globali Model-Agnostic.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI  - Modelli Post-Hoc.md",
     "Big Data & Text Analysis/07 Explainable AI/Explainable AI.md",

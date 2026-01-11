@@ -1,3 +1,8 @@
+---
+tags:
+  - progettazione_software
+  - agile
+---
 %% 2025/11/14 %%
 
 ## Rational Unified Process (RUP)

@@ -1,3 +1,11 @@
+---
+tags:
+  - iot
+  - app
+  - mobile
+---
+
+
 MIT App Inventor is a no-code mobile app development suite based on building blocks.
 
 *Pros*:

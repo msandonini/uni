@@ -1,3 +1,8 @@
+---
+tags:
+  - progettazione_software
+---
+
 Scrum, nel rugby, è il termine che indica il pacchetto di mischia (i giocatori che si tengono stretti durante la mischia per guadagnare terreno verso la meta)
 
 Scrum è un modello di processo per produrre software ottenendo il massimo valore utile nel minor tempo, che permette al cliente di ispezionare rapidamente e ripetutamente ogni 3-4 settimane versioni funzionanti del software.

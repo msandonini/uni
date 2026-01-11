@@ -1,3 +1,7 @@
+---
+tags:
+  - big_data
+---
 %% 2025/11/10 %%
 
 # Data-Centric AI
