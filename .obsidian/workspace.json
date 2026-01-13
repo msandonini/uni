@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2af46c8602d89c3a",
+        "id": "07b1a95bda693506",
         "type": "tabs",
         "children": [
           {
-            "id": "8a92bf268c160efc",
+            "id": "86d86e736909658d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "Progettazione del Software/Domande Teoria esame .pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Domande Teoria esame"
             }
           }
         ]
@@ -71,7 +73,7 @@
             }
           },
           {
-            "id": "bff31ce9472d3280",
+            "id": "26363b468c749a57",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -85,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -196,8 +199,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "8a92bf268c160efc",
+  "active": "86d86e736909658d",
   "lastOpenFiles": [
+    "Progettazione del Software/Putnam.md",
+    "Progettazione del Software/Domande Teoria esame .pdf",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
@@ -237,12 +242,10 @@
     "Progettazione del Software/09 RUP & OpenUP",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
     "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
-    "Internet of Things/11 - Node-RED/Node-RED.md",
     "Internet of Things/11 - Node-RED",
     "Internet of Things/10 - MIT App Inventor",
     "Internet of Things/12 - AI Pipeline",
     "Internet of Things/09 - Telegram Bots",
-    "Progettazione del Software/11 Scrum",
     "Progettazione del Software/10 Sviluppo Agile/_img/XP_phases.png"
   ]
 }
