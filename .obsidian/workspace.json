@@ -73,7 +73,7 @@
             }
           },
           {
-            "id": "26363b468c749a57",
+            "id": "e0a442c05945cf08",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
-    "collapsed": true
+    "width": 306.5
   },
   "right": {
     "id": "06508e50f09c70d5",
@@ -201,15 +200,15 @@
   },
   "active": "86d86e736909658d",
   "lastOpenFiles": [
-    "Progettazione del Software/Putnam.md",
+    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/Domande Teoria esame .pdf",
+    "Progettazione del Software/Putnam.md",
     "Big Data & Text Analysis/06 MLOps/Machine Learning Operativo (MLOps).md",
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/_img/Reinforcement_learning_gradient_descent.png",
     "Machine Learning and Deep Learning/14 Continual Learning/Continual Learning.md",
     "Vault.md",
-    "Progettazione del Software/07 Stima dei Costi - FP/Simulazione Esame.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/Esercizio_FP.png",
     "Progettazione del Software/07 Stima dei Costi - FP/_img/_img.md",
     "Progettazione del Software/07 Stima dei Costi - FP/_img",
@@ -241,7 +240,6 @@
     "Progettazione del Software/10 Sviluppo Agile/Sviluppo Agile.md",
     "Progettazione del Software/09 RUP & OpenUP",
     "Machine Learning and Deep Learning/08 - Generative Models/Generative Models.md",
-    "Internet of Things/10 - MIT App Inventor/MIT App Inventor.md",
     "Internet of Things/11 - Node-RED",
     "Internet of Things/10 - MIT App Inventor",
     "Internet of Things/12 - AI Pipeline",
