@@ -11,7 +11,7 @@ Un secondo elemento da prendere in considerazione è la corrispondenza tra il pr
 
 Definiamo la Manpower buildup come $D_0$
 - $D_{0} = 7.5$ - Progetto Real-Time con molte interfacce, molte interazioni esterne, in ambiente nuovo senza esperienza del team
-- $D_0 = 15$ - Software con alcune interfacce, alune interazioni esterne, e progetti interagenti tra loro
+- $D_0 = 15$ - Software con alcune interfacce, alcune interazioni esterne, e progetti interagenti tra loro
 - $D_0 = 30$ - Software sequenziale con pochi rischi, o Real-Time easy
 - $D_0 = 60$ - Software sequenziale con pochi rischi, team di sviluppo con esperienza
 

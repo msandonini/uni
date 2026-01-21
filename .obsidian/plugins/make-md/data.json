@@ -44,12 +44,12 @@
     "//Big Data & Text Analysis/Big Data & Text Analysis/10 Reinforcement Learning",
     "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI/Big Data & Text Analysis/07 Explainable AI/Interpretabilità Intrinseca",
     "//Big Data & Text Analysis/Big Data & Text Analysis/07 Explainable AI/Big Data & Text Analysis/07 Explainable AI/Metodi Locali Model-Agnostic",
-    "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/16 Reinforcement Learning",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning",
     "/",
-    "//Big Data & Text Analysis",
-    "//Big Data & Text Analysis/Big Data & Text Analysis/06 MLOps"
+    "//Big Data & Text Analysis/Big Data & Text Analysis/06 MLOps",
+    "//Progettazione del Software",
+    "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
