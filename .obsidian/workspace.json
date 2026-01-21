@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef4e42e7828ac446",
+        "id": "4e0a2f464f7a3206",
         "type": "tabs",
         "children": [
           {
-            "id": "804393e445166f6a",
+            "id": "3f9b9fb1eb1ab814",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -194,7 +194,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "019600b5849e6a0e",
+  "active": "3f9b9fb1eb1ab814",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Progettazione del Software/Domande Teoria esame .pdf",
