@@ -1,6 +1,6 @@
 .obsidian/workspace.json
 *.mdc
-*.mdb
+**.mdb
 
 .space/
 .trash/
