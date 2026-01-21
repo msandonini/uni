@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4e0a2f464f7a3206",
+        "id": "556ac944f7825321",
         "type": "tabs",
         "children": [
           {
-            "id": "3f9b9fb1eb1ab814",
+            "id": "103d2241293f8ff3",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -194,7 +194,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3f9b9fb1eb1ab814",
+  "active": "103d2241293f8ff3",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Progettazione del Software/Domande Teoria esame .pdf",
