@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "Machine Learning Operativo (MLOps)"
             }
+          },
+          {
+            "id": "bed6bdc2de637bf6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,10 +101,13 @@
             "id": "a86b775508f3b38e",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -210,7 +226,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "36fa8e768646012c",
+  "active": "bed6bdc2de637bf6",
   "lastOpenFiles": [
     "Big Data & Text Analysis/05 Data Centric AI/DataCentricAI.md",
     "Machine Learning and Deep Learning/16 Reinforcement Learning/Reinforcement Learning.md",
