@@ -98,4 +98,7 @@ The way we do so is the following one:
 After non maxima suppression, the selected edges have the propriety of creating closed curves; nevertheless only the strong edges should be selected, so Canny proposed the use of an **Hysteresis-based thresholding**.
 ![[Pasted image 20260302104917.png]]
 
+If we apply a derivative of a gaussian, we obtain the laplacian of gaussian:
+![[Pasted image 20260302105627.png]]
 
+![[Pasted image 20260302105702.png]]
