@@ -48,8 +48,10 @@
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/14 Continual Learning",
     "/",
     "//Big Data & Text Analysis/Big Data & Text Analysis/06 MLOps",
-    "//Progettazione del Software",
-    "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP"
+    "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP",
+    "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/01 Logistic Regression with Gradient Descent",
+    "//Computer Vision & Cognitive Systems",
+    "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260302 Contours"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
