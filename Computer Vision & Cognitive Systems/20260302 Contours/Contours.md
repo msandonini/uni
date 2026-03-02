@@ -62,10 +62,15 @@ Can be computed by convolution with the convolution masks:
 
 Now, which kernel do we want to use?
 The previous one is going to work, but images are noisy, so different types of kernel were created:
-- **Prewitt Mask**
+- **Prewitt Mask**:
 ![[Pasted image 20260302101221.png]]
-- Dobel operator
+- **Dobel operator**:
 ![[Pasted image 20260302101257.png]]
-- Frei and Chen
+- **Frei and Chen**:
 ![[Pasted image 20260302101332.png]]
+
+Each kernel does comes with a tradeoff:
+![[Pasted image 20260302101844.png]]
+
+![[Pasted image 20260302102216.png]]
 
