@@ -74,3 +74,23 @@ Each kernel does comes with a tradeoff:
 
 ![[Pasted image 20260302102216.png]]
 
+## Canny
+
+A good operator should have 3 criteria:
+- Good detection
+- Good localization
+- One response to single edge
+
+To achieve this, what Canny does is to apply a smoothing on the image:
+![[Pasted image 20260302102911.png]]
+
+Even in this case, there's a trade-off, since if we set the kernel to be too big the image gets too smoothed (so gets more blurry), and instead of clearing noise we start losing localization and detection.
+
+Sometimes it's useful to use multi-scale (extract multiple gaussians at different scales and then sum them).
+
+Once Canny has detected the edges, it executes **non-maximum suppression**, so it finds one point out of many points (in order to select a single point to draw the true edge, so the local maximum along gradient direction).
+![[Pasted image 20260302104113.png]]
+To do so, we don't select with a high gradient with a local maximum of DOG, but only the true maxima, which are the one in the direction of edges, so we need **subpixel interpolation**.
+
+The way we do so is the following one:
+![[Pasted image 20260302104438.png]]
