@@ -94,3 +94,8 @@ To do so, we don't select with a high gradient with a local maximum of DOG, but 
 
 The way we do so is the following one:
 ![[Pasted image 20260302104438.png]]
+
+After non maxima suppression, the selected edges have the propriety of creating closed curves; nevertheless only the strong edges should be selected, so Canny proposed the use of an **Hysteresis-based thresholding**.
+![[Pasted image 20260302104917.png]]
+
+
