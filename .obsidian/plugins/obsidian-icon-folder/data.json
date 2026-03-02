@@ -34,8 +34,8 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "Internet of Things": "LiGlobe",
   "Big Data & Text Analysis": "LiTextCursorInput",
   "Machine Learning and Deep Learning": "LiBrainCircuit",
-  "Progettazione del Software": "LiCode2"
+  "Passati/Internet of Things": "LiGlobe",
+  "Passati/Progettazione del Software": "LiCode2"
 }

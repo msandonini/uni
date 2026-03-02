@@ -14,7 +14,7 @@ Questo non significa che le parti più a <font color="#d99694">destra</font> non
 In sostanza, secondo il manifesto Agile ci si è concentrati troppo sulle singole componenti del software perdendo la visione d'insieme, e ottenendo dei software modulari con i vari moduli funzionanti se presi da soli ma che messi insieme cozzano tra loro.
 
 Esistono diversi metodi agili:
-- [[aGILE - Extreme Programming (XP)|Extreme Programming (XP)]]
+- [[Agile - Extreme Programming (XP)|Extreme Programming (XP)]]
 - [[Scrum]]
 - [[Feature-Driven Development (FDD)]]
 - [[Adaptive Software Process]]
