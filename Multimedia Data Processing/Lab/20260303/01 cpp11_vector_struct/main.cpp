@@ -38,6 +38,20 @@ struct vector
         cap_ = n;
     }
 
+    /*
+    Copy constructor
+    */
+    vector(const vector &other)
+    {
+        n_ = other.n_;
+        cap_ = other.cap_;
+        data_ = new int32_t[cap_];
+        for (size_t i = 0; i < other.n_; i++)
+        {
+            data_[i] = other[i];
+        }
+    }
+
     ~vector()
     {
         delete[] data_;
