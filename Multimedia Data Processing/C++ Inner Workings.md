@@ -1,2 +1,4 @@
 - The = operator always calls the copy constructor
 - In memory, objects are saved in the stack, so at the end of the program the destructors are called in the pop stack order (so it follows a FILO logic)
+- In an assignment like `x = y = z = 9` are executed in the order `(x = (y = (z = 9)))`, so in a stack order, with the return of `(z = 9)` being `9` and not `z`
+- 
