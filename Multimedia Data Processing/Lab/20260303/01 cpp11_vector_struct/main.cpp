@@ -57,6 +57,8 @@ struct vector
         delete[] data_;
     }
 
+    // Methods
+
     void push_back(int32_t val)
     {
         if (n_ == cap_)
@@ -90,10 +92,32 @@ struct vector
         return data_[pos];
     }
 
+    // Operator overloading
+
     int32_t operator[](size_t pos) const
     {
         assert(pos < n_);
         return data_[pos];
+    }
+
+    vector &operator=(const vector &rhs)
+    {
+        if (&rhs == this)
+        {
+            return *this;
+        }
+
+        delete[] data_;
+
+        n_ = rhs.n_;
+        cap_ = rhs.cap_;
+        data_ = new int32_t[cap_];
+        for (size_t i = 0; i < rhs.n_; i++)
+        {
+            data_[i] = rhs[i];
+        }
+
+        return *this;
     }
 };
 
