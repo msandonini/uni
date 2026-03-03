@@ -36,3 +36,9 @@ $$
 $$
 Conductance is useful for evaluating the quality of a graph partition, since a smaller conductance means tighter clusters with fewer edges crossing the partition.
 
+A **clique** is a subset of vertices of an undirected graph such that every two distinct vertices in the clique are adjacent.
+
+There is an algorithm called **K-Core decomposition** that identifies the maximal sub-graph of a graph where all nodes have at least degree $k$.
+This maximal is sub-graph is called the **k-core** of the graph.
+In a 3-core decomposition, a sub-graph is extracted where every node has degree at least 3 (it could be that in the end I don't actually obtain a clique).
+
