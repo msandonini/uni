@@ -18,16 +18,31 @@ struct vector
     size_t n_;
     size_t cap_;
 
+    /*
+    Default constructor
+    */
     vector()
     {
         data_ = nullptr;
         n_ = 0;
         cap_ = 0;
     }
+
+    /*
+    Constructor with specified preloaded capacity
+    */
+    vector(size_t n)
+    {
+        data_ = new int32_t[n];
+        n_ = 0;
+        cap_ = n;
+    }
+
     ~vector()
     {
         delete[] data_;
     }
+
     void push_back(int32_t val)
     {
         if (n_ == cap_)
@@ -44,14 +59,17 @@ struct vector
         data_[n_] = val;
         n_++;
     }
+
     void sort()
     {
         qsort(data_, n_, sizeof(int32_t), cmp_int32);
     }
+
     size_t size() const
     {
         return n_;
     }
+
     int32_t at(size_t pos) const
     {
         assert(pos < n_);
