@@ -1,0 +1,1 @@
+- Shallow copy: a copy of an object where the new object's members still point to the old object's data
