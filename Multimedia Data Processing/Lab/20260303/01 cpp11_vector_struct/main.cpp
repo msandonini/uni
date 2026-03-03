@@ -5,30 +5,37 @@
 #include <stdint.h>
 #include <assert.h>
 
-static int cmp_int32(const void *a, const void *b) {
+static int cmp_int32(const void *a, const void *b)
+{
     int32_t ia = *(const int32_t *)a;
     int32_t ib = *(const int32_t *)b;
     return (ia > ib) - (ia < ib);
 }
 
-struct vector {
+struct vector
+{
     int32_t *data_;
     size_t n_;
     size_t cap_;
 
-    vector() {
+    vector()
+    {
         data_ = nullptr;
         n_ = 0;
         cap_ = 0;
     }
-    ~vector() {
+    ~vector()
+    {
         delete[] data_;
     }
-    void push_back(int32_t val) {
-        if (n_ == cap_) {
-            size_t new_cap = (cap_ == 0) ? 1024 : cap_ * 2;
+    void push_back(int32_t val)
+    {
+        if (n_ == cap_)
+        {
+            size_t new_cap = (cap_ == 0) ? 5 : cap_ * 2;
             int32_t *tmp = new int32_t[new_cap];
-            for(size_t i = 0; i < n_; i++) {
+            for (size_t i = 0; i < n_; i++)
+            {
                 tmp[i] = data_[i];
             }
             data_ = tmp;
@@ -37,36 +44,25 @@ struct vector {
         data_[n_] = val;
         n_++;
     }
-    void sort() {
+    void sort()
+    {
         qsort(data_, n_, sizeof(int32_t), cmp_int32);
     }
-    size_t size() const {
+    size_t size() const
+    {
         return n_;
     }
-    int at(size_t pos) const {
+    int at(size_t pos) const
+    {
         assert(pos < n_);
         return data_[pos];
     }
 };
 
-struct myint {
-    int i;
-    myint() {
-        i = 42;
-    }
-
-    ~myint() {
-        printf("Destructor called");
-    }
-};
-
-int main(int argc, char **argv) 
+int main(int argc, char **argv)
 {
-    myint *x = new myint[3];
-
-    delete[] x;
-
-    if (argc != 3) {
+    if (argc != 3)
+    {
         return 1;
     }
 
@@ -74,46 +70,52 @@ int main(int argc, char **argv)
     const char *out_name = argv[2];
 
     FILE *fin = fopen(in_name, "r");
-    if (!fin) {
+    if (!fin)
+    {
         return 1;
     }
 
-    //vector *arr = new vector();
+    // vector *arr = new vector();
     vector arr;
 
     char token[128];
-    while(fscanf(fin, "%127s", token) == 1) {
+    while (fscanf(fin, "%127s", token) == 1)
+    {
         errno = 0;
         char *endp = NULL;
         long val = strtol(token, &endp, 10);
-        if (*endp != '\0') {
+        if (*endp != '\0')
+        {
             break;
         }
-        if (errno == ERANGE || val < INT32_MIN || val > INT32_MAX) {
+        if (errno == ERANGE || val < INT32_MIN || val > INT32_MAX)
+        {
             break;
         }
-        //arr->push_back(val);
+        // arr->push_back(val);
         arr.push_back(val);
     }
 
     fclose(fin);
 
-    //arr->sort();
+    // arr->sort();
     arr.sort();
 
     FILE *fout = fopen(out_name, "w");
-    if (!fout) {
-        //delete arr;
+    if (!fout)
+    {
+        // delete arr;
         return 1;
     }
-    //for (size_t i = 0; i < arr->size(); i++) {
-    //    fprintf(fout, "%d\n", arr->at(i));
-    //}
-    for (size_t i = 0; i < arr.size(); i++) {
+    // for (size_t i = 0; i < arr->size(); i++) {
+    //     fprintf(fout, "%d\n", arr->at(i));
+    // }
+    for (size_t i = 0; i < arr.size(); i++)
+    {
         fprintf(fout, "%d\n", arr.at(i));
     }
     fclose(fout);
 
-    //delete arr;
+    // delete arr;
     return 0;
 }
