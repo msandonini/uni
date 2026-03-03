@@ -52,7 +52,13 @@ struct vector
     {
         return n_;
     }
-    int at(size_t pos) const
+    int32_t at(size_t pos) const
+    {
+        assert(pos < n_);
+        return data_[pos];
+    }
+
+    int32_t operator[](size_t pos) const
     {
         assert(pos < n_);
         return data_[pos];
@@ -112,7 +118,7 @@ int main(int argc, char **argv)
     // }
     for (size_t i = 0; i < arr.size(); i++)
     {
-        fprintf(fout, "%d\n", arr.at(i));
+        fprintf(fout, "%d\n", arr[i]);
     }
     fclose(fout);
 
