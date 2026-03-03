@@ -1,0 +1,2 @@
+- The = operator always calls the copy constructor
+- In memory, objects are saved in the stack, so at the end of the program the destructors are called in the pop stack order (so it follows a FILO logic)
