@@ -42,3 +42,7 @@ There is an algorithm called **K-Core decomposition** that identifies the maxima
 This maximal is sub-graph is called the **k-core** of the graph.
 In a 3-core decomposition, a sub-graph is extracted where every node has degree at least 3 (it could be that in the end I don't actually obtain a clique).
 
+When analyzing the structure of a graph, we use 2 main characteristics:
+- **Average diameter** $L$: average length of the shortest paths connecting any two nodes
+- **Clustering coefficient** $C$: average local density (so how dense is the neighborhood of a node)
+
