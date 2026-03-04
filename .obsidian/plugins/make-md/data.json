@@ -49,15 +49,15 @@
     "/",
     "//Progettazione del Software/Progettazione del Software/07 Stima dei Costi - FP",
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/01 Logistic Regression with Gradient Descent",
-    "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260302 Contours",
     "//Graph Analytics/Graph Analytics/20250224 Graph Theory",
-    "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/Lab",
     "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/Lab/Computer Vision & Cognitive Systems/Lab/20260302 Introduction",
     "//Graph Analytics/Graph Analytics/20260303",
     "//Multimedia Data Processing/Multimedia Data Processing/Lab",
     "//Multimedia Data Processing/Multimedia Data Processing/Lab/Multimedia Data Processing/Lab/20260302",
+    "//Graph Analytics/Graph Analytics/20260304 Graph Traversal",
     "//Graph Analytics",
-    "//Graph Analytics/Graph Analytics/20260304 Graph Traversal"
+    "//Computer Vision & Cognitive Systems",
+    "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260304 CNNs"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
