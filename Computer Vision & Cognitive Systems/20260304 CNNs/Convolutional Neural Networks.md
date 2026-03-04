@@ -3,7 +3,7 @@ tags:
   - computer_vision
   - convolutional_neural_networks
 ---
-A [[Machine Learning and Deep Learning/CNN|CNN]] works by using a kernel to navigate on an image.
+A [[Machine Learning and Deep Learning/CNN|CNN]] works by using a kernel to do **convolution** operations while navigating on an image.
 When the kernel passes on a window in the pixel matrix, it applies a function, applying element-wise multiplication between the kernel values and the window values, and the values obtained in a single pass then get summed with each other in order to obtain a new value which will occupy a single cell in the output matrix (the output matrix will always be of a smaller size in respect to the input image's pixel matrix).
 
 ![[Pasted image 20260304122318.png]]
@@ -31,4 +31,21 @@ As we can have all $(kH \times kW)$ kernel sizes, we can also have a $(1 \times 
 Another important parameter is the **dilation** which makes it possible to increase the kernel's perceptive field without increasing its size.
 ![[Pasted image 20260304125711.png]]
 This is important because it means that a single pixel can see a bigger part of the image without increasing the number of learnable parameters.
+
+In the regular 2D convolution, all input channels are convolved using all filters, which means that all output channels have seen all input channels, each through its own filter.
+It is possible to use grouping mechanisms in order to make it possible for single output channels to see only the desired input channels.
+
+All of the previous parameters have an impact on the output size, making it  so that the output size is determined by these formulas:
+
+![[Pasted image 20260304130125.png]]
+
+
+A strange type of convolution is **2D pooling**, which operates over each activation map independently, and is often used to make representations smaller and more manageable.
+2D pooling has different techniques based on how we want the pool to be picked, e.g. the max pooling keeps the maximum value in the window.
+
+![[Pasted image 20260304130342.png]]
+![[Pasted image 20260304130400.png]]
+
+Once the convolution process is finished, we can apply our operations in order to obtain our desired output.
+![[Pasted image 20260304130454.png]]
 
