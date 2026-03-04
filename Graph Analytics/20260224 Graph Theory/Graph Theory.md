@@ -1,3 +1,9 @@
+---
+tags:
+  - graph_analytics
+---
+
+
 A graph is a collection of points, called **vertices** and lines connecting those points, called **edges**
 
 

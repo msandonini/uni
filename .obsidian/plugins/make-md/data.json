@@ -54,10 +54,10 @@
     "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/Lab",
     "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/Lab/Computer Vision & Cognitive Systems/Lab/20260302 Introduction",
     "//Graph Analytics/Graph Analytics/20260303",
-    "//Graph Analytics/Graph Analytics/20260303 Graph Traversal",
     "//Multimedia Data Processing/Multimedia Data Processing/Lab",
     "//Multimedia Data Processing/Multimedia Data Processing/Lab/Multimedia Data Processing/Lab/20260302",
-    "//Multimedia Data Processing"
+    "//Graph Analytics",
+    "//Graph Analytics/Graph Analytics/20260304 Graph Traversal"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
