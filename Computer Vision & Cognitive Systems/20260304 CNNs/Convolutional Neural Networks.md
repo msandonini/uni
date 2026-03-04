@@ -3,7 +3,7 @@ tags:
   - computer_vision
   - convolutional_neural_networks
 ---
-A CNN works by using a kernel to navigate on an image.
+A [[Machine Learning and Deep Learning/CNN|CNN]] works by using a kernel to navigate on an image.
 When the kernel passes on a window in the pixel matrix, it applies a function, applying element-wise multiplication between the kernel values and the window values, and the values obtained in a single pass then get summed with each other in order to obtain a new value which will occupy a single cell in the output matrix (the output matrix will always be of a smaller size in respect to the input image's pixel matrix).
 
 ![[Pasted image 20260304122318.png]]
@@ -24,4 +24,11 @@ Other parameters we can pass to the kernel are **stride** and **padding**.
 	- A typical choice is $k - 1$, where $k$ is the kernel size, so that the output shape matches the input shape on spatial axes.
 	- Usually we pad with 0s, even if other options are possible.
 ![[Pasted image 20260304124225.png]]
+
+As we can have all $(kH \times kW)$ kernel sizes, we can also have a $(1 \times 1)$ kernel, which keeps the image size the same, and it is very powerful since it can change the number of channels without changing the image size.
+![[Pasted image 20260304124837.png]]
+
+Another important parameter is the **dilation** which makes it possible to increase the kernel's perceptive field without increasing its size.
+![[Pasted image 20260304125711.png]]
+This is important because it means that a single pixel can see a bigger part of the image without increasing the number of learnable parameters.
 
