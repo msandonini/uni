@@ -100,6 +100,17 @@ struct vector {
         return *this;
     }
 
+    // Dal momento che abbiamo scritto il move constructor:
+    // Move assignment operator
+    vector& operator=(vector&& rhs) {
+        n_ = rhs.n_;
+        cap_ = rhs.cap_;
+        delete[] data_;
+        data_ = rhs.data_;
+        rhs.data_ = nullptr;
+        return *this;
+    }
+
     /*
     // Questo non funziona perché scritto in questo modo l'operatore [] ritorna
     // un valore int e non una reference ad un valore int
