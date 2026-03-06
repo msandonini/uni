@@ -18,6 +18,7 @@ struct vector {
 
     // Default constructor
     vector() {
+        printf("vector()\n");
         data_ = nullptr;
         n_ = 0;
         cap_ = 0;
@@ -25,6 +26,7 @@ struct vector {
 
     // Constructor with starting size
     vector(size_t n) {
+        printf("vector(size_t n)\n");
         n_ = n;
         cap_ = n;
         data_ = new int32_t[n];
@@ -32,12 +34,27 @@ struct vector {
 
     // Copy constructor
     vector(const vector& other) {
+        printf("vector(const vector& other)\n");
         n_ = other.n_;
         cap_ = other.cap_;
         data_ = new int32_t[n_];
         for (size_t i = 0; i < n_; ++i) {
             data_[i] = other.data_[i];
         }
+    }
+    // Move constructor
+    vector(vector&& other) {
+        // La sintassi vector&& è chiamata r-value reference, ed è usata per
+        // spostare la proprietà di un valore temporaneo che verrebbe distrutto
+        // ad un altro oggetto (ottimizzando la fine di funzioni che devono
+        // creare un oggetto dal momento che non devono fare una copia di tutti
+        // i dati)
+
+        printf("vector(vector&& other)\n");
+        n_ = other.n_;
+        cap_ = other.cap_;
+        data_ = other.data_;
+        other.data_ = nullptr;
     }
 
     // Rule of 4: costruttore, costruttore di copia, assegnamento, e distruttore
