@@ -34,3 +34,7 @@ Come per interagirci, anche per interrogare un Graph DB ci sono diversi metodi:
 	- Parte del framework TinkerPop
 
 Nonostante i Graph DBs non siano nati con uno standard, viene solitamente utilizzato GraphQL come tale.
+
+>[!NOTE] Standard lezioni
+> A lezione useremo Neo4j -(con Cypher) e NetworkX
+
