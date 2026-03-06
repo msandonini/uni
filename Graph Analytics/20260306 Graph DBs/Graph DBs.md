@@ -38,3 +38,13 @@ Nonostante i Graph DBs non siano nati con uno standard, viene solitamente utiliz
 >[!NOTE] Standard lezioni
 > A lezione useremo Neo4j -(con Cypher) e NetworkX
 
+| Feature        | NetworkX                        | Neo4j                                             |
+| -------------- | ------------------------------- | ------------------------------------------------- |
+| Type           | Python library                  | Graph database                                    |
+| Query Language | Python functions and methods    | Cypher                                            |
+| Primary use    | Analysis, prototyping, research | Persistent storage, transactions, production apps |
+| Scalability    | Limited by RAM                  | High (can scale horizontally)                     |
+| Persistence    | Manual (save to file)           | Automatic, ACID compliant                         |
+| Learning curve | Low                             | Medium                                            |
+
+
