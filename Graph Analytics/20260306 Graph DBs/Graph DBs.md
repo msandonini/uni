@@ -36,7 +36,7 @@ Come per interagirci, anche per interrogare un Graph DB ci sono diversi metodi:
 Nonostante i Graph DBs non siano nati con uno standard, viene solitamente utilizzato GraphQL come tale.
 
 >[!NOTE] Standard lezioni
-> A lezione useremo Neo4j -(con Cypher) e NetworkX
+> A lezione useremo Neo4j (con Cypher) e NetworkX
 
 | Feature        | NetworkX                        | Neo4j                                             |
 | -------------- | ------------------------------- | ------------------------------------------------- |
