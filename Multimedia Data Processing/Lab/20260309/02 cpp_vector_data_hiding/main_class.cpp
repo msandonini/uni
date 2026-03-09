@@ -49,6 +49,13 @@ class vector {
 		cap_ = n;
 		data_ = new T[n];
 	}
+
+	// -- 7: Copy constructor update --
+
+	// Our old copy constructor works, but it's not the most optimized we can
+	// get with it
+
+	/*
 	// Copy constructor
 	vector(const vector& other) {  // const reference to vector
 		printf("vector(const vector& other)\n");
@@ -59,14 +66,39 @@ class vector {
 			data_[i] = other.data_[i];
 		}
 	}
+	*/
+	// With the old version we copy one int at a time, but int is a 4 byte (32
+	// bits) value, and our architectures are 64 bit with support for specific
+	// architecture-level optimized functions, so there are techniques to copy
+	// more data in a single pass using those optimizations (will see tomorrow)
+	vector(const vector& other) {  // const reference to vector
+		printf("vector(const vector& other)\n");
+		n_ = other.n_;
+		cap_ = other.cap_;
+		data_ = new T[n_];
+		for (size_t i = 0; i < n_; ++i) {
+			data_[i] = other.data_[i];
+		}
+	}
+	// -- 7 --
+
+	// -- 6: Making move constructor safe --
+
+	// In C++ exceptions do exist, so we need to make the move constructor
+	// "safe" by saying it cannot launch any exception with the `noexcept`
+	// keyword
+
 	// Move constructor
-	vector(vector&& other) {  // r-value reference to vector
-		printf("vector(vector &&other)\n");
+	vector(vector&& other) noexcept {  // r-value reference to vector
+		// printf("vector(vector &&other)\n");
+		// The printf is removed since it could cause an exception
 		n_ = other.n_;
 		cap_ = other.cap_;
 		data_ = other.data_;
 		other.data_ = nullptr;
 	}
+
+	// -- 6 --
 
 	// -- 5: Better assignment --
 
