@@ -64,4 +64,5 @@ When training a CNN what we need to allocate are:
 - Learnable parameters
 - Input tensor
 - Output tensors of each layer
-- Gradients for backpropagation
+- Gradients for backpropagation (same size of the parameters)
+- Tensors for optimizers used by the next step of training to update the parameters
