@@ -28,7 +28,19 @@ Other parameters we can pass to the kernel are **stride** and **padding**.
 As we can have all $(kH \times kW)$ kernel sizes, we can also have a $(1 \times 1)$ kernel, which keeps the image size the same, and it is very powerful since it can change the number of channels without changing the image size.
 ![[Pasted image 20260304124837.png]]
 
-Another important parameter is the **dilation** which makes it possible to increase the kernel's perceptive field without increasing its size.
+To increase the receptive field of a single pixel, we can either increase kernel shape or apply multiple convolutions in series to one another. 
+In the case of multiple convolutions the receptive field of a single input pixel entering the following convolution is $(kH + kH - 1, kW + kW - 1)$
+
+The total number of learnable parameters in a 2-layers convolution with both kernels with a $3 \times 3$ shape is given by the following formula
+$$
+\begin{align}
+(oC_{1}, iC_{1}, 3, 3) + oC_{1} &+ (oC_{2}, oC_{1}, 3, 3) + oC_{2}  \\
+= oC_{1} \cdot iC_{1} \cdot 3 \cdot 3 + oC_{1} &+ oC_{2} \cdot oC_{1} \cdot 3 \cdot 3 + oC_{2} \\
+= \text{conv1} &+ \text{conv2}
+\end{align}
+$$
+
+Another important parameter to do so is the **dilation** which makes it possible to increase the kernel's perceptive field without increasing its size.
 ![[Pasted image 20260304125711.png]]
 This is important because it means that a single pixel can see a bigger part of the image without increasing the number of learnable parameters.
 
