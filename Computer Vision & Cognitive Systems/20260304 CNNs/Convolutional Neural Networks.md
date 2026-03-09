@@ -60,3 +60,8 @@ A strange type of convolution is **2D pooling**, which operates over each activa
 Once the convolution process is finished, we can apply our operations in order to obtain our desired output.
 ![[Pasted image 20260304130454.png]]
 
+When training a CNN what we need to allocate are:
+- Learnable parameters
+- Input tensor
+- Output tensors of each layer
+- Gradients for backpropagation
