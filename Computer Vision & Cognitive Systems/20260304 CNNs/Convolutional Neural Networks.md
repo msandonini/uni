@@ -13,7 +13,7 @@ In a 3D scenario where we work with an image of $H \times W$ size with $C$ chann
 A convolutional layer usually takes $iC$ input feature maps, but also produces $oC$ output maps, where each one of these output maps considers all input feature map, which is the equivalent of performing the operation $oC$ times with different kernel and biases.
 ![[Pasted image 20260304123241.png]]
 In this case, we have an input shape $(iC, H, W)$ and a kernel shape $(oC, iC, kH, kW)$, which is like having $oC$ different kernels and biases, and this will produce an output of shape $(oC, oH, oW)$, which is like performing $oC$ different cross-correlations.
-Also, if we do it for a batch of $n$ different images in parallel, we add the $n$ parameter to our coordinates.
+Also, if we do it for a batch of $n$ different images in parallel, we add the $n$ parameter to the coordinates of input and output shapes.
 
 Other parameters we can pass to the kernel are **stride** and **padding**.
 - Stride: controls the stride for the cross-correlation.
@@ -32,13 +32,12 @@ Another important parameter is the **dilation** which makes it possible to incre
 ![[Pasted image 20260304125711.png]]
 This is important because it means that a single pixel can see a bigger part of the image without increasing the number of learnable parameters.
 
-In the regular 2D convolution, all input channels are convolved using all filters, which means that all output channels have seen all input channels, each through its own filter.
-It is possible to use grouping mechanisms in order to make it possible for single output channels to see only the desired input channels.
-
-All of the previous parameters have an impact on the output size, making it  so that the output size is determined by these formulas:
+Both in convolution and pooling layers, what actually have an impact on the output size and reduce its size are the borders, padding, and dilation parameters, so it's incorrect to say that the downsampling is given by the convolution or the pooling, as it's actually these parameters that do it based on the following formulas:
 
 ![[Pasted image 20260304130125.png]]
 
+In the regular 2D convolution, all input channels are convolved using all filters, which means that all output channels have seen all input channels, each through its own filter.
+It is possible to use grouping mechanisms in order to make it possible for single output channels to see only the desired input channels.
 
 A strange type of convolution is **2D pooling**, which operates over each activation map independently, and is often used to make representations smaller and more manageable.
 2D pooling has different techniques based on how we want the pool to be picked, e.g. the max pooling keeps the maximum value in the window.
