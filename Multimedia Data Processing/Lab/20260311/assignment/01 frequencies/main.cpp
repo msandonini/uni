@@ -31,18 +31,10 @@ int main(int argc, char const* argv[]) {
 	}
 	*/
 
-	/*
 	char d;
 	while (is.get(d)) {
-		unsigned char c = d;
-
-		if (m.contains(c)) {
-			m[c]++;
-		} else {
-			m[c] = 1;
-		}
+		++m[(unsigned char)d];
 	}
-	*/
 
 	is.close();
 
