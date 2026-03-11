@@ -19,3 +19,13 @@ Computational Vision has 3 levels:
 	- How the system does what it does and what representations and processes are used
 - Implementational
 	- How the system is physically realized
+
+To compute an image in order to extract 3D data, the process passes by 4 levels:
+- A 2D image is created with intensity values at each point (pixels)
+- A primal sketch of the scene based on feature extraction of fundamental components of the scene, including edges, regions, etc...
+- 2.5D sketch of the scene, where textures are acknowledged
+- Definition of the 3D model
+
+![[Pasted image 20260311124314.png]]
+
+
