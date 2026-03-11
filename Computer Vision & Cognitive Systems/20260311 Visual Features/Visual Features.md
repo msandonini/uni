@@ -44,3 +44,23 @@ This is working on very generic and well represented objects/concepts, but is st
 Given an image, [[feature extraction]] is normally the task which performs the extraction of a **n-dimensional vector** representing some visual property.
 The feature has to be designed to effectively summarize the visual content, so it's a quantization problem or a compression problem.
 
+The choice criteria for visual features are basically 4 different proprieties:
+- Discriminant propriety
+	- Features must assume values that are significantly different for objects belonging to different classes
+- Reliability propriety
+	- Features must assume values that are similar for objects belonging to the same class
+- Independence propriety
+	- Features must be independent from each other
+- Minimum cardinality propriety
+	- Features must be as few as possible
+
+Some classical visual features in images are:
+- Color (perceptual features)
+- Shape (contours)
+- Texture (continuity and spatial similarity)
+- Depth (3D shape)
+- Motion (continuity in time)
+- Perception (keypoints)
+- Saliency (attention-based)
+
+
