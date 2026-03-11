@@ -1,8 +1,8 @@
 #include <array>
 #include <fstream>
+#include <map>
 #include <ostream>
 #include <print>
-#include <unordered_map>
 
 int main(int argc, char const* argv[]) {
 	if (argc != 3) {
@@ -18,7 +18,7 @@ int main(int argc, char const* argv[]) {
 		return 1;
 	}
 
-	std::unordered_map<unsigned char, unsigned int> m;
+	std::map<unsigned char, unsigned int> m;
 
 	/*
 	unsigned char d;
