@@ -38,5 +38,9 @@ The "classical" computer vision pipeline started in the late '80s, and at that t
 
 In the recent years, the approach to computer vision changed, becoming based on the usage of AI to learn the features to be used for a specific goal.
 
-As of now, the standard is using **foundation models** to learn everything in a prior unsupervised manner and than downstream tasks.
+As of now, the standard is using **[[foundation models]]** to learn everything in a prior unsupervised manner and than downstream tasks.
 This is working on very generic and well represented objects/concepts, but is still not suitable for all specific tasks
+
+Given an image, [[feature extraction]] is normally the task which performs the extraction of a **n-dimensional vector** representing some visual property.
+The feature has to be designed to effectively summarize the visual content, so it's a quantization problem or a compression problem.
+
