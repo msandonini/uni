@@ -35,3 +35,8 @@ The "classical" computer vision pipeline started in the late '80s, and at that t
 ![[Pasted image 20260311124640.png]]
 ![[Pasted image 20260311124659.png]]
 ![[Pasted image 20260311124731.png]]
+
+In the recent years, the approach to computer vision changed, becoming based on the usage of AI to learn the features to be used for a specific goal.
+
+As of now, the standard is using **foundation models** to learn everything in a prior unsupervised manner and than downstream tasks.
+This is working on very generic and well represented objects/concepts, but is still not suitable for all specific tasks
