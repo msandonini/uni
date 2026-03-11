@@ -55,10 +55,14 @@ int main(int argc, char const* argv[]) {
 	int* r = &y;
 	*/
 	// What can be done is this:
+	/*
 	const int y = 6;
 	int* r = (int*)&y;
 	*r = 7;
-	x = 7;
+	*/
+	const int y = 6;
+	int* r = const_cast<int*>(&y);
+	*r = 7;
 
 	return 0;
 }
