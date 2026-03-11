@@ -64,3 +64,13 @@ Some classical visual features in images are:
 - Saliency (attention-based)
 
 
+
+
+
+
+
+
+
+
+To calculate the geometric distance between vectors, the most used method is the cosine distance, which derives from the definition of dot product between 2 vectors.
+
