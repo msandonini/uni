@@ -70,7 +70,20 @@ Some classical visual features in images are:
 
 
 
-
+#### Cosine distance
 
 To calculate the geometric distance between vectors, the most used method is the cosine distance, which derives from the definition of dot product between 2 vectors.
 
+#### Kullback-Leibler distance
+
+Kullback-Leibler distance considers histograms as distributions and measures their similarity by calculating the relative entropy
+
+#### Ground distance
+
+##### Histogram intersection
+
+Good for partial matches
+
+##### Earth Movers Distance
+
+This is a distance between 2 distributions x and y over a region D. Informally the 2 distributions represent different ways of amassing the same amount of material from D and the EMD represents the minimum work to morph one distribution into the other
