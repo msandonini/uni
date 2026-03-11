@@ -28,4 +28,10 @@ To compute an image in order to extract 3D data, the process passes by 4 levels:
 
 ![[Pasted image 20260311124314.png]]
 
+The "classical" computer vision pipeline started in the late '80s, and at that time there was very small knowledge in neuroscience on the nature of the brain, since cortex and vision functionalities where not so well known, so the pipeline was based on a bottom-up data driven approach.
 
+![[Pasted image 20260311124607.png]]
+
+![[Pasted image 20260311124640.png]]
+![[Pasted image 20260311124659.png]]
+![[Pasted image 20260311124731.png]]
