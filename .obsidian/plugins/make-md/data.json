@@ -51,12 +51,11 @@
     "//Machine Learning and Deep Learning/Machine Learning and Deep Learning/01 Logistic Regression with Gradient Descent",
     "//Graph Analytics/Graph Analytics/20250224 Graph Theory",
     "//Graph Analytics/Graph Analytics/20260303",
-    "//Multimedia Data Processing/Multimedia Data Processing/Lab",
-    "//Multimedia Data Processing/Multimedia Data Processing/Lab/Multimedia Data Processing/Lab/20260302",
     "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260309",
     "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260309 ResNet",
-    "//Computer Vision & Cognitive Systems",
-    "//Computer Vision & Cognitive Systems/Computer Vision & Cognitive Systems/20260311 Visual Features"
+    "//Multimedia Data Processing",
+    "//Multimedia Data Processing/Multimedia Data Processing/Theory",
+    "//Multimedia Data Processing/Multimedia Data Processing/Theory/Multimedia Data Processing/Theory/20260324"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
