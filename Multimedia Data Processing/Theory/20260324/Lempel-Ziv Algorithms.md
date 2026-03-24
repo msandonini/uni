@@ -109,3 +109,13 @@ There is a special case that must be handled separately:
 
 When the code that we should have created in the current step is found, it means that this is equal to the last decoded code plus its first symbol.
 
+> [!WARNING] Problem with LZ78 e LZW
+> With LZ78 and LZW there can be an issue where the dictionary gets too big.
+> To solve this there are various ideas:
+> - Delete the dictionary when it reaches a certain size and then start again as if the file started here (technique used by GIF: simple)
+> - Delete the dictionary when the compression is not particularly effective and then start again (used in the Unix `compress` utility)
+> - Delete the least recently used entry (Least-Recently-Used or LRU) when the dictionary reaches a certain size (used in BTLZ, the standard of British Telecom)
+
+> [!INFO] Current state of LZ algorithms
+> Both LZ77 and LZ78 are becoming obsolete but the ideas used are the basis of all the latest algorithms
+
