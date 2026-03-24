@@ -72,3 +72,40 @@ A tiny variation to LZ77, which separates insertion from copy, obtaining 2 diffe
 	- The best match is found within the correct bucket.
 	- Limits are imposed on the length of the search.
 	- The data is stored in the bucket in position order
+
+### Theory behind LZ77
+
+In 1994, Wyner and Ziv published a paper proving that the LZ algorithm applied to sufficiently long strings results in them being compressed up to the limit of the entropy of the message when the search window tends to infinity:
+$$
+\begin{align}
+H_{n} &= \sum_{X \in A^{n}} p(X) \log \frac{1}{p(X)} \\
+H &= \lim_{ n \to \infty } H_{n}
+\end{align}
+$$
+
+## LZ78
+
+A dictionary of words is kept with an integer identifier for each entry (from an implementation POV this aspect becomes fundamental, as a structure like a trie can modify performance dramatically)
+
+- Find the longest string `S` in the dictionary matching the string starting at current position
+- Send the identifier of `S` and the next (after the correspondence) character `c`
+- add the string `Sc` to the dictionary
+
+<!-- Slide 44, stesso pacchetto delle slide di prima -->
+![[Pasted image 20260324145131.png]]
+
+## LZW
+
+LZW is a variation of LZ78 which avoids the extra character `c` while still adding `Sc` to the dictionary.
+The dictionary is initialized with byte values from 0 to 255 (all possible single bytes that can be encountered). This initialization is fixed and therefore does not require any data transmission.
+The decoder rebuilds the code and the dictionary based only on the codes received.
+
+<!-- Slide 47 -->
+![[Pasted image 20260324152030.png]]
+
+There is a special case that must be handled separately:
+<!-- Slide 49 -->
+![[Pasted image 20260324152504.png]]
+
+When the code that we should have created in the current step is found, it means that this is equal to the last decoded code plus its first symbol.
+
