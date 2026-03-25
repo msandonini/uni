@@ -3,5 +3,5 @@
 *.mdc
 **.mdb
 
-.space/
+*/.space/
 .trash/
