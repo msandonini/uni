@@ -28,4 +28,3 @@ Per comprendere il problema è necessario rispondere a determinate domande, defi
 	- Quali sono gli elementi fondamentali dell'applicazione e come si relazionano l'un l'altro
 - Funzionalità
 	- Come gli utenti useranno il sistema
-/
