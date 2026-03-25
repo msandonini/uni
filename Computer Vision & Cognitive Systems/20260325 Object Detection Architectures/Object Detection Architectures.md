@@ -91,3 +91,27 @@ Given a feature map obtained from an image, with shape $(C, H, W)$, the coordina
 This is what happens for a single input image and a single input bounding box.
 Of course, the ROI Pooling operator usually works on multiple bounding box at the same time, and over a batch of images
 Each image in the batch has its own bounding boxes.
+
+![[Pasted image 20260325133602.png]]
+As we can see, the [[#Fast R-CNN]] is the fastest algorithm between those, however the region proposal is what is taking a lot of time
+
+### Faster R-CNN
+
+In 2015, in order to make [[#R-CNN]] even faster, [Faster R-CNN]() was proposed.
+
+This architecture substitutes the Region Proposal Algorithm (which is slow as it is a fixed algorithm run on CPU) with a Region Proposal Network, which is basically a 2-layer CNN (which can be run on the GPU, so it can be faster).
+![[Pasted image 20260325133748.png]]
+
+The Region Proposal Network is basically a network which, for a set of pixels of an image called anchors, predicts if the box around the anchor contains an image (it's a binary classification).
+
+![[Pasted image 20260325134121.png]]
+
+In practice use $K$ different anchor boxes of different size and/or scale at each point, and in a single pass we compute the different anchor boxes to predict whether the box contains an object or not, and we have 2 outputs:
+- The box transforms
+	- Loss is MSE
+- The classification (so if the box contains an object or not)
+	- Loss is Binary Crossentropy
+![[Pasted image 20260325134401.png]]
+
+After the RPN, we use RoI Pooling and an upstream classifier and bbox regressor just like Fast R-CNN.
+
