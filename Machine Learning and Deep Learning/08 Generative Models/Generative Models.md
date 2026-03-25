@@ -1,7 +1,5 @@
 ---
-tags:
-  - deep_learning
-  - generative_models
+course: Machine Learning and Deep Learning
 ---
 %% 2025/11/11 %%
 

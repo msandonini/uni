@@ -1,9 +1,6 @@
 ---
-tags:
-  - big_data
+course: Big Data and Text Analysis
 ---
-
-
 %% 2025/11/10 %%
 
 slide 2 pipeline

@@ -1,9 +1,7 @@
 ---
-tags:
-  - progettazione_software
-  - bpmn
 aliases:
   - BPMN
+course: Progettazione del Software
 ---
 ##
 

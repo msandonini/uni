@@ -1,6 +1,5 @@
 ---
-tags:
-  - deep_learning
+course: Machine Learning and Deep Learning
 ---
 *Logistic Regression* is a **probabilistic discriminative classifier**.
 

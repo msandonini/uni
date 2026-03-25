@@ -1,6 +1,5 @@
 ---
-tags:
-  - graph_analytics
+course: Graph Analytics
 ---
 
 

@@ -1,7 +1,5 @@
 ---
-tags:
-  - big_data
-  - explainable_ai
+course: Big Data and Text Analysis
 ---
 %% 2025/11/17 %%
 

@@ -1,6 +1,5 @@
 ---
-tags:
-  - progettazione_software
+course: Progettazione del Software
 ---
 
 

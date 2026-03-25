@@ -1,8 +1,5 @@
 ---
-tags:
-  - deep_learning
-  - fine_tuning
-  - transfer_learning
+course: Machine Learning and Deep Learning
 ---
 Question: why is it now rare to train a NN from scratch, but instead everyone relies on fine-tuning of pre-trained models?
 - Performance

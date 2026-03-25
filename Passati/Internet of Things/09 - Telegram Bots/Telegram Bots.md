@@ -1,7 +1,5 @@
 ---
-tags:
-  - iot
-  - api
+course: IoT and 3D Intelligent Systems
 ---
 
 ## Telegram Bot

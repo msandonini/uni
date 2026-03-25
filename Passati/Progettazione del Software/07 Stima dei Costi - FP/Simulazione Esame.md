@@ -1,8 +1,5 @@
 ---
-tags:
-  - progettazione_software
-  - fp
-  - esercizi
+course: Progettazione del Software
 ---
 ![[Esercizio_FP.png]]
 

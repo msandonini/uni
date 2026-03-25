@@ -1,15 +1,10 @@
 ---
-tags:
-  - iot
-  - computer_vision
-  - deep_learning
+course: IoT and 3D Intelligent Systems
 ---
-
-
 All'interno della Computer Vision rientrano principalmente 3 task:
 - Classificazione
 	- Associazione di etichette a singoli oggetti a partire da un'immagine
-- Object detection
+- [[Object Detection Architectures|Object detection]]
 	- Localizzazione di oggetti diversi presenti in un'immagine
 - Segmentazione
 	- Localizzazione di oggetti diversi presenti in un'immagine più avanzata, con bounding box dalle forme più complesse

@@ -1,7 +1,5 @@
 ---
 course: Graph Analytics
-tags:
-  - graph_analytics
 ---
 Nei graph db, entities e relationships hanno la stessa importanza.
 

@@ -1,7 +1,5 @@
 ---
-tags:
-  - progettazione_software
-  - agile
+course: Progettazione del Software
 ---
 %% 2025/11/14 %%
 

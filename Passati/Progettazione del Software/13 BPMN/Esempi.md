@@ -1,9 +1,5 @@
 ---
-tags:
-  - progettazione_software
-  - bpmn
-  - esempi
-  - esercizi
+course: Progettazione del Software
 ---
 ### Processo rimborso spese
 

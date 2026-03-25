@@ -1,7 +1,5 @@
 ---
 course: Graph Analytics
-tags:
-  - graph_analytics
 ---
 L'obiettivo del personalized page rank è di creare un ranking specifico inerente un topic di interesse dell'utente.
 

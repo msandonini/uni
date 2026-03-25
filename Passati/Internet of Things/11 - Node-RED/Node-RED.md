@@ -1,9 +1,5 @@
 ---
-tags:
-  - iot
-  - app
-  - machine_learning
-  - edge
+course: IoT and 3D Intelligent Systems
 ---
 
 

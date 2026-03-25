@@ -1,7 +1,5 @@
 ---
-tags:
-  - progettazione_software
-  - erp
+course: Progettazione del Software
 ---
 Con ERP (Enterprise Resource Planning) si intende un'architettura client-server che registra e gestisce l'informazione generata da tutte le funzioni aziendali, permettendo la condivisione delle informazioni e la gestione per processi.
 

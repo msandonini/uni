@@ -1,7 +1,5 @@
 ---
-tags:
-  - multimedia_data_processing
-  - compression
+course: Multimedia Data Processing
 ---
 - LZ77
 	- Sliding window algorithm

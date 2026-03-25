@@ -1,6 +1,5 @@
 ---
-tags:
-  - graph_analytics
+course: Graph Analytics
 ---
 Per calcolare il Clustering Coefficient si possono usare 2 formule distinte, a seconda se il grafo sia diretto o indiretto:
 - Diretto: $C_{n} = \frac{\text{\# edges between the neighobrs of } n}{\deg(n) * (\deg(n) - 1)}$

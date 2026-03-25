@@ -1,9 +1,6 @@
 ---
-tags:
-  - progettazione_software
-  - agile
+course: Progettazione del Software
 ---
-
 *Extreme Programming* è una disciplina dello sviluppo software basata su valori di semplicità, comunicazione, feedback, e coraggio.
 
 Il team di sviluppo è solitamente costituito da meno di 10 persone, riunito nello stesso locale (si lavora tutti insieme in open space), ed è sempre presente un rappresentante del cliente.

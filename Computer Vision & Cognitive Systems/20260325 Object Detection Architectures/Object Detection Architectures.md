@@ -1,9 +1,6 @@
 ---
 course: Computer Vision and Cognitive Systems
-tags:
-  - computer_vision
 ---
-
 Image recognition is a classification task, and as such, we use cross-entropy (as in 99% of all classification tasks).
 Object detection, on the other hand, is a more complex task, as its output is composed by the bounding boxes of the objects and the class of these, so we have $n \times 2$ outputs, where $n$ is the number of bounding boxes, and as such when we pass an image to the model we don't know the number of outputs we will get.
 

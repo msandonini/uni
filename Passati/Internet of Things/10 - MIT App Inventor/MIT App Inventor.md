@@ -1,8 +1,5 @@
 ---
-tags:
-  - iot
-  - app
-  - mobile
+course: IoT and 3D Intelligent Systems
 ---
 
 

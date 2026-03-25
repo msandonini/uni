@@ -1,8 +1,6 @@
 ---
-tags:
-  - progettazione_software
+course: Progettazione del Software
 ---
-
 Scrum, nel rugby, è il termine che indica il pacchetto di mischia (i giocatori che si tengono stretti durante la mischia per guadagnare terreno verso la meta)
 
 Scrum è un modello di processo per produrre software ottenendo il massimo valore utile nel minor tempo, che permette al cliente di ispezionare rapidamente e ripetutamente ogni 3-4 settimane versioni funzionanti del software.
@@ -23,7 +21,7 @@ Scrum è caratterizzato da diversi punti chiave:
 
 ## Sprint
 
-Lo sprint è l'iterazione principale di Scrum, analoga alle iterazioni di [[09 RUP & OpenUP|RUP]].
+Lo sprint è l'iterazione principale di Scrum, analoga alle iterazioni di [[RUP & OpenUP|RUP]].
 Ogni sprint ha una durata costante di circa 2-4 settimane, ed include design, codifica e test.
 Ogni sprint estrae funzioni "ready" dal product backlog e aggiunge codice "done" al prodotto da mostrare al cliente
 

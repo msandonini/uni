@@ -1,7 +1,5 @@
 ---
 course: Graph Analytics
-tags:
-  - graph_analytics
 ---
 I Graph DBs sono schema-free, di conseguenza non si definisce nessun tipo di dato astratto per i nodi, bensì si crea un nodo, definendo a che tipo appartiene, e poi si aggiungono gli attributi senza definire uno schema, facendo si che nodi dello stesso tipo possano avere un numero diverso di attributi, o addirittura attributi totalmente differenti.
 Dal momento che nodi dello stesso tipo possono non possedere gli stessi attributi e le stesse caratteristiche, si può imporre che determinati attributi siano obbligatori, mantenendo comunque la libertà di aggiungere altri attributi unici per quel nodo.

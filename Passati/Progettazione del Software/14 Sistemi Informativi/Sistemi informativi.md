@@ -1,8 +1,5 @@
 ---
-tags:
-  - progettazione_software
-  - erp
-aliases:
+course: Progettazione del Software
 ---
 I produttori più noti sono:
 - SAP
