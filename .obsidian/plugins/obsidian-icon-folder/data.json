@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiCode2",
-      "LiGlobe",
-      "LiTextCursorInput",
-      "LiBrainCircuit",
-      "LiCode"
+      "LiVideotape",
+      "LiVideo",
+      "🕸",
+      "LiWebcam",
+      "LiCode2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -37,5 +37,8 @@
   "Big Data & Text Analysis": "LiTextCursorInput",
   "Machine Learning and Deep Learning": "LiBrainCircuit",
   "Passati/Internet of Things": "LiGlobe",
-  "Passati/Progettazione del Software": "LiCode2"
+  "Passati/Progettazione del Software": "LiCode2",
+  "Computer Vision & Cognitive Systems": "LiWebcam",
+  "Graph Analytics": "🕸",
+  "Multimedia Data Processing": "LiVideotape"
 }
