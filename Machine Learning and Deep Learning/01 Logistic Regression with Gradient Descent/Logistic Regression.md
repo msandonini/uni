@@ -1,7 +1,6 @@
 ---
 tags:
   - deep_learning
-  - logreg
 ---
 *Logistic Regression* is a **probabilistic discriminative classifier**.
 
