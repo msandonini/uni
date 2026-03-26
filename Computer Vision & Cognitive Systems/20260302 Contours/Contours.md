@@ -1,6 +1,5 @@
 ---
-tags:
-  - computer_vision
+course: Computer Vision and Cognitive Systems
 ---
 We recognize objects by its contours, which are characterized by strong luminance variations.
 

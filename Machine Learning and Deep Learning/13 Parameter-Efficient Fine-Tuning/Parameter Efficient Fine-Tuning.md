@@ -1,12 +1,8 @@
 ---
-tags:
-  - deep_learning
-  - transfer_learning
-  - transformers
-  - fine_tuning
 aliases:
   - PEFT
   - Parameter-Efficient Fine-Tuning (PEFT)
+course: Machine Learning and Deep Learning
 ---
 Full [[Fine Tuning|fine tuning]] entails updating all model parameters, but this leads to:
 - High computational demand (often requires thousands of GPUs in parallel)

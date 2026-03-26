@@ -1,7 +1,5 @@
 ---
-tags:
-  - big_data
-  - text_analysis
+course: Big Data and Text Analysis
 ---
 Il clustering del testo ha come obiettivo il raggruppamento di testi simili basato sul loro contenuto semantico, significato, e relazioni.
 Per eseguire clustering esistono diversi metodi:

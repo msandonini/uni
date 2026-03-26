@@ -1,6 +1,5 @@
 ---
-tags:
-  - deep_learning
+course: Machine Learning and Deep Learning
 ---
 %% 2025/12/18 %%
 

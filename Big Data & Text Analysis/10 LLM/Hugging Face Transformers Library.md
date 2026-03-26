@@ -1,9 +1,5 @@
 ---
-tags:
-  - big_data
-  - transformers
-  - hugging_face
-  - llm
+course: Big Data and Text Analysis
 ---
 Task NLP:
 - Classificazione del sentimento della frase

@@ -1,7 +1,5 @@
 ---
-tags:
-  - big_data
-  - llm
+course: Big Data and Text Analysis
 ---
 Dall'avvento dei LLM, la parte di [[Information Retrieval (IR)]] è rimasta particolarmente colpita.
 

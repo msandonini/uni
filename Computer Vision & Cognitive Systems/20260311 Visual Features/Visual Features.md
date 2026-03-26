@@ -1,6 +1,5 @@
 ---
-tags:
-  - computer_vision
+course: Computer Vision and Cognitive Systems
 ---
 In order to perform a CV task, we need to generate a semantic representation of the image.
 ![[Pasted image 20260311122323.png]]

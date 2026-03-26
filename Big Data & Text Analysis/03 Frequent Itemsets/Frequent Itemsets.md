@@ -1,6 +1,5 @@
 ---
-tags:
-  - big_data
+course: Big Data and Text Analysis
 ---
 %% 2025/10/08 %%
 

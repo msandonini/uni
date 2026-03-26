@@ -1,6 +1,5 @@
 ---
-tags:
-  - graph_analytics
+course: Graph Analytics
 ---
 In Graph Theory, the **shortest path** problem is the problem of finding the quickest path between 2 vertices.
 

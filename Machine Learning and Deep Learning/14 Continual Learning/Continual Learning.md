@@ -1,6 +1,5 @@
 ---
-tags:
-  - deep_learning
+course: Machine Learning and Deep Learning
 ---
 A Continual Learning classification problem is split in $T$ tasks
 

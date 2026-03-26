@@ -1,6 +1,5 @@
 ---
-tags:
-  - computer_vision
+course: Computer Vision and Cognitive Systems
 ---
 ## Wide Residual Networks
 

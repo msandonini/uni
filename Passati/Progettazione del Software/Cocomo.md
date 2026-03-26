@@ -1,4 +1,0 @@
----
-tags:
-  - progettazione_software
----

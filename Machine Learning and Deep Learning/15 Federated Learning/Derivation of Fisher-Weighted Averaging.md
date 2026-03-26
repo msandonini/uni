@@ -1,6 +1,5 @@
 ---
-tags:
-  - deep_learning
+course: Machine Learning and Deep Learning
 ---
 After local training each client $i = 1, \dots, M$ provides $\theta_{i} \in \mathbb{R}_{p}^{n}$ where $n_{p}$ is the number of parameters of the network, and $F_{i}=\in \mathbb{R}^{n_{p} x n_{p}}$ which is symmetric and positive semi-definite.
 Assume a Gaussian posterior $\mathcal{N}(\theta_{i}, (F_{i}^{-1}))$ around every $\theta_{i}$. We want the parameter vector $\theta$ that maximizes the product of these $K$ independent posteriors, that is, the joint posterior distribution:
