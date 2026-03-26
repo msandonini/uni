@@ -1,5 +1,6 @@
 .obsidian/workspaces.json
 .obsidian/workspace.json
+.obsidian/graph.json
 *.mdc
 **.mdb
 
