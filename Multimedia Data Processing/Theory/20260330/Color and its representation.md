@@ -196,5 +196,7 @@ In 1980 Paul Heckbert proposed the Median Cut Algorithm, a technique for obtaini
 - the minimum parallelepiped oriented like the axes that contains all the colors must then be found;
 - a cut on the longer direction of the box must be performed. The cut should be in the point that leaves (approximately) the same number of elements in the 2 halves (median cut).
 - the cutting process is repeated for the box with most elements (or the largest as volume) until as many boxes as the required colors have been obtained. The representative colors will be given by the box’s colors average.
-A further point to focus on is the technique to assign the palette to the image, since this implies a concept of similarity between colors. Usually graphics programs use the Euclidean distance in the RGB
-space as a metric, even if this is not perceptually so meaningful.
+A further point to focus on is the technique to assign the palette to the image, since this implies a concept of similarity between colors. Usually graphics programs use the Euclidean distance in the RGB space as a metric, even if this is not perceptually so meaningful.
+
+![[Pasted image 20260330124640.png]]
+![[Pasted image 20260330124708.png]]
