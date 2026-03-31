@@ -40,3 +40,82 @@ On the other hand, the information of the Bayer pattern is sampled, so in each p
 ![[Pasted image 20260331143316.png]]
 
 In order to solve the aliasing problem we now need some way to apply the demosaicing process.
+
+### Demosaicing
+
+To apply demosaicing different techniques were created:
+- Interpolation by convolution: Nearest neighbor, bilinear, cubic [Sak98], [Ram02], etc.
+- AI-based algorithms
+
+#### Nearest Neighbor Replication
+In nearest neighbor replication (NRR) the missing components are interpolated with neighboring pixel values. The closest pixel can be in any of the four fundamental directions, above,
+below, left or right.
+
+![[Pasted image 20260331145430.png]]
+
+This is the fastest idea, but it gives bad results, as it has quite a few problems:
+- It creates many false colors that can create problems for image processing.
+- High gradient transitions are very jagged (Zipper effect).
+- The interpolated image tends to be noisy.
+
+#### Bilinear interpolation
+With bilinear interpolation, the missing components are interpolated with a bilinear interpolation of neighboring pixels. The components can be interpolated simultaneously
+
+![[Pasted image 20260331145410.png]]
+![[Pasted image 20260331145354.png]]
+
+This algorithm is very efficient and often forms the basis for other better ones, but it has quite a few problems:
+- The "pure" color of adjacent pixels can change abruptly.
+- The whole image is subject to low pass filtering, causing a blur effect.
+- Zipper effect reduced but not eliminated.
+
+#### Linear interpolation with Laplacian 2nd order correction terms (LIL2)
+The missing components are interpolated in an adaptive way, following the chromatic gradients.
+This gives maximum performance in the case of images with vertical or horizontal edges.
+
+The interpolation of green pixels has priority
+
+This technique works based on the assumption that color planes are perfectly correlated in small areas of the image, so we approximate the following equations for the constants $j$ and $k$:
+$$
+\begin{align}
+G &= B + k \\
+G &= R + j
+\end{align}
+$$
+After obtaining the linear interpolation we apply the Laplacian 2nd order correction.
+In the case of green, it is calculated as follows
+$$
+\begin{align}
+\Delta H = |G4 - G6| + |B5 - B3 + B5 - B7| \\
+\Delta V = |G2 - G8| + |B5 - B1 + B5 - B9|
+\end{align}
+$$
+![[Pasted image 20260331145217.png]]
+
+Then the interpolation follows the following algorithm:
+![[Pasted image 20260331145118.png]]
+
+In the case of red, we have different possible cases:
+- The two nearest pixels of the same color of the missing component are in the same column:
+![[Pasted image 20260331150111.png]]
+$$
+R4 = \frac{R1 - R7}{2} + \frac{G4 - G1 + G4 - G7}{4}
+$$
+- The two nearest pixels of the same color of the missing components are in the same row:
+![[Pasted image 20260331150136.png]]
+$$
+R2 = \frac{R1 + R3}{2} + \frac{G2 - G1 + G2 - G3}{4}
+$$
+
+After separating the cases, we define the compound gradients:
+$$
+\begin{align}
+\Delta N &= |R1 - R9| + |G5 - G1 + G5 - G9| \\
+\Delta P &= |R3 - R7| + |G5 - G3 + G5 - G7|
+\end{align}
+$$
+
+So, the interpolation follows the following algorithm:
+![[Pasted image 20260331150532.png]]
+
+The interpolation of the blue is the same as the red
