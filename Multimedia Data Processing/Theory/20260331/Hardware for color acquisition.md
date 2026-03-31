@@ -19,6 +19,7 @@ This technique was used in old professional cameras, called 3-CCD cameras
 ## Bayer Pattern
 
 The **Bayer Pattern** is a kind of filter created in 1976 at Kodak by Bryce Bayer, and is nowadays the standard used for every modern camera.
+This filter is basically a single CCD array with a colored grid pattern on top acting as filter.
 There are different combinations of Bayer patterns:
 - CMY-Y
 - CMY+G 
@@ -38,4 +39,4 @@ The Bayer pattern has some advantages over 3-CCD technology:
 On the other hand, the information of the Bayer pattern is sampled, so in each pixel it is necessary to reconstruct the missing components, as the images obtained in this way do suffer from aliasing.
 ![[Pasted image 20260331143316.png]]
 
-
+In order to solve the aliasing problem we now need some way to apply the demosaicing process.
