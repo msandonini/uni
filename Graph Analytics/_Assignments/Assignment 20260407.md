@@ -76,7 +76,9 @@ MERGE (Missy:Character {name: "Missy", species: "Time Lord", iteration: 2})
 
 // Races
 
-MERGE (Daleks:Race {name: "Daleks"})
+MERGE (Daleks:Species {name: "Daleks"})
+MERGE (TimeLords:Species {name: "Time Lords"})
+MERGE (Humans:Species {name: "Humans"})
 
 // Actor
 MERGE (WilliamHartnell:Actor {name: "WilliamHartnell"})
@@ -135,29 +137,34 @@ MERGE (SarahJane)-[:COMPANION_OF]->(FourthDoctor)
 MERGE (Susan)-[:COMPANION_OF]->(FirstDoctor)
 
 // ENEMY_OF
-MERGE (daleks)-[:ENEMY_OF {threat: 9}]->(c1)
-MERGE (daleks)-[:ENEMY_OF {threat: 10}]->(c10)
-MERGE (master)-[:ENEMY_OF {threat: 8}]->(c10)
-MERGE (davros)-[:ENEMY_OF {threat: 10}]->(c4)
+MERGE (Daleks)-[:ENEMY_OF {threat: 8}]->(FirstDoctor)
+MERGE (Daleks)-[:ENEMY_OF {threat: 9}]->(TenthDoctor)
+MERGE (Daleks)-[:ENEMY_OF {threat: 10}]->(WarDoctor)
+MERGE (SaxonMaster)-[:ENEMY_OF {threat: 8}]->(TenthDoctor)
+MERGE (Davros)-[:ENEMY_OF {threat: 9}]->(FourthDoctor)
+MERGE (Daleks)-[:ENEMY_OF {threat: 10}]->(TimeLords)
+MERGE (Daleks)-[:ENEMY_OF {threat: 7}]->(Humans)
+MERGE (SaxonMaster)-[:ENEMY_OF {threat: 8}]->(Humans)
 
-// 7. Creazione Relazioni COMES_FROM
-MERGE (c1)-[:COMES_FROM]->(gallifrey)
-MERGE (master)-[:COMES_FROM]->(gallifrey)
-MERGE (davros)-[:COMES_FROM]->(skaro)
-MERGE (daleks)-[:COMES_FROM]->(skaro)
+// COMES_FROM
+MERGE (Susan)-[:COMES_FROM]->(Gallifrey)
+MERGE (SaxonMaster)-[:COMES_FROM]->(Gallifrey)
+MERGE (FirstDoctor)-[:COMES_FROM]->(Gallifrey)
+MERGE (Davros)-[:COMES_FROM]->(Skaro)
+MERGE (Daleks)-[:COMES_FROM]->(Skaro)
 
-// 8. Creazione Relazioni VISITED (con proprietà temporale)
-MERGE (c10)-[:VISITED {year: 2006}]->(earth)
-MERGE (c1)-[:VISITED {year: 1963}]->(earth)
-MERGE (c4)-[:VISITED {year: 1975}]->(skaro)
+// VISITED
+MERGE (TenthDoctor)-[:VISITED {year: 2006}]->(Earth)
+MERGE (FirstDoctor)-[:VISITED {year: 1963}]->(Earth)
+MERGE (FourthDoctor)-[:VISITED {year: 1975}]->(Skaro)
 
-// 9. Creazione Relazioni APPEARS_IN
-MERGE (c1)-[:APPEARS_IN]->(ep1)
-MERGE (earth)-[:APPEARS_IN]->(ep1)
-MERGE (c4)-[:APPEARS_IN]->(ep2)
-MERGE (skaro)-[:APPEARS_IN]->(ep2)
-MERGE (davros)-[:APPEARS_IN]->(ep2)
-MERGE (c10)-[:APPEARS_IN]->(ep3)
-MERGE (rose)-[:APPEARS_IN]->(ep3)
-MERGE (c10)-[:APPEARS_IN]->(ep4)
+// APPEARS_IN
+MERGE (FirstDoctor)-[:APPEARS_IN]->(UnearthlyChild)
+MERGE (Earth)-[:APPEARS_IN]->(UnearthlyChild)
+MERGE (FourthDoctor)-[:APPEARS_IN]->(GenesisOfTheDaleks)
+MERGE (Skaro)-[:APPEARS_IN]->(GenesisOfTheDaleks)
+MERGE (Davros)-[:APPEARS_IN]->(GenesisOfTheDaleks)
+MERGE (TenthDoctor)-[:APPEARS_IN]->(Doomsday)
+MERGE (RoseTyler)-[:APPEARS_IN]->(Doomsday)
+MERGE (TenthDoctor)-[:APPEARS_IN]->(TheEndOfTime)
 ```
