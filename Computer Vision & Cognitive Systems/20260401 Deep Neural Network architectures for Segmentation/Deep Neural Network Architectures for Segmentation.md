@@ -28,5 +28,5 @@ In order to design the upsampler, the first ideas were the following 2:
 Another solution is to track the max values' positions of the max pooling, and then when we do the upsampling we apply the unpooling by putting the value in the tracked position, and all other values are set to 0. This solution has the same problem of the bed of nails
 
 What we really want to do is to make the inverse operation of the convolution (which is called a transpose convolution), since the downsampling actually happens in the convolution and not in the pooling (since in the convolution we have stride, padding, and dilation).
-To make this transpose convolution we use a convolutive kernel which uses the pixel value of the reduced image as weight. In the positions where the kernels overlap, what we can do is to sum the weights, so that we don't lose detail in the image
+To make this transpose convolution we use a convolutive kernel which uses the pixel value of the reduced image as weight. In the positions where the kernels overlap, what we can do is to sum the weights, so that we have better detail in the image, since some information is obtained by the fact that kernels overlap.
 
