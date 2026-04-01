@@ -36,6 +36,11 @@ To do so, when doing the upsampling, we take the elements from previous iteratio
 
 ### Seg-Net
 
+[Seg-Net](https://arxiv.org/abs/1511.00561) is an encoder-decoder framework composed of different convolutional layers.
+This architecture doesn't use the transpose convolution to perform the upscaling, but instead it works by applying the upscaling in the unpooling layer.
+This makes it possible to use dilated convolutions in order to obtain a bigger receptive field, and as such recall more details of the image.
+Also, this makes it possible to not use the skip connections while still recalling details.
+
 
 
 ---
