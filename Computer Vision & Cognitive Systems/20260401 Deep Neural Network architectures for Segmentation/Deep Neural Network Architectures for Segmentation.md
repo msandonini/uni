@@ -32,6 +32,7 @@ To make this transpose convolution we use a convolutive kernel which uses the pi
 A problem with this technique is that when the stride is greater than 1 the transpose convolution becomes strange, as it actually is not a normal convolution.
 
 Since we want to keep all details of the starting image, another solution is to use the *skip connections* in the upsampling.
-To do so, when doing the downsampling, we take the elements from previous iterations.
+To do so, when doing the upsampling, we take the elements from previous iterations of downsampling.
 
 
+https://arxiv.org/abs/1411.4038
