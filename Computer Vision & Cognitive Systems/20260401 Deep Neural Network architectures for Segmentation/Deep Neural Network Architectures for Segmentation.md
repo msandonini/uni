@@ -41,7 +41,18 @@ This architecture doesn't use the transpose convolution to perform the upscaling
 This makes it possible to use dilated convolutions in order to obtain a bigger receptive field, and as such recall more details of the image.
 Also, this makes it possible to not use the skip connections while still recalling details.
 
+While powerful, Seg-Net is still very expensive, even on modern GPUs, getting outperformed by [[Object Detection Architectures#R-CNN|Mask R-CNN]] (an implementation of R-CNN used for segmentation tasks) on the [COCO](https://cocodataset.org/#home) Dataset (Common Objects in COntext) challenge.
 
+### Other Nets
+
+#### U-Net
+[U-NET](https://arxiv.org/abs/1505.04597) is a encoder-decoder architecture used for biomedical image segmentation tasks.
+The name depends on the fact that the architecture is U-shaped, as each layer of upsampling part is connected to the same-size layer of the downsampling part, in order to be able to retrieve data and reconstruct details.
+This architecture is able to reconstruct many details (useful to see veins and other details in medical photos).
+
+#### DeepLab
+
+[DeepLab](https://arxiv.org/abs/1606.00915) is a encoder-decoder architecture which makes use of standard convolution combined with Atrous Spatial Pyramid Pooling (ASPP).
 
 ---
 [^1]: https://arxiv.org/abs/1411.4038
