@@ -29,4 +29,9 @@ Another solution is to track the max values' positions of the max pooling, and t
 
 What we really want to do is to make the inverse operation of the convolution (which is called a transpose convolution), since the downsampling actually happens in the convolution and not in the pooling (since in the convolution we have stride, padding, and dilation).
 To make this transpose convolution we use a convolutive kernel which uses the pixel value of the reduced image as weight. In the positions where the kernels overlap, what we can do is to sum the weights, so that we have better detail in the image, since some information is obtained by the fact that kernels overlap.
+A problem with this technique is that when the stride is greater than 1 the transpose convolution becomes strange, as it actually is not a normal convolution.
+
+Since we want to keep all details of the starting image, another solution is to use the *skip connections* in the upsampling.
+To do so, when doing the downsampling, we take the elements from previous iterations.
+
 
