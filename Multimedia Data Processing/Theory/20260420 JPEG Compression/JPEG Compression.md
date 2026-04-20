@@ -84,3 +84,30 @@ Basically the DCT changes the base of the vector space, so obtaining the correct
 This different representation is useful in image compression since by moving from pixels to frequencies we changed the probability distributions of the symbols.
 Also, the human eye is not uniformly able to capture frequency changes in images, as it perceives low frequencies better than high ones, so if I make a mistake on higher frequencies, the error is perceived less than an error on lower frequencies, allowing us to be more aggressive in the quantization of higher frequencies (so that we can reduce the amount of data while still having low perceivable error).
 
+In the DCT the first value of each block (the one at position $(0, 0)$, being the low frequency one, is called DC coefficient, while the other ones are called AC (because as alternate current they have higher frequencies than the direct current).
+
+The DC coefficient is encoded differently with respect for each block, and it is proportional to the average of the pixel values in the block.
+The DC coefficient is compressed differently from the AC coefficients, since the average value of a block will be similar to that of the neighboring blocks.
+The DC coefficients are then encoded by difference with respect to the previously encoded block.
+
+The direct (forward) and inverse DCT functions are as follows:
+$$
+\begin{align}
+&\text{FDCT} \hspace{5mm} S_{uv} = \frac{1}{4} C_{u}C_{v} \sum_{y=0}^{7} \sum_{x=0}^{7} s_{xy} \cos \frac{(2x + 1) u \pi}{16} \cos \frac{(2y + 1) v \pi}{16} \\
+&\text{IDCT} \hspace{5mm} s_{xy} = \frac{1}{4} \sum_{v=0}^{7} \sum_{u=0}^{7} C_{u}C_{v}S_{uv} \cos \frac{(2x + 1) u \pi}{16} \cos \frac{(2y + 1) v \pi}{16} \\
+&C_{x} = \begin{cases}
+\frac{1}{\sqrt{ 2 }} & x=0 \\
+1 & \text{otherwise}
+\end{cases}
+\end{align}
+$$
+
+Since we need to encode the DC coefficient, and we are working with 8-bit/pixel value maps, 11-bit precision DC coefficients are obtained, so differential coding will require 12-bit precision.
+A category table is defined for DC values with 12 possible ranges of values.
+A 4-bit index called SSSS allows to identify from which category the current coefficient belongs to, and a Huffman table is then defined with the SSSS variable length encoding.
+
+The DC coefficient for the current block is calculated, then we subtract the previously coded value from this by creating the DC differential coefficient (DIFF).
+The value of the SSSS category to which DIFF belongs is found, and for each category SSSS bits are added to the SSSS Huffman code to identify which DIFF was generated.
+When DIFF is positive, the least significant SSSS bits of DIFF are added, and when DIFF is negative the least significant SSSS bits of DIFF - 1 are added. In practice the first bit of those added is 0 if DIFF is negative and 1 if positive.
+
+AC encoding is similar, but instead of using SSSS we use NNNNSSSS, where NNNN represents the number of null coefficients encountered by the last coded coefficient and before the current one.
