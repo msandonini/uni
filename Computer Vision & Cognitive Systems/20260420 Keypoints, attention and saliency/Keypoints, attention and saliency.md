@@ -78,3 +78,42 @@ Now that we have the keypoints, how can we describe them?
 A solution could be a vector of the 9 pixel values, but this is not invariant to luminance variation nor rotation.
 ### SIFT (Scale Invariant Feature Transform)
 
+SIFT is both a detector and a descriptor.
+We want to detect keypoints in a way that is invariant to scale.
+To do so, we work on images at different scale producing octaves in a pyramidal level.
+![[Pasted image 20260420101714.png]]
+
+The first octave is obtained by the convolution operation at different $\sigma$s such that $\sigma_{n}=k^{n} \sigma_{0} \hspace{5mm} (k=2)$.
+The DoG ([Difference of Gaussian](https://en.wikipedia.org/wiki/Difference_of_Gaussians)) at scale $\sigma$ is obtained by the difference of two nearby scales separated by a constant $k$.
+All the DoGs are an approximation of Laplacian.
+After the first octave is completed the image is subsampled by a factor equal to 2 for a next pyramid way
+![[Pasted image 20260420102344.png]]
+![[Pasted image 20260420102621.png]]
+
+After obtaining the octaves, we need to localize the keypoints.
+The highest variation causes a peak (local extreme).
+Local extrema of $D(x, y, \sigma)$ are the local interest points.
+If $p$ is a local extrema, it is selected as a candidate keypoint.
+Each candidate keypoint is compared to the 9 neighbours in the scale above and below.
+Only pixels that are local extrema in **3 adjacent levels** are promoted as keypoints.
+
+The number of scales and octaves is selected empirically.
+
+Edge has large principal curvature across the edge, but a small one in the perpendicular direction.
+The principal curvatures can be calculated from a Hessian function. The eigenvalues of H are proportional to the principal curvatures, so two eigenvalues shouldn’t diff too much.
+Lowe suggests keep points with r=10:
+
+$$
+H = \begin{bmatrix}
+D_{xx} & D_{xy} \\
+D_{xy} & D_{yy}
+\end{bmatrix}
+\hspace{1cm}
+\frac{\text{Tr}(H)^{2}}{\text{Det}(H)} < \frac{(r+1)^{2}}{r}
+$$
+
+By assigning a consistent orientation, the keypoint descriptor can be orientation invariant. For a keypoint, if $L$ is the Gaussian smoothed image with the closest scale, for a region around keypoint compute gradient magnitude and orientation using finite difference.
+
+
+
+
