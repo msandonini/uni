@@ -114,6 +114,7 @@ $$
 
 By assigning a consistent orientation, the keypoint descriptor can be orientation invariant. For a keypoint, if $L$ is the Gaussian smoothed image with the closest scale, for a region around keypoint compute gradient magnitude and orientation using finite difference.
 
+After doing so, we create a histogram with 36 bins for orientation, and weight each point with Gaussian window of $1.5 \sigma$
 
-
+![[Pasted image 20260420103729.png]]
 
