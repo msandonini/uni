@@ -72,4 +72,9 @@ The Harris detector is invariant to the intensity changes and the rotation, but 
 ![[Pasted image 20260420100754.png]]
 ![[Pasted image 20260420100818.png]]
 
+Now that we have the keypoints, how can we describe them?
+- If we know where the corners are, how can we match them?
+- Which descriptor do we need to use for this feature?
+A solution could be a vector of the 9 pixel values, but this is not invariant to luminance variation nor rotation.
 ### SIFT (Scale Invariant Feature Transform)
+
