@@ -118,3 +118,6 @@ After doing so, we create a histogram with 36 bins for orientation, and weight e
 
 ![[Pasted image 20260420103729.png]]
 
+Peak orientation is the keypoint canonical orientation.
+Any peak within 80% of the highest peak is used to create a keypoint with that orientation. Local peaks within 80% create multiple orientations. About 15% has multiple orientation (<span>&rarr;</span> multiple keypoints)
+
