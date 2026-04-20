@@ -125,3 +125,6 @@ In order to describe the points we need to do a set of passages:
 - Divide the 16x16 window into a 4x4 grid of cells
 - Compute an orientation histogram for each cell
 - 16 cells \* 8 orientations = 128 dimensional descriptor
+![[Pasted image 20260420104707.png]]
+
+
