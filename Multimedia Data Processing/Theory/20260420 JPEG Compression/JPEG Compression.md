@@ -9,7 +9,6 @@ It was designed to encode photographic images, as opposed to computer-generated 
 Since it is a standard, it's not a single algorithm, but simply defines how the image must be stored, in order to make it possible to have different implementation techniques.
 The standard is based on the usage of different techniques:
 - Encoding via [Discrete Cosine Transform (DCT)](https://en.wikipedia.org/wiki/Discrete_cosine_transform)
-	- This is a variant of Fourier Transform, which however employs only the cosine in order to remain in the real domain.
 - Run Length Encoding (RLE)
 - Huffman Encoding
 
@@ -59,4 +58,29 @@ The coefficients are sorted using a zig-zag path, and then they are encoded usin
 The biggest data loss happens in the quantization process, as the quantization is a really aggressive operation.
 
 ![[Pasted image 20260420114114.png]]
+
+### DCT
+
+The DCT is a variant of Fourier Transform, which however employs only the cosine in order to remain in the real domain.
+It has interesting properties for compression, since it separates the spatial frequencies by polarizing the lower ones at lower values of the coefficients.
+$$
+\begin{align}
+N &= 8 \\
+S_{u} &= C_{u} \sum_{x=0}^{7} s_{x} \cos \frac{\pi(2x + 1) u}{16} \hspace{5mm} ; \hspace{5mm} u = 0, \dots, 7 \\
+C_{u} &= \frac{1}{2 \sqrt{ 2 }} \\
+ \\
+& [1, 2, 3, 4, 5, 6, 7, 8] \rightarrow [S_{0}, S_{1}, \dots, S_{7}]
+\end{align}
+$$
+- $S$ is the transformed signal
+- $C$ is the normalization (scaling coefficients)
+- $u$ is the point in which we are computing the transform
+- s is the original vector we are transforming
+$S_{0}$ is just the sum of all the coefficients $S_{x}$
+
+![[Pasted image 20260420121709.png]]
+
+Basically the DCT changes the base of the vector space, so obtaining the correct base we get a different representation of the same stuff, and this base change allows us to describe the frequency changes of our data.
+This different representation is useful in image compression since by moving from pixels to frequencies we changed the probability distributions of the symbols.
+Also, the human eye is not uniformly able to capture frequency changes in images, as it perceives low frequencies better than high ones, so if I make a mistake on higher frequencies, the error is perceived less than an error on lower frequencies, allowing us to be more aggressive in the quantization of higher frequencies (so that we can reduce the amount of data while still having low perceivable error).
 
