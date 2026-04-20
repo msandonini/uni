@@ -2,7 +2,6 @@
 course: Multimedia Data Processing
 ---
 
-
 JPEG is an abbreviation for *Joint Photographic Experts Group*, and it is a standard for the compression of static images in continuous color tones.
 It was designed to encode photographic images, as opposed to computer-generated synthetic images.
 
