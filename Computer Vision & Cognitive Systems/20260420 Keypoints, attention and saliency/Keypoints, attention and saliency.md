@@ -8,6 +8,7 @@ Here we are tackling 2 tasks:
 
 ## Keypoint detection
 
+### Harris detector
 The HARRIS keypoint detector is an algorithm which extracts points from various regions based on variations in the gradient.
 
 ![[Pasted image 20260420094504.png]]
@@ -66,3 +67,9 @@ Eigenvalues $\lambda_{1}$ and $\lambda_{2}$ of $M$ reveal the intensity of the g
 
 ![[Pasted image 20260420100209.png]]
 
+The Harris detector is invariant to the intensity changes and the rotation, but not to the scale.
+![[Pasted image 20260420100737.png]]
+![[Pasted image 20260420100754.png]]
+![[Pasted image 20260420100818.png]]
+
+### SIFT (Scale Invariant Feature Transform)
