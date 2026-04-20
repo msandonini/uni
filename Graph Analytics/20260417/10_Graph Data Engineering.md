@@ -1,3 +1,7 @@
+---
+course: Graph Analytics
+---
+
 As we saw, graphs can be used to create views on top of a master dataset (batch layer) or real-time (speed layer) representations of part of the data available.
 In that approach, the transactional data resides in the master dataset. That option is useful when we can query and perform analysis on aggregated data.
 Other types of analysis, however, cannot be performed on an aggregate version of the data.

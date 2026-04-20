@@ -1,1 +1,5 @@
+---
+course: Graph Analytics
+---
+
 The transformation from structured or unstructured data to a graph representation can be performed in a lossless manner, but this loss less representation is not always necessary (or desirable) for the purpose of the learning algorithm.

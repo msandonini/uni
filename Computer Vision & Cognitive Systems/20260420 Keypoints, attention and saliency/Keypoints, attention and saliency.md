@@ -1,3 +1,6 @@
+---
+course: Computer Vision and Cognitive Systems
+---
 Keypoints are a way to extract descriptors from an image, with each descriptor associated to a location of the image, in order to obtain sparse features instead of dense ones. This is done since there is a variety of tasks (e.g. image correspondence) where extracting some features makes more sense than having all the dense features matrix.
 
 Here we are tackling 2 tasks:
