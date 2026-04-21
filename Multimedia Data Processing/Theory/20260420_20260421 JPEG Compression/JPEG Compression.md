@@ -83,11 +83,11 @@ Basically the DCT changes the base of the vector space, so obtaining the correct
 This different representation is useful in image compression since by moving from pixels to frequencies we changed the probability distributions of the symbols.
 Also, the human eye is not uniformly able to capture frequency changes in images, as it perceives low frequencies better than high ones, so if I make a mistake on higher frequencies, the error is perceived less than an error on lower frequencies, allowing us to be more aggressive in the quantization of higher frequencies (so that we can reduce the amount of data while still having low perceivable error).
 
-In the DCT the first value of each block (the one at position $(0, 0)$, being the low frequency one, is called DC coefficient, while the other ones are called AC (because as alternate current they have higher frequencies than the direct current).
+In the DCT the first value of each block (the one at position $(0, 0)$, being the low frequency one, is called `DC` coefficient, while the other ones are called `AC` (because as alternate current they have higher frequencies than the direct current).
 
-The DC coefficient is encoded differently with respect for each block, and it is proportional to the average of the pixel values in the block.
-The DC coefficient is compressed differently from the AC coefficients, since the average value of a block will be similar to that of the neighboring blocks.
-The DC coefficients are then encoded by difference with respect to the previously encoded block.
+The `DC` coefficient is encoded differently with respect for each block, and it is proportional to the average of the pixel values in the block.
+The `DC` coefficient is compressed differently from the `AC` coefficients, since the average value of a block will be similar to that of the neighboring blocks.
+The `DC` coefficients are then encoded by difference with respect to the previously encoded block.
 
 The direct (forward) and inverse DCT functions are as follows:
 $$
@@ -101,12 +101,27 @@ $$
 \end{align}
 $$
 
-Since we need to encode the DC coefficient, and we are working with 8-bit/pixel value maps, 11-bit precision DC coefficients are obtained, so differential coding will require 12-bit precision.
-A category table is defined for DC values with 12 possible ranges of values.
-A 4-bit index called SSSS allows to identify from which category the current coefficient belongs to, and a Huffman table is then defined with the SSSS variable length encoding.
+Since we need to encode the `DC` coefficient, and we are working with 8-bit/pixel value maps, 11-bit precision `DC` coefficients are obtained, so differential coding will require 12-bit precision.
+A category table is defined for `DC` values with 12 possible ranges of values.
+A 4-bit index called `SSSS` allows to identify from which category the current coefficient belongs to, and a Huffman table is then defined with the `SSSS` variable length encoding.
 
-The DC coefficient for the current block is calculated, then we subtract the previously coded value from this by creating the DC differential coefficient (DIFF).
-The value of the SSSS category to which DIFF belongs is found, and for each category SSSS bits are added to the SSSS Huffman code to identify which DIFF was generated.
-When DIFF is positive, the least significant SSSS bits of DIFF are added, and when DIFF is negative the least significant SSSS bits of DIFF - 1 are added. In practice the first bit of those added is 0 if DIFF is negative and 1 if positive.
+The DC coefficient for the current block is calculated, then we subtract the previously coded value from this by creating the `DC` differential coefficient (`DIFF`).
+The value of the `SSSS` category to which `DIFF` belongs is found, and for each category `SSSS` bits are added to the `SSSS` Huffman code to identify which `DIFF` was generated.
+When DIFF is positive, the least significant `SSSS` bits of `DIFF` are added, and when `DIFF` is negative the least significant `SSSS` bits of DIFF - 1 are added. In practice the first bit of those added is 0 if `DIFF` is negative and 1 if positive.
 
-AC encoding is similar, but instead of using SSSS we use NNNNSSSS, where NNNN represents the number of null coefficients encountered by the last coded coefficient and before the current one.
+`AC` encoding is similar, but instead of using `SSSS` we use `NNNNSSSS`, where `NNNN` represents the number of null coefficients encountered by the last coded coefficient and before the current one.
+
+The syntax of the bit string is rather complex, but broadly speaking the concept is that the data is divided into blocks hierarchically ordered.
+Before each block we have a marker (`FF`), which identifies a segment of file. The marker is followed by 2 bytes which indicate the length of the segment (in bytes).
+When, during an encoding, the `FF` byte is created in the output string, a `00` is also added (the string is stuffed with an extra byte, which is why this is called *byte stuffing*).
+If after an `FF` byte the decoder sees a `00`, it ignores it. If the byte is not a `0`, it must be a marker.
+At the end of the encoding of any block, if a completely full byte is not obtained, we add as many `1`s as needed to complete the byte.
+
+If we consider the R, G, and B components, it could be done as following:
+![[Pasted image 20260421141703.png]]
+
+However, for this situation the [JFIF (JPEG File Interchange Format)](https://en.wikipedia.org/wiki/JPEG_File_Interchange_Format) format has been defined, which provides the following transformation:
+![[Pasted image 20260421141829.png]]
+In this way, the color components are sub-sampled by reducing the size to one quarter of the original.
+
+
