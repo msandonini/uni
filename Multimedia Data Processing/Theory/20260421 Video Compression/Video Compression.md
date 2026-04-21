@@ -76,6 +76,19 @@ To do this, for example, it is possible to add a motion vector only if the SAD o
 - Difference image (B - Prediction of B):
 ![[Pasted image 20260421151817.png]]
 
+## Lossy compression
+
+As for image compression, not all information must be transmitted unaltered to allow to appreciate the video content, even with excellent quality; it is therefore possible to transmit the pixels encoded as inter frames or the differences encoded as intra-frames, accepting a loss in their representation.
+
+The loss should take place on the less significant components of the data, therefore we try to represent the data through a transformation that separates the different information from the contents.
+
+The main transformation used in video encoding is [DCT](https://en.wikipedia.org/wiki/Discrete_cosine_transform), followed by a quantization (integer division).
+
+Different quantization levels of the DCT coefficients produce drastic reductions in the width (uniformity) of the distribution:
+![[Pasted image 20260421152322.png]]
+
+
+
 
 
 ---
