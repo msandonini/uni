@@ -98,7 +98,9 @@ Since it is not possible to send the original reference to the decoder, the only
 This means that after encoding a frame, the encoder also performs a decoding, in order to store the uncompressed version of the just compressed data, thus having a reference for the future steps:
 ![[Pasted image 20260421153650.png]]
 
+After going through the compression and the quantization, we go to the [[Huffman encoding]], and then we apply a feedback loop from the buffer back to the quantization:
 ![[Pasted image 20260421153800.png]]
+This is done in order to dynamically change the quantization for the next frame, in order to compress more in the case of scenes with high differences between a frame and the other.
 
 ---
 
