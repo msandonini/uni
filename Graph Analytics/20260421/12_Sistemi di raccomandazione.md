@@ -15,3 +15,11 @@ Siccome la similarità è simmetrica il calcolo si può ridurre della metà.
 La rappresentazione della similarity matrix si può eseguire tramite l'utilizzo di un grafo bipartito.
 In un dataset User-Item la probabilità di ortogonalità è piuttosto alta, quindi il numero di calcoli inutili è a sua volta piuttosto alto. Usando una rappresentazione a grafo è semplice trovare tutti gli items che hanno almeno uno user in comune, quindi la similarità si può calcolare tra solo l'item corrente e quelli che si sovrappongono, riducendo dunque il numero di calcoli
 
+Una rete Bayesiana è un grafo diretto in cui ogni nodo è annotato con informazioni probabilistiche quantitative (come ad esempio "50%", "0.5", ecc...)
+Una rete Bayesiana rappresenta un mix tra teoria della probabilità e teoria dei grafi, in cui le dipendenze tra variabili sono espresse graficamente.
+
+Definiamo dinamica una rete bayesiana che mette in relazione delle variabili in time steps adiacenti.
+
+La versione più semplice di una DBN (Dynamic Bayesian Network) che può essere usata per predire una posizione è una [catena di Markov](https://en.wikipedia.org/wiki/Markov_chain).
+
+
