@@ -98,3 +98,4 @@ Useful papers:
 - [A fast and high subjective quality sprite generation algorithm with frame skipping and multiple sprites techniques](https://homepage.ntu.edu.tw/~lgchen/publication/paper/[C][2002][ICIP][Shao-Yi.Chien][1].pdf)
 - [Power efficient sum of absolute difference algorithms for video compression](https://www.iosrjournals.org/iosr-jvlsi/papers/vol1-issue6/C0161018.pdf)
 - [Appraisal of motion estimation techniques in video compression](https://iopscience.iop.org/article/10.1088/1742-6596/1706/1/012070/pdf)
+- [Adaptive Recurrent Frame Prediction with Learnable Motion Vectors](https://dl.acm.org/doi/10.1145/3610548.3618211)
