@@ -100,7 +100,7 @@ This means that after encoding a frame, the encoder also performs a decoding, in
 
 After going through the compression and the quantization, we go to the [[Huffman encoding]], and then we apply a feedback loop from the buffer back to the quantization:
 ![[Pasted image 20260421153800.png]]
-This is done in order to dynamically change the quantization for the next frame, in order to compress more in the case of scenes with high differences between a frame and the other, so that we can keep a constant bitrate (not constant quality but constant bitrate). This step is very difficult since it is very prone to over-compensation.
+This is done in order to dynamically change the quantization for the next frame, in order to compress more in the case of scenes with high differences between a frame and the other, so that we can keep a constant bitrate (not constant quality but constant bitrate). This step is very difficult since it is very prone to over-compensation, causing an oscillation in the video quality.
 
 ---
 
