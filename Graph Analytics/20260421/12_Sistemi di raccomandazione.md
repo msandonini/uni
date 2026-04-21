@@ -22,4 +22,5 @@ Definiamo dinamica una rete bayesiana che mette in relazione delle variabili in 
 
 La versione più semplice di una DBN (Dynamic Bayesian Network) che può essere usata per predire una posizione è una [catena di Markov](https://en.wikipedia.org/wiki/Markov_chain).
 
-
+Il modello di previsione può cambiare a seconda del contesto (es. a seconda dell'ora a cui controllo). In questo caso, si può usare un modello esteso basato su una catena di Markov contestuale (CMC - Contextual Markov Chain), nella quale la probabilità che il soggetto sia in un determinato luogo dipende anche dal tempo specificato.
+![[Pasted image 20260421125534.png]]
