@@ -3,7 +3,7 @@
   "accentColor": "#5d8dfd",
   "baseFontSizeAction": true,
   "nativeMenus": false,
-  "baseFontSize": 16,
+  "baseFontSize": 18,
   "enabledCssSnippets": [
     "theme-override"
   ],

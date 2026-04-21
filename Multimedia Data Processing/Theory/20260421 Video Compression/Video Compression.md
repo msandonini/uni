@@ -1,3 +1,7 @@
+---
+course: Multimedia Data Processing
+---
+
 From a technical point of view, the video is just a sequence of images, obtained by temporal sampling.
 The [PAL](https://en.wikipedia.org/wiki/PAL) standard, used in Europe, plans to send 25 images per second.
 
@@ -49,3 +53,35 @@ Generally, it is not allowed to indicate motion vector that would cause the bloc
 
 In the context of compression, being "similar" means having small differences. With the aim to minimize the [SAD](https://en.wikipedia.org/wiki/Sum_of_absolute_differences) (Sum of Absolute Differences i.e. sum of the absolute values of the differences), a search is carried out.
 There are many techniques for carrying out this search, which produce results more or less close to the optimum, which is obviously easily obtainable by carrying out an exhaustive search (try all possible motion vectors, measure the SAD and keep the one that provides the minimum result) .
+
+![[Pasted image 20260421150735.png]]
+>[Power-Aware Multimedia: Concepts and Design Perspectives](https://www.researchgate.net/publication/3432475_Power-Aware_Multimedia_Concepts_and_Design_Perspectives)
+>Block Matching Motion Estimation. An image is partitioned into 16 × 16 Macro Blocks (MBs). For each MB, the best-matched MB is searched in a $[−p, (p − 1)]$ search range. Sum of Absolute Difference (SAD) is adopted as the criterion for the matching.
+
+![[Pasted image 20260421151204.png]]
+
+By having the previous frame and the motion vector, it is possible to build an image composed of macroblocks of the previous frame, displaced by what is indicated by the motion vector. This operation is called [motion estimation](https://en.wikipedia.org/wiki/Motion_estimation).
+This predicted image allows to reconstruct the frame with lower differences and therefore with probable saving of space.
+
+Unfortunately, the space occupied by motion vectors must also be added. It is therefore necessary to introduce a trade-off between the space saved by reducing the differences and the one "wasted" by the motion vector.
+
+To do this, for example, it is possible to add a motion vector only if the SAD of the optimal block and that of the corresponding block $[MV = (0,0)]$ have a difference greater than a predetermined threshold.
+
+- Frame B:
+![[Pasted image 20260421151630.png]]
+- Predicted image:
+![[Pasted image 20260421151711.png]]
+- Difference image (B - A):
+![[Pasted image 20260421151736.png]]
+- Difference image (B - Prediction of B):
+![[Pasted image 20260421151817.png]]
+
+
+
+---
+
+Useful papers:
+- [Fast disparity estimation algorithm for mesh-based stereo image/video compression with two-stage hybrid approach](https://homepage.ntu.edu.tw/~lgchen/publication/paper/[C][2003][VCIP][Shao-Yi.Chien][1].pdf)
+- [A fast and high subjective quality sprite generation algorithm with frame skipping and multiple sprites techniques](https://homepage.ntu.edu.tw/~lgchen/publication/paper/[C][2002][ICIP][Shao-Yi.Chien][1].pdf)
+- [Power efficient sum of absolute difference algorithms for video compression](https://www.iosrjournals.org/iosr-jvlsi/papers/vol1-issue6/C0161018.pdf)
+- [Appraisal of motion estimation techniques in video compression](https://iopscience.iop.org/article/10.1088/1742-6596/1706/1/012070/pdf)
