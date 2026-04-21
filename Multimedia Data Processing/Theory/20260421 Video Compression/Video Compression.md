@@ -93,7 +93,12 @@ In fact, after the reconstruction, the decoder does not have the original frame,
 This phenomenon means that after a few frames, the error propagates, and the reconstruction becomes unacceptable:
 ![[Pasted image 20260421153055.png]]
 
+This problem is caused by the fact that the decoder does not have the original reference.
+Since it is not possible to send the original reference to the decoder, the only solution is to obtain the frame reconstructed by the decoder also from the encoding side, therefore referring to the same frame.
+This means that after encoding a frame, the encoder also performs a decoding, in order to store the uncompressed version of the just compressed data, thus having a reference for the future steps:
+![[Pasted image 20260421153650.png]]
 
+![[Pasted image 20260421153800.png]]
 
 ---
 
