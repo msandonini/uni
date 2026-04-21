@@ -87,7 +87,11 @@ The main transformation used in video encoding is [DCT](https://en.wikipedia.org
 Different quantization levels of the DCT coefficients produce drastic reductions in the width (uniformity) of the distribution:
 ![[Pasted image 20260421152322.png]]
 
+The approximation of the coefficients during reconstruction introduces a problem for inter frame coding.
 
+In fact, after the reconstruction, the decoder does not have the original frame, but an approximation of it. For this reason, if the reference is different, the aforementioned image will also be different, and therefore the result will be ruined.
+This phenomenon means that after a few frames, the error propagates, and the reconstruction becomes unacceptable:
+![[Pasted image 20260421153055.png]]
 
 
 
