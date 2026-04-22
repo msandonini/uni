@@ -89,3 +89,12 @@ Un sistema memory based può usare diversi approcci:
 	- Trova utenti simili al corrente
 	- Controlla cosa gli utenti simili abbiano apprezzato
 	- Raccomanda gli items che l'utente corrente non ha ancora visto
+
+### Model based collaborative filtering
+
+L'idea dietro al sistema model based è che il sistema deve costruire un modello in cui:
+- Ogni utente è rappresentato da un set di preferenze
+- Ogni item è rappresentato da un set di features
+- Le raccomandazioni sono fatte combinando queste rappresentazioni
+
+L'approccio più comune sono i latent factor models (come ad esempio la matrix factorization), che rappresentano utenti ed items in uno spazio dimensionale ridotto e tentano di ricostruire i ratings osservati da questi fattori
