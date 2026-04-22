@@ -77,3 +77,15 @@ Esistono 2 tipi diversi di collaborative filtering:
 	- Raccomanda un item guardando i neighbors (utenti o items simili) e usando le loro preferenze per fare le predizioni
 - Model based
 	- Approccio che non usa la matrice user-item a prediction time ma impara un modello offline che cattura le preferenze degli utenti e le caratteristiche degli items
+
+### Memory based collaborative filtering
+
+Un sistema memory based può usare diversi approcci:
+- Item based
+	- Cerca items simili
+	- Controlla come l'utente li ha recensiti
+	- Usa quelle recensioni per stimare quella nuova
+- User based
+	- Trova utenti simili al corrente
+	- Controlla cosa gli utenti simili abbiano apprezzato
+	- Raccomanda gli items che l'utente corrente non ha ancora visto
