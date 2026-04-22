@@ -97,4 +97,4 @@ L'idea dietro al sistema model based è che il sistema deve costruire un modello
 - Ogni item è rappresentato da un set di features
 - Le raccomandazioni sono fatte combinando queste rappresentazioni
 
-L'approccio più comune sono i latent factor models (come ad esempio la matrix factorization), che rappresentano utenti ed items in uno spazio dimensionale ridotto e tentano di ricostruire i ratings osservati da questi fattori
+L'approccio più comune sono i latent factor models (come ad esempio la matrix factorization), che rappresentano utenti ed items in uno spazio dimensionale ridotto e tentano di ricostruire i ratings osservati da questi fattori.
