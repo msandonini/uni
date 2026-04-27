@@ -1,0 +1,5 @@
+rectangle 0 0 79 24 *
+point 5 15 ?
+circle 10 10 4 @
+circle 70 10 4 @
+line 40 15 40 20 |
