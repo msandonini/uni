@@ -9,4 +9,15 @@ From saliency we can obtain a map which tells us where the human eye will focus.
 
 Saliency detection in humans is a key attentional mechanism that facilitates learning and survival by enabling organisms to focus their limited perceptual and cognitive resources on the most pertinent subset of the available sensory data.
 
+Since saliency is subjective 2 different people will see different things in the same image. In our case, saliency tries to extract an average of what people usually see.
+
+One of the first saliency extraction mechanisms was created by Itti and Koch:
 ![[Pasted image 20260427095611.png]]
+This saliency extraction mechanism is quite old, but the base idea still works decently.
+
+No feature contains semantics, as we just have features based on color, intensity, and orientation.
+
+
+Following the idea of multi-level features, we can use a VGG-16 in order to obtain both some perceptual-level features and some semantic-level features:
+![[Pasted image 20260427100423.png]]
+
