@@ -23,3 +23,75 @@ $$
 ![[Pasted image 20260427102833.png]]
 
 All these coordinates make it possible for us to perform all the transformations in a matrix form.
+
+We can perform different operations:
+- Translation
+	- The movement of a point based on a translation vector
+	![[Pasted image 20260427103517.png]]
+	- In homogeneous coordinates, translation can be obtained by a matrix product ; it is possible to find a matrix T, constituted by the identity matrix and the translation vector such that:
+$$
+\begin{bmatrix}
+X_{2} \\
+Y_{2} \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+1 & 0 & dx \\
+0 & 1 & dy \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+X_{1} \\
+Y_{1} \\
+1
+\end{bmatrix}
+$$
+- Euclidean transformation: Translation and rotation
+	- These transformations are also called Isometries, or Class I transformations.
+	- All Euclidean transformations are isometries
+$$
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+\epsilon \cos \theta & -\sin \theta & t_{x} \\
+\epsilon \sin \theta & \cos \theta & t_{y} \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\hspace{1.5cm} \epsilon=\pm_{1}
+$$
+- 2D scaling
+	- This scales an image by a scaling factor.
+	- This operation preserves the orientation and not the area
+- Class II: Similarity transformation
+	- This transformation is a 2D scaling + rotation + translation.
+	- Each point is rotated, scaled, and translated.
+$$
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+\epsilon \cos \theta & -\sin \theta & t_{x} \\
+\epsilon \sin \theta & \cos \theta & t_{y} \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\hspace{1cm} x' = H_{s} x = \begin{bmatrix}
+sR & t \\
+0^{T} & 1
+\end{bmatrix}x
+\hspace{5mm} R^{T}R = I
+$$
