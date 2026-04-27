@@ -25,3 +25,4 @@ Usually we have the tendency to focus on the center of the image, however this a
 In order to add importance to the center of the image we can make the prior focus on it.
 This is fully learned, and not pre-set.
 
+![[Pasted image 20260427101103.png]]
