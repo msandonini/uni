@@ -1,1 +1,0 @@
-3D and 2D geometric primitives are what we mainly use to describe three-dimensional shapes.
