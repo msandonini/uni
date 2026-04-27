@@ -20,4 +20,8 @@ No feature contains semantics, as we just have features based on color, intensit
 
 Following the idea of multi-level features, we can use a VGG-16 in order to obtain both some perceptual-level features and some semantic-level features:
 ![[Pasted image 20260427100423.png]]
+In this architecture we combine the attention levels and high level features, and then we apply the learned prior.
+Usually we have the tendency to focus on the center of the image, however this architecture does not, since computers are translation invariant.
+In order to add importance to the image center we can make the prior focus on it.
+
 
