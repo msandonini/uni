@@ -245,7 +245,12 @@ void mirror(matrix& img) {
 	}
 }
 
-// This works, but it definitely is not scalable
+// This works, but it definitely is not scalable.
+// To fix the scalability issue we could use a dictionary of types and lambda
+// functions associated with that function, or maybe use a decorator if we were
+// in Python. Since we are in C++ and we have OOP we can use inheeritance and
+// polymorphism to create multiple classes with different types in the hierarchy
+// and then switch between them
 
 // END STEP 6
 
