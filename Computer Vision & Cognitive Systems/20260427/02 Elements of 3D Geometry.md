@@ -30,7 +30,7 @@ All these coordinates make it possible for us to perform all the transformations
 We can perform different operations:
 - Translation
 	- The movement of a point based on a translation vector
-	![[Pasted image 20260427103517.png]]
+		![[Pasted image 20260427103517.png]]
 	- In homogeneous coordinates, translation can be obtained by a matrix product ; it is possible to find a matrix T, constituted by the identity matrix and the translation vector such that:
 $$
 \begin{bmatrix}
@@ -70,6 +70,9 @@ y \\
 \end{bmatrix}
 \hspace{1.5cm} \epsilon=\pm_{1}
 $$
+	- We have 3 degrees of freedom:
+		- 2 for the translation
+		- 1 for the rotation
 - 2D scaling
 	- This scales an image by a scaling factor.
 	- This operation preserves the orientation and not the area
@@ -98,3 +101,13 @@ sR & t \\
 \end{bmatrix}x
 \hspace{.8cm} R^{T}R = I
 $$
+	- We have 4 degrees of freedom:
+		- 2 for the translation
+		- 1 for the rotation
+		- 1 for the scaling
+	- Rations of length, angles, ratios of areas, and parallel lines are preserved
+- Class III: Affine transformations
+	- A generic affine transformation relaxes any constraint in the matrix
+		![[Pasted image 20260427105120.png]]
+	- Only the parallel lines are preserved
+- Class IV: Projective transformations
