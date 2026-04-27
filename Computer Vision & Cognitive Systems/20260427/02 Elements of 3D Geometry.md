@@ -22,4 +22,4 @@ $$
 
 ![[Pasted image 20260427102833.png]]
 
-
+All these coordinates make it possible to perform all the transformations in a matrix form.
