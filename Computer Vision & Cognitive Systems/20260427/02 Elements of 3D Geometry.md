@@ -110,4 +110,9 @@ $$
 	- A generic affine transformation relaxes any constraint in the matrix
 		![[Pasted image 20260427105120.png]]
 	- Only the parallel lines are preserved
+	- We have 6 degrees of freedom:
+		- 2 for translation
+		- 2 for rotation
+		- 2 for scaling
+	- Because we have 2 degrees of freedom on scale and orientation this is called non-isotropic scaling
 - Class IV: Projective transformations
