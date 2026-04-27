@@ -26,3 +26,5 @@ In order to add importance to the center of the image we can make the prior focu
 This is fully learned, and not pre-set.
 
 ![[Pasted image 20260427101103.png]]
+
+It's possible to apply saliency also to videos. In this case we need to keep motion into account, as also the movement is something that catches the human attention.
