@@ -19,3 +19,12 @@ The SIFT algorithm is used in various applications:
 	- It's useful to locate where to put virtual objects in a real-world image
 There are many other applications of SIFT, as it is the most used keypoints extraction algorithm, but there are also different and newer algorithms which can perform even better.
 
+Keypoint extraction tasks were tried also with CNNs, but it did not work, however what worked was [mixing CNN based descriptor with handcrafted descriptors](http://refbase.cvc.uab.es/files/BRP2019.pdf).
+The combination of the 2 has both the location (given by SIFT) and the semantics (given by the CNN).
+
+There are also semantic keypoints, which are keypoints with a semantic information.
+They are used for different tasks:
+- Pose estimation keypoints
+- Facial landmarks
+- Vehicle keypoints
+These keypoints are not so precise in term of localization, because they are extracted by a CNN or a VIT.
