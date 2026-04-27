@@ -245,6 +245,8 @@ void mirror(matrix& img) {
 	}
 }
 
+// This works, but it definitely is not scalable
+
 // END STEP 6
 
 int main(int argc, char* argv[]) {
