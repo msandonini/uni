@@ -135,5 +135,10 @@ $$
 		- 2 for rotation
 		- 2 for scaling
 	- Because we have 2 degrees of freedom on scale and orientation this is called non-isotropic scaling
-- Class IV: Projective transformations
-	- 
+- Class IV: Perspective/Projective transformations
+		![[Pasted image 20260427110129.png]]
+	- This transformation has 8 degrees of freedom (not 9 since a point is still mapped to the previous position and vice-versa):
+		- 2 scale
+		- 2 rotation
+		- 2 translation
+		- 2 line
