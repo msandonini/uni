@@ -109,6 +109,26 @@ $$
 - Class III: Affine transformations
 	- A generic affine transformation relaxes any constraint in the matrix
 		![[Pasted image 20260427105120.png]]
+$$
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix} = \begin{bmatrix}
+a_{11} & a_{22} & t_{x} \\
+a_{21} & a_{22} & t_{y} \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\hspace{1cm} x' = H_{A}x = \begin{bmatrix}
+A & t \\
+0^{T} & 1
+\end{bmatrix} x
+$$
 	- Only the parallel lines are preserved
 	- We have 6 degrees of freedom:
 		- 2 for translation
@@ -116,3 +136,4 @@ $$
 		- 2 for scaling
 	- Because we have 2 degrees of freedom on scale and orientation this is called non-isotropic scaling
 - Class IV: Projective transformations
+	- 
