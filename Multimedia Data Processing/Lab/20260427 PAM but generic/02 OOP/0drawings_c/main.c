@@ -41,6 +41,37 @@ void shape_draw(const shape* this, canvas* c) {
 }
 // END STEP 2
 
+// STEP 3: Create a rectangle based on a shape (inheritance-like behaviour)
+typedef struct rectangle {
+	shape base_;
+
+	int x2_, y2_;
+} rectangle;
+
+rectangle* rectangle_create(rectangle* this, int x, int y, int x2, int y2,
+							char c) {
+	shape_create(&this->base_, x, y, c);
+
+	this->x2_ = x2;
+	this->y2_ = y2;
+
+	return this;
+}
+rectangle* rectangle_destroy(rectangle* this) {
+	shape_destroy(&this->base_);
+	return this;
+}
+rectangle* new_rectangle(rectangle* this, int x, int y, int x2, int y2,
+						 char c) {
+	return rectangle_create(malloc(sizeof(rectangle)), x, y, x2, y2, c);
+}
+void delete_canvas(rectangle* this) { free(rectangle_destroy(this)); }
+void rectangle_draw(const rectangle* this, canvas* c) {
+	canvas_rectangle(c, this->base_.x_, this->base_.y_, this->x2_, this->y2_,
+					 this->base_.c_);
+}
+// END STEP 3
+
 void draw_file(FILE* f, canvas* c) {
 	char type[30];
 	while (fscanf(f, "%29s", type) == 1) {
@@ -70,6 +101,10 @@ void draw_file(FILE* f, canvas* c) {
 
 int main(void) {
 	canvas* c = new_canvas(80, 25);
+
+	rectangle r;
+	rectangle_create(&r, 0, 0, 79, 24, '*');
+	rectangle_draw(&r, c);
 
 	draw_file(stdin, c);
 
