@@ -23,5 +23,5 @@ Following the idea of multi-level features, we can use a VGG-16 in order to obta
 In this architecture we combine the attention levels and high level features, and then we apply the learned prior.
 Usually we have the tendency to focus on the center of the image, however this architecture does not, since computers are translation invariant.
 In order to add importance to the center of the image we can make the prior focus on it.
-
+This is fully learned, and not pre-set.
 
