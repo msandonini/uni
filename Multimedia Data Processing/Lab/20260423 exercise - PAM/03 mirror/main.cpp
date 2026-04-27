@@ -30,12 +30,16 @@ struct matrix {
 	auto data() const { return data_; }
 	auto size() const { return data_.size(); }
 
+	void resize(h, w) {
+		//*this =
+	}
+
 	const char* rawdata() const {
 		return reinterpret_cast<const char*>(data_.data());
 	}
 	char* rawdata() { return reinterpret_cast<char*>(data_.data()); }
 
-	size_t rawsize() { return size() * sizeof(T); }
+	size_t rawsize() const { return size() * sizeof(T); }
 };
 
 using rgb = std::array<uint8_t, 3>;
@@ -84,16 +88,32 @@ matrix<rgb> loadPAM_rgb(const std::string& filename) {
 		return img;
 	}
 
-	img = matrix(h, w);
+	img = matrix<rgb>(h, w);
 
 	if (!is.read(img.rawdata(), img.size())) {
-		img = matrix();
+		img = matrix<rgb>();
 	}
 
 	return img;
 }
 
-bool savePAM(const std::string& filename, const matrix& img) {
+bool savePAM_gs(const std::string& filename, const matrix<uint8_t>& img) {
+	std::ofstream os(filename, std::ios::binary);
+	if (!os) {
+		return false;
+	}
+	os << "P7\n"
+	   << "WIDTH " << img.cols() << "\n"
+	   << "HEIGHT " << img.rows() << "\n"
+	   << "DEPTH 1\n"
+	   << "MAXVAL 255\n"
+	   << "TUPLTYPE GRAYSCALE\n"
+	   << "ENDHDR\n";
+
+	os.write(img.rawdata(), img.rawsize());
+	return true;
+}
+bool savePAM_rgb(const std::string& filename, const matrix<rgb>& img) {
 	std::ofstream os(filename, std::ios::binary);
 	if (!os) {
 		return false;
@@ -110,12 +130,12 @@ bool savePAM(const std::string& filename, const matrix& img) {
 	//		os.put(img(r, c));
 	//	}
 	// }
-	os.write(img.rawdata(), img.size());
+	os.write(img.rawdata(), img.rawsize());
 	return true;
 }
 
-matrix makeVerticalGradient() {
-	matrix img(256, 256);
+auto makeVerticalGradient() {
+	matrix<uint8_t> img(256, 256);
 	for (int r = 0; r < img.rows(); ++r) {
 		for (int c = 0; c < img.cols(); ++c) {
 			img(r, c) = static_cast<uint8_t>(r);
@@ -124,14 +144,17 @@ matrix makeVerticalGradient() {
 	return img;
 }
 
-void flip(matrix& mat) {
+template <typename T>
+void flip(matrix<T>& mat) {
 	for (size_t i = 0; i < mat.rows() / 2; i++) {
 		for (size_t j = 0; j < mat.cols(); j++) {
 			std::swap(mat(i, j), mat(mat.rows() - i - 1, j));
 		}
 	}
 }
-void mirror(matrix& mat) {
+
+template <typename T>
+void mirror(matrix<T>& mat) {
 	for (size_t i = 0; i < mat.rows(); i++) {
 		for (size_t j = 0; j < mat.cols() / 2; j++) {
 			std::swap(mat(i, j), mat(i, mat.cols() - j - 1));
@@ -144,7 +167,7 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 
-	matrix img = loadPAM(argv[1]);
+	matrix img = loadPAM_rgb(argv[1]);
 
 	if (img.empty()) {
 		return 1;
@@ -152,7 +175,7 @@ int main(int argc, char* argv[]) {
 
 	flip(img);
 
-	savePAM(argv[2], img);
+	savePAM_rgb(argv[2], img);
 
 	return 0;
 }
