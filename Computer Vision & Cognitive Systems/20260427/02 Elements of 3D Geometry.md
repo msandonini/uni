@@ -1,3 +1,6 @@
+---
+course: Computer Vision and Cognitive Systems
+---
 3D and 2D geometric primitives are what we mainly use to describe three-dimensional shapes.
 
 The vision model is based on the physical lens models, and o the geometric optics so the world can be described by the 3D geometry and its mapping onto 2D planes.
@@ -89,9 +92,9 @@ x \\
 y \\
 1
 \end{bmatrix}
-\hspace{1cm} x' = H_{s} x = \begin{bmatrix}
+\hspace{1.5cm} x' = H_{s} x = \begin{bmatrix}
 sR & t \\
 0^{T} & 1
 \end{bmatrix}x
-\hspace{5mm} R^{T}R = I
+\hspace{.8cm} R^{T}R = I
 $$

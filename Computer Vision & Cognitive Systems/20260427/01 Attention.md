@@ -1,3 +1,7 @@
+---
+course: Computer Vision and Cognitive Systems
+---
+
 Saliency is the task of estimating where you will look at when you see an image.
 
 How we see the things is very different from how we encode them, and knowing which are the most attractive spots in an image is useful to learn how we can encode and process it.

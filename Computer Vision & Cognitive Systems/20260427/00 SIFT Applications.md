@@ -1,3 +1,7 @@
+---
+course: Computer Vision and Cognitive Systems
+---
+
 The SIFT algorithm is used in various applications:
 - Object Recognition
 	- It was used for these tasks when CNN and VIT were a solution, so they used SIFT to extract keypoints and connect them with other images of the same object
