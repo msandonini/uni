@@ -4,6 +4,7 @@
 #include "matrix.hpp"
 
 class rgbImage : public matrix<std::array<uint8_t, 3>> {
+	rgbImage() : matrix() {}
 	rgbImage(size_t rows, size_t cols) : matrix(rows * 3, cols * 3) {}
 
 	void loadPAM(const std::string& filename) override {

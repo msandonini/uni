@@ -5,6 +5,9 @@
 
 class grayscaleImage : public matrix<uint8_t> {
   public:
+	grayscaleImage() : matrix() {}
+	grayscaleImage(size_t rows, size_t cols) : matrix(rows, cols) {}
+
 	void loadPAM(const std::string& filename) override {
 		std::ifstream is(filename, std::ios::binary);
 
