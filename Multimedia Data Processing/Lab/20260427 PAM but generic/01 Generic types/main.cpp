@@ -117,7 +117,8 @@ matrix loadPAM(const std::string& filename) {
 		}
 	}
 
-	if (w < 0 || h < 0 || maxval != 255 || type != "GRAYSCALE") {
+	if (w < 0 || h < 0 || maxval != 255 ||
+		(type != "GRAYSCALE" && type != "RGB")) {
 		return img;
 	}
 
