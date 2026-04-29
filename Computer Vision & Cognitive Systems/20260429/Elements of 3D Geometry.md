@@ -26,6 +26,46 @@ Composite transformations are obtained by multiplying the matrices of each step:
 $$
 T_{c} = T_{4}\cdot T_{3}\cdot T_{2}\cdot T_{1}
 $$
+In a composite transformation the order is important, as in the example above the first transformation is $T_{1}$, and the last is $T_{4}$, thus the order is basically the following:
+$$
+P_{2} = T_{c} \cdot P_{1} = T_{4} \cdot T_{3}\cdot T_{2}\cdot T_{1}= T_{4}\cdot(T_{3}\cdot (T_{2}\cdot(T_{1}\cdot P_{1})))
+$$
 
+
+In Computer Vision, transformations are useful to perform transformations on the images before processing them. For example, if we have 2 separate images which we want to unify in a landscape image, we can do so by using homography estimation:
+![[Pasted image 20260429130412.png]]
+- We select 4 points in the same plane but not collinear, each with its set of coordinates:
+$$
+\begin{bmatrix}
+x_{i}' \\
+y_{i}' \\
+1
+\end{bmatrix} = 
+\begin{bmatrix}
+h_{00} & h_{01} & h_{02} \\
+h_{10} & h_{11} & h_{12} \\
+h_{20} & h_{21} & 1
+\end{bmatrix}
+\begin{bmatrix}
+x_{i} \\
+y_{i} \\
+1
+\end{bmatrix}
+$$
+- In this formula $h_{00}, \dots, h_{21}$ are the variables
+$$
+\begin{align}
+x_{i}' &= h_{00} x_{i} + h_{01} y_{i} + h_{02} \\
+y_{i}' &= h_{10} x_{i} + h_{11} y_{i} + h_{12} \\
+1 &= h_{20} x_{i} + h_{21} y_{i} + 1
+\end{align}
+$$
+$$
+\begin{cases}
+x_{i}' = \frac{h_{00} x_{1} + h_{01} y_{1} + h_{02}}{h_{20} x_{1} + h_{21} y_{1} + 1} \\
+y_{i}' = \frac{h_{11} x_{1} + h_{11} y_{1} + h_{12}}{h_{20} x_{1} + h_{21} y_{1} +1ì 1}
+\end{cases}
+$$
+- Now we repeat for the 4 points, obtaining a matrix of 8 equations
 
 
