@@ -100,5 +100,7 @@ The simplest device to form an image of a 3D scene on a 2D surface is the "pinho
 ![[Pasted image 20260429132850.png]]
 ![[Pasted image 20260429133028.png]]
 
-
+We call focal length the distance between the image plane and the barrier with the hole. Each camera in existence has a different focal length, as even a small difference is enough to change the capture of the image.
+In Computer Vision, since we don't like having an inverse image as our image plane, what we usually call image plane is actually the virtual image plane.
+![[Pasted image 20260429133600.png]]
 
