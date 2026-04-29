@@ -59,8 +59,8 @@ y' \\
 1
 \end{bmatrix} =
 \begin{bmatrix}
-\epsilon \cos \theta & -\sin \theta & t_{x} \\
-\epsilon \sin \theta & \cos \theta & t_{y} \\
+\varepsilon \cos \theta & -\sin \theta & t_{x} \\
+\varepsilon \sin \theta & \cos \theta & t_{y} \\
 0 & 0 & 1
 \end{bmatrix}
 \begin{bmatrix}
@@ -68,7 +68,7 @@ x \\
 y \\
 1
 \end{bmatrix}
-\hspace{1.5cm} \epsilon=\pm_{1}
+\hspace{1.5cm} \varepsilon=\pm_{1}
 $$
 	- We have 3 degrees of freedom:
 		- 2 for the translation

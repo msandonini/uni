@@ -1,4 +1,4 @@
-Given a transformation $x' = Hx$ and given an initial image $I = f(x)$, we call **parametric transformation** the process in which we can create a new image $I'=g(x)$. To do so, we have 2 different algorithms:
+Given a transformation $x' = Hx$ and given an initial image $I = f(x)$, we call **parametric transformation** the process in which we create a new image $I'=g(x)$. To do so, we have 2 different algorithms:
 - Forward: 
 	- For every pixel $x$ in $f(x)$ compute the destination location $x'=h(x)$ and copy the pixel $f(x)$ to $g(x')$
 	- This is straightforward, but has some limitations:
@@ -9,3 +9,18 @@ Given a transformation $x' = Hx$ and given an initial image $I = f(x)$, we call 
 	- This is defined in each point (we get no holes)
 	- If the initial location is not an integer coordinates some interpolation methods can be adopted (neighbour, bilinear, bicubic, etc...)
 	- The inverse kernel in this case is the inverse matrix
+
+All the previous transformations can be done in a 3D space by basically adding an additional coordinate.
+The translation remains fundamentally identical, except for the fact that now we have one more dimension.
+The rotation changes a bit, as we now need to take care of the rotation axis. As an example, in a 3D rotation around the Z axis the operation is the following:
+$$
+\begin{cases}
+X_{2} = X_{1} \cos \vartheta - Y_{1} \sin \vartheta \\
+Y_{2} = X_{1} \sin \vartheta + Y_{1} \cos \vartheta \\
+Z_{2} = Z_{1}
+\end{cases}
+$$
+![[Pasted image 20260429124519.png]]
+
+
+
