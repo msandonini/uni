@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include <memory>
 #include <vector>
 
 #include "canvas.hpp"
@@ -67,6 +68,7 @@ int main(void) {
 	line 40 15 40 20 |
 	*/
 
+	/*
 	std::vector<shape*> shapes;
 	shapes.push_back(new rectangle(0, 0, 79, 24, '*'));
 	shapes.push_back(new point(5, 15, '?'));
@@ -74,14 +76,34 @@ int main(void) {
 	shapes.push_back(new circle(70, 10, 4, '@'));
 	shapes.push_back(new line(40, 15, 40, 20, '|'));
 
+
 	for (size_t i = 0; i < shapes.size(); ++i) {
 		shapes[i]->draw(c);
 	}
 	c.out(std::cout);
 
+	// If we forget this line we have a memory leak. To see them we can either
+	// use Valgrind in Linux or the _CrtDumpMemoryLeaks() function in
+	// Windows from Visual Studio
+	/*
 	for (size_t i = 0; i < shapes.size(); i++) {
 		delete shapes[i];
 	}
+	*/
+	// If instead of using standard pointers we used unique_ptrs we wouldn't
+	// have memory leaks
+
+	std::vector<std::unique_ptr<shape>> shapes;
+	shapes.emplace_back(std::make_unique<rectangle>(0, 0, 79, 24, '*'));
+	shapes.emplace_back(std::make_unique<point>(5, 15, '?'));
+	shapes.emplace_back(std::make_unique<circle>(10, 10, 4, '@'));
+	shapes.emplace_back(std::make_unique<circle>(70, 10, 4, '@'));
+	shapes.emplace_back(std::make_unique<line>(40, 15, 40, 20, '|'));
+
+	for (size_t i = 0; i < shapes.size(); ++i) {
+		shapes[i]->draw(c);
+	}
+	c.out(std::cout);
 
 	return 0;
 }

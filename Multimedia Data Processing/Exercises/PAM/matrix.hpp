@@ -4,12 +4,10 @@
 #include <vector>
 
 template <typename T>
-class matrix {
-  protected:
+struct matrix {
 	size_t rows_, cols_;
 	std::vector<T> data_;
 
-  public:
 	// -- CONSTRUCTORS & DESTRUCTORS --
 	matrix() {};
 	matrix(size_t rows, size_t cols) : rows_(rows), cols_(cols) {}

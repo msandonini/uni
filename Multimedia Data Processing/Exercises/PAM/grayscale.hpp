@@ -3,8 +3,7 @@
 
 #include "matrix.hpp"
 
-class grayscaleImage : public matrix<uint8_t> {
-  public:
+struct grayscaleImage : public matrix<uint8_t> {
 	grayscaleImage() : matrix() {}
 	grayscaleImage(size_t rows, size_t cols) : matrix(rows, cols) {}
 
