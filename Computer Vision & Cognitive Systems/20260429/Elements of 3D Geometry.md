@@ -86,5 +86,13 @@ $$
 $$
 ![[Pasted image 20260429131525.png]]
 
+### Camera Model
+
+Illumination is what makes it possible for a camera to capture the image of a object, so to take an image we need at least one source of illumination.
+In reality, because of how the light works, there always are multiple sources of illumination.
+
+In order to take a picture of an object, what we measure is its irradiance, so how much it reflects light.
+Basically, if we have an object which does not produce reflection, we are unable to capture it.
+
 
 
