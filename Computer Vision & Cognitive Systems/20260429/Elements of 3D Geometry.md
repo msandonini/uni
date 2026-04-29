@@ -66,6 +66,6 @@ x_{i}' = \frac{h_{00} x_{1} + h_{01} y_{1} + h_{02}}{h_{20} x_{1} + h_{21} y_{1}
 y_{i}' = \frac{h_{11} x_{1} + h_{11} y_{1} + h_{12}}{h_{20} x_{1} + h_{21} y_{1} +1ì 1}
 \end{cases}
 $$
-- Now we repeat for the 4 points, obtaining a matrix of 8 equations
+- Now we repeat for the 4 points, obtaining a matrix of 8 equations (slide 66)
 
 
