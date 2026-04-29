@@ -104,3 +104,8 @@ We call focal length the distance between the image plane and the barrier with t
 In Computer Vision, since we don't like having an inverse image as our image plane, what we usually call image plane is actually the virtual image plane.
 ![[Pasted image 20260429133600.png]]
 
+What we need to do is to find an equation able to transform the points of our real object into the points of our virtual image.
+This transformation is not reversible, as with a single camera we are not able to estimate the distance of the object.
+
+
+
