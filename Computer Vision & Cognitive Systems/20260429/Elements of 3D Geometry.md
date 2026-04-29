@@ -1,0 +1,11 @@
+Given a transformation $x' = Hx$ and given an initial image $I = f(x)$, we call **parametric transformation** the process in which we can create a new image $I'=g(x)$. To do so, we have 2 different algorithms:
+- Forward: 
+	- For every pixel $x$ in $f(x)$ compute the destination location $x'=h(x)$ and copy the pixel $f(x)$ to $g(x')$
+	- This is straightforward, but has some limitations:
+		- $x'$ can be not integer, so further transformation or blending is needed to distribute it in the neighborhood (in computer graphics this is called *splatting*)
+		- Some $x'$ point can be not defined
+- Inverse
+	- For every pixel $x'$ in $g(x')$ compute the destination location $x = \hat{h}(x')$ and resample $f(x)$ at location $x$ and copy to $g(x')$
+	- This is defined in each point (we get no holes)
+	- If the initial location is not an integer coordinates some interpolation methods can be adopted (neighbour, bilinear, bicubic, etc...)
+	- The inverse kernel in this case is the inverse matrix
