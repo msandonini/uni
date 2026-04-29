@@ -68,4 +68,13 @@ y_{i}' = \frac{h_{11} x_{1} + h_{11} y_{1} + h_{12}}{h_{20} x_{1} + h_{21} y_{1}
 $$
 - Now we repeat for the 4 points, obtaining a matrix of 8 equations (slide 66)
 
-
+In real life, when we take a photo or a video, we are basically applying a 3D to 2D transformation.
+3D to 2D transformations can be of 2 types:
+- Orthographic
+	- Given $x$ a 2D point and $p$ a 3D point, $x = (x, y)$, $p=(x, y, z)$
+	- With this transformation we basically drop the z coordinate
+	- In the real world, this is possible only when the depth of the objects is the same or when we are using cameras with a very long focal length
+![[Pasted image 20260429131506.png]]
+- Perspective
+	- This is the most commonly used projection, as it is the one usually obtained by normal cameras and in normal conditions. Here, points are projected on the image plane by dividing by their z component (this is why the more distant objects look smaller)
+![[Pasted image 20260429131525.png]]
