@@ -77,4 +77,14 @@ In real life, when we take a photo or a video, we are basically applying a 3D to
 ![[Pasted image 20260429131506.png]]
 - Perspective
 	- This is the most commonly used projection, as it is the one usually obtained by normal cameras and in normal conditions. Here, points are projected on the image plane by dividing by their z component (this is why the more distant objects look smaller)
+$$
+\mathcal{P}_{2}(p) = \begin{bmatrix}
+\frac{x}{z} \\
+\frac{y}{z} \\
+1
+\end{bmatrix}
+$$
 ![[Pasted image 20260429131525.png]]
+
+
+
