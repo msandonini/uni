@@ -22,5 +22,10 @@ Z_{2} = Z_{1}
 $$
 ![[Pasted image 20260429124519.png]]
 
+Composite transformations are obtained by multiplying the matrices of each step:
+$$
+T_{c} = T_{4}\cdot T_{3}\cdot T_{2}\cdot T_{1}
+$$
+
 
 
