@@ -93,6 +93,12 @@ In reality, because of how the light works, there always are multiple sources of
 
 In order to take a picture of an object, what we measure is its irradiance, so how much it reflects light.
 Basically, if we have an object which does not produce reflection, we are unable to capture it.
+![[Pasted image 20260429132642.png]]
+
+Since each point of an object irradiates light everywhere, we need a barrier to block off most of the rays to capture the object, otherwise we get blur because of the multiple sources of the light.
+The simplest device to form an image of a 3D scene on a 2D surface is the "pinhole" camera, where rays of light pass through a pinhole and form an inverted image of the object on the image plane.
+![[Pasted image 20260429132850.png]]
+![[Pasted image 20260429133028.png]]
 
 
 
