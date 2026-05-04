@@ -29,5 +29,59 @@ This is very close to a Gaussian filter with $\sigma = 0.8$.
 The usage of this loop filter has a very low computational cost and allows to slightly reduce the blocky effect given by compression. 
 The standard also provides that up to 3 frames can be skipped per transmitted frame in order to reduce the frame rate.
 In addition, to prevent the overall image quality from being excessively low, each macroblock must be transmitted INTRA at least once every 132 times it is transmitted.
-There is no indication on when to transmit INTRA or INTER, nor on the level of quantization to use or how to choose it, nor on when a block may not be transmitted.
+There is no indication on when to transmit INTRA or INTER, nor on the level of quantization to use or how to choose it, nor on when a block may not be transmitted (so that each video encoder can tackle different needs).
+
+## Bitstream structure
+
+The fields are bit-coded and are transmitted with the most significant bit first.
+The structure of the stream is divided into 4 levels of layers:
+- Picture
+- Group of blocks (GOB)
+- Macroblock (MB)
+- Block
+Each level is usually preceded by a header, except for the block.
+
+### Picture layer
+
+The picture layer is composed of:
+- Picture start code (PSC) - 20 bits: `0000 0000 0000 0001 0000`
+	- This is not byte aligned
+	- A search for a PSC requires a bit-by-bit scan
+- Temporal Reference (TR) - 5 bits: value from 0 to 31 which is increased by one each time
+	- Tracks any skipped frame
+- Type information (PTYPE) - 6 bits: a bitmapped field where the fourth bit represents the picture type
+	- QCIF is `0`
+	- CIF is `1`
+- Extra insertion information (PEI) - 1 bit: If `1` indicates that there is a byte of additional information (PSPARE) following
+	- The standard says not to insert them and to ignore those that meet until they are defined (which never happened). 
+	- All the following continues with PEI until this is 0
+
+### GOB layer
+
+Each picture is divided in 12 GOBs:
+![[Pasted image 20260504115621.png]]
+
+Each GOB layer is composed of:
+- Group of Blocks Start Code (GBSC) - 16 bits: `0000 0000 0000 0001`
+- Group Number (GN) - 4 bits: number indicating the GOB number:
+	- 0 corresponds to PSC
+	- 13, 14, 15 are not used
+	- This is useful to skip sending the GOB if it's equal to the preceding one
+- Quantizer information (GQUANT) - 5 bits: quantization value to use for all blocks in the GOB
+- Extra insertion information (GEI) - 1 bit:
+	- Same mechanism as [[#Picture layer|PEI]]
+	- In this case the information is called GSPARE
+
+### Macroblock layer
+
+Each GOB is divided into 11 x 3 macroblocks of size 16 x 16
+![[Pasted image 20260504120123.png]]
+
+Each macroblock starts with a Macroblock Address (MBA) coded at variable length (variable length code or VLC).
+For the first MB transmitted, its absolute address is sent (from 1 to 33), while for subsequent ones the difference between the current address and that of the previously transmitted MB is sent (prediction of the MBA).
+At this stage it is possible that, instead of meeting the VLC of an MBA, a start code (PSC or GBSC) is encountered, which means that the current GOB has ended (it may not contain macroblocks).
+There is also a VLC that allows to enlarge the bit stream, for example to obtain exactly a certain bit rate, in cases where compression reduces it excessively (used very rarely).
+
+![[Pasted image 20260504120740.png]]
+
 
