@@ -92,5 +92,61 @@ Differently from [[JPEG Compression|JPEG]], the standard does not allow to chang
 The second variable length field is the Type information (MTYPE), which provides information on the macroblock and the elements present.
 ![[Pasted image 20260504121218.png]]
 
+Following the MTYPE, the following fields may be present:
+- Quantizer (MQUANT) - 5 bits: indicates that from here on the quantization value must be the one indicated
+- Motion vector data (MVD)
+	- If a block is of the MC type, 2 VLCs are provided, one for the vertical and one for the horizontal components.
+	- The values are the difference from the previous one, which is considered (0, 0) if we are at 1, 12, 23 MB, if the previous was skipped, or if the previous was not MC.
+	- A further optimization is carried on, as the difference between the components of 2 MVs, by them being limited between $\pm 15$, is in the range $\pm 30$.
+	- Knowing the value of the previous component only 31 of the 61 values are possible, so in the VLC table for MVDs 2 different values correspond to the same VLC. The correct value is the one that makes fall in the ragne $\pm 15$.
 
+![[Pasted image 20260504123132.png]]
 
+The last field of the Macroblock layer is the Coded Block Pattern (CBP).
+This field is a 6-bit bitmap indicating which blocks are present in the MB.
+The blocks are numbered like this:
+![[Pasted image 20260504123314.png]]
+Each CBP is associated with a VLC in order to further compress this field too.
+
+![[Pasted image 20260504123400.png]]
+
+## Block layer
+
+In the Block layer the coefficients of the transform (TCOEFF) of the blocks indicated in the CBP are coded according to the zig-zag order. If the MB is INTRA, all the blocks are present.
+
+All the coefficients of the transforms, both INTRA and INTER, except the first one, are represented as a pair (run,level), which indicates the number of null coefficients preceding the non-zero level that is being coded.
+Typically the pairs (run,level) are present in the following table. Those that are not present are encoded with a 20-bit word: escape, run, level. escape is code 0000 01, run is a 6-bit unsigned integer and level is an 8-bit two's complement signed integer. Obviously, level cannot be zero.
+![[Pasted image 20260504123618.png]]
+The last bit "s" indicates the level sign:
+- `0` if positive
+- `1` if negative
+
+At the end of each block there is an end of block (EOB) 10 code, which indicates that all the other coefficients are null. 
+The first coefficient for INTRA blocks is simply coded with 8 bits, except for the value 128 (`1000 0000` in binary) which is replaced by 255 (`1111 1111`) in order not to create false start codes.
+
+The first coefficient for INTER blocks uses the same table as the others, but since it cannot be an EOB, it shortens the combination by one bit (run=0, level=± 1) (see table)
+
+The level is basically the quantization coefficient.
+
+Quantization in H. 261 is defined in terms of reconstruction, i.e. the inverse operation that must be performed to switch from quantized to dequantized (reconstructed) values. The formula is as follows:
+
+$$
+\begin{align}
+&\text{QUANT is odd:} \\
+&\begin{cases}
+\text{REC} = \text{QUANT} \cdot (2 \cdot \text{level} + 1) & \text{level}>0 \\
+\text{REC} = \text{QUANT} \cdot (2 \cdot \text{level} - 1) & \text{level}<0
+\end{cases} \\ \\
+
+&\text{QUANT is even:} \\
+&\begin{cases}
+\text{REC} = \text{QUANT} \cdot (2 \cdot \text{level} + 1) -1 & \text{level > 0} \\
+\text{REC} = \text{QUANT} \cdot (2 \cdot \text{level} - 1) +1 & \text{level < 0} \\
+\end{cases} \\
+ \\
+&\text{REC} = 0 \hspace{.5cm} \text{level}=0
+\end{align}
+$$
+
+The $2 \cdot \text{level}$ in the reconstruction formulas is present because the DCT coefficients are divided by 2 x QUANT during the coding. So the quantization goes from 2 to 62 (QUANT is always between 1 and 31).
+A simpler fixed division by 8 is used for the DC coefficient of the INTRA blocks.
