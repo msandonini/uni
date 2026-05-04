@@ -82,6 +82,7 @@ For the first MB transmitted, its absolute address is sent (from 1 to 33), while
 At this stage it is possible that, instead of meeting the VLC of an MBA, a start code (PSC or GBSC) is encountered, which means that the current GOB has ended (it may not contain macroblocks).
 There is also a VLC that allows to enlarge the bit stream, for example to obtain exactly a certain bit rate, in cases where compression reduces it excessively (used very rarely).
 
+Differently from [[JPEG Compression|JPEG]], the standard does not allow to change the Huffman table.
 ![[Pasted image 20260504120740.png]]
 
 
