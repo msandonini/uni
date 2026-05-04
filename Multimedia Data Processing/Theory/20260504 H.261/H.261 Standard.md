@@ -1,3 +1,7 @@
+---
+course: Multimedia Data Processing
+---
+
 H.261 was introduced in 1990, and it is the first "modern" standard for video encoding
 
 The standard title is "Video codec for audiovisual services at p x 64 kbit/s". This was initially designed for transmission over ISDN lines, which allowed bi-directional traffic at 64 kbps, therefore by using several lines in parallel it was possible to obtain a band of $p \times 64$ kbits, with $p$ being the number of lines, up to a max of 30.
@@ -84,5 +88,9 @@ There is also a VLC that allows to enlarge the bit stream, for example to obtain
 
 Differently from [[JPEG Compression|JPEG]], the standard does not allow to change the Huffman table.
 ![[Pasted image 20260504120740.png]]
+
+The second variable length field is the Type information (MTYPE), which provides information on the macroblock and the elements present.
+![[Pasted image 20260504121218.png]]
+
 
 
