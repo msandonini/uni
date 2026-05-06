@@ -30,9 +30,26 @@ Working on motion, the knowledge of the acquisition system is always mandatory, 
 - Constrained but unknown egocentric motion
 
 In computer vision, motion is used for many different tasks:
-- Moving point estimation
-- Moving object detection
+- Moving point estimation:
+	- sparse and dense motion estimation, motion of undefined objects
+	- point movement detection, shot detection
+	- speed of background, foreground points and camera motion
+	- SFM structure from motion (3D reconstruction by motion)
+- Moving object detection:
+	- estimating motion of background and foreground regions
+	- detecting shapes in motion in 2D and 3D
+	- understanding objects, people, actions by motion cue
 - Detected object motion detection
+	- spatial and temporal coherency analysis
+	- tracking single and multiple targets
+	- tracking objects with multiple point of views
+	- reidentifying moving objects (re-id)
 
-
+When working with notion we have 3 correlated but different terms:
+- Motion
+	- The actual motion concept
+- Motion field
+	- Projection of 3D motion in a plane
+- Optical flow
+	- What can be computed visually from images
 
