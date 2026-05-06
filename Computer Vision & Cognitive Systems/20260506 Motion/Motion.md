@@ -57,3 +57,39 @@ The true motion cannot be computed by video; what is computable is the optical f
 
 Ideally, the optical flow is the projection of the 3-dimensional velocity vectors on the image.
 ![[Pasted image 20260506125804.png]]
+
+Evaluating the correctness of OF vector is hard. We cannot provide manual annotation since humans cannot compute this measure. It can be done only on synthetic video where the true point motion can be computed[^1].
+
+If $(u_{0},v_{0})$ is the ground truth optical flow vector and $(u_{1},v_{1})$ is the computed OF vector:
+- Angular error $AE = \arccos((u_{0}, v_{0}) \cdot (u_{1}, v_{1}))$
+- Endpoint error $EPE = \sqrt{ (u_{0} - u_{1})^{2} + (v_{0} - v_{1})^{2} }$
+
+
+- $P(t)$ is a moving 3D point
+- $V = \frac{dP}{dt}$ is the velocity of scene point
+- $p(t) = (x(t),y(t))$ is the projection of $P$ in the image
+
+*Apparent velocity* $v$ in the image is given by components $vx = \frac{dx}{dt}$ and $vy = \frac{dy}{dt}$. These components create a vector known as the motion field of the image
+
+The motion field is the motion projection in the image plane
+![[Pasted image 20260506130941.png]]
+
+$$
+\begin{align}
+V &= (V_{x}, V_{y}, V_{z}) \\
+p &= f \frac{P}{Z} \\
+v &= f \frac{ZV - V_{Z}P}{Z^{2}} \\
+v_{x} &= \frac{fV_{x} - V_{Z}x}{Z} & v_{y}= \frac{fV_{y} - V_{z}y}{Z}
+\end{align}
+$$
+
+Image motion is a function of both the 3D motion (V) and the depth of the 3D point $(Z)$, so  we need the calibrated camera to have metric measure. We have an uncertainty in the distance.
+
+Optical flow is not always perceived as similar to motion field:
+![[Pasted image 20260506133355.png]]
+
+
+
+---
+
+[^1]: In order to train models there are various open source datasets like Sintel and Flying Chairs
