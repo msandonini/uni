@@ -35,34 +35,42 @@ bool y4m_extract_header(std::ifstream& is, y4m_header& header) {
 
 	while (ss >> token) {
 		switch (token.c_str()[0]) {
-			case 'H':
+			case 'H': {
 				header.h = std::stoi(token.substr(1));
 				break;
-			case 'W':
+			}
+			case 'W': {
 				header.w = std::stoi(token.substr(1));
 				break;
-			case 'C':
+			}
+			case 'C': {
 				header.c = token.substr(1);
 				break;
-			case 'I':
+			}
+			case 'I': {
 				header.i = token.c_str()[1];
 				break;
-			case 'F':
+			}
+			case 'F': {
 				int del = token.find(':');
 				header.fn = std::stoi(token.substr(1, del));
 				header.fd = std::stoi(token.substr(del));
 				break;
-			case 'A':
+			}
+			case 'A': {
 				int del = token.find(':');
 				header.an = std::stoi(token.substr(1, del));
 				header.ad = std::stoi(token.substr(del));
 				break;
-			case 'X':
+			}
+			case 'X': {
 				header.x = token.substr(1);
 				break;
-			default:
+			}
+			default: {
 				return false;
 				break;
+			}
 		}
 	}
 
