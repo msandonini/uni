@@ -33,7 +33,8 @@ The sinusoid has a series of properties, which will be described and analyzed on
 	- A phase difference can be described as the distance between 2 points which rotate at the same speed but starting from different positions on the circumference. In particular, the angle identified by the 2 points is precisely the phase difference
 	- $\phi = 2\pi f\Delta t$
 
-The physical quantity used to describe sound is pressure
+The physical quantity used to describe sound is pressure. In sound waves the amplitude is therefore the variation of local pressure with respect to the atmospheric pressure at that point. This is called sound or acoustic pressure.
+Being it a pressure difference, it is still measured in Pascal (Pa).
 
 
 ---
