@@ -24,7 +24,7 @@ The sinusoid has a series of properties, which will be described and analyzed on
 - Period $T$
 	- Defines the time taken to complete a single cycle, and its relationship with the frequency is $T=\frac{1}{f}$
 - Wavelenght $\lambda$
-	- Defined as the distance between 2 corresponding points along the waveform. It can be calculated as $\lambda = \frac{c}{f}$, wher $c$ is the speed of sound in the considered medium (about 344 m/s in the air)
+	- Defined as the distance between 2 corresponding points along the waveform. It can be calculated as $\lambda = \frac{c}{f}$, where $c$ is the speed of sound in the considered medium (about 344 m/s in the air)
 - Amplitude $A$
 	- The measure of the maximum deviation from the equilibrium position
 	- Larger amplitudes correspond to higher volumes
