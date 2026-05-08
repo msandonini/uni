@@ -72,3 +72,6 @@ Moreover, motion vectors are specified with a precision of half a pixel for more
 
 Thanks to the bitstream syntax, it is also possible to access the desired location (random access) and to fast forward effortlessly, decoding only P frames, or only I, or an I every n.
 Also, the notion of slices allows for faster synchronization after data loss.
+![[Pasted image 20260508094206.png]]
+
+
