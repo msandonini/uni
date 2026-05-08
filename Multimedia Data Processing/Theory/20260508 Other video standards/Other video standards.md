@@ -1,7 +1,7 @@
 ---
 course: Multimedia Data Processing
 ---
-## MPEG
+## MPEG-1 & MPEG-2
 
 Moving Picture Expert Group (MPEG) has worked to create the specification within the ISO and the IEC.
 
@@ -74,4 +74,33 @@ Thanks to the bitstream syntax, it is also possible to access the desired locati
 Also, the notion of slices allows for faster synchronization after data loss.
 ![[Pasted image 20260508094206.png]]
 
+## H.264 / AVC
+
+H.264, also called Advanced Video Coding (AVC), is a basic design architecture similar to MPEG-x and H.26x.
+This has better compression efficiency (leading up to 50% in bit rate savings), the subjective quality is better, and has advanced functional elements.
+
+This standard was started to be designed by the Video Coding Experts Group (VCEG) in early 1998, with its first name being H.26L.
+The standard target was to double the coding efficiency, and its first draw was adopted in October of 1999.
+
+### Design features
+
+H.264 implemented various features:
+- Prediction enhancement:
+	- Directional spatial prediction for intra coding
+	- Variable block-size motion compensation with small block size
+	- Quarter-sample-accurate motion compensation
+	- Motion vectors over picture boundaries
+	- Multiple reference picture motion compensation
+	- Decoupling of referencing order from display order
+	- Decoupling of picture representation methods from picture referencing capability
+	- Weighted prediction
+	- Improved "skipped" and "direct" motion reference
+	- In-the-loop deblocking filtering
+- Coding efficiency improvement:
+	- Small block-size transform
+	- Exact-match inverse transform
+	- Short word-length transform
+	- Hierarchical block transform
+	- Arithmetic entropy coding
+	- Context-adaptive entropy coding
 
