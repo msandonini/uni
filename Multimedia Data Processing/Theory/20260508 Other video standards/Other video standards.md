@@ -101,7 +101,7 @@ H.264 implemented various features:
 	- Exact-match inverse transform
 	- Short word-length transform
 	- Hierarchical block transform
-	- Arithmetic entropy coding
+	- Arithmetic entropy coding (dropped Huffman coding)
 	- Context-adaptive entropy coding
 
 ![[Pasted image 20260508095502.png]]
