@@ -106,4 +106,7 @@ H.264 implemented various features:
 
 ![[Pasted image 20260508095502.png]]
 
+#### Intra coding prediction
 
+Intra prediction is the prediction of texture in current block by using the pixel samples from neighboring blocks.
+H.264 supports intra prediction for 4x4 and 16x16 blocks.
