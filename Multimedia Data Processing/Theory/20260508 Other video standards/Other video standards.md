@@ -104,3 +104,6 @@ H.264 implemented various features:
 	- Arithmetic entropy coding
 	- Context-adaptive entropy coding
 
+![[Pasted image 20260508095502.png]]
+
+
