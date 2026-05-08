@@ -110,3 +110,45 @@ H.264 implemented various features:
 
 Intra prediction is the prediction of texture in current block by using the pixel samples from neighboring blocks.
 H.264 supports intra prediction for 4x4 and 16x16 blocks.
+![[Pasted image 20260508100956.png]]
+![[Pasted image 20260508101023.png]]
+![[Pasted image 20260508101045.png]]
+
+#### Variable block-size motion compression
+
+To apply motion compensation it's possible to divide the blocks in smaller ones.
+This process is divided in 2 stages:
+1. Determine first 4 nodes
+	- 16x16, 16x8, 8x16, 8x8
+2. If mode 4 (8x8) is selected, further partition into smaller blocks for every 8x8 block:
+	- 8x4, 4x8, 4x4
+At most 16 motion vectors may be trnsmitted for a 16x16 macroblock.
+![[Pasted image 20260508101515.png]]
+
+#### Multiple reference picture motion compensation
+
+More than one prior coded picture can be used as reference for MC prediction.
+Reference index parameter is transmitted for each MC 16x16, 16x8, 8x16, 8x8.
+For smaller blocks within the 8x8 use 1 reference index.
+P macroblock can also be coded in P-Skip type.
+![[Pasted image 20260508101723.png]]
+Utilize two distinct lists of reference pictures
+Four different types of inter-picture predict:
+- list 0, 
+- list 1, 
+- bi-predictive
+	- weighted average of MC list 0 and list 1
+- direct prediction
+	- Inferred from previously transmitted syntax
+	- Either list 0 or list 1 prediction or bi-predictive
+Similar macroblock partitioning as P slices is utilized
+B-Skip mode is supported
+
+#### Adaptive deblocking filter
+
+The adaptive deblocking filter brings a big improvement, as if there are severe blocking artifacts we apply 4x4 transforms and block-based motion compensation, resulting in bit rate savings of around 6~9%, and improving subjective quality and PSNR of the decoded picture.
+![[Pasted image 20260508102124.png]]
+
+
+
+
