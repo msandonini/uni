@@ -45,6 +45,8 @@ SPL is given by the ratio between effective and reference sound pressure, measur
 $$
 L_{p} = 20 \log_{10} \left( \frac{p}{p_{0}} \right) \text{dB}
 $$
+![[Pasted image 20260508105224.png]]
+
 
 ---
 
