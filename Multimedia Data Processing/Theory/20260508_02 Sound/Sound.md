@@ -36,6 +36,15 @@ The sinusoid has a series of properties, which will be described and analyzed on
 The physical quantity used to describe sound is pressure. In sound waves the amplitude is therefore the variation of local pressure with respect to the atmospheric pressure at that point. This is called sound or acoustic pressure.
 Being it a pressure difference, it is still measured in Pascal (Pa).
 
+To express a summary value of a quantity in a certain time interval, the concept of effective value is used, that is, the square root of the mean of the squares of the values (root mean square or RMS).
+
+Effective sound pressure $p$ is the effective value (RMS) of pressure over a period of time.
+Sound pressure level (SOL) $L_p$ is a logarithmic measure of the effective sound pressure of a mechanical (sound) wave with respect to a reference sound source.
+The reference sound pressure $p_{0}$ is around the hearing threshold at 1000 Hz.
+SPL is given by the ratio between effective and reference sound pressure, measured in dB:
+$$
+L_{p} = 20 \log_{10} \left( \frac{p}{p_{0}} \right) \text{dB}
+$$
 
 ---
 
