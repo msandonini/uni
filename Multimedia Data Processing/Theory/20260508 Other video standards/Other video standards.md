@@ -68,4 +68,7 @@ The fact that for each macroblock in a B-frame there can be a backward reference
 ![[Pasted image 20260508093752.png]]
 
 In order to address these problems MPEG has a greater time distance between frames I and P, and so it becomes necessary to expand the motion vector search area ($\pm 32$ pixels).
+Moreover, motion vectors are specified with a precision of half a pixel for more effective encoding. This means that two whole positions must be interpolated to obtain the correct reference.
 
+Thanks to the bitstream syntax, it is also possible to access the desired location (random access) and to fast forward effortlessly, decoding only P frames, or only I, or an I every n.
+Also, the notion of slices allows for faster synchronization after data loss.
