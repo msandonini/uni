@@ -30,3 +30,10 @@ In this case:
 - $I_{t}$ and $I_{t-1}$ are two consecutive frames
 
 Having the $I_{t}$ and $I_{t-1}$ frames of shape $(c, x, y)$, and giving them to the CNN, what we obtain is a vector of shape $(2, x, y)$, because we have one channel for $u$ and one channel for $v$.
+
+To train these models we have few datasets:
+- Flying chairs
+- MPI Sintel
+
+
+
