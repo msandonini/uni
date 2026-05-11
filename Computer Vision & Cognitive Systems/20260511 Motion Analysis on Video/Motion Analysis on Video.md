@@ -41,5 +41,9 @@ To train these models we have few datasets:
 
 ![[Pasted image 20260511095809.png]]
 
+Flownetsimple compares 2 frames.
+In order to do so, having 2 $(c, x, y)$ shaped frames, we stack them in a single $(2\cdot c, x, y)$ frame in order to pass them to the CNN as a single image.
+In reality, Flownetsimple did not work by stacking 2 images but by stacking 6.
+
 
 
