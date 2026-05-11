@@ -16,6 +16,17 @@ There also are some algorithms like the SIFT flow, where instead of using Harris
 
 ## Dense Optical Flow
 
+Dense optical flow methods use Deep Learning to do estimation, but as such they need a ground truth.
+In order to get such ground truth the models get trained on synthetic data.
 
+Dense optical flow models are usually CNNs, modeled as to obtain the following result:
+$$
+(u, v) = f(I_{t-1}, I_{t})
+$$
+In this case:
+- $u$ is the motion vector in the $x$ direction
+- $v$ is the motion vector in the $y$ direction
+- $f$ is the CNN
+- $I_{t}$ and $I_{t-1}$ are two consecutive frames
 
-
+Having the $I_{t}$ and $I_{t-1}$ frames of shape $(c, x, y)$, and giving them to the CNN, what we obtain is a vector of shape $(2, x, y)$, because we have one channel for $u$ and one channel for $v$.
