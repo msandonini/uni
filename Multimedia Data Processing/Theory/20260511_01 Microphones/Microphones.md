@@ -1,3 +1,7 @@
+---
+course: Multimedia Data Processing
+---
+
 Microphones are transducers capable of transforming acoustic energy into electric energy.
 Atmospheric pressure variations are converted into voltage variation, and therefore in an electric current.
 
