@@ -53,6 +53,6 @@ Flownetcorr, instead of stacking the images, firs processes them separately, and
 ![[Pasted image 20260511100456.png]]
 In this case we have 2 separate, yet identical processing streams.
 The network first produces meaningful representation of 2 images separately and then combine at a later stage.
-This works more as a matching approach.
+This works more like a matching approach.
 
 
