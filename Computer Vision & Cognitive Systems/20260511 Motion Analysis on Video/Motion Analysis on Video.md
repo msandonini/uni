@@ -39,11 +39,20 @@ To train these models we have few datasets:
 
 ![[Pasted image 20260511095733.png]]
 
-![[Pasted image 20260511095809.png]]
+#### Flownetsimple
 
-Flownetsimple compares 2 frames.
-In order to do so, having 2 $(c, x, y)$ shaped frames, we stack them in a single $(2\cdot c, x, y)$ frame in order to pass them to the CNN as a single image.
+Flownetsimple is a network used to compare 2 frames of $(c, x, y)$ shape.
+To do so, we stack them in a single $(2\cdot c, x, y)$ frame in order to pass them to the CNN as a single image.
 In reality, Flownetsimple did not work by stacking 2 images but by stacking 6.
+![[Pasted image 20260511100323.png]]
+It consists only of conv layers, and it allows the network to decide itself how to process and extract the motion information.
 
+#### Flownetcorr
+
+Flownetcorr, instead of stacking the images, firs processes them separately, and then it correlates their features at different locations and process further.
+![[Pasted image 20260511100456.png]]
+In this case we have 2 separate, yet identical processing streams.
+The network first produces meaningful representation of 2 images separately and then combine at a later stage.
+This works more as a matching approach.
 
 
