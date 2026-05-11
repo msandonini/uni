@@ -35,5 +35,11 @@ To train these models we have few datasets:
 - Flying chairs
 - MPI Sintel
 
+### Supervised NN-based dense flow estimation (Flownet)
+
+![[Pasted image 20260511095733.png]]
+
+![[Pasted image 20260511095809.png]]
+
 
 
