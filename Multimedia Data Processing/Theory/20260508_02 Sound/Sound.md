@@ -47,7 +47,6 @@ L_{p} = 20 \log_{10} \left( \frac{p}{p_{0}} \right) \text{dB}
 $$
 ![[Pasted image 20260508105224.png]]
 
-
 ---
 
 [^1]: A wave occurring when the elements of the material medium move parallel to the direction of the wave propagation

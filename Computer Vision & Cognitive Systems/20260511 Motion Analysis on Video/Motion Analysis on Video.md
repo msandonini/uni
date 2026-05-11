@@ -4,7 +4,7 @@ course: Computer Vision and Cognitive Systems
 ## Sparse Optical Flow
 
 Optical flow should not be computed in all points but only for points where the brightness feature is significant.
-%% Slide 49 - KLT Kande Lucas Tomasi Feature Tracking
+%% Slide 49 - KLT Kande Lucas Tomasi Feature Tracking %%
 
 ![[Pasted image 20260511092026.png]]
 
