@@ -25,5 +25,8 @@ int main(void) {
 		return 1;
 	}
 
-		return 0;
+	os.write(reinterpret_cast<char*>(samples.data()),
+			 samples.size() * sizeof(int16_t));
+
+	return 0;
 }
