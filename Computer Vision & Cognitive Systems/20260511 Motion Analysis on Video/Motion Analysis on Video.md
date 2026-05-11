@@ -56,7 +56,3 @@ The network first produces meaningful representation of 2 images separately and 
 This works more like a matching approach.
 
 The advantage with respect to Flownetsimple is that Flownetcorr, working on the single image, is able to recognize objects before extracting movement, while Flownetsimple just forces the recognition from the start by looking at the differences between channels.
-
-
-
-
