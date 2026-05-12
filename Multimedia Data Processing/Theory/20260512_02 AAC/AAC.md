@@ -33,5 +33,7 @@ The quantization process introduces noise in the reconstructed signal.
 The goal is to shape the introduced quantization noise to reduce the noise perceived by the human auditory system.
 Psychoacoustic and perceptual models are employed.
 ![[Pasted image 20260512150952.png]]
+![[Pasted image 20260512151103.png]]
+
 
 
