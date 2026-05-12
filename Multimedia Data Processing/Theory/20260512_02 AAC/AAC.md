@@ -35,5 +35,13 @@ Psychoacoustic and perceptual models are employed.
 ![[Pasted image 20260512150952.png]]
 ![[Pasted image 20260512151103.png]]
 
+## Sub-band processing
+
+The  sub-band analysis filter-bank transforms the input audio signal in its spectral representation.
+The input audio is analysed by means of a sliding window of N samples in order to produce N spectral coefficients.
+The spectral analysis has many purposes:
+- Spectral coefficients are used to calculate masking information
+- Spectral coefficients will be quantized and coded in the final bit stream (as in the [[JPEG Compression | JPEG encoder]]).
+![[Pasted image 20260512151906.png]]
 
 
