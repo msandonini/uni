@@ -66,4 +66,14 @@ The MDCT is applied on subsequent couples (this is called overlap operation) of 
 Then the audio samples values are reconstructed by adding the second half of the previous reconstructed window with the first half of the current one, hence why MDCT is called a lapped transform.
 ![[Pasted image 20260512154115.png]]
 
+An AAC encoder always processes a 2048 audio samples at a time.
+A block of 2048 samples is called *frame*.
+The MDCT can be applied on same windows of different length.
+AAC supports 2 different window lengths:
+- 2048 is the regular size
+- 256 is used when a transient is detected in the audio samples (i.e. a drum hit)
+This technique is called block switching, and it is employed to better represent short and sudden variations in the audio samples.
+For each frame processed by the encoder 2 situations may occur:
+![[Pasted image 20260512154356.png]]
+
 
