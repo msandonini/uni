@@ -44,4 +44,16 @@ The spectral analysis has many purposes:
 - Spectral coefficients will be quantized and coded in the final bit stream (as in the [[JPEG Compression | JPEG encoder]]).
 ![[Pasted image 20260512151906.png]]
 
+AAC uses the Modified Discrete Cosine Transformation (MDCT) to calculate spectral coefficients (in other words MDCT is used as a filter-bank):
+$$
+X_{k} = \sum_{n=0}^{2N-1} x_{n} w_{n} \cos\left[ \frac{\pi}{N}\left( n+\frac{1}{2}+\frac{N}{2} \right) \left( k + \frac{1}{2} \right) \right] \hspace{1cm} k \in [0, N-1]
+$$
+The inverse transform used to obtain samples from the spectral coefficients is called Inverse MDCT (IMDCT):
+$$
+y_{n} = \frac{2}{N} w_{n} \sum_{k=0}^{N-1} X_{k} \cos \left[ \frac{\pi}{N} \left( n + \frac{1}{2} + \frac{N}{2} \right) \left( k + \frac{1}{2} \right) \right] \hspace{1cm} n \in [0, 2N - 1]
+$$
+The MDCT produces N coefficients from 2N input values.
+Viceversa the IMDCT produces 2N values from N spectral coefficients.
+To obtain N coefficients from N samples the overlap-add technique is used.
+
 

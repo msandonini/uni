@@ -50,7 +50,7 @@ When working with notion we have 3 correlated but different terms:
 	- The true motion
 - Motion field
 	- Projection of 3D motion in a plane
-- Optical flow
+- [[Motion Analysis on Video|Optical flow]]
 	- What can be computed visually from images (so the apparent motion of brightness patterns)
 The true motion cannot be computed by video; what is computable is the optical flow.
 ![[Pasted image 20260506125224.png]]
