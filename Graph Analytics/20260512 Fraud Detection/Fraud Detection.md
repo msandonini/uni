@@ -25,4 +25,13 @@ Fraud detection e fraud prevention sono 2 termini vicini ma con differenti signi
 	- Si riferisce alla capacità di riconoscere o scoprire un caso di frode
 	- Torna utile quando i sistemi di prevenzione della frode falliscono, ma proprio perché non è sempre ovvio quando ciò accade, è necessario utilizzare queste misure costantemente, risultando in un sistema non solo costoso da costruire ma anche da mantenere
 
-
+%% Es. slide 33 %%
+```cypher
+MATCH p = (fraud:Fraudolent)<-[:HAS_NEXT*]-(tx:Transaction)
+WHERE fraud.date > datetime() - duration("P7D") 
+	AND NONE (
+		tx IN nodes(p)
+		WHERE COALESCE(tx.date, datetime()) <= datetime() - duration("P14D")
+	)
+RETURN p
+```

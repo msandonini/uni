@@ -1,21 +1,13 @@
 [
-  "dataview",
   "obsidian-excalidraw-plugin",
   "table-editor-obsidian",
   "obsidian-git",
   "obsidian-latex-suite",
-  "code-emitter",
   "obsidian-icon-folder",
-  "obsidian-style-settings",
-  "omnisearch",
-  "obsidian-kanban",
-  "obsidian-importer",
   "tag-wrangler",
-  "obsidian-mind-map",
-  "obsidian-annotator",
   "obsidian-html-tags-autocomplete",
   "templater-obsidian",
-  "obsidian-tagfolder",
   "pseudocode-in-obs",
-  "homepage"
+  "homepage",
+  "obsidian-style-settings"
 ]
