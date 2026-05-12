@@ -34,4 +34,27 @@ The isophonic curves are curves on a graph designed to indicate the $\text{dB}_{
 These curves were created since the human ear has a different perception of sound intensity as the frequency changes.
 The reference frequency for each curve is 1 kHz and, at this frequency, the $\text{dB}_{\text{spl}}$ value is equal to the value that identifies a particular curve and which is called **phon**.
 ![[Pasted image 20260512143228.png]]
+>[!WARNING] Curves standards
+> Different studies' revisions change how the data is shown, so when working with them it's important to reference the correct curve standards and revision and keep an eye on how the curves were obtained in the specific study we are referencing
+
+The lowest isophonic curve of all is called the audibility threshold, and it indicates the smallest pressure change that the ear is able to detect at different frequencies:
+
+| Frequency zone   | Hz    | $\text{dB}_{spl}$ |
+| ---------------- | ----- | ----------------- |
+| Reference        | 1000  | 5                 |
+| Low Frequencies  | 50    | 42                |
+| High frequencies | 10000 | 15                |
+The table shows some reference values relating to the curve.
+The pain threshold is located at 120 phons, and it's the point where the ear begins to perceive physical pain and non-reversible damage can be generated for prolonged exposures.
+
+The hearing, like the view that interprets the light, is capable of perceiving only a part of the acoustic waves that surround us and therefore returns a partial picture.
+The perceived waves are processed by the brain which thus interprets the sounds it has to process.
+Psychoacoustics is the science that studies the brain's sound processing mechanisms.
+
+A frequency component with *high amplitude* can mask components at nearby frequencies with lower amplitudes, since nearby frequencies are decoded by cilia belonging to the same critical band.
+A sound of a certain frequency and intensity (masker) can temporarily change the frequency response of the ear bringing other sounds (masked) below the audibility threshold:
+![[Pasted image 20260512144321.png]]
+
+
+
 
