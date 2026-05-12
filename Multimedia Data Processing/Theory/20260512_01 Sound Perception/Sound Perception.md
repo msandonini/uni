@@ -56,7 +56,7 @@ A sound of a certain frequency and intensity (masker) can temporarily change the
 ![[Pasted image 20260512144321.png]]
 The bandwidth of the masking threshold depends on the intensity and frequency of the masker and the intensity of the masking effect decreases moving away from the frequency of the masker sound.
 ![[Pasted image 20260512145154.png]]
-This property is massively exploited to create algorithms for compressing audio data in digital format such as MP3 or AAC, allowing compressions in the order of 5: 1
+This property is massively exploited to create algorithms for compressing audio data in digital format such as MP3 or [[AAC]], allowing compressions in the order of 5: 1
 
 Another type of sound masking is the temporal masking, which occurs when a weak sound follows (in about 50 ms) or, incredibly, precedes (of about 10 ms), a more intense sound.
 ![[Pasted image 20260512145224.png]]
