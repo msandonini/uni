@@ -76,4 +76,23 @@ This technique is called block switching, and it is employed to better represent
 For each frame processed by the encoder 2 situations may occur:
 ![[Pasted image 20260512154356.png]]
 
+Processing 2L samples at a time is the same as transforming the input signal multiplied by a rectangular signal centered on the current 2L samples.
+This introduces unwanted variations in the resulting coefficients (this phenomenon is called spectral leakage)
+![[Pasted image 20260512154831.png]]
+
+AAC supports 2 different window functions to reduce spectral leakage:
+- Sine window
+$$
+w_{n} = \sin \left[ \frac{\pi}{2N}\left( n + \frac{1}{2} \right) \right], \hspace{1 cm} n\in[0, 2N-1]
+$$
+![[Pasted image 20260512155014.png]]
+- Kaiser-Bessel-Derived (KBD) window
+$$
+w_{n} = 
+\begin{cases}
+\sqrt{ \frac{\sum_{p=0}^{n} W'(p, \alpha)}{\sum_{p=0}^{N} W'(p, \alpha)} }, & n \in [0, N) \\
+\sqrt{ \frac{\sum_{p=0}^{2N-n-1} W'(p, \alpha)}{\sum_{p=0}^{N} W'(p, \alpha)} },  & n \in [N, 2N)
+\end{cases}
+$$
+![[Pasted image 20260512155419.png]]
 
