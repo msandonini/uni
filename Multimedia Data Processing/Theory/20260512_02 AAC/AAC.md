@@ -56,4 +56,14 @@ The MDCT produces N coefficients from 2N input values.
 Viceversa the IMDCT produces 2N values from N spectral coefficients.
 To obtain N coefficients from N samples the overlap-add technique is used.
 
+MDCT is a modified version of the type IV of the DCT (DCT-IV).
+It is also a lapped transform, which means that it is performed over 50% overlapped blocks of the input signals.
+![[Pasted image 20260512153424.png]]
+MDCT is used since by it being a lapped transform, blocking artifacts are reduced, and also because it has a property called time-domain aliasing cancellation (TDAC), which makes it possible for the inverse transform to remove the introduced aliasing, permitting perfect reconstruction of the original signal.
+
+With analysis/synthesis via MDCT the input audio signal is padded with L zeros at the beginning and at the end in order to not lose any information around the edges.
+The MDCT is applied on subsequent couples (this is called overlap operation) of L samples each in order to produce L coefficients.
+Then the audio samples values are reconstructed by adding the second half of the previous reconstructed window with the first half of the current one, hence why MDCT is called a lapped transform.
+![[Pasted image 20260512154115.png]]
+
 
