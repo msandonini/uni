@@ -22,4 +22,16 @@ Huffman coding is used in the last encoding steps (noiseless coding).
 The basic task of a perceptual audio coding system is to compress the digital audio data in a way that:
 - the compression is as efficient as possible
 - the reconstructed (decoded) audio sounds exactly (or as close as possible) to the original audio before compression.
+Other requirements may include:
+- Low complexity (in order to make encoding and decoding as inexpensive as possible for both software and hardware)
+- Flexibility (to make the encoder usable in different scenarios)
+Perceptual audio coding is a lossy compression technique.
+
+![[Pasted image 20260512150830.png]]
+
+The quantization process introduces noise in the reconstructed signal.
+The goal is to shape the introduced quantization noise to reduce the noise perceived by the human auditory system.
+Psychoacoustic and perceptual models are employed.
+![[Pasted image 20260512150952.png]]
+
 
