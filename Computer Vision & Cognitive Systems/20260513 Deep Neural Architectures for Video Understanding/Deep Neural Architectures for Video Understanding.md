@@ -126,8 +126,8 @@ A more sophisticated idea is to apply the fusion not only at the end but between
 ![[Pasted image 20260513134142.png]]
 ![[Pasted image 20260513134151.png]]
 
-
-
+The two-stream solution is loosely inspired by neuroscience, where the ventral stream does the object identification, while the dorsal stream mediates the required sensorimotor transformations for visually guided actions directed at such objects
+![[Pasted image 20260513134640.png]]
 
 ---
 
