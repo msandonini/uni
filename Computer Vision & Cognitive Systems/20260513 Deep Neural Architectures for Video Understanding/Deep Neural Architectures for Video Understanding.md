@@ -114,9 +114,10 @@ The difference with 2D convolutions is that 3D conv kernels move over 3 axes, le
 ![[Pasted image 20260513132631.png]]
 ![[Pasted image 20260513132642.png]]
 
-In order to use C3D on longer videos, the video needs to be split into chunks (also known as *clips*), with a number of frames that fits the receptive field of the C3D.
-Usually clips have 16 frames.
+In order to use C3D on longer videos, the video needs to be split into chunks (also known as *clips*), with a number of frames that fits the receptive field of the C3D (usually clips are composed of 16 frames):
 ![[Pasted image 20260513133333.png]]
+The problem of using an average is that we lose any kind of temporal information.
+
 
 
 
