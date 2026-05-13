@@ -121,6 +121,8 @@ In order to use C3D on longer videos, the video needs to be split into chunks (a
 
 A different paradigm to including temporal features is to extract optical flow for a stack of frames and use it as an input to a CNN:
 ![[Pasted image 20260513134119.png]]
+![[Pasted image 20260513134142.png]]
+![[Pasted image 20260513134151.png]]
 
 
 
