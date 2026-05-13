@@ -88,5 +88,16 @@ With single frame models, the combination is commonly implemented as a small NN 
 
 To solve this problem, different ways to fuse features from multiple frames were implemented:
 ![[Pasted image 20260513125502.png]]
+The interesting part of the paper where this was published[^1] is that the best single model was slow fusion, but the ensemble of all these fusion models was what worked best.
+
+By using multiple frames we reduce spatial dimension to reduce model complexity, and we can achieve multi-resolution (low-res context + high-res foveate)
+![[Pasted image 20260513125820.png]]
+![[Pasted image 20260513125913.png]]
 
 
+
+
+
+---
+
+[^1]: Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., & Fei-Fei, L. . Large-scale video classification with convolutional neural networks. CVPR 2014
