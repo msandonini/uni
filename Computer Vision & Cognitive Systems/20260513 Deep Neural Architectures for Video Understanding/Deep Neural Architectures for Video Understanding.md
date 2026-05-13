@@ -81,9 +81,12 @@ In order to represent motion, before using Deep Learning, we could use Optical F
 ![[Pasted image 20260513124735.png]]
 With deep learning, expressing a video as a 3D signal with 2 spatial coordinates $(x, y)$ and one temporal coordinate $t$, by fitting $t$, we can understand a video as a sequence of images.
 
-## Single Frame Models
+## Multiple Frames
 
 ![[Pasted image 20260513125304.png]]
-Combination is commonly implemented as a small NN on top of a pooling operation. The limitation of this is that pooling is not aware of the temporal order
+With single frame models, the combination is commonly implemented as a small NN on top of a pooling operation. The limitation of this is that pooling is not aware of the temporal order.
+
+To solve this problem, different ways to fuse features from multiple frames were implemented:
+![[Pasted image 20260513125502.png]]
 
 
