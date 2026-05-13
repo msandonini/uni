@@ -121,6 +121,8 @@ In order to use C3D on longer videos, the video needs to be split into chunks (a
 
 A different paradigm to including temporal features is to extract optical flow for a stack of frames and use it as an input to a CNN:
 ![[Pasted image 20260513134119.png]]
+
+A more sophisticated idea is to apply the fusion not only at the end but between the intermediate conv layers. This is done because mid-level fusion allows the network to learn cross model interactions between the 2 streams, learning that a specific type of motion combined with a specific type of image is related to an action:
 ![[Pasted image 20260513134142.png]]
 ![[Pasted image 20260513134151.png]]
 
