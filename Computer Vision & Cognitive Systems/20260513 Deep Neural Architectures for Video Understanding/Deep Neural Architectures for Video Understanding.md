@@ -116,8 +116,11 @@ The difference with 2D convolutions is that 3D conv kernels move over 3 axes, le
 
 In order to use C3D on longer videos, the video needs to be split into chunks (also known as *clips*), with a number of frames that fits the receptive field of the C3D (usually clips are composed of 16 frames):
 ![[Pasted image 20260513133333.png]]
-The problem of using an average is that we lose any kind of temporal information.
 
+## Two Stream 2D CNNs
+
+A different paradigm to including temporal features is to extract optical flow for a stack of frames and use it as an input to a CNN:
+![[Pasted image 20260513134119.png]]
 
 
 
