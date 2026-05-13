@@ -95,6 +95,25 @@ By using multiple frames we reduce spatial dimension to reduce model complexity,
 The interesting part of the paper where this was published[^1] is that the best single model was slow fusion, but the ensemble of all these fusion models was what worked best:
 ![[Pasted image 20260513125913.png]]
 
+![[Pasted image 20260513131854.png]]
+The limitation for the feed forward + static window approach is that increasing the length L of the window causes a fast increase in the number of parameters, the decisions are independent between time steps, and there's a cumbersome padding when there are not enough samples to fill the L size.
+
+A possible solution is to instead use [[RNN|RNNs]], as they are well suited for processing sequences.
+![[Pasted image 20260513132254.png]]
+The problem with RNNs is that they are sequential and cannot be parallelized.
+
+![[Pasted image 20260513132327.png]]
+
+Another possibility is to use a 3D CNN (C3D).
+By adding an extra dimension to standard CNNs, we obtain that:
+- An image is a (iC, H, W) tensor, so we use (oC, iC, kH, kW) kernels
+- A video is a (iC, T, H, W) tensor, so we use (oC, iC, kT, kH, kW) kernels
+![[Pasted image 20260513132538.png]]
+
+The difference with 2D convolutions is that 3D conv kernels move over 3 axes, learning features that encode temporal information.
+![[Pasted image 20260513132631.png]]
+![[Pasted image 20260513132642.png]]
+
 
 
 
