@@ -1,0 +1,56 @@
+---
+course: Computer Vision and Cognitive Systems
+---
+Making deep neural architectures understand video data is useful for various tasks:
+- robotics / manipulation
+- self-driving cars
+- collective activity understanding
+- video captioning
+- video editing
+- VR
+- video QA
+- ...
+
+In order to perform these tasks we need a variety of different videos.
+To obtain those, there are various datasets:
+- UCF 101
+	- Dataset from Google, composed of YouTube videos
+	- Used for video classification
+	- Contains 13'320 videos and 101 action categories
+	- The videos have large variations in camera motion, object appearance and pose, viewpoint, background, illumination, etc...
+- Sports-1M
+	- Composed of YouTube videos
+	- Used for video classification
+	- Contains 1'133'157 videos and 487 sports labels
+- YouTube8M
+	- From Google
+	- Used for video classification and retrieval
+	- Composed of machine-generated annotations from 3'862 classes
+	- Has audio-visual features
+- Charades
+	- Composed of crowdsourced "boring" videos of people doing daily activities
+	- Used for action classification and sentence prediction
+	- Contains 9'848 videos with RGB and optical flow features
+	- Has video-level and frame-level classification, but no human localization
+- Kinetics (DeepMind)
+- Atomic Visual Actions (AVA)
+	- By Berkeley and Google
+	- Contains 57.6k segments of 3 seconds each
+	- Used for pose and object interactions
+	- It's fine-grained, but has no annotations about objects
+- Moments in Time
+	- From MIT
+	- Contains 1'000'000 videos of 3 seconds each, with 339 verbs
+	- It's not limited to humans
+	- It's sound dependent
+	- It's balanced, but only has a single label, making it suitable for classification but not detection
+- M-VAD and MPII-MD
+	- Video clips with descriptions (e.g. "SOMEONE holds a crossbow", "He and SOMEONE exit a mansion", ...)
+	- Used for multimodal models bridging videos and natural language
+- Sparsely Labeled ACtions Dataset (SLAC)
+	- From MIT and Facebook
+	- Contains 520k untrimmed videos with 200 classes and 1.75M clip annotations
+- DALY
+	- From INRIA
+	- Contains spatial annotations
+	- 
