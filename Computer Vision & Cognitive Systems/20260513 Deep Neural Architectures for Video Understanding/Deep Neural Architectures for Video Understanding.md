@@ -52,5 +52,38 @@ To obtain those, there are various datasets:
 	- Contains 520k untrimmed videos with 200 classes and 1.75M clip annotations
 - DALY
 	- From INRIA
-	- Contains spatial annotations
-	- 
+	- Contains spatial annotations:
+		- Bounding box around the action
+		- Upper body pose annotation, including bounding box around the head
+		- Bounding box around objects involved in the action
+- Large Scale Movie Descriptor Challenge (LSMDC)
+	- Combination of M-VAD and MPII-MD
+	- Used for various applications:
+		- Movie description
+		- Description prediction for 4-5 seconds movie clips
+		- Movie retrieval
+		- Video caption finding
+		- Movie Fill-in-the-Blank (QA)
+![[Pasted image 20260513124034.png]]
+
+Video understanding is a more difficult task with respect of image understanding, mainly because of its characteristics and the challenges it poses:
+- Computationally expensive
+- Lower quality
+- Resolution, motion blur, occlusion
+- Requires lots of training data
+
+Before deep learning usage in this field, the video understanding task relied on feature extraction of:
+- local features, using HOG and HOF (Histogram of Optical Flow)
+- trajectory based features
+The extracted features were then aggregated via bag of visual words and Fisher vectors
+
+In order to represent motion, before using Deep Learning, we could use Optical Flow or Trajectory Stacking:
+![[Pasted image 20260513124735.png]]
+With deep learning, expressing a video as a 3D signal with 2 spatial coordinates $(x, y)$ and one temporal coordinate $t$, by fitting $t$, we can understand a video as a sequence of images.
+
+## Single Frame Models
+
+![[Pasted image 20260513125304.png]]
+Combination is commonly implemented as a small NN on top of a pooling operation. The limitation of this is that pooling is not aware of the temporal order
+
+
