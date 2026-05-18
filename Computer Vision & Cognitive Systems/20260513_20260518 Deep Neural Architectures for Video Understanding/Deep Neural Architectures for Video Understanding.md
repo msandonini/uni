@@ -116,7 +116,10 @@ The difference with 2D convolutions is that 3D conv kernels move over 3 axes, le
 
 In order to use C3D on longer videos, the video needs to be split into chunks (also known as *clips*), with a number of frames that fits the receptive field of the C3D (usually clips are composed of 16 frames):
 ![[Pasted image 20260513133333.png]]
+In a C3D the filters need to learn both the object and the movement:
+![[Pasted image 20260518094716.png]]
 
+The main problem of the C3D is that it underperformed.
 ## Two Stream 2D CNNs
 
 A different paradigm to including temporal features is to extract optical flow for a stack of frames and use it as an input to a CNN:
@@ -126,8 +129,16 @@ A more sophisticated idea is to apply the fusion not only at the end but between
 ![[Pasted image 20260513134142.png]]
 ![[Pasted image 20260513134151.png]]
 
+%% 2026/05/18 - From slide 53 %%
+
 The two-stream solution is loosely inspired by neuroscience, where the ventral stream does the object identification, while the dorsal stream mediates the required sensorimotor transformations for visually guided actions directed at such objects
 ![[Pasted image 20260513134640.png]]
+
+
+![[Pasted image 20260518094224.png]]
+
+
+
 
 ---
 
