@@ -179,7 +179,7 @@ Since videos exhibit a large redundancy in time, we can reduce the frame rate wi
 Current GPUs can fit batches of 32~64 images when training state of the art CNNs (so 32~64 video frames at once).
 Also, there's a very big memory issue. This memory footprint can be reduced in different ways if a pre-trained CNN model is used, by for example freezing some layers (reducing memory impact of backdrop), extracting frame-level features and training a model on top of it (e.g. RNN on top of CNN features).
 
-Whenever we train a network there's a constant I/O stream going on, so the critical component is not only the GPU, as if CPU is not fast enough to provide the data, the GPU gets starved (so it runs at maybe 50% capacity instead of 100%, so there's no speed-up from a better GPU since there's a CPU bottleneck)
+Whenever we train a network there's a constant I/O stream going on, so the critical component is not only the GPU, as if CPU is not fast enough to provide the data, the GPU gets starved (so it runs at maybe 50% capacity instead of 100%, so there's no speed-up from a better GPU since there's a CPU bottleneck).
 
 ---
 
