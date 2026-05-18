@@ -171,6 +171,12 @@ These networks apply spatial-temporal attention among frames, interconnecting th
 To do so, the input tensor $x$ goes into 3 different $1 \times 1 \times 1$ conv layers, where the first 2 results get multiplied, get passed into a softmax, get multiplied with the 3rd result, and this result gets fed into a $1 \times 1 \times 1$ conv layer.
 This is not a new kind of architecture or something applied in a ViT, instead it is a new kind of layer that gets inserted into some positions of a CNN.
 
+## Large-scale datasets
+
+The reference dataset for image classification is ImageNet, which has ~1.3M images, and training a state of the art CNN can take up to 2 weeks on a single GPU.
+If we now imagine about the sizes of an ImageNet-like dataset composed of 1.3M videos (assuming these are 30s videos at 24fps), we have a total of 936M frames, which is 720 times ImageNet.
+Since videos exhibit a large redundancy in time, we can reduce the frame rate without losing too much information.
+
 ---
 
 [^1]: Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., & Fei-Fei, L. . Large-scale video classification with convolutional neural networks. CVPR 2014
