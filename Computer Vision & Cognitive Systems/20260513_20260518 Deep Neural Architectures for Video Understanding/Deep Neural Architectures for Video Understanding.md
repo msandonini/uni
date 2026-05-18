@@ -139,10 +139,15 @@ The two-stream solution is loosely inspired by neuroscience, where the ventral s
 The author of I3D, in order to tackle the problem of low C3D performance, tried to modify the training process, training a 2D layer and plugging it into a 3D one in order to pass its knowledge to it:
 ![[Pasted image 20260518100238.png]]
 In order to pass the 2D layer weights to the 3D layer, the kernel gets picked and stacked N times, and then it gets fine tuned.
+The 3D models are initialized with ImageNet images transformed into a video sequence.
 ![[Pasted image 20260518101033.png]]
 ![[Pasted image 20260518101046.png]]
 
+## Two-Stream I3D
 
+![[Pasted image 20260518101205.png]]
+
+This is a bit redundant, but it works better.
 
 
 ---
