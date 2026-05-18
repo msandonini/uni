@@ -147,7 +147,17 @@ The 3D models are initialized with ImageNet images transformed into a video sequ
 
 ![[Pasted image 20260518101205.png]]
 
-This is a bit redundant, but it works better.
+This is a bit redundant, but it works better:
+
+## Pseudo 3D Residual Networks (2D+1D)
+
+This is a set of networks that try to approximate 3D Networks in order to make them simpler.
+To do so, they decompose the network:
+![[Pasted image 20260518102024.png]]
+These are technically 3D kernels, but there is at least one axis that does not support the temporal information ($1 \times 3 \times 3$ conv) and 2 axes which don't support spatial information ($3 \times 1 \times 1$ conv).
+In this way we have one layer which takes into account the spatial differences and a different one which takes into account the temporal differences.
+
+
 
 
 ---
