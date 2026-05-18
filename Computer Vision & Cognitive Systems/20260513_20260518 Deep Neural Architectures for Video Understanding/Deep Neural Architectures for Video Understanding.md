@@ -134,8 +134,13 @@ A more sophisticated idea is to apply the fusion not only at the end but between
 The two-stream solution is loosely inspired by neuroscience, where the ventral stream does the object identification, while the dorsal stream mediates the required sensorimotor transformations for visually guided actions directed at such objects
 ![[Pasted image 20260513134640.png]]
 
+## Inflated 3D CNNs (I3D)
 
-![[Pasted image 20260518094224.png]]
+The author of I3D, in order to tackle the problem of low C3D performance, tried to modify the training process, training a 2D layer and plugging it into a 3D one in order to pass its knowledge to it:
+![[Pasted image 20260518100238.png]]
+In order to pass the 2D layer weights to the 3D layer, the kernel gets picked and stacked N times, and then it gets fine tuned.
+![[Pasted image 20260518101033.png]]
+![[Pasted image 20260518101046.png]]
 
 
 
