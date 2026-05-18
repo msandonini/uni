@@ -148,7 +148,7 @@ The 3D models are initialized with ImageNet images transformed into a video sequ
 A two-stream I3D is basically the same as the two-stream C3D but with an I3D:
 ![[Pasted image 20260518101205.png]]
 This is a bit redundant, but it works better.
-## Pseudo 3D Residual Networks (2D+1D)
+## Pseudo 3D Residual Networks (2D+1D) - ICCV2017
 
 This is a set of networks that try to approximate 3D Networks in order to make them simpler.
 To do so, they decompose the network:
@@ -156,6 +156,19 @@ To do so, they decompose the network:
 These are technically 3D kernels, but there is at least one axis that does not support the temporal information ($1 \times 3 \times 3$ conv) and 2 axes which don't support spatial information ($3 \times 1 \times 1$ conv).
 In this way we have one layer which takes into account the spatial differences and a different one which takes into account the temporal differences.
 ![[Pasted image 20260518102224.png]]
+
+### Spatiotemporal Separable 3D - CVPR2018
+
+This is basically the same as the previous one, as it was a concurrent work.
+### ResNet (2+1)D - CVPR2018
+
+Still, same as the previous one but with a different architecture.
+
+## Non-local Neural Networks
+
+These networks apply spatial-temporal attention among frames, interconnecting things that are distant from each other:
+![[Pasted image 20260518102816.png]]
+
 
 
 ---
