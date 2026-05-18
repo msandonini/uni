@@ -176,6 +176,10 @@ This is not a new kind of architecture or something applied in a ViT, instead it
 The reference dataset for image classification is ImageNet, which has ~1.3M images, and training a state of the art CNN can take up to 2 weeks on a single GPU.
 If we now imagine about the sizes of an ImageNet-like dataset composed of 1.3M videos (assuming these are 30s videos at 24fps), we have a total of 936M frames, which is 720 times ImageNet.
 Since videos exhibit a large redundancy in time, we can reduce the frame rate without losing too much information.
+Current GPUs can fit batches of 32~64 images when training state of the art CNNs (so 32~64 video frames at once).
+Also, there's a very big memory issue. This memory footprint can be reduced in different ways if a pre-trained CNN model is used, by for example freezing some layers (reducing memory impact of backdrop), extracting frame-level features and training a model on top of it (e.g. RNN on top of CNN features).
+
+Whenever we train a network there's a constant I/O stream going on, so the critical component is not only the GPU, as if CPU is not fast enough to provide the data, the GPU gets starved (so it runs at maybe 50% capacity instead of 100%, so there's no speed-up from a better GPU since there's a CPU bottleneck)
 
 ---
 
