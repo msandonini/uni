@@ -169,7 +169,7 @@ Still, same as the previous one but with a different architecture.
 These networks apply spatial-temporal attention among frames, interconnecting things that are distant from each other:
 ![[Pasted image 20260518102816.png]]
 To do so, the input tensor $x$ goes into 3 different $1 \times 1 \times 1$ conv layers, where the first 2 results get multiplied, get passed into a softmax, get multiplied with the 3rd result, and this result gets fed into a $1 \times 1 \times 1$ conv layer.
-This is not a new kind of architecture or something applied in a ViT, instead it is a new kind of layer that gets inserted into some parts of a CNN.
+This is not a new kind of architecture or something applied in a ViT, instead it is a new kind of layer that gets inserted into some positions of a CNN.
 
 ---
 
