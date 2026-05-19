@@ -1,7 +1,7 @@
 ---
 course: Multimedia Data Processing
 ---
-AAC is a lossy audio coding format designed to be the MP3 successor.
+AAC is a lossy audio coding format designed to be the [[MP3]] successor.
 It is defined in ISO documents ISO/IEC 13818-7 and ISO/IEC 14496-3 as part of the MPEG2 and MPEG4 standards.
 
 It introduces many improvements but the overall structure of the encoder is still very similar to that of an MP3 encoder.
