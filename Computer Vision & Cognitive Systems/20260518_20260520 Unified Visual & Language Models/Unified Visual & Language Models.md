@@ -27,4 +27,34 @@ This model is based on 2 big ideas:
 To merge the 2 vectors we use cosine similarity, so that all the numbers of the diagonal are close to 1 and the further we get from the diagonal the further the further we get from 1.
 
 After computing the similarity we normalize with the soft-max and then we use cross-entropy to make this a classification problem.
-For each row, the ground-truth for the row is the index of the row (so the ground truth for the row is basically the value that would be on the diagonal of the matrix)
+For each row, the ground-truth for the row is the index of the row (so the ground truth for the row is basically the value that would be on the diagonal of the matrix).
+The same thing is then done for each column.
+This way we create an association between the text and the image
+This process is called Contrastive loss or InfoNCE loss.
+
+```python
+def forward(self, image, text):
+	image_features = self.encode_image(image) # (N, D)
+	text_features = self.encode_text(text) # (N, D)
+	
+	# normalized features
+	image_features = image_features / image_features.norm(dim=1, keepdim=True)
+	text_features = text_features / text_features.norm(dim=1, keepdim=True)
+	
+	# cosine similarity as logits
+	logit_scale = self.logit_scale.exp()
+	logits = logit_scale * image_features @ text_features.t() # (N, N)
+	
+	# fill in the loss
+	# Hint: use torch.arange and F.cross_entropy
+	target = torch.arange(image_features.shape[0], device=image_features.device)
+	loss_image = F.cross_entropy(logits, target)
+	loss_text = F.cross_entropy(logits.t(), target)
+	
+	# average of the two
+	loss = (loss_image + loss_text) / 2.0
+	return loss 
+```
+%% This loss usually gets asked in work interviews %%
+
+
