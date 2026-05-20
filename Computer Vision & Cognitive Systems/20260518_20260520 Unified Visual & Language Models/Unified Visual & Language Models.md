@@ -65,3 +65,8 @@ For this paper, in each forward-backward pass a 32 thousand images mini-batch wa
 The objective during training looks at $N^{2}$ image and text embeddings, where $N$ is the mini-batch size.
 The performance of this model is very sensible on the mini-batch size, as it will not perform well with small mini-batch sizes.
 In order to accelerate training and save memory, in addition to a multi-GPU environment, they used mixed precision, gradient checkpointing, half-precision Adam statistics, and more.
+In this model the real bottleneck is the softmax, as it needs to compute operations which cannot be split between different GPUs (to tackle this a CLIP variation called SIGLIP was created, where instead of using the softmax the sigmoid gets used, which means that instead of needing to perform an operation on all the data with the softmax, we can perform an operation on the single images with the sigmoid, making it possible to split the computational load)
+
+It is also possible to deploy CLIP on ImageNet without ever training on it. This is called Zero-shot.
+It was demonstrated that there are many cases where performing a CLIP Zero-shot still performed better than using classification models trained on the specific dataset.
+
