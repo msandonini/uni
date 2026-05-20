@@ -60,6 +60,8 @@ def forward(self, image, text):
 The visual features extracted this way are always better than the ones usually obtained by a normal classification task. This is because texts are more descriptive than single words, so each image is associated with way more information than it would be in the classification.
 
 In order to get the data for this model (which was trained on 400 million image-text pairs), the novelty of this paper was that they crawled the web for images and used as annotation the `alt` html property (the property containing the text which gets loaded to describe the image in the case of the browser being unable to load and show it).
-In each forward-backward pass a 32 thousand images mini-batch was sampled.
+For this paper, in each forward-backward pass a 32 thousand images mini-batch was sampled.
 
-
+The objective during training looks at $N^{2}$ image and text embeddings, where $N$ is the mini-batch size.
+The performance of this model is very sensible on the mini-batch size, as it will not perform well with small mini-batch sizes.
+In order to accelerate training and save memory, in addition to a multi-GPU environment, they used mixed precision, gradient checkpointing, half-precision Adam statistics, and more.
