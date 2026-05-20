@@ -8,9 +8,11 @@ These problems are described as **closed vocabulary** limitations:
 ![[Pasted image 20260518105431.png]]
 
 %% 2026/05/20 %%
-## CLIP (Learning Transferable Visual Models from Natural Language Supervision)
+## CLIP ([Learning Transferable Visual Models from Natural Language Supervision](https://arxiv.org/pdf/2103.00020))
 
-CLIP is based on 2 big ideas:
+CLIP was nothing new theory-wise, as everything was already there, but CLIP was the first model making it work.
+
+This model is based on 2 big ideas:
 - Data
 	- While prior vision datasets where in the form of $\mathcal{D}$={\<img\>, "dog"}, CLIP collects datasets of (image, text) pairs as $\mathcal{D}$={\<img\>, "a corgi wearing a Zorro cape and mask"}, so we change from a dataset describing each image with a single word to a dataset describing each image with a free-formed text
 - Representation
@@ -18,5 +20,11 @@ CLIP is based on 2 big ideas:
 		1. An image encoder $f: \mathbb{R}^{H \times W \times 3} \to \mathbb{R}^{D}$
 		2. A text encoder $g: \mathbb{R}^{M} \to \mathbb{R}^{D}$
 		such that $f(I_{k})$ and $g(T_{l})$ are close for $k = l$ and are far away for $k \neq l$
+	- Basically, instead of a single encoder like before we learn 2 encoders which both project their results in a single shared embedding space
 
-This was nothing new theory-wise, as everything was already there, but CLIP was the first working model of this
+![[Pasted image 20260520124635.png]]
+
+To merge the 2 vectors we use cosine similarity, so that all the numbers of the diagonal are close to 1 and the further we get from the diagonal the further the further we get from 1.
+
+After computing the similarity we normalize with the soft-max and then we use cross-entropy to make this a classification problem.
+For each row, the ground-truth for the row is the index of the row (so the ground truth for the row is basically the value that would be on the diagonal of the matrix)
