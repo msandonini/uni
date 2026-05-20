@@ -59,4 +59,7 @@ def forward(self, image, text):
 
 The visual features extracted this way are always better than the ones usually obtained by a normal classification task. This is because texts are more descriptive than single words, so each image is associated with way more information than it would be in the classification.
 
+In order to get the data for this model (which was trained on 400 million image-text pairs), the novelty of this paper was that they crawled the web for images and used as annotation the `alt` html property (the property containing the text which gets loaded to describe the image in the case of the browser being unable to load and show it).
+In each forward-backward pass a 32 thousand images mini-batch was sampled.
+
 
