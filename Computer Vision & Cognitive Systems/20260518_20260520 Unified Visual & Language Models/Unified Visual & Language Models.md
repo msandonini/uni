@@ -69,4 +69,5 @@ In this model the real bottleneck is the softmax, as it needs to compute operati
 
 It is also possible to deploy CLIP on ImageNet without ever training on it. This is called Zero-shot.
 It was demonstrated that there are many cases where performing a CLIP Zero-shot still performed better than using classification models trained on the specific dataset.
-
+![[Pasted image 20260520134441.png]]
+These results are caused by the fact that CLIP was trained on web-scraped data, which makes it easier to find high quality images of some data in high quantities with respect with other ones.
