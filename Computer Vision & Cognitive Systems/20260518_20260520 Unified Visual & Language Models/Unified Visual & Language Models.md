@@ -57,4 +57,6 @@ def forward(self, image, text):
 ```
 %% This loss usually gets asked in work interviews %%
 
+The visual features extracted this way are always better than the ones usually obtained by a normal classification task. This is because texts are more descriptive than single words, so each image is associated with way more information than it would be in the classification.
+
 
