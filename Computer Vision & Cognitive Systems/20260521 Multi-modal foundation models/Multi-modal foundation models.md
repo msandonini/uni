@@ -10,7 +10,7 @@ These models have a few characteristics in order to be recognized:
 - they usually have a large number of parameters and data
 - they usually have self-supervised pre-training
 
-A multi-modal model is a model which acts as an integration between 2 different tasks. In our case, these tasks are language understanding (done with LLMs), and computer vision.
+A multi-modal model is a model which acts as an integration between 2 different tasks. In our case, these tasks are language understanding (done with [[LLM|LLMs]]), and computer vision.
 
 ## LLaVA
 
@@ -27,7 +27,7 @@ If we took the output tokens discarding the CLS we would obtain non-supervised t
 ![[Pasted image 20260521105623.png]]
 This makes it so that we have more fine-grained set of vectors.
 
-In order to train this architecture, we initialize it with a pre-trained Language Model for LLM Decoder and a pre-trained image decoder.
+In order to train this architecture, we initialize it with a pre-trained Language Model for LLM Decoder (e.g. [[Llama]]) and a pre-trained image decoder (e.g. CLIP).
 After that, we train a new linear layer to train bridge CLIP features to LLM input space, and then fine-tune LLM and linear layer together.
 
 ![[Pasted image 20260521110015.png]]
