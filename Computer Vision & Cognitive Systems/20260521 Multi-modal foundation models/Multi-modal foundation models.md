@@ -46,4 +46,9 @@ The reason why SAM is very powerful is that it has a caching mechanism, so once 
 
 ![[Pasted image 20260521113234.png]]
 
+This architecture has a problem of ambiguity in correct prompt:
+![[Pasted image 20260521113523.png]]
+In order to tackle this multiple masks are generated, so the output is a stack of the various predictions:
+![[Pasted image 20260521113622.png]]
+
 
