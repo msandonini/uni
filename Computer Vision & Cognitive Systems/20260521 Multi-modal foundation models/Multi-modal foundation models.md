@@ -60,9 +60,8 @@ Technically speaking, this model does not actually perform semantic segmentation
 ## Visual Programming
 
 Many Visual Question Answering models have ben trained to create a sequence of functions in order to work similarly to how the human brain works.
-This is a paradigm where instead we have a single huge network that tries to do anything we have lots of network each specified in one task.
+This is a paradigm where instead of having a single huge network that tries to do anything we have a network trained to take an input and assign it to lots of smaller network each trained on one specific task.
 
 ![[Pasted image 20260521115433.png]]
-
 ![[Pasted image 20260521115506.png]]
 
