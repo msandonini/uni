@@ -34,7 +34,7 @@ After that, we train a new linear layer to train bridge CLIP features to LLM inp
 
 ## Segment Anything Model (SAM)
 
-SAM is a segmentation foundational model trained on [[COCO]].
+SAM is a segmentation foundational model.
 The fact that it is a foundation model means that it can segment also data on which it is not trained.
 
 ![[Pasted image 20260521112444.png]]
@@ -48,7 +48,13 @@ The reason why SAM is very powerful is that it has a caching mechanism, so once 
 
 This architecture has a problem of ambiguity in correct prompt:
 ![[Pasted image 20260521113523.png]]
-In order to tackle this multiple masks are generated, so the output is a stack of the various predictions:
+In order to tackle this problem multiple masks are generated, so the output is a stack of the various predictions:
 ![[Pasted image 20260521113622.png]]
+
+SAM was trained on a massive amount of images, as it was trained on a dataset created by performing a train-annotate cycle generating new data at each iteration:
+![[Pasted image 20260521113735.png]]
+![[Pasted image 20260521113818.png]]
+
+Technically speaking, this model does not actually perform semantic segmentation, as it does not have a definite number of classes, and it differentiate between instances of the same type. The most appropriate way to call this is to call it **open vocabulary segmentation**.
 
 
