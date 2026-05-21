@@ -39,7 +39,7 @@ The fact that it is a foundation model means that it can segment also data on wh
 
 ![[Pasted image 20260521112444.png]]
 
-The prompt encoder can accept points, bounding boxes, or text (even if the text version was never released by Meta, but we know it should work since a paper about it was released).
+The prompt encoder can accept points, bounding boxes, or text (while the the text version was talked about in the paper, it was actually never released by Meta).
 This model is not able to classify objects, but it's very powerful in segmentation.
 
 The reason why SAM is very powerful is that it has a caching mechanism, so once it receives the image it takes a while to pass it in the image encoder, but then it caches the activation function and it makes it possible to change the object we want to segment almost immediately.
@@ -57,4 +57,12 @@ SAM was trained on a massive amount of images, as it was trained on a dataset cr
 
 Technically speaking, this model does not actually perform semantic segmentation, as it does not have a definite number of classes, and it differentiate between instances of the same type. The most appropriate way to call this is to call it **open vocabulary segmentation**.
 
+## Visual Programming
+
+Many Visual Question Answering models have ben trained to create a sequence of functions in order to work similarly to how the human brain works.
+This is a paradigm where instead we have a single huge network that tries to do anything we have lots of network each specified in one task.
+
+![[Pasted image 20260521115433.png]]
+
+![[Pasted image 20260521115506.png]]
 
