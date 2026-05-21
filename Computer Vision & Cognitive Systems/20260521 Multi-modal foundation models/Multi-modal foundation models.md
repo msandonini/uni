@@ -39,6 +39,9 @@ The fact that it is a foundation model means that it can segment also data on wh
 
 ![[Pasted image 20260521112444.png]]
 
+The prompt encoder can accept points, bounding boxes, or text (even if the text version was never released by Meta).
+This model is not able to classify objects, but it's very powerful in segmentation.
+
 The reason why SAM is very powerful is that it has a caching mechanism, so once it receives the image it takes a while to pass it in the image encoder, but then it caches the activation function and it makes it possible to change the object we want to segment almost immediately.
 
 
