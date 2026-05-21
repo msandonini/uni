@@ -31,3 +31,14 @@ In order to train this architecture, we initialize it with a pre-trained Languag
 After that, we train a new linear layer to train bridge CLIP features to LLM input space, and then fine-tune LLM and linear layer together.
 
 ![[Pasted image 20260521110015.png]]
+
+## Segment Anything Model (SAM)
+
+SAM is a segmentation foundational model trained on [[COCO]].
+The fact that it is a foundation model means that it can segment also data on which it is not trained.
+
+![[Pasted image 20260521112444.png]]
+
+The reason why SAM is very powerful is that it has a caching mechanism, so once it receives the image it takes a while to pass it in the image encoder, but then it caches the activation function and it makes it possible to change the object we want to segment almost immediately.
+
+
