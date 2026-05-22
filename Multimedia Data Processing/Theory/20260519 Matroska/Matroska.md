@@ -165,8 +165,26 @@ The `Segment` contains all the level 1 EBML elements indicated in the Matroska f
 - `Chapters`
 	- Contains information on the chapters in which the file is divided
 	- Differs from the `CuePoint` because each `Chapter` can be associated with strings in different languages to allow the user to understand exactly where a certain `Chapter` will lead into the file
+	- It indicates semantically interesting points of a file (e.g. number of different scenes in a film, different songs in a music album, ...)
+	- Each chapter has different data:
+		- `ChapterUID`: unique ID of the chapter
+		- `ChapterTimeStart`: chapter start timestamp (unscaled)
+		- `ChapterTimeEnd`: chapter end timestamp (unscaled)
+		- `ChapterDisplay`: chapter related strings (there may be multiple languages in the same `ChapterDisplay`):
+			- `ChapterString`: chapter description
+			- `ChapterLanguage`: corresponds to the `ChapterString` language
+	![[Pasted image 20260522092554.png]]
 - `Attachment`
 	- Can contain any type of file
-- `Tagging`
+- `Tags`
 	- Contains all kinds of information about the tracks, like the `ID3` tags of [[MP3]] files
+	- The `Tags` element contains one or more `Tag` type elements, each with its own sub-element:
+		- `Targets`: contains the unique IDs of the elements to which the tags refer
+		- `SimpleTag`: a master element that can contain generic metadata, with a set of sub-elements:
+			- `TagName`: name of the stored tag
+			- `TagLanguage`: language in which the tag is stored
+			- `TagString`: value of the tag as a string
+			- `TagBinary`: value of the tags as binary data
+			- `SimpleTag`
+	![[Pasted image 20260522093005.png]]
 
