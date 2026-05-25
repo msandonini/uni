@@ -11,4 +11,3 @@ Detection and tracking are like the chicken or the egg problem, as we have 2 app
 	![[Pasted image 20260525173358.png]]
 
 %% All'esame verranno chiesti solo Kalman & DeepSORT %%
-
