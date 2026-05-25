@@ -14,4 +14,14 @@ Since in a generative model we learn a probability distribution $p(x)$, it requi
 While with generative models w learn the probability distribution, with conditional generative models learn the probability distribution of the data given a specific condition.
 ![[Pasted image 20260525092936.png]]
 
+Recalling Baye's rule:
+$$
+P(x|y) = \frac{P(y | x)}{P(y)}P(x)
+$$
+Where, at least from a theoretical point of view:
+- $P(x|y)$ is the conditional generative model
+- $P(y|x)$ is the discriminative model
+- $P(y)$ is the prior over labels
+- $P(x)$ is the unconditional generative model
+
 
