@@ -66,7 +66,7 @@ When training a CNN what we need to allocate are:
 - Tensors for optimizers used by the next step of training to update the parameters
 
 Initially GoogLeNet was unable to train, as it was affected by vanishing gradients. To solve this problem they applied, each n layers, a classification layer.
-This solution was awful, and the solution came in 2015 with ResNet, where the output of each layer gets summed with the input residual block. 
+This solution was awful, and the solution came in 2015 with [[ResNet Variations|ResNet]], where the output of each layer gets summed with the input residual block. 
 This works because the gradients are basically values between 0 and 1, so they tend to 0 once multiplied one with the other at each layer, but adding a residual block to the gradient makes it impossible for the gradient to become 0.
 The negative part of the residual block summation is that, being a summation, the input and output gradients that need to be summed need to be of the same shape since it's an element-wise summation, and this is an issue since in this case we cannot downsample.
 This problem is solved by sometimes applying a convolutional layer on the residual pass, so that even the residual block gets downsampled, but isn't affected by the problem since it's not applied each time.
