@@ -122,5 +122,17 @@ t &\sim \text{Uniform}[0, 1]
 \end{align}
 $$
 ![[Pasted image 20260525104509.png]]
-
+Now, we set $x_{t} = (1-t)x + tz, v=z-x$, so we train a NN to predict v:
+$$
+L = \lvert \lvert f_{\theta}(x_{t}, t) - v \rvert  \rvert_{2}^{2} 
+$$
+The core training loop is just a few lines of code:
+```python
+for x in dataset:
+	z = torch.randn_like(x)
+	t = random.uniform(0, 1)
+	xt = (1 - t) * x + t * z
+	v = model(xt, t)
+	loss = (z - x - v).square().sum()
+```
 
