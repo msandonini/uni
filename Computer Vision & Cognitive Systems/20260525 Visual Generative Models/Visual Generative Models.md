@@ -137,3 +137,31 @@ for x in dataset:
 	loss = (z - x - v).square().sum()
 ```
 
+At the same way, even the sampling is just a few lines of code:
+```python
+y = user_input()
+sample = torch.randn(x_shape)
+for t in torch.linspace(1, 0, num_steps):
+	v = model(sample, y, t)
+	sample = sample - v / num_steps
+```
+
+![[Pasted image 20260525164729.png]]
+
+The major problem with this is that the user wants a high quality image, so this model is really heavy.
+
+### Latent Diffusion Models (LDMs)
+
+In reality, what gets used are latent diffusion models, where we train encoder and decoder to convert images to latents.
+![[Pasted image 20260525164443.png]]
+After this we train the diffusion model to remove noise from latents (here the encoder is frozen).
+![[Pasted image 20260525165117.png]]
+
+%% Questo è effettivamente un autoencoder, tutti gli altri visti nel corso no (il prof specifica perché in esame tutti sbagliano) %%
+
+The training follows the VAE's training, typically with a very small KL prior weight.
+The problem is that the decoder outputs are often blurry.
+The solution to this is to add a discriminator:
+![[Pasted image 20260525165248.png]]
+
+
