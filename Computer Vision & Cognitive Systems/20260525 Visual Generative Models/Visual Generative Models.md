@@ -93,4 +93,12 @@ x_{t} &= G(z_{t})
 \end{align}
 $$
 
+- Pros:
+	- Simple formulation
+	- Good image quality
+- Cons:
+	- No loss curve to look at
+	- Unstable training
+	- Hard to scale to big models + data
+
 
