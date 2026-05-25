@@ -24,4 +24,4 @@ Where, at least from a theoretical point of view:
 - $P(y)$ is the prior over labels
 - $P(x)$ is the unconditional generative model
 
-
+Usually, when we talk about generative models, we talk about both conditional and unconditional models.
