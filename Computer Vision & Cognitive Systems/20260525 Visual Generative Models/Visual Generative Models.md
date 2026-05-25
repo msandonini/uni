@@ -83,4 +83,14 @@ Generator G and discriminator D are both neural networks.
 StyleGAN is a more complex architecture that injects noise via adaptive normalization.
 ![[Pasted image 20260525101443.png]]
 
+GAN latent space is smooth.
+This is not a forced behaviour but an emerging one, as during training we did not force it.
+This also means that given latent vectors $z_{0}$ and $z_{1}$ we can interpolate between them: 
+$$
+\begin{align}
+z_{t} &= tz_{0} + (1 - t)z_{1} \\
+x_{t} &= G(z_{t})
+\end{align}
+$$
+
 
