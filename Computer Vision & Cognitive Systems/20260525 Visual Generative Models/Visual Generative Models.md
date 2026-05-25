@@ -79,3 +79,8 @@ At the same way, when training G, we fix D:
 - $E_{x \sim p_{\text{data}}}[\log D(x)]$ does not depend on G
 - $\log(1-D(G(z)))$ means that the generator wants $D(x) = 1$ for fake data
 
+Generator G and discriminator D are both neural networks.
+StyleGAN is a more complex architecture that injects noise via adaptive normalization.
+![[Pasted image 20260525101443.png]]
+
+
