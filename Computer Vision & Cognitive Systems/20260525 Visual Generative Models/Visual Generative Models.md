@@ -11,3 +11,7 @@ Unsupervised learning is usually useful in clustering, dimensionality reduction,
 Since in a generative model we learn a probability distribution $p(x)$, it requires to have deep understanding of the probability distribution of the dataset.
 ![[Pasted image 20260525092806.png]]
 
+While with generative models w learn the probability distribution, with conditional generative models learn the probability distribution of the data given a specific condition.
+![[Pasted image 20260525092936.png]]
+
+
