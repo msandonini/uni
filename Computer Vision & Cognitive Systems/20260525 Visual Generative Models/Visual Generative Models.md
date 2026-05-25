@@ -103,4 +103,24 @@ $$
 
 GANs are not so used anymore because it's difficult to scale up the architecture to bigger models.
 
+## Diffusion models
+
+Diffusion models are the current state of the art.
+There are many different mathematical formalisms and tons of variance in terminology and notation between papers.
+
+The starting point of diffusion models is picking a latent picture (a noise distribution $z \sim p_{\text{noise}}$, usually unit Gaussian).
+![[Pasted image 20260525103930.png]]
+Starting from this random image, we now train the network to de-noise it removing a little bit of noise: $f_{\theta}(x_{t}, t)$.
+At inference time, we sample $x_{1} \sim p_{\text{noise}}$ and apply $f_{\theta}$ many times in sequence to generate a noiseless sample $x_{0}$.
+
+Supposing we have a simple $p_{\text{noise}}$ and samples from $p_{\text{data}}$, on each training iteration, we sample:
+$$
+\begin{align}
+z &\sim p_{\text{noise}} \\
+x &\sim p_{\text{data}} \\
+t &\sim \text{Uniform}[0, 1]
+\end{align}
+$$
+![[Pasted image 20260525104509.png]]
+
 
