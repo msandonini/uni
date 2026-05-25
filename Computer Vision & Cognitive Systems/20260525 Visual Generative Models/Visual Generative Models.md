@@ -101,4 +101,6 @@ $$
 	- Unstable training
 	- Hard to scale to big models + data
 
+GANs are not so used anymore because it's difficult to scale up to bigger models.
+
 
