@@ -11,3 +11,10 @@ Detection and tracking are like the chicken or the egg problem, as we have 2 app
 	![[Pasted image 20260525173358.png]]
 
 %% All'esame verranno chiesti solo Kalman & DeepSORT %%
+
+%% 2026/05/27 %%
+
+## Normalized Cross Correlation (NCC)
+
+NCC is a single object tracker without motion analysis and prediction
+![[Pasted image 20260527122903.png]]
