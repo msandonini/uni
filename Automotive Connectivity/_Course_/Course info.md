@@ -10,6 +10,8 @@ Written test on everything:
 Non-mandatory oral test about everything
 Non-mandatory lab project about a chosen argument
 
+2026/12/17 there is an informal exam session (during the lesson time)
+
 Oral test cannot decrease the evaluation
 
 Laboratory is hands-on on 802.11p (similar to WiFi but for automotive scenarios) using professors' Arduino-Yun
