@@ -1,13 +1,11 @@
 [
-  "obsidian-excalidraw-plugin",
-  "table-editor-obsidian",
   "obsidian-git",
-  "obsidian-latex-suite",
-  "obsidian-icon-folder",
-  "tag-wrangler",
+  "table-editor-obsidian",
+  "dataview",
+  "obsidian-excalidraw-plugin",
+  "obsidian-annotator",
   "obsidian-html-tags-autocomplete",
-  "templater-obsidian",
+  "obsidian-mind-map",
   "pseudocode-in-obs",
-  "homepage",
-  "obsidian-style-settings"
+  "tag-wrangler"
 ]
