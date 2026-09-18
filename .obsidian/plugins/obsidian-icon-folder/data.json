@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCloud",
       "LiCar",
       "LiCode2",
       "LiGlobe",
-      "LiVideotape",
-      "LiVideo"
+      "LiVideotape"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,5 +41,6 @@
   "Multimedia Data Processing": "LiVideotape",
   "Internet of Things": "LiGlobe",
   "Progettazione del Software": "LiCode2",
-  "Automotive Connectivity": "LiCar"
+  "Automotive Connectivity": "LiCar",
+  "Sistemi e Applicazioni Cloud": "LiCloud"
 }
