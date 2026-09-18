@@ -42,6 +42,23 @@ Esiste anche un'altra famiglia di paradigmi, legata al modello di deployment:
 - Hybrid
 	- Struttura cloud locale integrata con un cloud esterno
 	- Esempio: database locale per dati sensibili e altri dati tenuti su un servizio esterno
+	- Utile per mantenere dei dati o delle specifiche funzioni localmente facendo comunque offloading dei calcoli ad esterni
 ![[Pasted image 20260918121723.png]]
 
+In un ambito di offerta servizi, ci sono diversi step possibili per la scalabilità:
+- Step 1: servizio hostato localmente su un server bare-metal
+	- Non posso hostare diverse applicazioni perché potrebbero avere dipendenze in conflitto tra loro
+	- I server sono tipicamente sotto-utilizzati
+	- La gestione è complessa
+- Step 2: servizio hostato su una macchina virtuale che gira sul server
+	- In questo caso è già un caso di paradigma IaaS
+	- I costi per l'utente in questo caso, rimangono gli stessi sia che le risorse vengano utilizzate al massimo sia che rimangano idle per la maggior parte del tempo
+![[Pasted image 20260918122845.png]]
+- Step 3: granularizzazione delle applicazioni
+	- Rendo le applicazioni granularizzate, così da calcolare i costi per l'utente in base all'utilizzo delle risorse
+	- Sistema elastico (dal punto di vista dell'utente)
+	- Sistema molto complesso e costoso (dal punto di vista del provider)
 
+Definizione di cloud da parte del NIST: un modello che fornisce una serie di risorse computazionali ubique, convenienti, ed on-demand che può essere configurata e rilasciata in tempi brevi con gestione ed interazione con il provider minimi
+
+![[Pasted image 20260918123724.png]]
