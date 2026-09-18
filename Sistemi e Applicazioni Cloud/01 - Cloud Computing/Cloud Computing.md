@@ -32,4 +32,11 @@ Ad oggi la distinzione inizia a diventare non più così chiara, in quanto il pa
 - PaaS+IaaS:
 	- Contesti con container, dove l'immagine è tua ma non è l'immagine del sistema operativo, quindi hai il controllo dei container ma non del sistema infrastrutturale (niente controllo sul sistema di base della macchina virtuale)
 
+Esiste anche un'altra famiglia di paradigmi, legata al modello di deployment:
+- Private
+- Community
+- Public
+- Hybrid
+![[Pasted image 20260918121723.png]]
+
 
