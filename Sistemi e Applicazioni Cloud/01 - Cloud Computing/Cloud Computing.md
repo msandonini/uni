@@ -34,9 +34,14 @@ Ad oggi la distinzione inizia a diventare non più così chiara, in quanto il pa
 
 Esiste anche un'altra famiglia di paradigmi, legata al modello di deployment:
 - Private
+	- Azienda che è provider e utente dei suoi servizi cloud
 - Community
+	- Insieme di aziende che si associano per condividere servizi cloud
 - Public
+	- Azienda che è provider di servizi cloud per altre aziende
 - Hybrid
+	- Struttura cloud locale integrata con un cloud esterno
+	- Esempio: database locale per dati sensibili e altri dati tenuti su un servizio esterno
 ![[Pasted image 20260918121723.png]]
 
 
