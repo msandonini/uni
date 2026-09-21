@@ -42,7 +42,7 @@ Distributed AI is a form of distributed computing, as there is not a sharp disti
 In order to enable 2 processes to interact with one another, from a programming perspective, knowledge of the architecture is needed, so it's not a transparent procedure.
 To facilitate interactions between the processes and make the system transparent, middleware is needed.
 
-Middleware acts as a middle layere between the OS and the application software.
+Middleware acts as a middle layer between the OS and the application software.
 To some extent, middleware can be considered as a sort of OS for distributed systems.
 Basically, middleware solves the following problems:
 - Transparency
@@ -51,7 +51,7 @@ Basically, middleware solves the following problems:
 - App-level adaptivity
 - Environment-level adaptivity
 
-A widely used example of middleware is DNS, which translates human-comprensible URLs to the destination IPs.
+A widely used example of middleware is DNS, which translates human-comprehensible URLs to the destination IPs.
 
 >[!Info] Adaptivity
 >The capacity of intelligence of adapting to a situation
@@ -67,7 +67,7 @@ A distributed system can interact via different models:
 For intelligence, we can say that there are 3 things required:
 - Perceiving
 	- The capability for an entity of perceiving and understanding what happens around in the environment / context
-	- This also typically includes the entity itself, so it is also about seelf-perception
+	- This also typically includes the entity itself, so it is also about self-perception
 - Reasoning
 	- The capability of reasoning about what is perceived and previously deduced
 - Acting
