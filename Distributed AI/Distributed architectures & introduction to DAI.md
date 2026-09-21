@@ -38,3 +38,9 @@ Distributed AI is a form of distributed computing, as there is not a sharp disti
 - Degree of goal oriented autonomy
 - Degree of adaptability
 - Flexibility
+
+In order to enable 2 processes to interact with one another, from a programming perspective, knowledge of the architecture is needed, so it's not a transparent procedure.
+To facilitate interactions between the processes and make the system transparent, middleware is needed.
+
+Middleware acts as a middle layere between the OS and the application software.
+To some extent, middleware can be considered as a sort of OS for distributed systems
