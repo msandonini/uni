@@ -42,4 +42,7 @@ Questo livello a metà tra il cloud e i device è chiamato edge layer, e si occu
 | Applicazioni            | Micro-applicazioni       | Gestione del ciclo di vita |
 | Intelligenza            | Ragionamento distribuito | Training centralizzato     |
 
+>[!Info] Fog Computing
+>Con fog layer si intende uno strato intermedio tra il cloud layer e l'edge, utilizzato per spostare i calcoli dal cloud più vicino all'edge
+
 
