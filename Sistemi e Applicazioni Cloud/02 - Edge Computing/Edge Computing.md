@@ -61,4 +61,3 @@ Nel 2018 il sistema MEC è diventato la tecnologia abilitante per il 5G.
 Ogni server MEC è composto da una MEC hosting infrastructure e da una MEC application platform, la quale permette l'hosting di diverse applicazioni ed è composta da:
 - application virtualization manager
 - application platform services
-
