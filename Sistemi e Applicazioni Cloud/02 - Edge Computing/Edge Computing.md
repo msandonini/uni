@@ -45,4 +45,20 @@ Questo livello a metà tra il cloud e i device è chiamato edge layer, e si occu
 >[!Info] Fog Computing
 >Con fog layer si intende uno strato intermedio tra il cloud layer e l'edge, formato da dei piccoli datacenter, utilizzato per spostare i calcoli dal cloud più vicino all'edge
 
+>[!Info] MCC & MEC
+>MCC (Mobile Cloud Computing) e MEC (Mobile Edge Computing) sono dei paradigmi utilizzati per ridurre la latenza e migliorare la capacità delle applicazioni mobili
+
+Nel 2009/10 è emerso il paradigma MCC che integra il cloud computing con i dispositivi mobili, così da migliorare le loro prestazioni e capacità. Per fare ciò viene eseguito l'offloading verso il cloud delle parti più pesanti delle applicazioni. Un grosso problema del MCC è la latenza.
+Per ridurre questo problema è stato introdotto il Cloudlet Computing.
+
+>[!Info] Cloudlet
+>Una cloudlet è un piccolo datacenter di scala ridotta allocata all'edge delle reti, così da offrire risorse computazionali per applicazioni mobili che richiedono bassa latenza ed elevata potenza computazionale
+
+Un'altra alternativa per migliorare il contesto delle cloud applications su dispositivi mobili è il MEC (Mobile Edge Computing, nel tempo si è evoluto per avere come target dispositivi di ogni tipo, quindi ad oggi ha preso l'acronimo di Multi-access Edge Computing).
+Questa alternativa alle cloudlets è stata creata dagli operatori RAN (Radio Access Network, sono gli operatori mobili) come standard per introdurre delle base stations ad alte performance considerate come base stations per l'edge computing.
+Nel 2018 il sistema MEC è diventato la tecnologia abilitante per il 5G.
+
+Ogni server MEC è composto da una MEC hosting infrastructure e da una MEC application platform, la quale permette l'hosting di diverse applicazioni ed è composta da:
+- application virtualization manager
+- application platform services
 
