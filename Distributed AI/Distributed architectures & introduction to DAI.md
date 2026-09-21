@@ -43,4 +43,38 @@ In order to enable 2 processes to interact with one another, from a programming 
 To facilitate interactions between the processes and make the system transparent, middleware is needed.
 
 Middleware acts as a middle layere between the OS and the application software.
-To some extent, middleware can be considered as a sort of OS for distributed systems
+To some extent, middleware can be considered as a sort of OS for distributed systems.
+Basically, middleware solves the following problems:
+- Transparency
+- Scalability
+- Heterogeneity
+- App-level adaptivity
+- Environment-level adaptivity
+
+A widely used example of middleware is DNS, which translates human-comprensible URLs to the destination IPs.
+
+>[!Info] Adaptivity
+>The capacity of intelligence of adapting to a situation
+
+A distributed system can interact via different models:
+- Client-server (master/slave)
+- Message-passing (peer-to-peer)
+- Event-based (pub/sub)
+
+>[!Info] Intelligence
+>The capability to act purposefully towards achievements of goals in an environment, where a goal is a specific desired situation in a specific environment (so we are not talking about AGIs, but situated finalized intelligence)
+
+For intelligence, we can say that there are 3 things required:
+- Perceiving
+	- The capability for an entity of perceiving and understanding what happens around in the environment / context
+	- This also typically includes the entity itself, so it is also about seelf-perception
+- Reasoning
+	- The capability of reasoning about what is perceived and previously deduced
+- Acting
+	- Having capabilities of acting an taking actions that can modify the current situation
+All of these requirements are dependent on the central concept of adaptivity
+
+These 3 requirements can be seen as a loop of perceiving, reasoning about what was perceived, acting accordingly to what reasoned modifying the surrounding environment (which in turn changes what is perceived in the subsequent iteration).
+An entity working based on this loop is called an autonomous agent
+
+
