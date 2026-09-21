@@ -77,4 +77,7 @@ All of these requirements are dependent on the central concept of adaptivity
 These 3 requirements can be seen as a loop of perceiving, reasoning about what was perceived, acting accordingly to what reasoned modifying the surrounding environment (which in turn changes what is perceived in the subsequent iteration).
 An entity working based on this loop is called an autonomous agent
 
+How much intelligence is needed for a task is dependent on the goal and on the environment.
+Sometimes even very trivial forms of perception and reasoning can be enough (e.g. a thermostat), while sometimes we require more complex activities of perception and reasonining (e.g. self-driving car or agentic AI code assistant)
+
 
