@@ -14,4 +14,11 @@ Ciò che differenzia l'una dall'altra sono i requisiti diversi di queste caratte
 - Affidabilità
 	- Applicazioni con determinate necessità di sicurezza, integrità, ...
 
+In tante applicazioni le sfide principali sono 2:
+- Scalabilità
+	- Grandi quantità di dati da trasferire e processare
+	- Sistemi distribuiti geograficamente
+- Bassa latenza
+	- Supporto per applicazioni real-time
+Quello che mette in crisi le applicazioni cloud è il jitter, in quanto non si sa a quali datacenter si viene assegnati
 
