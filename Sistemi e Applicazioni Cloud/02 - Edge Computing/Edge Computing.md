@@ -23,4 +23,23 @@ In tante applicazioni le sfide principali sono 2:
 Quello che mette in crisi le applicazioni cloud è il jitter, in quanto non si sa a quali datacenter si viene assegnati
 
 Il 5G non è la soluzione per le applicazioni latency-bound, in quanto riguarda solo l'ultimo miglio, e non l'interezza dell'infrastruttura di rete da cui dobbiamo passare.
-Inoltre, un grande problema è quello della sicurezza dei dati, specialmente considerando le normative sulla privacy e sulla sensibilità dei dati
+Inoltre, un grande problema è quello della sicurezza dei dati, specialmente considerando le normative sulla privacy e sulla sensibilità dei dati.
+Queste problematiche ci fanno capire che il cloud non è abbastanza per molti di questi contesti intelligenti, specialmente per quanto riguarda:
+- Dipendenza dalla rete (non solo dalla latenza ma anche dalla disponibilità di connessione continua)
+- Mancanza di sovranità dei dati
+- Problema del vendor lock-in
+Per questi motivi può essere necessario portare una parte del processing dei dati più vicino ai sensori.
+Questo livello a metà tra il cloud e i device è chiamato edge layer, e si occupa solitamente di:
+- Data processing e riduzione dei dati
+- Data caching e buffering
+- Controllo della risposta
+- Virtualizzazione
+
+| Punto di ottimizzazione | Edge computing           | Cloud computing            |
+| ----------------------- | ------------------------ | -------------------------- |
+| Rete                    | Aggregazione dati        | Analisi dati               |
+| Servizi                 | Agenti                   | Orchestrazione dei servizi |
+| Applicazioni            | Micro-applicazioni       | Gestione del ciclo di vita |
+| Intelligenza            | Ragionamento distribuito | Training centralizzato     |
+
+
