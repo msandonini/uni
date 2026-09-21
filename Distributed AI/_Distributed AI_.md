@@ -9,6 +9,14 @@ aliases:
   - Disrespected AI
   - Dispelled AI
   - Disseminated AI
+  - Distrusted AI
+  - Distinguished AI
+  - Distilled AI
+  - Disastered AI
+  - Disilluded AI
+  - Discussed AI
+  - Disallocated AI
+  - Displaced AI
 ---
 The general problem of AI ensembles or multi-agent AI systems: how can we decide which AI is the one whose choice is the one we must keep?
 

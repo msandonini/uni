@@ -88,4 +88,8 @@ There are different levels of intelligence reasoning:
 - Goal oriented (strategic reasoning)
 	- Compares the current situation against the desired situation and identifies the strategy that could lead to the goal
 
+At the implementation level, an agent will necessarily be implemented in terms of a multi threaded software process
+
+A DAI system is a system made up of multiple autonomous agents (a multi-agent system)
+
 
