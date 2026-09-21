@@ -22,4 +22,5 @@ In tante applicazioni le sfide principali sono 2:
 	- Supporto per applicazioni real-time
 Quello che mette in crisi le applicazioni cloud è il jitter, in quanto non si sa a quali datacenter si viene assegnati
 
-Il 5G non è la soluzione per le applicazioni latency-bound, in quanto riguarda solo l'ultimo miglio, e non l'interezza dell'infrastruttura di rete da cui dobbiamo passare
+Il 5G non è la soluzione per le applicazioni latency-bound, in quanto riguarda solo l'ultimo miglio, e non l'interezza dell'infrastruttura di rete da cui dobbiamo passare.
+Inoltre, un grande problema è quello della sicurezza dei dati, specialmente considerando le normative sulla privacy e sulla sensibilità dei dati
