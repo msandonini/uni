@@ -18,6 +18,7 @@ aliases:
   - Disallocated AI
   - Displaced AI
   - Disenchanted AI
+  - Disassembled AI
 ---
 The general problem of AI ensembles or multi-agent AI systems: how can we decide which AI is the one whose choice is the one we must keep?
 
