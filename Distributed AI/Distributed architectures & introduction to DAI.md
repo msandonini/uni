@@ -80,4 +80,12 @@ An entity working based on this loop is called an autonomous agent
 How much intelligence is needed for a task is dependent on the goal and on the environment.
 Sometimes even very trivial forms of perception and reasoning can be enough (e.g. a thermostat), while sometimes we require more complex activities of perception and reasoning (e.g. self-driving car or agentic AI code assistant)
 
+There are different levels of intelligence reasoning:
+- Processing (no reasoning)
+	- Always runs the same set of actions without adapting to changed conditions
+- Reactive
+	- Establishes what to do in which situation based on a set of pre-defined rules
+- Goal oriented (strategic reasoning)
+	- Compares the current situation against the desired situation and identifies the strategy that could lead to the goal
+
 
