@@ -25,10 +25,16 @@ There are 2 different types of architectures:
 Today, we have very different radio technologies working with the microprocessors via to the automotive ethernet (STP):
 - TV/Radio
 - WiFi ax/ad
-- LTE/5G (sub-6GHz 4x4 MIMO)
+- LTE/5G (sub-6 GHz 4x4 MIMO)
 - V2X (5G NR/DSRC)
 - GNSS (L1/L2 or L1/L5)
-The big problem of having so many antennas on a single vehicle is EMI (ElectroMagnetic Interference), so each protocol and antenna power must be fine tuned in order to remain into different limits.
+The big problem of having so many antennas on a single vehicle is EMI (Electromagnetic Interference), so each protocol and antenna power must be fine tuned in order to remain into different limits.
 This is also why we have limited bandwidth constraints.
+
+As of today, a car is composed of:
+- Up to 100 ECUs
+- Up to 3 km of wiring for power and data
+- From 10 kg to 150 kg of cables (for both power and data)
+- Up to 3800 interface points (each interface is a point of failure)
 
 
