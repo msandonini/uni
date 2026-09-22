@@ -9,6 +9,7 @@ Written test on everything:
 - 11 questions, 3 points each, 2h of time
 Non-mandatory oral test about everything
 Non-mandatory lab project about a chosen argument
+Exam is held in english
 
 2026/12/17 there is an informal exam session (during the lesson time)
 
