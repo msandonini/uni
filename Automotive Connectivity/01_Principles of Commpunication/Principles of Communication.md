@@ -62,4 +62,10 @@ There are various motives on why bus systems (and CAN-Bus between them) became p
 	- Cooperation with Original Equipment Manufacturers (OEMs)
 - Shorter development cycles
 
-
+Also, using a bus system enables:
+- Complex control and monitoring tasks
+	- Data transmission between ECUs
+- Simplification of wiring
+	- Replaces all dedicated copper wiring with a single cable
+- Multimedia bus systems
+	- Transmission of large volumes of data
