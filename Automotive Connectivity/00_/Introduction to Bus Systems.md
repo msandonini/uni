@@ -15,4 +15,9 @@ Bus system:
 
 Traditionally, a dedicated ECU was added for each task, but nowadays the trend is to update the already present ECU in order to make them able to work on more tasks simultaneously.
 
-
+There are 2 different types of architectures:
+- Domain architecture
+	- Central domain controller (high performance computer)
+	- Ability to handle more complex functions
+- Zonal architecture
+	- Local ethernet gateway per-zone
