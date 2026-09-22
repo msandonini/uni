@@ -33,7 +33,7 @@ In reality, also layer 4 is used, but usually only for debugging (the OBD is con
 
 CAN-Bus, being a very low-level (nearly physical) protocol, is a broadcast-based protocol, so we need ways to filter out the messages we don't care about, and we need a congestion control mechanism.
 Each CAN-Bus functionality is divided between layer 1 and 2:
-1. Physical
+1. Physical, where we find physical characteristics and functionalities
 	- Physical Signaling (PLS)
 		- Bit encoding/decoding
 		- Bit time sync
@@ -42,13 +42,24 @@ Each CAN-Bus functionality is divided between layer 1 and 2:
 	- Media Dependant Interface (MDI)
 		- Connectors
 			- Can be either electrical or optical
-2. Data Link
+2. Data Link, where we find logical characteristics and functionalities
 	- Logical Link Control (LLC)
 		- Acceptance filtering
 		- Overload notification
-		- Rcovery management
+		- Recovery management
 	- Medium Access Control (MAC)
 		- Data encapsulation/decapsulation
 		- Frame coding
 		- Error detection/signaling/handling
+
+There are various motives on why bus systems (and CAN-Bus between them) became popular:
+- Lower cost
+	- Material
+	- Weight
+	- Volume
+- Higher modularity
+	- Customizability of vehicles
+	- Cooperation with Original Equipment Manufacturers (OEMs)
+- Shorter development cycles
+
 
