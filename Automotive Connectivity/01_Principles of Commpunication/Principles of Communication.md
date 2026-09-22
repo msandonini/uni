@@ -27,4 +27,4 @@ The automotive ISO/OSI stack is simply composed of the Application layer and a C
 - Transceiver block
 	- Only layer 1
 
-
+In reality, also layer 4 is used, but usually only for debugging (the OBD is considered layer 4)
