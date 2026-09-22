@@ -21,6 +21,9 @@ aliases:
   - Disassembled AI
   - Distracted AI
   - Dissimulated AI
+  - Disintegrated AI
+  - Disentangled AI
+  - Disclosed AI
 ---
 The general problem of AI ensembles or multi-agent AI systems: how can we decide which AI is the one whose choice is the one we must keep?
 
