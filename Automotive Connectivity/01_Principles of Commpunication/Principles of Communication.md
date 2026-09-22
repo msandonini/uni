@@ -28,3 +28,26 @@ The automotive ISO/OSI stack is simply composed of the Application layer and a C
 	- Only layer 1
 
 In reality, also layer 4 is used, but usually only for debugging (the OBD is considered layer 4)
+
+## CAN-Bus
+
+CAN-Bus, being a very low-level (nearly physical) protocol, is a broadcast-based protocol, so we need ways to filter out the messages we don't care about, and we need a congestion control mechanism.
+Each CAN-Bus functionality is divided between layer 1 and 2:
+1. Physical
+	- Physical Signaling (PLS)
+		- Bit encoding/decoding
+		- Bit time sync
+	- Physical Medium attachment (PMA)
+		- Driver/Receiver characteristics
+	- Media Dependant Interface (MDI)
+		- Connectors
+2. Data Link
+	- Logical Link Control (LLC)
+		- Acceptance filtering
+		- Overload notification
+		- Rcovery management
+	- Medium Access Control (MAC)
+		- Data encapsulation/decapsulation
+		- Frame coding
+		- Error detection/signaling/handling
+
