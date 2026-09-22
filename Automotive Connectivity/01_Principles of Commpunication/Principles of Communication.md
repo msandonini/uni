@@ -21,4 +21,10 @@ I layer sono come gli orchi, e gli orchi sono come le cipolle
 
 In the course we will focus just on Physical and Data Link layers
 
+The automotive ISO/OSI stack is simply composed of the Application layer and a Communication layer (composed of Data Link and Physical layers), where the Communication layer uses 2 physical blocks:
+- Communication controller
+	- Layer 1/2
+- Transceiver block
+	- Only layer 1
+
 
