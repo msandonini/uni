@@ -48,4 +48,36 @@ As soon as we move outside of the car, we then face different challenges:
 - security
 - privacy
 
+According to the power and utilization of a node, we change the "class" of the node itself:
+- Repeater
+	- Signal amplification/refreshing
+	- Layer 1
+- Bridge
+	- Medium/timing adaptation
+	- Unfiltered forwarding
+	- Layer 1/2
+- Router
+	- Filtered forwarding
+	- Quality of Service (QoS)
+	- Layer 1/2/3
+- Gateway
+	- Address adaptation
+	- Speed adaptation
+	- Protocol adaptation
+	- Layer 1/2/3/7
+
+Also, we need to define ways to send data (mediums), and how these mediums handle data transmission:
+- Mediums:
+	- Optical
+		- Fiber line
+	- Ethernet
+		- One wire
+		- Two (multi) wire
+	- Wireless
+		- Bluetooth
+		- WiFi
+- Data transmission:
+	- Unicast
+	- Broadcast
+	- Multicast
 

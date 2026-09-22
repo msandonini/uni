@@ -2,8 +2,6 @@
 
 Layers are a set of rules and guideline on how to manage and implement the communication.
 
-I layer sono come gli orchi, e gli orchi sono come le cipolle
-
 1. Physical layer
 	- Specifies mechanical, electrical properties to transmit bits
 	- Time sync, coding, modulation
@@ -12,7 +10,7 @@ I layer sono come gli orchi, e gli orchi sono come le cipolle
 	- Frame sync, error checking, flow control
 3. Network layer
 	- Transmission of packets
-	- Connection setup, routing, resourc management
+	- Connection setup, routing, resource management
 4. Transport layer
 	- Reliable end to end transport of segments
 5. Session layer
@@ -31,7 +29,7 @@ In reality, also layer 4 is used, but usually only for debugging (the OBD is con
 
 ## CAN-Bus
 
-CAN-Bus, being a very low-level (nearly physical) protocol, is a broadcast-based protocol, so we need ways to filter out the messages we don't care about, and we need a congestion control mechanism.
+CAN-Bus, being a very low-level (nearly physical) protocol based on a line network topology, is a broadcast-based protocol, so we need ways to filter out the messages we don't care about, and we need a congestion control mechanism.
 Each CAN-Bus functionality is divided between layer 1 and 2:
 1. Physical, where we find physical characteristics and functionalities
 	- Physical Signaling (PLS)
@@ -69,3 +67,5 @@ Also, using a bus system enables:
 	- Replaces all dedicated copper wiring with a single cable
 - Multimedia bus systems
 	- Transmission of large volumes of data
+
+
