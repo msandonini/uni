@@ -41,6 +41,7 @@ Each CAN-Bus functionality is divided between layer 1 and 2:
 		- Driver/Receiver characteristics
 	- Media Dependant Interface (MDI)
 		- Connectors
+			- Can be either electrical or optical
 2. Data Link
 	- Logical Link Control (LLC)
 		- Acceptance filtering
