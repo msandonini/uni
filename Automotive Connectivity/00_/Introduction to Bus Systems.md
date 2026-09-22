@@ -37,4 +37,15 @@ As of today, a car is composed of:
 - From 10 kg to 150 kg of cables (for both power and data)
 - Up to 3800 interface points (each interface is a point of failure)
 
+Inside the car, we face basic communication challenges:
+- timeliness: time between when the data is generated and when it is used
+- throughput
+- robustness (with heat, dust, oil, ..., the automotive environment is very harsh)
+- cost
+As soon as we move outside of the car, we then face different challenges:
+- introperability
+- reachability
+- security
+- privacy
+
 
