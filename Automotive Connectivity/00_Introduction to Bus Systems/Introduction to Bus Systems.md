@@ -96,6 +96,6 @@ Each bus has its own way to get the access. These different ways divide into dif
 	- Collision free
 		- Implements CSMA/CR (collision resolution)
 		- Used by CAN-Bus
-		- Before transmitting data each client transmits its "name", and the name gets arbitrated to choose who transmits first
+		- Before transmitting data each client transmits its "name", and the name gets arbitrated to choose who transmits first in case of a collision (every client which is not chosen will backoff, and wait patiently until the first client stops sending data)
 
 
