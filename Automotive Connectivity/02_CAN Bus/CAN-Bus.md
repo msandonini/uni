@@ -44,3 +44,14 @@ Base state of CAN bus:
 - Transistor in non-conductive state
 - Base state is up (+5V, Bit logical value of 1)
 When one or more ECUs have to write they turn transistor conductive (diode), which connects the bus to ground, meaning that the bus level goes to low (0V ground, bit logical value of 0) independently from each other ECU (in this configuration the 0 bit is called the **dominant** level)
+
+CAN is an event-driven bus system:
+- There's no need to wait for a precise scheduled time slot
+- There's the possibility of there being collisions (if there's a transmission on the bus, and 2 events happen, then 2 different ECUs will wait for the current message to end before sending their respective messages, creating a collision)
+In order to avoid collisions we use the CSMA-CR instead of CSMA-CD.
+In order to implement CSMA-CR bitwise arbitration is used.
+All ECUs with a transmission request simultaneously send the identifier of their respective CAN message to be transmitted, bitwise from the most significant to least significant bit. Since 0 is dominant, once a sender detects that it sent a 1 but a 0 arrived on the bus, it stops transmitting and transitions to Rx state
+
+![[Pasted image 20260924172707.png]]
+
+
