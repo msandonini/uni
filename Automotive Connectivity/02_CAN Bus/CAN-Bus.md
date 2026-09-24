@@ -54,6 +54,6 @@ All ECUs with a transmission request simultaneously send the identifier of their
 
 ![[Pasted image 20260924172707.png]]
 
-If during arbitration a 0 is transmitted but a 1 is received on the bus, it means that there's some error somewhere, so the ECU kills itself
+If during arbitration a 0 is transmitted but a 1 is received on the bus, it means that there's some error somewhere, so the ECU suicides
 
 
