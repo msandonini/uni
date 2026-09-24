@@ -81,3 +81,10 @@ Also, we need to define ways to send data (mediums), and how these mediums handl
 	- Broadcast
 	- Multicast
 
+Each bus has its own way to get the access. These different ways divide into different categories:
+- Deterministic: everybody knows what everybody else does and when
+	- Centralized: a master-slave approach, with simple request/response patterns
+	- Distributed: token-based & TDMA protocols (e.g. Flexray) 
+- Random: nobody knows what everybody else does or when
+	- Non collision free
+	- Collision free
