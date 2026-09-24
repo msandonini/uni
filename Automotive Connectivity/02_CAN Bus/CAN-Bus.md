@@ -40,6 +40,8 @@ All the overhead is caused by the amount of blocks
 
 Each ECU reads the wire (through a buffer) and can write on the line (through a transistor)
 
+## Tx
+
 Base state of CAN bus:
 - Transistor in non-conductive state
 - Base state is up (+5V, Bit logical value of 1)
@@ -54,6 +56,11 @@ All ECUs with a transmission request simultaneously send the identifier of their
 
 ![[Pasted image 20260924172707.png]]
 
-If during arbitration a 0 is transmitted but a 1 is received on the bus, it means that there's some error somewhere, so the ECU suicides
+If during arbitration a 0 is transmitted but a 1 is received on the bus, it means that there's some error somewhere, so the ECU kills itself
 
+![[Pasted image 20260924173358.png]]
 
+## Error detection
+
+The calculation of CRC depends on mod2 polynomial arithmetics.
+![[Pasted image 20260924175747.png]]
