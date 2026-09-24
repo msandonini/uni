@@ -83,8 +83,19 @@ Also, we need to define ways to send data (mediums), and how these mediums handl
 
 Each bus has its own way to get the access. These different ways divide into different categories:
 - Deterministic: everybody knows what everybody else does and when
-	- Centralized: a master-slave approach, with simple request/response patterns
-	- Distributed: token-based & TDMA protocols (e.g. Flexray) 
+	- Centralized
+		- A master-slave approach, with simple request/response patterns
+	- Distributed
+		- Token-based & TDMA protocols (e.g. Flexray) 
 - Random: nobody knows what everybody else does or when
 	- Non collision free
+		- Implements CSMA/CA (collision avoidance)
+		- Still can collide if 2 clients sense the bus as idle and try to transmit at the same time
+		- There's no guaranteed transmission (potentially, a client could sense the bus as always busy, so it would defer the message indefinitely)
+		- If 2 clients collide they emit a "jam" signal, and after that a "backoff" which means that they will wait randomly before trying to re-transmit the data
 	- Collision free
+		- Implements CSMA/CR (collision resolution)
+		- Used by CAN-Bus
+		- Before transmitting data each client transmits its "name", and the name gets arbitrated to choose who transmits first
+
+
