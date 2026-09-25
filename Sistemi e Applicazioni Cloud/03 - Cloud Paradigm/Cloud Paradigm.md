@@ -52,3 +52,11 @@ Anche per quanto riguarda il processing dei dati bisogna scegliere l'approccio c
 	- Vengono eseguite off-line
 - Real-time processing
 	- Può processare i flussi di dati nel mentre che arrivano
+
+Nella maggior parte dei casi a prevalere sono architetture ibride, in cui le nuove tecnologie non sostituiscono le precedenti ma vi si aggiungono, in quanto se qualcosa già funziona non ha senso sostituirla solo perché è uscita una nuova architettura.
+
+## Modelli pre-SOA
+
+Prima dei sistemi SOA veniva scritto codice che funzionasse come wrapper delle invocazioni. Per fare ciò venivano scritti degli stub in linguaggio IDL (Interface Definition Language) usati per per gestire i parametri e nascondere determinati aspetti dell'interazione
+![[Pasted image 20260925104531.png]]
+
