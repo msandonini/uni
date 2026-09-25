@@ -69,5 +69,40 @@ Approcci diversi si concentrano su interazioni asincrone, ideali per un coupling
 
 ## Modelli SOA
 
+I modelli SOA si applicano in 3 possibili scenari:
+- SOA for intra-company apps
+- SOA for inter-company apps, Business-to-business (B2B)
+- SOA for inter-company apps, Openly usable
 
+Una SOA è composta da diversi ingredienti:
+- Servizi
+- Tecnologie abilitanti
+- Policies e governance SOA
+- Metriche SOA
+- Modelli organizzativi e comportamentali
+Per poter funzionare, le SOA necessitano del supporto per:
+- Service discovery
+- Service negotiation
+- Service composition
+- Service adaptation
+- Service invocation
+- Service monitoring
+- Data and process mediation
+In sostanza, le SOA hanno un bias vers service provider più che sul cliente
+
+Per favorire lo sviluppo di web services tramite modelli SOA, SOAP (Service Oriented Architecture Protocol) è stato creato, come core messaging technology basata su HTTP o HTTPS e scambiando dati in XML.
+I servizi vengono dfiniti in WSDL (Web Service Definition Language), uno standard descrittivo basato su XML, e la registrazione dei servizi avviene tramite UDDI (Universal Description, Discovery and Integration)
+
+SOAP ha diverse limitazioni:
+- XML è lento (i parser SAX non sono abbastanza per risolvere)
+- HTTP è usato come se fosse TCP (senza il codice di risposta)
+A causa di queste limitazioni si è passati ad un approccio RESTful, utilizzando JSON al posto di XML
+
+## Microservizi
+
+Lo stile architetturale a microservizi consiste nello sviluppo di una singola applicazione come suite di task di business molto piccole implementate come servizi.
+Ogni microservizio viene eseguito tramite il suo processo dedicato, comunicando tramite meccanismi leggeri (API HTTP), e possono essere scritti in linguaggi di programmazione diversi.
+Questo stile architetturale ha bisogno di orchestrazione.
+
+Questa architettura permette continuous delivery e deployment di applicazioni molto larghe e complesse, in quanto hanno migliore testabilità, miglior deployability, e se ne può organizzare il ciclo di sviluppo attorno a team diversi ed indipendenti
 
