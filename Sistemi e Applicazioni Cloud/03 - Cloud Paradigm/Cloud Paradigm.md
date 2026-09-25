@@ -106,3 +106,28 @@ Questo stile architetturale ha bisogno di orchestrazione.
 
 Questa architettura permette continuous delivery e deployment di applicazioni molto larghe e complesse, in quanto hanno migliore testabilità, miglior deployability, e se ne può organizzare il ciclo di sviluppo attorno a team diversi ed indipendenti
 
+## Architettura REST
+
+REST è un approccio leggero sia lato client che lato server, dove le risorse incapsulano le entità.
+Le risorse sono identificate tramite URI, e sono fornite come rappresentazioni, mentre ogni azione è mappata su degli specifici messaggi.
+Le principali caratteristiche sono le seguenti:
+- modello client-server
+- operazioni stateless
+- risultati con possibilità di caching
+- sistema stratificato
+- interfaccia unificata
+- nessun limite esplicito sui messaggi
+- diverse azioni possibili su paradigma CRUD (Create, retrieve, update, delete):
+	- GET: Retrieve/Read
+	- POST: Create
+	- PUT: Update
+	- DELETE: Delete
+	- HEAD: Check (controlla se una risorsa esiste)
+	- OPTIONS: Describe (descrive i possibili verbi HTTP utilizzabili)
+- le risorse possono essere restituite in diverse rappresentazioni, ma JSON è la preferita.
+
+## Event Driven Architectures
+
+Una EDA supporta la generazione e la gestione di notifiche di eventi, e rappresenta un'architettura real-time molto flessibile, in quanto gli elementi che generano eventi non hanno bisogno di sapere le componenti del ricevitore, funziona tramite tempi di risposta non deterministici, ed è veloce ad adattarsi ai cambiamenti
+
+Un evento può essere sostanzialmente qualsiasi cosa, e ogni nuovo evento causa la creazione di un messaggio con un determinato topic, al che ogni altro sistema interessato al topic viene notificato
