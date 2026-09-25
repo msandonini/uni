@@ -1,3 +1,6 @@
+---
+date: 2026/09/25
+---
 Lo scaling (passare da una VM a molte o viceversa) può avvenire in brevissimi lassi di tempo.
 Per permettere questo scaling, e per ridurre i possibili problemi, facciamo uso di 2 tecniche:
 - Replicazione
@@ -38,5 +41,13 @@ Quando si va a realizzare un servizio e a metterlo in produzione dobbiamo scegli
 	- Approccio molto comune
 - Architettura serverless
 	- Evoluzione dei micro-servizi
+	- Si isola ancora di più dall'hardware
+	- Tenta di raggiungere un approccio stateless (per mantenere memoria ha bisogno di servizi di persistenza dedicati)
 	- Trend emergente
 
+Anche per quanto riguarda il processing dei dati bisogna scegliere l'approccio corretto per la task:
+- Batch processing
+	- Task pesanti delay-tolerant
+	- Vengono eseguite off-line
+- Real-time processing
+	- Può processare i flussi di dati nel mentre che arrivano

@@ -1,3 +1,6 @@
+---
+date: 2026/09/18
+---
 <!-- Esame pratico come le esercitazioni -->
 
 A common characteristic of robust and scalable services is that they work always, even in front of hug DDoS attacks. Some examples from 2022 are the following:

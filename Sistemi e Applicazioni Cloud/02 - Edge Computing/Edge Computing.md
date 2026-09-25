@@ -1,3 +1,6 @@
+---
+date: 2026/09/21
+---
 Tutti i sistemi "intelligenti" presentano diverse caratteristiche simili:
 - Connettività
 - Raccolta dati

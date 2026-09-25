@@ -1,3 +1,7 @@
+---
+date: 2026/09/18
+---
+
 Il cloud può essere visto come una sorta di utility
 
 Uno dei primi grossi effort per trasformare la capacità di calcolo della singola macchina in una capacità distribuita è stato il grid computing, con la divisione in organizzazioni virtuali.
