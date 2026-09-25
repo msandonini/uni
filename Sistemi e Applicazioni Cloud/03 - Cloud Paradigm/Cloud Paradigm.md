@@ -44,6 +44,7 @@ Quando si va a realizzare un servizio e a metterlo in produzione dobbiamo scegli
 	- Si isola ancora di più dall'hardware
 	- Tenta di raggiungere un approccio stateless (per mantenere memoria ha bisogno di servizi di persistenza dedicati)
 	- Trend emergente
+![[Pasted image 20260925103306.png]]
 
 Anche per quanto riguarda il processing dei dati bisogna scegliere l'approccio corretto per la task:
 - Batch processing
