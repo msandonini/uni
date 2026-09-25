@@ -139,4 +139,5 @@ Esempi di EDA sono i protocolli pub/sub:
 
 ### Kafka
 
-Kafka in realtà è sostanzialmente un database reso protocollo, pensato per la scalabilità e la fault tolerance, difatto di base è pensato per essere un'architettura distribuita geograficamente
+Kafka in realtà è sostanzialmente un database reso protocollo, pensato per la scalabilità e la fault tolerance, di fatto di base è pensato per essere un'architettura replicata e distribuita geograficamente.
+A causa di queste sue caratteristiche è utilizzato moltissimo come backbone per quasi ogni sistema che fa uso di FaaS (Function as a Service)
