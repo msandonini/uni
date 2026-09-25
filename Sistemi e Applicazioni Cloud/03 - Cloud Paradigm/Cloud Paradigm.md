@@ -57,6 +57,17 @@ Nella maggior parte dei casi a prevalere sono architetture ibride, in cui le nuo
 
 ## Modelli pre-SOA
 
-Prima dei sistemi SOA veniva scritto codice che funzionasse come wrapper delle invocazioni. Per fare ciò venivano scritti degli stub in linguaggio IDL (Interface Definition Language) usati per per gestire i parametri e nascondere determinati aspetti dell'interazione
+Prima dei sistemi SOA veniva scritto codice che funzionasse come wrapper delle invocazioni. Per fare ciò venivano scritti degli stub in linguaggio IDL (Interface Definition Language) usati per per fare marshaling/unmarshaling dei parametri e nascondere determinati aspetti dell'interazione.
 ![[Pasted image 20260925104531.png]]
+Questo processo si chiama Remote Procedure Call (RPC).
+
+Le RPC hanno alcune limitazioni date dal loro approccio:
+- Client-Server
+- Messaggi sincroni
+- Coupling delle componenti molto stretto
+Approcci diversi si concentrano su interazioni asincrone, ideali per un coupling molto meno stretto tra le componenti, ed utilizzando code di messaggi
+
+## Modelli SOA
+
+
 
