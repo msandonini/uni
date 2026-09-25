@@ -130,4 +130,13 @@ Le principali caratteristiche sono le seguenti:
 
 Una EDA supporta la generazione e la gestione di notifiche di eventi, e rappresenta un'architettura real-time molto flessibile, in quanto gli elementi che generano eventi non hanno bisogno di sapere le componenti del ricevitore, funziona tramite tempi di risposta non deterministici, ed è veloce ad adattarsi ai cambiamenti
 
-Un evento può essere sostanzialmente qualsiasi cosa, e ogni nuovo evento causa la creazione di un messaggio con un determinato topic, al che ogni altro sistema interessato al topic viene notificato
+Un evento può essere sostanzialmente qualsiasi cosa, e ogni nuovo evento causa la creazione di un messaggio con un determinato topic, al che ogni altro sistema interessato al topic viene notificato.
+
+Esempi di EDA sono i protocolli pub/sub:
+- AMQP
+- MQTT
+- Kafka
+
+### Kafka
+
+Kafka in realtà è sostanzialmente un database reso protocollo, pensato per la scalabilità e la fault tolerance, difatto di base è pensato per essere un'architettura distribuita geograficamente
