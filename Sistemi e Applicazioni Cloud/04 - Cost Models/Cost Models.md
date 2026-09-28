@@ -92,7 +92,7 @@ La TCO (Total Cost of Ownership) viene utilizzata per eseguire confronti e capir
 Essa include tutti i costi associati in un periodo di tempo definito, e tiene conto non solo degli investimenti iniziali ma anche degli altri costi associati tenendo conto dell'utilizzo degli assets.
 Solitamente i punti di calcolo di una TCO sono 3, 5, e 7 anni.
 
-Dal momento che la TCO è una procedura abbastanza standardizzata, esistono vari modelli di TCO
+Dal momento che la TCO è una procedura abbastanza standardizzata, ne esistono vari modelli di calcolo
 
 Nonostante i vari benefici, le TCO hanno anche diversi limiti:
 - Misurano solo i costi totali
@@ -100,5 +100,3 @@ Nonostante i vari benefici, le TCO hanno anche diversi limiti:
 - Non tiene conto delle periodicità di alcuni costi (es. meglio un costo di acquisizione alto con poi bassi costi di mantenimento o un costo di acquisizione basso con poi alti costi di mantenimento?)
 - Rischio di non considerare determinate opzioni in quanto difficili da quantificare (es. inflazione)
 - Minimizza i costi, ma non vuol dire che i ritorni vengano massimizzati, di conseguenza necessita di altre metriche come ROI (Return Of Investment) e CBA (Cost/Benefit Analysis)
-
-
