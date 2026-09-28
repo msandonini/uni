@@ -63,4 +63,5 @@ The class to which a CA belongs is determined by a limited set of parameters. Th
 	- Class 3 (e.g. rule 30)
 
 In real life systems we have asynchronicity, since there is not a global clock but a lot of local different clocks.
-When we are in an async context, the dynamics are dramatically different from those of synchronous CAs, as it's easier to reach self-organization patterns
+When we are in an async context, the dynamics are dramatically different from those of synchronous CAs, as it's easier to reach self-organization patterns.
+If we perturb state transition in async CAs, we can see that global scale self-organized behaviours emerges
