@@ -102,4 +102,3 @@ Nonostante i vari benefici, le TCO hanno anche diversi limiti:
 - Minimizza i costi, ma non vuol dire che i ritorni vengano massimizzati, di conseguenza necessita di altre metriche come ROI (Return Of Investment) e CBA (Cost/Benefit Analysis)
 
 
-
