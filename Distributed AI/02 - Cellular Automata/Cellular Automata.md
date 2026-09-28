@@ -62,4 +62,5 @@ The class to which a CA belongs is determined by a limited set of parameters. Th
 	- Too much feedback noise to sustain any regular behaviour
 	- Class 3 (e.g. rule 30)
 
-In real life systems we have asynchronicity, since there is not a global clock but a lot of local different clocks
+In real life systems we have asynchronicity, since there is not a global clock but a lot of local different clocks.
+When we are in an async context, the dynamics are dramatically different from those of synchronous CAs, as it's easier to reach self-organization patterns
