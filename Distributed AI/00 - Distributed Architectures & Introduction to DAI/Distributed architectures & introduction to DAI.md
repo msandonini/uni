@@ -1,4 +1,8 @@
- Some keywords:
+---
+date:
+  - 2026/09/21
+---
+Some keywords:
 >[!Info] Context
 > What surrounds an entity and its existence, also known as the environment where an entity is situated. There can be different types of contexts:
 > - Physical context: different rooms, different streets, ...
