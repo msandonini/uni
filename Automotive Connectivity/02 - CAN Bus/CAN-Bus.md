@@ -74,23 +74,10 @@ a_n x^n + a_{n-1} x^{n - 1} + \cdots + a_2 x^2 + a_1 x + a_0, \hspace{40px} a_n,
 $$
 
 ![[Pasted image 20260924175747.png]]
-This is basically an XOR operator
-
+This is basically an XOR operator. 
+E.g.: payload = `1100 1100`
 $$
 \begin{array}{rll}
-    1101 \\
-1011 \, \overline{) \ 1101001}\\
-    \underline{1011\phantom{00}}\\
-     1100\phantom{0}\\
-     \underline{1011\phantom{0}} \\
-      1110 & \\
-      \underline{1011} & \\
-       101 & \
-\end{array}
-$$
-
-$$
-\begin{array}{rll} \\
 11001100 \phantom{0}| \underline{1001} \\
 \underline{1001 \phantom{00000} |}\phantom{0000} \\
 1011100 \phantom{0}|\phantom{0000} \\
@@ -100,3 +87,4 @@ $$
 110\phantom{00000|}
 \end{array}
 $$
+CRC = `110`
