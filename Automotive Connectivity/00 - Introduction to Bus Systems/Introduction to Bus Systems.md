@@ -1,5 +1,7 @@
-<!-- 2026/09/22 -->
-
+---
+date:
+  - 2026/09/22
+---
 <!-- Professor had a strange weekend (he didn't get drunk) -->
 
 Bus system:
@@ -95,7 +97,6 @@ Each bus has its own way to get the access. These different ways divide into dif
 		- If 2 clients collide they emit a "jam" signal, and after that a "backoff" which means that they will wait randomly before trying to re-transmit the data
 	- Collision free
 		- Implements CSMA/CR (collision resolution)
-		- Used by CAN-Bus
+		- Used by [[CAN-Bus]]
 		- Before transmitting data each client transmits its "name", and the name gets arbitrated to choose who transmits first in case of a collision (every client which is not chosen will backoff, and wait patiently until the first client stops sending data)
-
 
