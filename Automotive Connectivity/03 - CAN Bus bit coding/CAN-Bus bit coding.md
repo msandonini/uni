@@ -19,4 +19,7 @@ When using NRZ, sending many identical bits leaves no signal edges that could be
 
 ![[Pasted image 20260929105048.png]]
 
+> [!WARNING] Problem with bit stuffing
+> If we have a message like `0100011001100`, what happens is that the message gets incredibly big, as after reading the initial 3 `0`s we need to start stuffing, but the stuffing makes all the couples after it to become triplets, so we obtain a final message like `010001110001110001`
 
+Even with this problem, we still prefer NRZ with bit stuffing over MC, since MC by its nature needs to operate on higher frequencies
