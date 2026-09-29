@@ -68,4 +68,3 @@ Also, using a bus system enables:
 - Multimedia bus systems
 	- Transmission of large volumes of data
 
-

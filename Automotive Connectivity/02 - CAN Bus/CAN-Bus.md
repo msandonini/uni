@@ -1,3 +1,9 @@
+---
+date:
+  - 2026/09/24
+  - 2026/09/29
+---
+
 ![[Pasted image 20260924164937.png]]
 Electrically, CAN-Bus works by two wires giving noise resistance and increase resiliency.
 These 2 wires are CAN High and CAN Low, and are twisted (to avoid EMI to go outside); also, if one of the 2 breaks the other still can send data.
@@ -62,5 +68,35 @@ If during arbitration a 0 is transmitted but a 1 is received on the bus, it mean
 
 ## Error detection
 
-The calculation of CRC depends on mod2 polynomial arithmetics.
+The calculation of CRC depends on mod2 polynomial arithmetics:
+$$
+a_n x^n + a_{n-1} x^{n - 1} + \cdots + a_2 x^2 + a_1 x + a_0, \hspace{40px} a_n, \cdots, a_1, a_0 = \text{int mod 2}
+$$
+
 ![[Pasted image 20260924175747.png]]
+This is basically an XOR operator
+
+$$
+\begin{array}{rll}
+    1101 \\
+1011 \, \overline{) \ 1101001}\\
+    \underline{1011\phantom{00}}\\
+     1100\phantom{0}\\
+     \underline{1011\phantom{0}} \\
+      1110 & \\
+      \underline{1011} & \\
+       101 & \
+\end{array}
+$$
+
+$$
+\begin{array}{rll} \\
+11001100 \phantom{0}| \underline{1001} \\
+\underline{1001 \phantom{00000} |}\phantom{0000} \\
+1011100 \phantom{0}|\phantom{0000} \\
+\underline{1001\phantom{0000}|}\phantom{0000} \\
+10100\phantom{0}|\phantom{0000} \\
+\underline{1001\phantom{00}|}\phantom{0000} \\
+110\phantom{00000|}
+\end{array}
+$$
