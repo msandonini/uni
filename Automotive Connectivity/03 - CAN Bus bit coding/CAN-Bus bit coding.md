@@ -15,7 +15,7 @@ CAN-Bus is plagued by a problem of clock drifting, as with the engine heat and s
 In order to avoid this, all receivers not only look at the bus but also try to re-adjust bit timing continuously.
 Commonly, we use rising/falling signal edges in order to re-adjust bit timing.
 
-When using NRZ, sending many identical bits leaves no signal edges that could be used to compensate for clock drift, so what we do is to insert extra stuffing bits after n consecutive identical bits (while the image below shows 3 bits, real world CAN-Bus uses 5 bits)
+When using NRZ, sending many identical bits leaves no signal edges that could be used to compensate for clock drift, so what we do is to insert extra stuffing bits after n consecutive identical bits (while the image below inserts stuffing after 3 identical bits, real world CAN-Bus uses 5 bits)
 
 ![[Pasted image 20260929105048.png]]
 
