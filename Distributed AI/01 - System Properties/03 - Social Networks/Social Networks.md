@@ -22,4 +22,4 @@ P(k) = \alpha k^{-\gamma}
 $$
 Most real networks are scale free
 
-
+Scale free networks exhibit the relevant presence of nodes that act as hubs (nodes to which most of the other nodes connect to) or connectors (nodes which connect many sub-networks).
