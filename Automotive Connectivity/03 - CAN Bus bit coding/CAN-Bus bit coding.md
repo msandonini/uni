@@ -1,6 +1,7 @@
 ---
 date:
   - 2026/09/29
+  - 2026/10/01
 ---
 In order to encode bits, [[CAN-Bus]] used 2 techniques:
 - NRZ
@@ -23,3 +24,21 @@ When using NRZ, sending many identical bits leaves no signal edges that could be
 > If we have a message like `0100011001100`, what happens is that the message gets incredibly big, as after reading the initial 3 `0`s we need to start stuffing, but the stuffing makes all the couples after it to become triplets, so we obtain a final message like `010001110001110001`
 
 Even with this problem, we still prefer NRZ with bit stuffing over MC, since MC by its nature needs to operate on higher frequencies
+
+A single bit time segment is actually composed of a set number of different time quanta (4 to 25), divided in 4 different segments:
+- Synchronization segment
+	- Used to synchronize the various bus nodes
+	- Segment where the receivers expect the bus state change to occur
+- Propagation time segment
+	- Programmable length of 1 to 8 time quanta
+	- Segment used to wait
+- Buffer segment 1
+	- Programmable length of 1 to 8 time quanta
+	- Only segment that may grow in length during resync
+	- At the end of this segment the bus state is sampled
+- Buffer segment 2
+	- Programmable length of 1 to 8 time quanta
+	- Only segment that may shrink in length during resync
+
+If a receiver notices that it is desynchronized of at least one time quanta it resyncs (if it is desynced by less than one it waits until it is desynced by at least 1)
+

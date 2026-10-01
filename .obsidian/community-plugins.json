@@ -1,11 +1,6 @@
 [
+  "obsidian-latex-suite",
   "obsidian-git",
-  "table-editor-obsidian",
-  "dataview",
   "obsidian-excalidraw-plugin",
-  "obsidian-annotator",
-  "obsidian-html-tags-autocomplete",
-  "obsidian-icon-folder",
-  "obsidian-style-settings",
-  "obsidian-latex-suite"
+  "table-editor-obsidian"
 ]
