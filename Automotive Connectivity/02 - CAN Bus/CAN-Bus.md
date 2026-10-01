@@ -31,6 +31,7 @@ All the overhead is caused by the amount of blocks
 - Control
 	- 6 bits
 	- Informs the length of data in bytes (0 to 8)
+	- Since the payload can be max 8 bytes, we just need 4 bits to indicate the payload length (we call them DLC) are actually wasting 2 bits, and all the possible combinations from `1001` onwards (we will see them in the future)
 - Data
 	- 0-64 bits
 	- The actual data

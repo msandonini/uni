@@ -41,4 +41,3 @@ A single bit time segment is actually composed of a set number of different time
 	- Only segment that may shrink in length during resync
 
 If a receiver notices that it is desynchronized of at least one time quanta it resyncs (if it is desynced by less than one it waits until it is desynced by at least 1)
-
