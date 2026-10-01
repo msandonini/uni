@@ -41,6 +41,7 @@ All the overhead is caused by the amount of blocks
 - ACK
 	- 2 bits
 	- Indicates if the CRC process is ok
+	- The field is sent by the transmitter, which transmits 1 hoping that any receiver writes 0 while receiving it (so that, with 0 being dominant, the transmitter receives the ACK from the receiver without the necessity of sending one entire message over the bus)
 - EOF
 	- 7 bits
 	- Marks the end of the message

@@ -1,10 +1,9 @@
 [
-  "obsidian-latex-suite",
   "obsidian-git",
   "obsidian-excalidraw-plugin",
   "table-editor-obsidian",
   "obsidian-html-tags-autocomplete",
   "obsidian-icon-folder",
   "obsidian-mind-map",
-  "better-mathjax"
+  "obsidian-latex-suite"
 ]
