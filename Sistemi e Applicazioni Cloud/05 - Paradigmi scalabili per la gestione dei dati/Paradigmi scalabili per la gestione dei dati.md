@@ -2,9 +2,7 @@
 date:
   - 2026/10/02
 ---
-Uno dei meccanismi chiave della gestione e replicazione dei dati consiste nel caching.
-
-Posso decidere di replicare completamente i server che gestiscono i dati (i DB), o posso replicare solo alcuni dati (in questo caso parliamo di cache server).
+Posso decidere di [[Cloud Paradigm|replicare]] completamente i server che gestiscono i dati (i DB), o posso replicare solo alcuni dati (in questo caso parliamo di cache server).
 Nel caso di un cache server possiamo un meccanismo di replicazione di tipo push, dove vengono caricati sul cache server solo i dati a cui viene eseguito l'accesso più spesso.
 L'alternativa è un meccanismo di pull replication, dove vengono caricati i dati quando otteniamo un cache miss (senza dunque controllare che l'accesso in questione sia una tantum).
 
@@ -111,5 +109,14 @@ Ci sono 2 meccanismi principali di caching
 	- Contenuti che vengono richiesti con maggiore probabilità e vengono pre-caricati sui server secondari
 	- Utilizzato da reverse proxies e CDN
 
-<!-- Slides from 48 to 67 -->
+<!-- Slides from 48 to 82 -->
+
+Recentemente l'implementazione delle CDN è piuttosto opaca (è difficile capire come operino), ma comunque alcuni principi di funzionamento sono comuni e riconoscibili:
+- URL-rewriting
+	- Determinati URL sono sostituiti e fanno riferimento direttamente alla CDN (questa gestione degli URL non avviene tramite un DNS primario ma da dei server della CDN)
+	- Gli embedded objects della pagina vengono recuperati dalla CDN
+- DNS outsourcing
+	- Il DNS originale ritorna un canonical name di un DNS della CDN che ha la risoluzione giusta
+Ad oggi il leader nel settore delle CDN è Akamai
+
 
