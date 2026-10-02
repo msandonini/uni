@@ -1,9 +1,13 @@
 [
-  "obsidian-git",
+  "obsidian-latex-suite",
   "obsidian-excalidraw-plugin",
+  "dataview",
   "table-editor-obsidian",
-  "obsidian-html-tags-autocomplete",
+  "obsidian-tasks-plugin",
+  "obsidian-git",
+  "calendar",
   "obsidian-icon-folder",
+  "smart-connections",
   "obsidian-mind-map",
-  "obsidian-latex-suite"
+  "smart-lookup"
 ]

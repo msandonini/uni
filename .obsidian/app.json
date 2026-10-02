@@ -1,17 +1,5 @@
 {
-  "strictLineBreaks": true,
-  "showLineNumber": true,
-  "vimMode": false,
   "readableLineLength": false,
-  "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": true,
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A4",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
   "showInlineTitle": false,
-  "foldIndent": true
+  "showLineNumber": true
 }

@@ -38,7 +38,7 @@
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
   "displaySVGInPreview": false,
-  "previewImageType": "SVGIMG",
+  "previewImageType": "SVG",
   "renderingConcurrency": 3,
   "imageCacheRetentionDays": 30,
   "allowImageCache": true,
@@ -73,18 +73,18 @@
   "zoomStep": 0.05,
   "zoomMin": 0.1,
   "zoomMax": 30,
-  "linkPrefix": "📍",
-  "urlPrefix": "🌐",
+  "linkPrefix": "",
+  "urlPrefix": "",
   "parseTODO": false,
   "todo": "☐",
-  "done": "🗹",
+  "done": "☑",
   "hoverPreviewWithoutCTRL": false,
   "linkOpacity": 1,
   "openInAdjacentPane": true,
   "showSecondOrderLinks": true,
   "focusOnFileTab": true,
   "openInMainWorkspace": true,
-  "showLinkBrackets": true,
+  "showLinkBrackets": false,
   "syncElementLinkWithText": false,
   "allowCtrlClick": true,
   "forceWrap": false,
@@ -125,13 +125,13 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.28.1",
     "libraryItems": []
   },
   "imageElementNotice": true,
   "mdSVGwidth": 500,
   "mdSVGmaxHeight": 800,
-  "mdFont": "Virgil",
+  "mdFont": "Cascadia",
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
@@ -139,7 +139,7 @@
     "defaults": {
       "width": 500,
       "paddingBottom": 10,
-      "fontFamily": "Virgil",
+      "fontFamily": "Cascadia",
       "fontColor": "Black",
       "border": {
         "enabled": false,
@@ -168,7 +168,7 @@
   "excalidrawMasteryPromoCollapsed": false,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
-  "latexBoilerplate": "\\color{blue}",
+  "latexBoilerplate": "\\color{green}e=mc^2",
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
@@ -520,7 +520,8 @@
     "borderMatchElement": true,
     "borderColor": "#fff",
     "borderOpacity": 0,
-    "filenameVisible": false
+    "filenameVisible": false,
+    "lockedReadingMode": false
   },
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
@@ -897,8 +898,8 @@
         "defaultAction": "new-tab",
         "rules": [
           {
-            "shift": false,
-            "ctrl_cmd": false,
+            "shift": true,
+            "ctrl_cmd": true,
             "alt_opt": false,
             "meta_ctrl": false,
             "result": "active-pane"
@@ -1112,20 +1113,5 @@
     "alignment": "center",
     "margin": "normal"
   },
-  "disableContextMenu": false,
-  "panWithRightMouseButton": false,
-  "onceOffGPTVersionReset": true,
-  "autosave": true,
-  "openAIAPIToken": "",
-  "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
-  "openAIDefaultTextModelMaxTokens": 4096,
-  "openAIDefaultVisionModel": "gpt-4o",
-  "openAIDefaultImageGenerationModel": "dall-e-3",
-  "openAIURL": "https://api.openai.com/v1/chat/completions",
-  "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
-  "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
-  "openAIImageVariationURL": "https://api.openai.com/v1/images/variations",
-  "isDebugMode": false,
-  "defaultTrayMode": true,
-  "compactModeOnTablets": true
+  "disableContextMenu": false
 }
