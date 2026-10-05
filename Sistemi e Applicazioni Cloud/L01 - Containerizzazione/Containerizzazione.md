@@ -56,6 +56,18 @@ Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti
 	- Introduzione su Linux delle Jail come contesto di sicurezza
 - OpenVZ (2005)
 - LXC (2008)
-	- uso di `cgroups` (control groups) e namespaces Linux (prima soluzione di containerizzazione completa su Linux)
+	- Uso di `cgroups` (control groups)
+		- Permette la limitazione delle risorse
+	- Uso di namespaces Linux (prima soluzione di containerizzazione completa su Linux)
+		- Permette la creazione di nuovi spazi di redirezionamento IP
+- Warden (2011)
+	- Introduce il concetto di container runtime
+- Docker (2013)
+	- Inizialmente basato su LXC
+	- Rilascia `containerd` come standard open
+	- Inserisce il concetto di immagine e orchestrazione
+- Podman
+	- Drop in replacement per Docker
+	- Attualmente il più utilizzato
 
 
