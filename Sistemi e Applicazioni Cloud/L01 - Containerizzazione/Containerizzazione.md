@@ -142,5 +142,53 @@ I container offrono diversi benefici:
 - sicurezza
 	- grazie all'isolamento riusciamo a fare fault isolation ma riusciamo anche ad evitare che determinati attacchi si possano propagare al sistema
 
+Un container è sostanzialmente un'architettura client-server con dei daemons che gestiscono i servizi invocati dai client.
+Ogni container è composto da diversi elementi critici:
+- Gestore del container (containerd)
+- Engine del container (docker, podman)
+- Gestore dati (file systems)
+- Orchestratore (docker-compose, docker-swarm, kubernetes)
+	- Si distacca dall'architettura client-server per funzionare in logica dichiarativa
 
+## Containerd
 
+Containerd, introdotto inizialmente da docker, è ora un progetto separato ed open source.
+È considerabile come un layer a basso livello di docker, la cui funzione di base è il container runtime.
+
+Containerd sostanzialmente gestisce le immagini dei container, esegue i containers (usando `runc`), e si occupa di fare push/pull delle immagini su e dal registro.
+Per fare ciò espone diverse API.
+
+In genere un container è gestito da un client che si collega ad un host (es. Docker) su cui è installato (o meno, nel caso di Podman) un daemon, che ha l'obiettivo di gestire le immagini ed i container interagendo con un registro delle immagini.
+
+```
+client [docker] -> daemon [dockerd] <-> registry
+```
+
+Containerd usa tool a basso livello per gestire i container:
+- usa `runc` per la containerizzazione
+- 
+
+Tutti questi strati separati sono implementati per permettere di cambiare facilmente da uno strumento all'altro sostituendo semplicemente un layer invece che tutta la struttura.
+
+## Docker
+
+Per interagire con Docker, un client può usare 2 metodi diversi:
+- REST API
+- Socket Unix (o socket TCP)
+
+```
+REST API
+|
+Docker daemon 
+|
+Unix Socket
+```
+
+Gli oggetti essenziali sono 2:
+- Immagini (la classe)
+	- Strati software che consentono il riutilizzo di porzioni di codice
+	- Sostanzialmente dei read-only templates composti da diversi layer (grazie ad OverlayFS, che permette di creare una serie di file system virtuali uno sopra l'altro tramite un meccanismo CoW)
+- Container (l'oggetto)
+	- La parte eseguibile di un'immagine
+	- Possono essere creati, avviati, fermati, e cancellati
+	- Ogni container è definito dalla sua immagine e dalle sue configurazioni
