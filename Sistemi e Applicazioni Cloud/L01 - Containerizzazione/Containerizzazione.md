@@ -2,6 +2,8 @@
 date:
   - 2026/10/05
 ---
+# Containerizzazione
+
 Container: unità auto-contenuta di dimensioni standard, modulare, facile da trasportare.
 
 Un processo contiene una parte statica ed una parte dinamica:
@@ -42,5 +44,7 @@ Un container può essere paragonato ad una VM, ma con alcune differenze
 | Eseguito sullo stesso OS  | Eseguito su OS diversi   |
 | Basso utilizzo di risorse | Alto utilizzo di risorse |
 | Basso overhead            | Alto overhead            |
+
+## Principi di containerizzazione
 
 
