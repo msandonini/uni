@@ -104,6 +104,13 @@ System calls come `setns()` permettono ad un processo di unirsi ad un sistema.
 Deriva da 2 parole (development ed operation), in quanto tenta di unire 2 mondi dell'informatica diverso e spesso in conflitto tra loro.
 
 L'idea principale del DevOps è di coordinare un po' di più il team di development e quello di operation per tentare di accorciare un ciclo di sviluppo lungo e semplificare il tutto.
-Per fare ciò la metodologia di sviluppo consiste in "sprint" di 2/4 settimane con liste di features più corte e test automatizzati, e per fare ciò introduce alcune task di operation nel development e alcune task di development nell'operation
+Per fare ciò la metodologia di sviluppo consiste in "sprint" di 2/4 settimane con liste di features più piccole e test automatizzati, e per fare ciò introduce alcune task di operation nel development e alcune task di development nell'operation.
+L'obiettivo finale della metodologia DevOps è quello di introdurre migliorare la proprietà di velocity (velocità di deployment e scalabilità) migliorando sicurezza e collaborazione tra i team.
+Uno dei concetti che salta fuori dal DevOps è quello di CI/CD (Continuous Integration / Continuous Deoployment), che porta ad un aumento della velocità di deployment, e di conseguenza porta ad un'architettura a microservizi.
+
+Le best practices del DevOps sono:
+- IaC (Infrastructure as a code)
+- Monitoring e logging
+- Communication and collaboration
 
 
