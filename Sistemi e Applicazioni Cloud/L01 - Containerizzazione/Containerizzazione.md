@@ -47,4 +47,15 @@ Un container può essere paragonato ad una VM, ma con alcune differenze
 
 ## Principi di containerizzazione
 
+Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti introdotti da diverse tecnologie e loro evoluzioni negli anni:
+- `chroot` (1979): system call che permette ad un processo e ai suoi figli di posizionarsi in un file system di root diverso.
+	- Permette una sorta di segregazione dell'accesso dei file ad una base per processo
+	- Primo esempio di **process isolation**
+		- Sistema usato da BSD che permette di creare environment (jail nel caso di BSD) diversi ognuno isolato dagli altri e con configurazioni diverse tra l'uno e l'altro
+- VServer (2001)
+	- Introduzione su Linux delle Jail come contesto di sicurezza
+- OpenVZ (2005)
+- LXC (2008)
+	- uso di `cgroups` e namespaces Linux (prima soluzione di containerizzazione completa su Linux)
+
 
