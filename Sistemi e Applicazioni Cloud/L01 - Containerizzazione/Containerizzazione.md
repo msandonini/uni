@@ -56,6 +56,6 @@ Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti
 	- Introduzione su Linux delle Jail come contesto di sicurezza
 - OpenVZ (2005)
 - LXC (2008)
-	- uso di `cgroups` e namespaces Linux (prima soluzione di containerizzazione completa su Linux)
+	- uso di `cgroups` (control groups) e namespaces Linux (prima soluzione di containerizzazione completa su Linux)
 
 
