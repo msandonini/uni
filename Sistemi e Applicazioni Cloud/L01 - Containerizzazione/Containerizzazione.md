@@ -126,4 +126,21 @@ Gli elementi tecnici che permettono di arrivare al DevOps consistono nell'automa
 Questa automatizzazione prevede che la Continuous Integration gestisce la codebase testando il codice e passando i risultati alla Continuous Delivery, che dopo il testing genera un report che viene inviato al product owner così che la build venga approvata, e poi in seguito il Deployment automatizzato.
 Tutto ciò porta ad un sistema nel quale non c'è necessita di approvazione della build.
 
+## Benefici della containerizzazione
+
+I container offrono diversi benefici:
+- portability
+- supporto all'approccio DevOps
+- velocità di startup
+	- utilizza come host il sistema operativo (a basso livello la chiamata usata è una `clone()`)
+- alta efficienza
+	- overhead e footprint ridotti
+- isolamento
+	- isolati sia dal punto di vista di failure che di troubleshooting e performance (quest'ultimo a seconda di come sono configurati i cgroups)
+	- utilizza sia i cgroups che SELinux 
+- gestione automatica tramite orchestratori
+- sicurezza
+	- grazie all'isolamento riusciamo a fare fault isolation ma riusciamo anche ad evitare che determinati attacchi si possano propagare al sistema
+
+
 
