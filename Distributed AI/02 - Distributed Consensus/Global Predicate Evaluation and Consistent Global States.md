@@ -33,4 +33,3 @@ We can use a delivery rule to decide when received messages are to actually be p
 We can choose between different delivery rules:
 - FIFO delivery rule
 - Casual delivery rule
-
