@@ -19,7 +19,7 @@ Ciò che permette ai processi di funzionare sono le librerie, che a loro volta p
 	- I simboli sono risolti dal linker
 		- File `.o`: oggetti creati dal compilatore
 		- File `.a`: librerie
-	- Più safe in quanto le librerie sono incluse nell'eseguibile, ma l'eseguibile pesa di più in quanto la stessa libreria non può essere condivisa tra più programmi
+	- Più safe in quanto le librerie sono incluse nell'eseguibile, ma l'eseguibile pesa di più in quanto la stessa libreria non può essere condivisa tra più programmi, e in caso di scoperta di falle di sicurezza devo aggiornare manualmente (io sviluppatore) la dipendenza
 - Linking dinamico
 	- Librerie linkate a compile time e bindate al runtime
 	- I simboli sono risolti dal linker
@@ -28,5 +28,19 @@ Ciò che permette ai processi di funzionare sono le librerie, che a loro volta p
 	- Il codice delle librerie viene caricato e boundato dinamicamente agli stubs:
 		- `ld.so`: linker dinamico
 	- I file `.so` possono essere condivisi da diversi eseguibili
+
+Quando pacchettizzo un eseguibile solitamente il pacchetto finale contiene dei metadati contenente informazioni sulle dipendenze.
+Da ciò derivano problemi di complessità nel dependency graph e di conflitti di dipendenze.
+
+Per ridurre problemi di conflitti delle dipendenze senza gli svantaggi dello static linking, quello che posso fare è pacchettizzare le applicazioni in un container.
+
+Un container può essere paragonato ad una VM, ma con alcune differenze
+
+| Container                 | VM                       |
+| ------------------------- | ------------------------ |
+| Astrazione dell'OS        | Astrazione dell'HW       |
+| Eseguito sullo stesso OS  | Eseguito su OS diversi   |
+| Basso utilizzo di risorse | Alto utilizzo di risorse |
+| Basso overhead            | Alto overhead            |
 
 
