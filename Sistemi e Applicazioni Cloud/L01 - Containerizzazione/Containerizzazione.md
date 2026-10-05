@@ -48,7 +48,7 @@ Un container può essere paragonato ad una VM, ma con alcune differenze
 ## Principi di containerizzazione
 
 Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti introdotti da diverse tecnologie e loro evoluzioni negli anni:
-- `chroot` (1979): system call che permette ad un processo e ai suoi figli di posizionarsi in un file system di root diverso.
+- [[#`chroot`]] (1979): system call che permette ad un processo e ai suoi figli di posizionarsi in un file system di root diverso.
 	- Permette una sorta di segregazione dell'accesso dei file ad una base per processo
 	- Primo esempio di **process isolation**
 		- Sistema usato da BSD che permette di creare environment (jail nel caso di BSD) diversi ognuno isolato dagli altri e con configurazioni diverse tra l'uno e l'altro
@@ -58,7 +58,7 @@ Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti
 - LXC (2008)
 	- Uso di `cgroups` (control groups)
 		- Permette la limitazione delle risorse
-	- Uso di namespaces Linux (prima soluzione di containerizzazione completa su Linux)
+	- Uso di [[#namespaces]] Linux (prima soluzione di containerizzazione completa su Linux)
 		- Permette la creazione di nuovi spazi di redirezionamento IP
 - Warden (2011)
 	- Introduce il concetto di container runtime
@@ -69,5 +69,29 @@ Il concetto di container è nato alla fine degli anni 70, e si basa su conocetti
 - Podman
 	- Drop in replacement per Docker
 	- Attualmente il più utilizzato
+	- Differisce da Docker solo per l'unpriviledge container (i container podman sono unpriviledged e non hanno dietro un daemon che ne ascolta le chiamate)
 
+Grazie ai container, nel 2010, sono nati diversi movimenti e sistemi:
+- DevOps come evoluzione del movimento Agile
+- Sistemi di orchestrazione
+	- Docker-swarm
+	- Kubernetes
 
+### `chroot`
+
+Chiamata di sistema che permette di spostarsi in un container.
+Non è nato per questioni di sicurezza ma ai fini dell'installazione di sistemi operativi, di fatto si può tranquillamente uscire dal chroot in maniera semplicissima.
+
+### namespaces
+
+Sistema che permette la creazione di layer di astrazione.
+Un processo in un namespace si comporta come se avesse un'istanza isolata della risorsa.
+Diversi gruppi di processi hanno diverse visioni del sistema.
+System calls come `setns()` permettono ad un processo di unirsi ad un sistema.
+
+- Mount namespace (`mnt`)
+	- Usato per creare file system separati
+	- Come `chroot` ma più flessibile e sicuro
+- Network (`net`)
+	- Usato per virtualizzare lo stack di rete
+- User ID (`user`)
