@@ -160,8 +160,15 @@ Per fare ciò espone diverse API.
 
 In genere un container è gestito da un client che si collega ad un host (es. Docker) su cui è installato (o meno, nel caso di Podman) un daemon, che ha l'obiettivo di gestire le immagini ed i container interagendo con un registro delle immagini.
 
-```
-client [docker] -> daemon [dockerd] <-> registry
+```mermaid
+flowchart LR;
+	client["`Client
+	_docker_`"]
+	daemon["`Daemon
+	_dockerd_`"]
+	registry["Registry"]
+	client --> daemon
+	daemon --> registry
 ```
 
 Containerd usa tool a basso livello per gestire i container:
@@ -176,12 +183,13 @@ Per interagire con Docker, un client può usare 2 metodi diversi:
 - REST API
 - Socket Unix (o socket TCP)
 
-```
-REST API
-|
-Docker daemon 
-|
-Unix Socket
+```mermaid
+graph TD;
+	m1(["REST API"])
+	m2(["Socket"])
+	d(["Docker daemon"])
+	m1 --> d
+	m2 --> d
 ```
 
 Gli oggetti essenziali sono 2:
@@ -192,3 +200,11 @@ Gli oggetti essenziali sono 2:
 	- La parte eseguibile di un'immagine
 	- Possono essere creati, avviati, fermati, e cancellati
 	- Ogni container è definito dalla sua immagine e dalle sue configurazioni
+
+Esempio:
+```shell
+docker run -i -t ubuntu /bin/bash
+```
+
+- `-i`: interactive
+- `-t`: 
