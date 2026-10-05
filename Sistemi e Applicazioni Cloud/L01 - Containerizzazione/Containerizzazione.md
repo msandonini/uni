@@ -110,7 +110,14 @@ Uno dei concetti che salta fuori dal DevOps è quello di CI/CD (Continuous Integ
 
 Le best practices del DevOps sono:
 - IaC (Infrastructure as a code)
+	- Es. Terraform
 - Monitoring e logging
-- Communication and collaboration
+- Communication e collaboration
+
+Il discorso tecnico dietro il DevOps è quello di utilizzare testing automatici per valutare il comportamento delle nuove features (critico nel regression testing), in sostanza il concetto è quello di fallire spesso e presto, così da avere più tempo per fixare il problemi (come nei razzi).
+
+Gli elementi tecnici che permettono di arrivare al DevOps consistono nell'automatizzazione di build, test, integration, delivery e deployment.
+Questa automatizzazione prevede che la Continuous Integration gestisce la codebase testando il codice e passando i risultati alla Continuous Delivery, che dopo il testing genera un report che viene inviato al product owner così che la build venga approvata, e poi in seguito il Deployment automatizzato.
+Tutto ciò porta ad un sistema nel quale non c'è necessita di approvazione della build.
 
 
