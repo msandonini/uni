@@ -29,5 +29,8 @@ In order to work with these 2 different architectures we must introduce some con
 - Run $R$: a total ordering of all events in $H$ consistent with each local history ($R = e_1^1 e_3^1 e_2^1 e_3^2 e_1^2 e_3^3 \dots$); a single distributed computation can have many possible runs
 - Cut $C = (c_1, \dots, c_n)$: a subset of global history $H$ containing an initial prefix of each of the local histories (i.e. $C = h_1^{c_1} \cup \dots \cup h_n^{c_n}$) corresponding to freezing the observation of a global state $\sum$ for the sake of evaluating some global predicate
 
-
+We can use a delivery rule to decide when received messages are to actually be presented to a process.
+We can choose between different delivery rules:
+- FIFO delivery rule
+- Casual delivery rule
 
