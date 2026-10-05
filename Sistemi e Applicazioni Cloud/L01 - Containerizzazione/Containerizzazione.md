@@ -95,3 +95,15 @@ System calls come `setns()` permettono ad un processo di unirsi ad un sistema.
 - Network (`net`)
 	- Usato per virtualizzare lo stack di rete
 - User ID (`user`)
+- Control group (`cgroup`)
+	- Può separare l'accesso alle risorse
+	- Critico per performance isolation (es. per limitare l'efficacia dei DoS)
+
+### DevOps
+
+Deriva da 2 parole (development ed operation), in quanto tenta di unire 2 mondi dell'informatica diverso e spesso in conflitto tra loro.
+
+L'idea principale del DevOps è di coordinare un po' di più il team di development e quello di operation per tentare di accorciare un ciclo di sviluppo lungo e semplificare il tutto.
+Per fare ciò la metodologia di sviluppo consiste in "sprint" di 2/4 settimane con liste di features più corte e test automatizzati, e per fare ciò introduce alcune task di operation nel development e alcune task di development nell'operation
+
+
