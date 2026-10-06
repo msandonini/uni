@@ -44,5 +44,3 @@ In order to follow the delivery rules, we need to use timestamping schemas, so t
 - Causal history ($\theta(e)$):
 	- Defined as $\theta(e)=\{e^\prime \in H | e^\prime \to e\} \cup \{e\}$ , representing the smallest consistent cut containing $e$
 
-
-
