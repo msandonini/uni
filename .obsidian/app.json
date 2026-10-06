@@ -1,7 +1,5 @@
 {
-  "readableLineLength": false,
-  "showInlineTitle": false,
   "showLineNumber": true,
-  "strictLineBreaks": false,
-  "propertiesInDocument": "visible"
+  "showInlineTitle": false,
+  "readableLineLength": false
 }

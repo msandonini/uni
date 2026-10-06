@@ -1,6 +1,7 @@
 ---
 date:
   - 2026/10/05
+  - 2026/10/06
 ---
 A key general problem in distributed and [[Distributed architectures & introduction to DAI|DAI]] systems is how to reach a common understanding of what is happening in the system and what is the overall state of the distributed computation.
 Understanding if $v$ has a certain value or not is not an opinion, as either $v(t) = v_t$ or $v(t) \ne v_t$; thus, there is no need of reasoning or to applying some strategy to decide what is the value of $v$.
@@ -33,3 +34,15 @@ We can use a delivery rule to decide when received messages are to actually be p
 We can choose between different delivery rules:
 - FIFO delivery rule
 - Casual delivery rule
+
+In order to follow the delivery rules, we need to use timestamping schemas, so that we can place our events in a time line:
+- Real Time cclocks with bounded delay $\delta$: if global physical clocks exist and message latencies are bounded by $\delta$, a monitor $P_0$ delivers messages with timestamp $<t-\delta$ at physical time $t$
+- Lamport logical clocks:
+	- Each process maintains a scalar clock $LC_i$ initialized to 0, and as each event happens and gets sent the clock gets increased ($LC_i += 1$)
+	- At the receiver's end, we receive an event with message $m$ with timestamp $TS(m): LC_i = \max(LC_i, TS(m)) + 1$
+	- This has a weak clock condition, as $\theta(e) \to {e^\prime} \implies LC(e) < LC(e^\prime)$, so its main limitation is that a scalar logical clocks cannot distinguish between causally dependent and concurrent events
+- Causal history ($\theta(e)$):
+	- Defined as $\theta(e)=\{e^\prime \in H | e^\prime \to e\} \cup \{e\}$ , representing the smallest consistent cut containing $e$
+
+
+

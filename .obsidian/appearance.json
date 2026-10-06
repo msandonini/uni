@@ -1,9 +1,1 @@
-{
-  "theme": "obsidian",
-  "cssTheme": "GitHub Theme",
-  "accentColor": "#8ad4ff",
-  "showViewHeader": true,
-  "showRibbon": true,
-  "nativeMenus": false,
-  "baseFontSizeAction": true
-}
+{}
