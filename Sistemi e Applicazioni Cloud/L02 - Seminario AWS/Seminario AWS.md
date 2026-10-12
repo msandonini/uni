@@ -31,8 +31,8 @@ Per poter funzionare usa un reconciliation loop, che osserva i file di manifest 
 flowchart TB
 
 You --> API_server
-API_server --> n1_kubelet
-API_server --> n2_kubelet
+API_server --> k1
+API_server --> k2
 
 subgraph Control Plane
 	direction TB
@@ -42,13 +42,13 @@ subgraph Control Plane
 end
 subgraph Node 1
 	direction LR
-	n1_kubelet
+	k1[kubelet]
 	process_1
 	process_2
 end
 subgraph Node 2
 	direction LR
-	n2_kubelet
+	k2[kubelet]
 	process
 end
 
