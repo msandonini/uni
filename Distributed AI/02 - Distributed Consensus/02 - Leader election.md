@@ -1,14 +1,9 @@
 ---
 date:
   - 2026/10/06
+  - 2026/10/12
 ---
 We define the term "election" as assigning a special role to a specifica agent of the distributed system.
-
-	dm
-
-	mk
-
-test
 
 Many problems in DAI and distributed systems require identifying a "coordinator" or a "leader".
 We have 2 situations:
