@@ -26,3 +26,25 @@ The bus operates on a time cycle (schedule), with a static segment and a dynamic
 The static segment is preallocated into slices, allowing for a more master-slave, deterministic approach, which allows addressing time constraints.
 The dynamic segment is what happens in the schedule holes, and it operates more like CAN, where nodes take control of the bus as available, allowing event-triggered behavior.
 
+![[Pasted image 20261013095748.png]]
+
+After each static and dynamic segment there are 2 more small segments:
+- symbol window: is typically used for network maintenance and signaling for starting the network
+- network idle time: a known quiet time used to maintain synchronization between node clocks
+
+Also in this case we need to solve the contention on the bus. While CAN uses bitwise arbitration, FlexRay uses Time Division Multiple Access (TDMA), so all nodes sync with the same clock and each node waits its turn to write (this is the mechanism which implements time consistency, and so the one which make FlexRay deterministic).
+
+While CAN nodes only needed to know the correct baud rate to communicate, nodes on a FlexRay network must know how all the pieces of the network are configured in order to communicate. This is because of the TDMA constraint.
+This constraint means that the system works while in a closed configuration where no changes are made after the installation (so an embedded scenario).
+
+For a TDMA network to work correctly, all nodes must be configured correctly, with a static network configuration. This makes the system really reliable, but removes flexibility and needs advanced planning ahead, in order to decide a-priori all of the configuration:
+- data-rate
+- deterministic data volume
+- dynamic data volume
+- topology
+
+![[Pasted image 20261013100757.png]]
+
+TDMA, while having many benefits, also has many limitations, as if an ECU goes down (not necessarily a fail) its reserved slot will simply not be used, so we are losing resources (time), as the other ECUs cannot use the free slots.
+
+
