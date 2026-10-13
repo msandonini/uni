@@ -102,4 +102,29 @@ To do so, each process has a logical scalar clock ([[Lamport's logical clock]]).
 
 ![[Pasted image 20261013152329.png]]
 
+Pros:
+- Safe: only one process at a time can access a resource
+- Live: everyone will access the critical section
+- Fair: requests are ordered by timestamp
+Cons:
+- Low efficiency & high complexity: it needs $3 \cdot (N-1)$ messages to execute the algorithm
+- Not robust: if a process dies, the algorithm blocks ($N$ points of failure)
 
+### Ricart & Agrawala algorithm
+
+This algorithm uses a multicast and logical clocks to simplify Lamport algorithm, combining REPLY and RELEASE.
+
+![[Pasted image 20261013153347.png]]
+
+Pros:
+- Same as Lamport algorithm
+- More efficient than Lamport
+Cons:
+- Not robust: $N$ points of failure as with Lampert
+- Low efficiency: while better than Lamport, it still needs $2 \cdot (N - 1)$ messages
+
+| Algorithm   | Messages per entry / exit | Delay before entry | Problems                  |
+| ----------- | ------------------------- | ------------------ | ------------------------- |
+| Centralized | 3                         | 2                  | Coordinator crash         |
+| Distributed | $2 \cdot (N - 1)$         | $2\cdot(N-1)$      | Crash of any process      |
+| Token ring  | 1 to $\infty$             | 0 to $n-1$         | Lost token, process crash |
