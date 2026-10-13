@@ -32,7 +32,7 @@ After each static and dynamic segment there are 2 more small segments:
 - symbol window: is typically used for network maintenance and signaling for starting the network
 - network idle time: a known quiet time used to maintain synchronization between node clocks
 
-Also in this case we need to solve the contention on the bus. While CAN uses bitwise arbitration, FlexRay uses Time Division Multiple Access (TDMA), so all nodes sync with the same clock and each node waits its turn to write (this is the mechanism which implements time consistency, and so the one which make FlexRay deterministic).
+Also in this case we need to solve the contention on the bus. While CAN uses bit-wise arbitration, FlexRay uses Time Division Multiple Access (TDMA), so all nodes sync with the same clock and each node waits its turn to write (this is the mechanism which implements time consistency, and so the one which make FlexRay deterministic).
 
 While CAN nodes only needed to know the correct baud rate to communicate, nodes on a FlexRay network must know how all the pieces of the network are configured in order to communicate. This is because of the TDMA constraint.
 This constraint means that the system works while in a closed configuration where no changes are made after the installation (so an embedded scenario).
