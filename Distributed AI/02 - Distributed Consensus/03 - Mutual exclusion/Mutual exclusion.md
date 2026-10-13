@@ -60,3 +60,46 @@ Cons:
 	- Not suitable for distributed resources
 	- Needs leader election for the coordinator
 
+## Distributed algorithms
+### Token ring algorithm
+
+
+```mermaid
+flowchart TB
+
+start["START"]
+loop{"LOOP"}
+token("token(RESOURCE)")
+recv["PROCESS_i"]
+if{"IF needed(RESOURCE)"}
+consume["CONSUME RESOURCE"]
+
+start --> loop
+loop --> GET_TOKEN
+
+subgraph GET_TOKEN
+	token --> recv
+end
+
+recv --> if
+if --|true|-->consume
+consume -->loop
+if --|false|-->loop
+```
+
+Pros:
+- Safe: mutual exclusion guaranteed
+- Live: starvation cannot occur
+Cons:
+- Low efficiency: the token must always be transmitted (even if a process does not need the resource)
+- Unfair: does not guarantee FIFO order
+- Not robust: if token is lost (e.g. process died) it will have to be regenerated, and the regeneration needs a leader election to decide who regenerates it
+
+### Lamport's Mutual Exclusion
+
+Each process maintains a request queue, containing mutual exclusion requests.
+To do so, each process has a logical scalar clock ([[Lamport's logical clock]]). Whenever a process $P_{i}$ wants to access a resource, it sends a request to all other processes, sending them its internal clock value, creating a queue which determines which process gets the resource (the one with the lower clock).
+
+![[Pasted image 20261013152329.png]]
+
+
