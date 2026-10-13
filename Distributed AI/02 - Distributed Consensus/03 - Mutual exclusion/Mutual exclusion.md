@@ -34,13 +34,29 @@ participant cont as Controller
 participant proc1 as Process 1
 participant proc2 as Process 2
 participant proc3 as Process 3
+participant proc3 as Process 4
 proc1->>cont: Resource 1 request
 cont ->> proc1: Resource 1 granted
 proc2->>cont: Resource 1 request
+proc4->>cont: Resource 1 request
 proc3->>cont: Resource 2 request
 cont->>proc3: Resource 2 granted
 proc1->>cont: Resource 1 release
 cont->>proc2: Resource 1 granted
-
+proc2->>cont: Resource 1 release
+cont->>proc4: Resource 1 granted
 ```
+
+Pros:
+- Safe & live: only one can access and everyone will eventually access
+- Fair: all requests processed in order
+- Suitable for centralized resource
+- Processes don't need to know each other
+- Low complexity: 3 messages for each request (request, grant, release)
+Cons:
+- Not robust
+	- Processes cannot distinguish a dead coordinator from waiting because the resource is already being used
+	- Coordinator can be a bottleneck and a single point of failure
+	- Not suitable for distributed resources
+	- Needs leader election for the coordinator
 
