@@ -45,6 +45,8 @@ For a TDMA network to work correctly, all nodes must be configured correctly, wi
 
 ![[Pasted image 20261013100757.png]]
 
-TDMA, while having many benefits, also has many limitations, as if an ECU goes down (not necessarily a fail) its reserved slot will simply not be used, so we are losing resources (time), as the other ECUs cannot use the free slots.
+TDMA, while having many benefits, also has many limitations, as if an ECU goes down (not necessarily a fail) its reserved slot will simply not be used, so we are losing resources (time), as the other ECUs cannot use the free slots (each ECU configured in the system reduces the total bandwidth, and if it goes down the bandwidth is lost).
 
+TDMA is also implemented in the dynamic slot, and it works by dividing the slot in many mini slots reserved for each ECU. If an ECU finds the bus free during a mini-slot reserved for him, it can transmit, and all the others must wait (even during their mini-slots).
+If all ECUs are synced (and they are because of the network idle time slot), there is no way to collide.
 
