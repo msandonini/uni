@@ -128,3 +128,26 @@ Cons:
 | Centralized | 3                         | 2                  | Coordinator crash         |
 | Distributed | $2 \cdot (N - 1)$         | $2\cdot(N-1)$      | Crash of any process      |
 | Token ring  | 1 to $\infty$             | 0 to $n-1$         | Lost token, process crash |
+
+## Decentralized algorithm
+
+The decentralized approach works by associating resources to controllers as in the centralized approach, but in this case the controllers are replicated, so that the failure of a single machine does not ruin the algorithm.
+In this approach resources can be replicated as well, and each replica can be associated to one replica of the controllers, so that we obtain more efficiency in accessing the resource.
+
+This approach works based on Distributed Hash Tables ([[DHT]]), which map replicated controllers and resources into different nodes.
+
+Each replica has a coordinator that controls access to it (the node that stores it), and a process that wants to access any replica of a resource asks the permission to all coordinators, so the process knows that it can access the resource as soon as it receives permission from $m > \frac{n}{2}$ coordinators.
+This system guarantees exclusive access (provided that a coordinator only grants access to one process at a time).
+
+The coordinator notifies the requester both when the resource is granted and when the resource is denied, and it's requester's responsibility to count the votes and decide whether or not the overall permission has been granted or denied.
+If a requester gets fewer than $m$ votes it will wait for a random time and then ask again.
+
+Pros:
+- Live enough: while some process could fall in starvation due to the random time for re-trying, it overall performs well from a probabilistic point of view
+- Fair enough: because of the random time of wait for re-trying, the protocol does not ensure complete fairness, but overall it performs well from a probabilistic point of view
+- Robust: if one coordinator goes down, the others are available
+- Safe: if a coordinator fails and resets, then it will not remember granting access to a requester, and may then give access to another; still, because of the need of $m$ "granting" votes, it's very unlikely that this will lead to a violation of mutual exclusion
+Cons:
+- Not completely live: there is possibility of starvation
+- Not completely fair: there is no guarantee of complete fairness
+- Not so efficient: if a resource is in high demand, the protocol generates a high number of multiple requests
