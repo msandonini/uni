@@ -2,7 +2,7 @@
 date:
   - 2026/10/01
 ---
-CAN-Bus can be subjected to different errors:
+[[CAN-Bus]] can be subjected to different errors:
 - bit errors
 	- happens when a transmitting ECU detects an opposite bit level on the CAN Bus 
 		- ECU writes 1 and reads 0 is reasonable

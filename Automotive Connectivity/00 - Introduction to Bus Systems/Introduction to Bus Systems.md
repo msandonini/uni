@@ -88,7 +88,7 @@ Each bus has its own way to get the access. These different ways divide into dif
 	- Centralized
 		- A master-slave approach, with simple request/response patterns
 	- Distributed
-		- Token-based & TDMA protocols (e.g. Flexray) 
+		- Token-based & TDMA protocols (e.g.  [[FlexRay]]) 
 - Random: nobody knows what everybody else does or when
 	- Non collision free
 		- Implements CSMA/CA (collision avoidance)

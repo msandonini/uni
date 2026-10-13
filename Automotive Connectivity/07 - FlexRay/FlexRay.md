@@ -2,7 +2,7 @@
 date:
   - 2026/10/13
 ---
-Problems of CAN-Bus:
+Problems of [[CAN-Bus]]:
 - "prone" to failures
 	- line topology
 	- no redundant links
@@ -49,4 +49,39 @@ TDMA, while having many benefits, also has many limitations, as if an ECU goes d
 
 TDMA is also implemented in the dynamic slot, and it works by dividing the slot in many mini slots reserved for each ECU. If an ECU finds the bus free during a mini-slot reserved for him, it can transmit, and all the others must wait (even during their mini-slots).
 If all ECUs are synced (and they are because of the network idle time slot), there is no way to collide.
+
+Here, prioritization is done via TDMA, as it is written in the scheduler cycle.
+The lower the priority the higher is the congestion (so the higher it is to lose the dynamic slot).
+
+![[Pasted image 20261013103339.png]]
+
+```mermaid
+---
+title: "Frame structure"
+config:
+  packet:
+    bitsPerRow: 12
+---
+packet
++1: "TSS0 (LOW)"
++1: "TSS1 (HIGH)"
++8: "m Bytes"
++1: "FES (LOW)"
++1: "TES (HIGH)"
+```
+
+- FES: Frame End Signal
+- TES: Transmission End Signal
+
+
+```mermaid
+---
+title: "Byte frame structure"
+---
+packet
+0: "BSS0 (HIGH)"
++1: "BSS1 (LOW)"
++8: "Byte data"
+```
+
 
