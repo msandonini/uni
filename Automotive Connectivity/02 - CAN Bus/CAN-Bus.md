@@ -16,6 +16,18 @@ Each ECU attached to the bus must follow the CAN interface (consisting of a CAN 
 The CAN message contains very much overhead (a frame with 64 bits of data is composed of a total of 126 bits), so it's characterized by an efficiency of nearly 0.5 (against the high efficiency of other telecom protocols, like ethernet which has 0.98 efficiency)
 ![[Pasted image 20260924165404.png]]
 
+```mermaid
+packet
++1: "SOF"
++29: "CAN-ID"
++1: "RTR"
++6: "Control"
++64: "Data (0-64 bits)"
++16: "CRC"
++2: "ACK"
++7: "EOF"
+```
+
 All the overhead is caused by the amount of blocks
 - SOF
 	- 1 bit
