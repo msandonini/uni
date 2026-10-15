@@ -75,7 +75,7 @@ packet
 +7: "7 - Length"
 +11: "11 - Header CRC"
 +6: "6 - Cycle Counter"
-+28: "n = [0 - 244] - Payload"
++28: "n = [0 - 254] - Payload"
 +24: "24 - CRC"
 ```
 
@@ -83,4 +83,7 @@ packet
 - Frame ID identifies the message id (we already know who is transmitting, and it's a broadcast, so we don't identify a receiver)
 - Header CRC uses the same math of CAN-Bus
 - Cycle Counter is a global counter of passed bus cycles (we always need to know time)
+
+Having an efficiency of about 95%, FlexRay is way more efficient than CAN-Bus
+
 
