@@ -56,8 +56,31 @@ The lower the priority the higher is the congestion (so the higher it is to lose
 
 ![[Pasted image 20261013103339.png]]
 
+In FlexRay, each byte is framed, so that it can remain time deterministic.
+This frame is composed by a Byte start signal (`10`) and 8 bits.
+
 ![[Pasted image 20261015162350.png]]
 
+```mermaid
+---
+config:
+  packet:
+    showBits: false
+    bitsPerRow: 34
+---
+packet
+
++5: "5 - Control bus"
++11: "11 - Frame ID"
++7: "7 - Length"
++11: "11 - Header CRC"
++6: "6 - Cycle Counter"
++28: "n = [0 - 244] - Payload"
++24: "24 - CRC"
+```
 
 
+- Frame ID identifies the message id (we already know who is transmitting, and it's a broadcast, so we don't identify a receiver)
+- Header CRC uses the same math of CAN-Bus
+- Cycle Counter is a global counter of passed bus cycles (we always need to know time)
 
