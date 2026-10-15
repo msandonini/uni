@@ -84,6 +84,19 @@ packet
 - Header CRC uses the same math of CAN-Bus
 - Cycle Counter is a global counter of passed bus cycles (we always need to know time)
 
-Having an efficiency of about 95%, FlexRay is way more efficient than CAN-Bus
+Having an efficiency of about 97%, FlexRay is way more efficient than CAN-Bus 
 
+In FlexRay, time synchronization is configured as a cold start procedure enacted by (typically) three nodes:
+- Check if bus is idle
+	- if not abort (cold start already proceeding or unneeded)
+- Transmit wake-up (WUP) pattern
+	- if collision occurs abort
+	- if no collision occurs this becomes the leading cold start node
+- Leading cold start node sends Collision Avoidance Symbol (CAS)
+	- Start regular operations (Cycle Counter starts at 0)
+	- Set bits: Startup Frame Indicator and Sync Frame Indicator
+- Other cold start nodes wait for 4 frames of leading cold start node
+	- After this they start regular operations
+Regular ECUs wait for 2 frames of 2 cold start nodes
 
+During the transmission, in order to keep synchronized 
