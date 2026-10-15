@@ -32,4 +32,4 @@ The key concept of Ethernet success is its CSMA/CD mechanism:
 
 When detecting a collision, Ethernet's CSMA/CD mechanism tosses a coin and waits before retrying
 
-
+In the past Ethernet was used and proposed as a bus (line topology), but nowadays each LAN is configured with a Switch / Router (star topology) and full duplex cables, so nowadays there is no reason for CSMA/CD, as the collision problem has been delocalized into the switches logic
