@@ -58,4 +58,16 @@ docker system prune -v
 ```
 Elimina tutti i volumi non correntemente utilizzati (anche se legato ad un container ancora esistente)
 
+## Docker compose
+
+```sh
+docker compose -f <file> <command>
+```
+Specifica il file di configurazione di compose
+- `-f <file>` specifica il nome del file di configurazione
+
+```sh
+docker compose up
+```
+Crea il container
 

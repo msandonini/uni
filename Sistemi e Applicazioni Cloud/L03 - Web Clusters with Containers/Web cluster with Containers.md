@@ -54,4 +54,41 @@ docker container exec -it <name> bash
 ```
 Apre bash su un container in esecuzione
 
+## Lab
+
+```Dockerfile
+FROM httpd:2.4
+ARG workername='RLworker'
+EXPOSE 80
+RUN mkdir /usr/local/apache2/htdocs/cluster
+COPY index.html /usr/local/apache2/htdocs/cluster
+RUN sed -i s/NAME/$workername/ /usr/local/apache2/htdocs/cluster/index.html
+```
+
+```
+docker run 
+```
+
+Equivalente a prima ma con compose, basta creare un file chiamato `docker-compose.yaml`:
+```yaml
+services:
+	httpworker1:
+		build:
+			context: httpworker
+			args:
+				workername: worker1
+		image: httpworker:worker1
+		container_name: httpworker1
+	httpworker2:
+		build:
+			context: httpworker
+			args:
+				workername: worker2
+		image: httpworker:worker2
+		container_name: httpworker2
+```
+
+```sh
+docker compose -f config.yaml
+```
 
