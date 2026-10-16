@@ -110,4 +110,7 @@ services:
 			- httpworker1
 			- httpworker2
 		ports:
+			- "80:80"
 ```
+
+
