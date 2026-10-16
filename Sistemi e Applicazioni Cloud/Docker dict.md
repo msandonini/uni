@@ -1,3 +1,7 @@
+---
+aliases:
+  - docker
+---
 ## Gestione container
 
 ```sh
