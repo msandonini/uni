@@ -25,6 +25,11 @@ docker container inspect -f {{<filter>}}
 ```
 Mostra le informazioni del container filtrandole. Il filtro segue la sintassi di Go
 
+```sh
+docker container exec -it <name> <command>
+```
+Esegue un comando sul container
+
 ## Gestione immagini
 
 ```sh

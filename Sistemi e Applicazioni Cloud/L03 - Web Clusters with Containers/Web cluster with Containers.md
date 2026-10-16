@@ -44,8 +44,14 @@ FROM httpd:2.4
 COPY index.html /usr/local/apache2/htdocs
 ```
 
-Una volta creato il dockerfile posso creare un'immagine:
+Una volta creato il dockerfile posso creare un'immagine con i miei file e configurazioni:
 ```sh
 docker image build -t <name> .
 ```
+
+```sh
+docker container exec -it <name> bash
+```
+Apre bash su un container in esecuzione
+
 
