@@ -71,3 +71,12 @@ docker compose up
 ```
 Crea il container
 
+```sh
+docker compose down
+```
+Elimina il container (se si stoppa con `CTRL+C` il container viene stoppato ma non eliminato e al prossimo `docker compose up` viene ricaricato dall'ultimo stato, non applicando eventuali modifiche)
+
+```sh
+docker compose down -v
+```
+Elimina il container e i volumi
