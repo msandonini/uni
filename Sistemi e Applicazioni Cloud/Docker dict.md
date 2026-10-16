@@ -1,3 +1,5 @@
+## Gestione container
+
 ```sh
 docker container ps
 ```
@@ -23,9 +25,28 @@ docker container inspect -f {{<filter>}}
 ```
 Mostra le informazioni del container filtrandole. Il filtro segue la sintassi di Go
 
+## Gestione immagini
+
 ```sh
 docker image build -t <name> <context>
 ```
 Crea un immagine con nome `<name>` partendo dalla posizione `<context>`
+
+```sh
+docker image rm <name>
+```
+Elimina un'immagine 
+
+## Gestione sistema
+
+```sh
+docker system prune
+```
+Rimuove tutto ciò che non è utilizzato
+
+```sh
+docker system prune -v
+```
+Elimina tutti i volumi non correntemente utilizzati (anche se legato ad un container ancora esistente)
 
 
