@@ -65,10 +65,6 @@ COPY index.html /usr/local/apache2/htdocs/cluster
 RUN sed -i s/NAME/$workername/ /usr/local/apache2/htdocs/cluster/index.html
 ```
 
-```
-docker run 
-```
-
 Equivalente a prima ma con compose, basta creare un file chiamato `docker-compose.yaml`:
 ```yaml
 services:
