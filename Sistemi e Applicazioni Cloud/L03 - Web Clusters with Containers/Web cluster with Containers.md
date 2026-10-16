@@ -88,3 +88,26 @@ services:
 docker compose -f config.yaml
 ```
 
+---
+
+Gateway container:
+```dockerfile
+FROM httpd:2.4
+EXPOSE 80
+COPY mod_proxy.conf /usr/local/apache2/conf/extra
+RUN echo "Include conf/extra/mod_proxy.conf" >> /usr/local/apache2/conf/httpd.conf
+```
+
+Equivalente in compose:
+```yaml
+services:
+	[...]
+	switch:
+		build:
+			context: switch
+		image: httpswitch
+		depends_on:
+			- httpworker1
+			- httpworker2
+		ports:
+```

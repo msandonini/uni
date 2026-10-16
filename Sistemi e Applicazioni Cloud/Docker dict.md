@@ -80,3 +80,10 @@ Elimina il container (se si stoppa con `CTRL+C` il container viene stoppato ma n
 docker compose down -v
 ```
 Elimina il container e i volumi
+
+```sh
+docker compose exec -it <service> <command>
+```
+Come eseguire `docker container exec` ma su un servizio specifico
+
+
