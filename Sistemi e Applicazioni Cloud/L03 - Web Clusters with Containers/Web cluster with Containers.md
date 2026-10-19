@@ -1,6 +1,7 @@
 ---
 date:
   - 2026/10/16
+  - 2026/10/19
 ---
 Quando si fa server scaling ci sono diverse possibilità:
 - Scale-up del server
@@ -113,4 +114,13 @@ services:
 			- "80:80"
 ```
 
-a
+## `nginx`
+
+A differenza che con [[#Apache `httpd`|httpd]], con nginx non bisogna caricare moduli come mod proxy e mod proxy balancer, in quanto sono già pre-compilati.
+
+Il balancer si crea upstram, e per utilizzarlo si mettono delle regole per specificare i worker disponibili, e necessita di un proxy pass.
+Con nginx non si ha visualizzazione integrata delle richieste e dei worker (si può vedere ma con trucchi strani).
+
+Nginx lavora con HTTP e basta (non supporta AJP), e dal momento che lavora con HTTP si aspetta una risposta HTTP, di conseguenza c'è una componente software che fa da intermediario tra nginx e il server che risponde.
+
+
