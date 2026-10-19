@@ -4,6 +4,8 @@ date:
 ---
 Not asked in exam
 
+## Introduction to blockchains
+
 The blockchain is a general concept describing a model for dealing with distributed asset tracking and identity management, which can be implemented in different ways and with disparate goals (e.g. Bitcoin for cryptocurrency, medical records for health, or the EU ID system which is currently being thought in the EU for identity management).
 
 Basically, with the term blockchain we identify a combination of distinct already existing technologies:
@@ -60,3 +62,15 @@ In blockchains, partitioning is intrinsic since it's an asynchronous system, and
 Research in blockchain contributed to mechanisms of eventual consistency (sooner or later in finite time, things will become consistent).
 
 Interactive example for distributed blockchain system in slide 23.
+
+A blockchain can also be permissioned or permissionless: in permissioned blockchains only nodes with permission can mine, while any node in a permissionless blockchains can mine
+
+## Blockchain inner workings
+
+When adding a new block, it needs to meet at least some requirements:
+- its index must be the latest block index + 1
+- the previous hash field must be equal to the latest block hash field
+- the hash must meet difficulty requirements
+Hence, changing a committed block leads to a cascade of invalid blocks.
+
+Slides from 35 onward as references and additional information
