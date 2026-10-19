@@ -41,6 +41,22 @@ In the blockchain, a hash must follow some rules:
 
 We define "mining" as the operation of finding a nonce (number), which produces a desired hash, in order to commit the block.
 As difficulty increases the number $M$ of valid hashes decreases, and with a lower $M$ it takes more processing power and time to find a valid hash.
+
 Those who find the nonce are called miners, and since they are the ones who write blockchain history, they can also harm the system, either by mistake or maliciously (by lying)
 
+In order to guarantee the integrity and authenticity of a commit, we use a signature system based on an asymmetric private + public key infrastructure.
 
+Slide 17's link for mining interactive example not working, correct link is [this](https://andersbrownworth.com/blockchain/blockchain).
+
+As we said before, the operation of finding a nonce is to find a number which produces a desired hash.
+This is because it's possible (and very probable) that the data's hash does not respect the additional constraints of our blockchain hashing rules, so we have to combine a number (the nonce) with the message in order to find a valid hash.
+
+The blockchain is made of networked nodes executing the same state machine, and each node executes the same consensus protocol, which guarantees consistency and robustness.
+
+By FLP theorem we know that we must choose one property between safety, liveness, and fault tolerance (with fault tolerance being impossible in asynchronous networks).
+The FLP theorem may resemble the CAP theorem, stating that for any distributed system, in case of failures (partitioning) we must choose among consistency and availability.
+
+In blockchains, partitioning is intrinsic since it's an asynchronous system, and availability cannot be lost in many application domains, but consistency is very importance too, but there are ways we can have *almost* consistency.
+Research in blockchain contributed to mechanisms of eventual consistency (sooner or later in finite time, things will become consistent).
+
+Interactive example for distributed blockchain system in slide 23.
