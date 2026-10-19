@@ -48,13 +48,16 @@ This impossibility results apply to asynchronous systems (local clocks, no synch
 >Problem: this algorithm does not work with crash or link failures (examples in slides from 32 to 35)
 
 We can't do anything to solve link failures, but we can solve the problems of crashes and byzantine failures by organizing multiple rounds of value exchanges.
-This is called $f$-resilient consensus algorithm, and it can tolerate the failure of at most $f$ processors, requiring $f+1$ rounds of information exchange
+This is called $f$-resilient consensus algorithm, and it can tolerate the failure of at most $f$ processors, requiring $f+1$ rounds of information exchange.
 
->[!INFO] f-resilient consensus algorithm
+>[!INFO] $f$-resilient consensus algorithm
 >Example in slides from 39 to 48
 >
 >Round 1: broadcast my value
 >Round 2 to $f+1$: broadcast any new received values
 >End of round $f+1$: decide on the minimum value received
+
+Similar $f$-resilient algorithms with $f+1$ rounds can be conceived for byzantine failures (only in the case of synchronous systems).
+However, there is no $f$-resilient algorithm for $n$ processes where $f \geq n/3$.
 
 
