@@ -59,3 +59,5 @@ This is called $f$-resilient consensus algorithm, and it can tolerate the failur
 
 Similar $f$-resilient algorithms with $f+1$ rounds can be conceived for byzantine failures (only in the case of synchronous systems).
 However, there is no $f$-resilient algorithm for $n$ processes where $f \geq n/3$.
+
+When some distributed operations require very high reliability, the blockchain is a very good solution.
