@@ -123,4 +123,8 @@ Con nginx non si ha visualizzazione integrata delle richieste e dei worker (si p
 
 Nginx lavora con HTTP e basta (non supporta AJP), e dal momento che lavora con HTTP si aspetta una risposta HTTP, di conseguenza c'è una componente software che fa da intermediario tra nginx e il server che risponde.
 
+## Clustering with Kubernetes (MiniKube)
 
+Kubernetes, almeno solitamente, viene usato con almeno una ventina di master nodes ed un centinaio di worker
+
+Per poterlo provare in locale si può usare MiniKube (più pesante di k3d ma più completo)
