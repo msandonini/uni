@@ -143,4 +143,10 @@ This standard took the name of 100BASE-T1 (while 100BASE-Tx is standard Ethernet
 To solve latency problems OPEN defined Express Packets, which an interrupt existing packets, and the interrupted packets continue after the express packet is completed.
 Express Packets can guarantee latency in the single microsecond range.
 
+In order to solve the bandwidth issue, the AVB (Audio Video Bridging) task group has createad:
+- Stream Reservation: simple reservation protocol to notify the various network elements in a path to reserve the resources necessary to support a particular stream
+- Queuing and Forwarding for AV Bridges: defines rules to ensure that an AV stream will pass through the network within the delay specified in the reservation
 
+To solve the problem of synchronization between devices and having multiple devices sample data at the same time IEEE 802.1AS (Timing and Synchronization for Time-Sensitive Applications in Bridged Local Area Networks) standard was created, which introduces simpler and faster methods for choosing a master clock.
+
+Also, to further reduce the wiring needed in a car, a new PoE standard was created. The IEEE 801.3bu (1-Pair Power over Data Lines (PoDL)) task force is working on standardizing PoE over a single pair.
