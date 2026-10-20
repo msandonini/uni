@@ -134,3 +134,13 @@ A possible alternative to Ethernet could have ben MOST (which we skipped), since
 | Ring topology                       | Hierarchical network                      |
 | One 100 Mbps takes entirely the bus | Many 100 Mbps flows can share the network |
 | Hard to extend                      | Modular                                   |
+
+In order to solve the EMI/RFI problem, Broadcom developed a proprietary PHY standard, BroadR-Reach, to enable longer distances of copper Ethernet connectivity at 100 Mbps (up to 700M using 1GE tech).
+Due to the lower bandwidth (27MHz bandwidth instead of 62.5MHz for 100Base-T) this standard met the automotive EMI requirements.
+This standard took the name of 100BASE-T1 (while 100BASE-Tx is standard Ethernet).
+![[Pasted image 20261020102313.png]]
+
+To solve latency problems OPEN defined Express Packets, which an interrupt existing packets, and the interrupted packets continue after the express packet is completed.
+Express Packets can guarantee latency in the single microsecond range.
+
+
