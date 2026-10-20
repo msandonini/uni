@@ -120,3 +120,17 @@ This is because of various previous limitations:
 - Ethernet did not have a way of synchronizing time between devices and having multiple devices sample data at the same time
 
 Nowadays we started using Ethernet also in cars in order to have bandwidths high enough to achieve autonomous driving
+
+## OPEN Alliance
+
+OPEN (One-Pair Ether-Net) Alliance is a consortium with both automotive constructors and electronics constructors, with the objective of solving the previously cited standard Ethernet's problems so that Ethernet can now be used in automotive.
+
+A possible alternative to Ethernet could have ben MOST (which we skipped), since it was fast, but it had major drawbacks:
+
+| MOST                                | OPEN                                      |
+| ----------------------------------- | ----------------------------------------- |
+| Proprietary                         | Open (except for level 1 only)            |
+| Expensive                           | Cheap                                     |
+| Ring topology                       | Hierarchical network                      |
+| One 100 Mbps takes entirely the bus | Many 100 Mbps flows can share the network |
+| Hard to extend                      | Modular                                   |
