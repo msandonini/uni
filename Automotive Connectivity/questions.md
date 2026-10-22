@@ -36,7 +36,7 @@ $$
 - Check the correctness of the message `10101001111`. The generator $G(x)$ is $x^3 + x + 1$
 $$
 \begin{array}{rll}
-10101001111 \phantom{0}| \underline{1011} \\
+10101001111 \phantom{0} | \underline{1011} \\
 \underline{1011 \phantom{00000000} |}\phantom{0000} \\
 11001111 \phantom{0} | \phantom{0000} \\
 \underline{1011 \phantom{00000} |} \phantom{0000} \\

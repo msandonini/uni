@@ -2,6 +2,7 @@
 date:
   - 2026/10/15
   - 2026/10/20
+  - 2026/10/22
 ---
 <!-- We skip MOST -->
 
@@ -150,3 +151,5 @@ In order to solve the bandwidth issue, the AVB (Audio Video Bridging) task group
 To solve the problem of synchronization between devices and having multiple devices sample data at the same time IEEE 802.1AS (Timing and Synchronization for Time-Sensitive Applications in Bridged Local Area Networks) standard was created, which introduces simpler and faster methods for choosing a master clock.
 
 Also, to further reduce the wiring needed in a car, a new PoE standard was created. The IEEE 801.3bu (1-Pair Power over Data Lines (PoDL)) task force is working on standardizing PoE over a single pair.
+
+Nowadays 10BASE-T1S (Ethernet with a bandwidth of 10Mbps) is the only non-P2P Ethernet protocol, as it is a bus technology developed with the scope of taking over CAN-Bus market share.
