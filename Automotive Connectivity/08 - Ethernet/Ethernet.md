@@ -153,3 +153,43 @@ To solve the problem of synchronization between devices and having multiple devi
 Also, to further reduce the wiring needed in a car, a new PoE standard was created. The IEEE 801.3bu (1-Pair Power over Data Lines (PoDL)) task force is working on standardizing PoE over a single pair.
 
 Nowadays 10BASE-T1S (Ethernet with a bandwidth of 10Mbps) is the only non-P2P Ethernet protocol, as it is a bus technology developed with the scope of taking over CAN-Bus market share.
+
+100B-Tx, in order to transmit data, uses just 2 couples of wires (1 tx, 1 rx), using a MLT-3 logic, so 3 levels:
+- logical 0: NRZI
+- logical 1: round-robin transmission (\[+1, 0, -1, 0, +1\])
+```wavedrom
+{
+	"signal": [
+		{
+			"name": "Clock", 
+			"wave": "p........" 
+		},
+		{ 
+			"name": "Data", 
+			"wave": "x4.3.4.3.4", 
+			"data": ["0", "1", "1", "1", "0"] 
+		}, 
+		{}, 
+		{ 
+			"name": "MLT-3 (+1)", 
+			"wave": "0..........", 
+			"type": "line" 
+		}, 
+		{
+			"name": "MLT-3 (0)", 
+			"wave": "1.0.1.0..1", 
+			"type": "line"
+		}, 
+		{
+			"name": "MLT-3 (-1)",
+			"wave": "0...1.0....",
+			"type": "line" 
+		} 
+	], 
+	"head": { 
+		"text": "MLT-3", 
+		"tick": 0 
+	} 
+}
+```
+100B-T speed, for a bitrate of 100 Mbps, is 66.66 MBd (mega-baud), since we are encapsulating 3 bits into 2 symbols (so 2 combinations of 3 levels)
