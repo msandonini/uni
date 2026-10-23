@@ -136,8 +136,10 @@ In Kubernetes il nome di default per un master node è `control-plane`.
 
 Ingress è un kind di Kubernetes che si occupa di definire delle regole di routing
 ```yaml
-kind: "Ingress"
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
+	name: <name>
 	annotations:
 		nginx.ingress.kubernetes.io/affinity: "cookie"
 		nginx.ingress.kubernetes.io/session-cookie-name: "worker"
@@ -147,7 +149,8 @@ spec:
 	- host: tomcat.127.0.0.1.nip.io
 	  http:
 		  paths:
-		  - [...]
+		  - path: /
+		    [...]
 ```
 
 Può capitare che anche la control plane prenda lavoro. Di base noi non vogliamo questa cosa, quindi dobbiamo cordonarlo con `kubectl cordon`.
