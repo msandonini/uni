@@ -19,3 +19,17 @@ Queste proprietà portano diversi benefici:
 
 FaaS e serverless computing sono tipicamente basati sui container, e solitamente supportano diversi linguaggi, tra cui i più usati sono Go, Rust, e Python.
 
+Ci sono 2 tipi di servizi serverless:
+- FaaS (Function as a Service)
+	- Elastico
+		- Stateless
+		- Asincrono
+		- Event-driven
+	- Poco costoso
+	- Gestione semplice
+- BaaS (Backend as a Service)
+	- Servizio fornito ad altre applicazioni come API per i dev
+	- Esempi tipici di BaaS sono server di autenticazioni e storage
+	- Persistente (cloud storage e db management)
+	- Serve gestione della sicurezza
+
