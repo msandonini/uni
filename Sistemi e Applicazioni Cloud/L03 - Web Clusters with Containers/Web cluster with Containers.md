@@ -123,8 +123,31 @@ Con nginx non si ha visualizzazione integrata delle richieste e dei worker (si p
 
 Nginx lavora con HTTP e basta (non supporta AJP), e dal momento che lavora con HTTP si aspetta una risposta HTTP, di conseguenza c'è una componente software che fa da intermediario tra nginx e il server che risponde.
 
-## Clustering with Kubernetes (MiniKube)
+## Clustering with Kubernetes (`minikube` & `k3d`)
 
 Kubernetes, almeno solitamente, viene usato con almeno una ventina di master nodes ed un centinaio di worker
 
-Per poterlo provare in locale si può usare MiniKube (più pesante di k3d ma più completo)
+Per poterlo provare in locale si può usare `minikube` (più pesante di `k3d` ma più completo).
+`k3d` è una versione single-node di `k3s`, che a sua volta è una semplificazione di `k8s` pensata per ambienti edge ed embedding.
+Di default `k3d` si appoggia a `traefik`, mentre il vero Kubernetes si appoggia a [[#`nginx`|nginx]].
+
+In Kubernetes il nome di default per un master node è `control-plane`.
+### Ingress
+
+Ingress è un kind di Kubernetes che si occupa di definire delle regole di routing
+```yaml
+kind: "Ingress"
+metadata:
+	annotations:
+		nginx.ingress.kubernetes.io/affinity: "cookie"
+		nginx.ingress.kubernetes.io/session-cookie-name: "worker"
+spec:
+	ingressClassName: nginx
+	rules:
+	- host: tomcat.127.0.0.1.nip.io
+	  http:
+		  paths:
+		  - [...]
+```
+
+Può capitare che anche la control plane prenda lavoro. Di base noi non vogliamo questa cosa, quindi dobbiamo cordonarlo con `kubectl cordon`.
